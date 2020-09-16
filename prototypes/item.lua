@@ -44,11 +44,11 @@ stacksize = 50
 {
 type = "item",
 name = "uranium-233",
-icon = "__SAM_2.0__/graphics/icons/uranium-233.png",
+icon = "__SAM_2__/graphics/icons/uranium-233.png",
 icon_size = 64, icon_mipmaps = 4,
 pictures = 
  {
- { size = 64, filename = "__SAM_2.0__/graphics/icons/uranium-233",  scale = 0.25, mipmap_count = 4}
+ { size = 64, filename = "__SAM_2__/graphics/icons/uranium-233",  scale = 0.25, mipmap_count = 4}
  },
  subgroup = "raw_resources",
  order = "d[uranium-233]",
