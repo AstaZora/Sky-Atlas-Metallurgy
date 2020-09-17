@@ -2,19 +2,12 @@
   "name": "Sky-Atlas-Metallurgy-Rebirth",
   "version": "2.0.0",
   "factorio_version": "1.0",
-  "date": "2020-9-15",
+  "date": "2020-09-15",
   "title": "Sky Atlas Metallurgy Rebirth",
   "author": "Quasar_0, AstaZora",
   "homepage": "",
   "description": "This mod is the main mod, for a new overhaul of vanilla metallurgy. Includes many changes and additions",
   "dependencies": [
-    "base >= 0.18.21",
-    "! Krastorio2",
-    "! space-exploration",
-    "! space-exploration-postprocess",
-    "! angelsrefining",
-    "! bobores",
-    "! bobplates",
-    "! bobassembly"
+    "base >= 1.0"
   ]
 }
