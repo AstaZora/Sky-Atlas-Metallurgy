@@ -1,4 +1,7 @@
 require("prototypes.item.item")
+require("prototypes.entity.resources")
+require("prototypes.entity.autoplace-controls")
+require("prototypes.particle.particles")
 
 local function removeResource(resource)
   -- Remove from presets
