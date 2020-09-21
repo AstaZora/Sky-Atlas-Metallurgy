@@ -3,8 +3,32 @@ require("prototypes.entity.resources")
 require("prototypes.entity.autoplace-controls")
 require("prototypes.particle.particles")
 
+local presets = {
+  ["rich-resources"] = {richness = "very-good"},
+  ["rail-world"] = {
+    frequency = 0.33333333333,
+    size = 3
+  },
+  ["ribbon-world"] = {
+    frequency = 3,
+    size = 0.5,
+    richness = 2
+  }
+}
+
+local function addResource(resource)
+  for preset, conf in pairs(presets) do
+    local set = data.raw["map-gen-presets"]["default"][preset]
+    if
+      set and set.basic_settings and set.basic_settings.autoplace_controls and
+        not set.basic_settings.autoplace_controls[resource]
+     then
+      set.basic_settings.autoplace_controls[resource] = conf
+    end
+  end
+end
+
 local function removeResource(resource)
-  -- Remove from presets
   for _, preset in pairs(data.raw["map-gen-presets"]["default"]) do
     if
     preset and preset.basic_settings and preset.basic_settings.autoplace_controls and
@@ -19,3 +43,6 @@ end
 
 removeResource("iron-ore")
 removeResource("copper-ore")
+addResource("magnetite-ore")
+addResource("malachite-ore")
+addResource("laterite-ore")
