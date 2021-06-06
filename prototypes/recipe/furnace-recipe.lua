@@ -13,7 +13,7 @@ data:extend(
     type = "recipe",
     name = "iron-plate",
     category = "smelting",
-    ingredients = {{ "iron-ore", 1}},
+    ingredients = {{ "iron-ore", 2}},
     results = {{"iron-plate", 1}},
     energy_required = 3.2,
     enabled = true
@@ -31,7 +31,7 @@ data:extend(
     type = "recipe",
     name = "copper-plate",
     category = "smelting",
-    ingredients = {{ "copper-ore", 1}},
+    ingredients = {{ "copper-ore", 2}},
     results = {{"copper-plate", 1}},
     energy_required = 3.2,
     enabled = true
@@ -49,7 +49,7 @@ data:extend(
     type = "recipe",
     name = "nickel-plate",
     category = "smelting",
-    ingredients = {{ "nickel-ore", 1}},
+    ingredients = {{ "nickel-ore", 2}},
     results = {{"nickel-plate", 1}},
     energy_required = 3.2,
     enabled = true
@@ -67,7 +67,7 @@ data:extend(
     type = "recipe",
     name = "cobalt-plate",
     category = "smelting",
-    ingredients = {{ "cobalt-ore", 1}},
+    ingredients = {{ "cobalt-ore", 2}},
     results = {{"cobalt-plate", 1}},
     energy_required = 3.2,
     enabled = true

@@ -6,11 +6,10 @@ data:extend(
     category = "crafting",
     subgroup = "intermediate-product",
     enabled = true,
-    energy_required = 16,
-    ingredients = {{"laterite-ore", 10}},
+    energy_required = 12,
+    ingredients = {{"laterite-ore", 8}},
     results = 
     {
-      {"nickel-ore", 2},
       {"cobalt-ore", 2},
       {"bauxite-ore", 2},
       {"magnetite-ore", 2},
