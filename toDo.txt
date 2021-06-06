@@ -6,3 +6,4 @@ Aluminium
 Magnetite - tree
 Laterite - tree
 Malachite - tree
+monazite creates helium by heat - make this a thing
