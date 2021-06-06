@@ -15,7 +15,7 @@ data:extend(
       {"magnetite-ore", 2},
       {"malachite-ore", 2}
     },
-    main_product = "nickel-ore",
+    main_product = "cobalt-ore",
     icon_size = 64,
   },
   {
