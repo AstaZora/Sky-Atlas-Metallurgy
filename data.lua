@@ -2,6 +2,8 @@ require("prototypes.item.item")
 require("prototypes.entity.resources")
 require("prototypes.entity.autoplace-controls")
 require("prototypes.particle.particles")
+require("prototypes.recipe.furnace-recipe")
+require("prototypes.recipe.recipe")
 
 local presets = {
   ["rich-resources"] = {richness = "very-good"},

@@ -176,5 +176,36 @@ data:extend(
     subgroup = "intermediate-product",
     order = "r[uranium-233]",
     stack_size = 50
+  },
+
+
+------------ Plates
+
+  {
+    type = "item",
+    name = "nickel-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[nickel-plate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "cobalt-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[cobalt-plate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "aluminium-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminium-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[aluminium-plate]",
+    stack_size = 50
   }
 })
