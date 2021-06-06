@@ -20,5 +20,12 @@ data:extend(
     richness = true,
     order = "b-bc",
     category = "resource"
+  },
+  {
+    type = "autoplace-control",
+    name = "monazite-ore",
+    richness = true,
+    order = "b-bd",
+    category = "resource"
   }
 })
