@@ -133,47 +133,9 @@ data:extend(
     {
       mining_particle = "monazite-ore-particle",
       mining_time = 1,
-      result = "monazite-ore"
-    },
-    collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
-    selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
-    autoplace = resource_autoplace.resource_autoplace_settings
-    {
-      name = "monazite-ore",
-      order = "d",
-      base_density = 5,
-      has_starting_area_placement = true,
-      regular_rq_factor_multiplier = 1,
-      starting_rq_factor_multiplier = 1
-    },
-    stage_counts = {10000, 7500, 5000, 2500, 1250, 800, 400, 100},
-    stages =
-    {
-      sheet =
-      {
-        filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/monazite-ore/monazite-ore.png",
-        priority = "medium",
-        width = 128,
-        height = 128,
-        frame_count = 8,
-        variation_count = 8,
-        scale = 0.5
-      }
-    },
-    map_color = {220, 220, 220}
-  },
-  {
-    type = "resource",
-    name = "monazite-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monazite-ore.png",
-    icon_size = 64,
-    flags = {"placeable-neutral"},
-    order="h-i",
-    minable =
-    {
-      mining_particle = "monazite-ore-particle",
-      mining_time = 1,
-      result = "monazite-ore"
+      result = "monazite-ore",
+      fluid_amount = 10,
+      required_fluid = "sulfuric-acid"
     },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},

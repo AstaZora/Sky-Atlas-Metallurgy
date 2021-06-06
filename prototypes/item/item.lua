@@ -169,6 +169,19 @@ data:extend(
   },
   {
     type = "item",
+    name = "chromium-ore",
+    icon = "__base__/graphics/icons/iron-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    pictures =
+    {
+      { size = 64, filename = "__base__/graphics/icons/iron-ore.png",  scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "raw-resource",
+    order = "s[chromium-ore]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "uranium-233",
     icon = "__base__/graphics/icons/uranium-235.png",
     icon_size = 64, icon_mipmaps = 4,
