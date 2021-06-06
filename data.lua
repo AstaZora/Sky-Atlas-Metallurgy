@@ -2,6 +2,7 @@ require("prototypes.item.item")
 require("prototypes.entity.resources")
 require("prototypes.entity.autoplace-controls")
 require("prototypes.particle.particles")
+require("prototypes.particle.particle-animations")
 require("prototypes.recipe.furnace-recipe")
 require("prototypes.recipe.recipe")
 
@@ -45,6 +46,8 @@ end
 
 removeResource("iron-ore")
 removeResource("copper-ore")
+removeResource("uranium-ore")
 addResource("magnetite-ore")
 addResource("malachite-ore")
 addResource("laterite-ore")
+addResource("monazite-ore")

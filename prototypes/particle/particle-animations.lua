@@ -114,6 +114,44 @@ particle_animations.get_laterite_particle_pictures = function(options)
   }
 end
 
+particle_animations.get_monazite_particle_pictures = function(options)
+  return
+  {
+    {
+      filename = "__base__/graphics/particle/stone-ore-particle/hr-stone-particle-1.png",
+      priority = "extra-high",
+      width = 32,
+      height = 32,
+      frame_count = 1,
+      scale = 0.375
+    },
+    {
+      filename = "__base__/graphics/particle/stone-ore-particle/hr-stone-particle-2.png",
+      priority = "extra-high",
+      width = 32,
+      height = 32,
+      frame_count = 1,
+      scale = 0.375
+    },
+    {
+      filename = "__base__/graphics/particle/stone-ore-particle/hr-stone-particle-3.png",
+      priority = "extra-high",
+      width = 32,
+      height = 32,
+      frame_count = 1,
+      scale = 0.375
+    },
+    {
+      filename = "__base__/graphics/particle/stone-ore-particle/hr-stone-particle-4.png",
+      priority = "extra-high",
+      width = 32,
+      height = 32,
+      frame_count = 1,
+      scale = 0.375
+    }
+  }
+end
+
 particle_animations.get_iron_particle_shadow_pictures = function()
   return
   {
@@ -181,6 +219,44 @@ particle_animations.get_copper_particle_shadow_pictures = function()
     },
     {
       filename = "__base__/graphics/particle/copper-ore-particle/hr-copper-ore-particle-shadow-4.png",
+      priority = "extra-high",
+      width = 32,
+      height = 32,
+      frame_count = 1,
+      scale = 0.375
+    }
+  }
+end
+
+particle_animations.get_monazite_particle_shadow_pictures = function()
+  return
+  {
+    {
+      filename = "__base__/graphics/particle/stone-particle/hr-stone-particle-shadow-1.png",
+      priority = "extra-high",
+      width = 32,
+      height = 32,
+      frame_count = 1,
+      scale = 0.375
+    },
+    {
+      filename = "__base__/graphics/particle/stone-particle/hr-stone-particle-shadow-2.png",
+      priority = "extra-high",
+      width = 32,
+      height = 32,
+      frame_count = 1,
+      scale = 0.375
+    },
+    {
+      filename = "__base__/graphics/particle/stone-particle/hr-stone-particle-shadow-3.png",
+      priority = "extra-high",
+      width = 32,
+      height = 32,
+      frame_count = 1,
+      scale = 0.375
+    },
+    {
+      filename = "__base__/graphics/particle/stone-particle/hr-stone-particle-shadow-4.png",
       priority = "extra-high",
       width = 32,
       height = 32,
