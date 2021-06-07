@@ -36,5 +36,13 @@ data:extend(
       {"samarium-ore", 2}
     },
     icon_size = 64
+  },
+  {
+    type = "recipe-category",
+    name = "electrolysis"
+  },
+  {
+    type = "recipe-category",
+    name = "alloying"
   }
 })
