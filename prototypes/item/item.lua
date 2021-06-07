@@ -223,5 +223,23 @@ data:extend(
     subgroup = "raw-resource",
     order = "a[aluminium-plate]",
     stack_size = 50
+  },
+  {
+    type = "item",
+    name = "invar-ingot",
+    icon = "__base__/graphics/icons/iron-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[invar-ingot]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "monel-ingot",
+    icon = "__base__/graphics/icons/copper-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[monel-ingot]",
+    stack_size = 50
   }
 })

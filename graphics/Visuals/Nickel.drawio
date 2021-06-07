@@ -1,0 +1,19 @@
+<mxfile>
+    <diagram id="iFGa_D4UpRRFrXyIqBg6" name="Page-1">
+        <mxGraphModel dx="864" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;ul&gt;&lt;li&gt;&lt;span&gt;Potential Applications of NIckel&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Pumps&lt;br&gt;&lt;/li&gt;&lt;li&gt;Pipes&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 12px&quot;&gt;&lt;span&gt;direct contact with concentrated hydrofluoric acid&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;Valves&lt;/li&gt;&lt;li&gt;HydroChloric Reduction&lt;br&gt;&lt;/li&gt;&lt;li&gt;Sulfuric Reduction&lt;/li&gt;&lt;li&gt;propeller shafts (boats)&lt;/li&gt;&lt;li&gt;Uranium Enrichment&lt;br&gt;&lt;/li&gt;&lt;li&gt;Uranium rod Casing&lt;/li&gt;&lt;li&gt;Hydrogen Chloride Storage&lt;/li&gt;&lt;li&gt;Thermal Machinery&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+                    <mxGeometry width="260" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Nickel Prospects" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="10" width="450" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;ol&gt;&lt;li&gt;Invar&lt;/li&gt;&lt;li&gt;Monel&lt;br&gt;&lt;/li&gt;&lt;li&gt;Cupronickel&lt;/li&gt;&lt;li&gt;nickel-chromium (armor)&lt;/li&gt;&lt;/ol&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+                    <mxGeometry x="650" width="200" height="140" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

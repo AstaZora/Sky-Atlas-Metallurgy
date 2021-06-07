@@ -80,5 +80,23 @@ data:extend(
     results = {{"aluminium-plate", 1}},
     energy_required = 3.2,
     enabled = true
+  },
+  {
+    type = "recipe",
+    name = "invar-ingot",
+    category = "basic-crafting",
+    ingredients = {{ "nickel-plate", 1},{"iron-plate", 2}},
+    results = {{"invar-ingot", 3}},
+    energy_required = 3.2,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "monel-ingot",
+    category = "basic-crafting",
+    ingredients = {{ "nickel-plate", 2},{"copper-plate", 1}},
+    results = {{"monel-ingot", 3}},
+    energy_required = 3.2,
+    enabled = true
   }
 })
