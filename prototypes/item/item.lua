@@ -226,20 +226,20 @@ data:extend(
   },
   {
     type = "item",
-    name = "invar-ingot",
-    icon = "__base__/graphics/icons/iron-plate.png",
+    name = "invar-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/invar-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
-    order = "a[invar-ingot]",
+    order = "a[invar-plate]",
     stack_size = 50
   },
   {
     type = "item",
-    name = "monel-ingot",
-    icon = "__base__/graphics/icons/copper-plate.png",
+    name = "monel-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monel-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
-    order = "a[monel-ingot]",
+    order = "a[monel-plate]",
     stack_size = 50
   }
 })
