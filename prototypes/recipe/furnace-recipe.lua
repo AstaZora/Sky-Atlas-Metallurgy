@@ -83,20 +83,29 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "invar-ingot",
-    category = "basic-crafting",
+    name = "invar-plate",
+    category = "alloy-smelting",
     ingredients = {{ "nickel-plate", 1},{"iron-plate", 2}},
-    results = {{"invar-ingot", 3}},
+    results = {{"invar-plate", 3}},
     energy_required = 3.2,
     enabled = true
   },
   {
     type = "recipe",
-    name = "monel-ingot",
-    category = "basic-crafting",
+    name = "monel-plate",
+    category = "alloy-smelting",
     ingredients = {{ "nickel-plate", 2},{"copper-plate", 1}},
-    results = {{"monel-ingot", 3}},
+    results = {{"monel-plate", 3}},
     energy_required = 3.2,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "kovar-plate",
+    category = "alloy-smelting",
+    ingredients = {{ "iron-plate", 5},{"nickel-plate", 3},{ "cobalt-plate", 2}},
+    results = {{"kovar-plate", 10}},
+    energy_required = 5,
     enabled = true
   }
 })
