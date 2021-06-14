@@ -48,5 +48,18 @@ data:extend(
   {
     type = "recipe-category",
     name = "alloy-smelting"
-  }
+  },
+  {
+    type = "recipe",
+    name = "alloy-furnace",
+    icon = "__base__/graphics/icons/electric-furnace.png",
+    category = "alloy-smelting",
+    subgroup = "smelting-machine",
+    enabled = true,
+    energy_required = 12,
+    ingredients = {{"cobalt-plate", 10}, {"nickel-plate", 10}, {"iron-plate", 10}, {"stone-brick", 10}},
+    results =
+    {
+      {"alloy-furnace", 1}
+    },
 })
