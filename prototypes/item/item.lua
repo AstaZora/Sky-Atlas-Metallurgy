@@ -258,6 +258,7 @@ data:extend(
     name = "alloy-furnace",
     icon = "__base__/graphics/icons/electric-furnace.png",
     icon_size = 64, icon_mipmaps = 4,
+    place_result = "alloy-furnace",
     subgroup = "smelting-machine",
     order = "a[alloy-furnace]",
     stack_size = 50
