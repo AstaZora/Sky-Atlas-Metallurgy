@@ -5,6 +5,7 @@ require("prototypes.particle.particles")
 require("prototypes.particle.particle-animations")
 require("prototypes.recipe.furnace-recipe")
 require("prototypes.recipe.recipe")
+require("prototypes.entity.entity")
 
 local presets = {
   ["rich-resources"] = {richness = "very-good"},
@@ -43,15 +44,6 @@ local function removeResource(resource)
     end
   end
 end
-
-alloyFurnace = table.deepcopy(data.raw["furnace"]["electric-furnace"])
-alloyFurnace.name = "alloy-furnace"
-alloyFurnace.category = "alloy-smelting"
-
-data:extend (
-{
-  alloyFurnace
-})
 
 removeResource("iron-ore")
 removeResource("copper-ore")

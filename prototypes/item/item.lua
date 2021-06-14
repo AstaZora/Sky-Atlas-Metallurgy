@@ -250,5 +250,17 @@ data:extend(
     subgroup = "raw-resource",
     order = "a[kovar-plate]",
     stack_size = 50
+  },
+
+    --New Machines
+  {
+    type = "item",
+    name = "alloy-furnace",
+    icon = "__base__/graphics/icons/electric-furnace.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "smelting-machine",
+    order = "a[alloy-furnace]",
+    stack_size = 50
   }
+
 })
