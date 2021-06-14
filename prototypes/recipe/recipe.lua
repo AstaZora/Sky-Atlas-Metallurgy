@@ -41,7 +41,7 @@ data:extend(
     type = "recipe",
     name = "alloy-furnace",
     icon = "__base__/graphics/icons/electric-furnace.png",
-    category = "alloy-smelting",
+    category = "crafting",
     subgroup = "smelting-machine",
     enabled = true,
     energy_required = 12,
