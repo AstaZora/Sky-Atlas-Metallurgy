@@ -53,6 +53,23 @@ data:extend(
     icon_size = 64
   },
 
+  --Recycle Ores
+  {
+    type = "recipe",
+    name = "bauxite-recycling",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bauxite-ore.png",
+    category = "crafting",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 12,
+    ingredients = {{"bauxite-ore", 8}},
+    results =
+    {
+      {"laterite-ore", 8}
+    },
+    icon_size = 64
+  },
+
     --recipe categories
 
   {
