@@ -46,6 +46,11 @@ local function removeResource(resource)
   end
 end
 
+data.raw["furnace"]["alloy-furnace"]["type"] = "assembling-machine"
+data.raw["assembling-machine"]["alloy-furnace"] = data.raw["furnace"]["alloy-furnace"]
+data.raw["furnace"]["alloy-furnace"] = nil
+
+
 removeResource("iron-ore")
 removeResource("copper-ore")
 removeResource("uranium-ore")
