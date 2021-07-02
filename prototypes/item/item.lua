@@ -114,6 +114,32 @@ data:extend(
   },
   {
     type = "item",
+    name = "titanium-ore",
+    icon = "__base__/graphics/icons/iron-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    pictures =
+    {
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",  scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "raw-resource",
+    order = "q[titanium-ore]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "aluminum-ore",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    pictures =
+    {
+      { size = 64, filename = "__base__/graphics/icons/iron-ore.png",  scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "raw-resource",
+    order = "q[aluminum-ore]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "monazite-ore",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monazite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
@@ -131,11 +157,11 @@ data:extend(
   {
     type = "item",
     name = "neodymium-ore",
-    icon = "__base__/graphics/icons/iron-ore.png",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__base__/graphics/icons/iron-ore.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "q[monazite-ore]",
@@ -144,11 +170,11 @@ data:extend(
   {
     type = "item",
     name = "thorium-ore",
-    icon = "__base__/graphics/icons/uranium-ore.png",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__base__/graphics/icons/uranium-ore.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "r[thorium-ore]",
@@ -157,11 +183,11 @@ data:extend(
   {
     type = "item",
     name = "samarium-ore",
-    icon = "__base__/graphics/icons/iron-ore.png",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__base__/graphics/icons/iron-ore.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "s[samarium-ore]",
@@ -169,15 +195,15 @@ data:extend(
   },
   {
     type = "item",
-    name = "chromium-ore",
-    icon = "__base__/graphics/icons/iron-ore.png",
+    name = "chromite-ore",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__base__/graphics/icons/iron-ore.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
-    order = "s[chromium-ore]",
+    order = "s[chromite-ore]",
     stack_size = 50
   },
   {
@@ -217,11 +243,38 @@ data:extend(
   },
   {
     type = "item",
-    name = "aluminium-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminium-plate.png",
+    name = "aluminum-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
-    order = "a[aluminium-plate]",
+    order = "a[aluminum-plate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "titanium-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[titanium-plate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "chromium-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromium-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[chromium-plate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "incoloy-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/incoloy-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[incoloy-plate]",
     stack_size = 50
   },
   {
@@ -251,7 +304,39 @@ data:extend(
     order = "a[kovar-plate]",
     stack_size = 50
   },
-
+    --Nuclear Age
+    {
+      type = "item",
+      name = "thorium-fuel-cell",
+      icon = "__base__/graphics/icons/uranium-fuel-cell.png",
+      icon_size = 64, icon_mipmaps = 4,
+      pictures =
+      {
+        layers =
+        {
+          {
+            size = 64,
+            filename = "__base__/graphics/icons/uranium-fuel-cell.png",
+            scale = 0.25,
+            mipmap_count = 4
+          },
+          {
+            draw_as_light = true,
+            flags = {"light"},
+            size = 64,
+            filename = "__base__/graphics/icons/uranium-fuel-cell-light.png",
+            scale = 0.25,
+            mipmap_count = 4
+          }
+        }
+      },
+      subgroup = "intermediate-product",
+      order = "r[uranium-processing]-a[uranium-fuel-cell]",
+      fuel_category = "nuclear",
+      burnt_result = "uranium-233",
+      fuel_value = "32GJ",
+      stack_size = 10
+    },
     --New Machines
   {
     type = "item",

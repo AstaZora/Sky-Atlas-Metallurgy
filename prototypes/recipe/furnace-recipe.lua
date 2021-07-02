@@ -74,10 +74,28 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "aluminium-plate",
+    name = "aluminum-plate",
     category = "smelting",
-    ingredients = {{ "bauxite-ore", 2}},
-    results = {{"aluminium-plate", 1}},
+    ingredients = {{ "aluminum-ore", 2}},
+    results = {{"aluminum-plate", 1}},
+    energy_required = 3.2,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "titanium-plate",
+    category = "smelting",
+    ingredients = {{ "titanium-ore", 2}},
+    results = {{"titanium-plate", 1}},
+    energy_required = 3.2,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "chromium-plate",
+    category = "smelting",
+    ingredients = {{ "chromite-ore", 2}},
+    results = {{"chromium-plate", 1}},
     energy_required = 3.2,
     enabled = true
   },
@@ -87,6 +105,15 @@ data:extend(
     category = "alloy-smelting",
     ingredients = {{ "nickel-plate", 1},{"iron-plate", 2}},
     results = {{"invar-plate", 3}},
+    energy_required = 3.2,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "incoloy-plate",
+    category = "alloy-smelting",
+    ingredients = {{ "nickel-plate", 2},{"iron-plate", 1},{"chromium-plate", 1}},
+    results = {{"incoloy-plate", 2}},
     energy_required = 3.2,
     enabled = true
   },
