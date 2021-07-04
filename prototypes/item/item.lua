@@ -115,7 +115,7 @@ data:extend(
   {
     type = "item",
     name = "titanium-ore",
-    icon = "__base__/graphics/icons/iron-ore.png",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
@@ -132,7 +132,7 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__base__/graphics/icons/iron-ore.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "q[aluminum-ore]",

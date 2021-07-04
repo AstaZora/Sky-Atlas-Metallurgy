@@ -7,3 +7,8 @@ Magnetite - tree
 Laterite - tree
 Malachite - tree
 monazite creates helium by heat - make this a thing
+Titanite (Sphene) comes from titanium ore reduction
+anatase, brookite, ilmenite, leucoxene, perovskite, rutile, and sphene. (from titanium ore mining)
+
+"Perovskite is a semiconductor, which is used to transport the electric charge whenever the light hits the material. In the United Kingdom, Oxford University physicists have found that the perovskite has been used as the replacement for thin-film solar cells [12]."
+"Omni Crystal" - Crystal product made of every gemstone that's able to be used as any gem (creates 4)

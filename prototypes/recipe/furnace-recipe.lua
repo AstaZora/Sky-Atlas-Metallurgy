@@ -101,6 +101,15 @@ data:extend(
   },
   {
     type = "recipe",
+    name = "aluminum-plate",
+    category = "smelting",
+    ingredients = {{ "bauxite-ore", 2}},
+    results = {{"aluminum-plate", 1}},
+    energy_required = 3.2,
+    enabled = true
+  },
+  {
+    type = "recipe",
     name = "chromium-steel",
     category = "alloy-smelting",
     ingredients = {{ "chromium-plate", 2},{"iron-plate", 4}},

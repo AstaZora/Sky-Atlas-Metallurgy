@@ -3,7 +3,7 @@ data:extend(
   {
     type = "recipe",
     name = "laterite-crushing",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/laterite-ore.png",
     category = "crafting",
     subgroup = "intermediate-product",
     enabled = true,
@@ -11,7 +11,7 @@ data:extend(
     ingredients = {{"laterite-ore", 8}},
     results =
     {
-      {"cobalt-ore", 2},
+      {"cobaltite-ore", 2},
       {"bauxite-ore", 2},
       {"magnetite-ore", 2},
       {"malachite-ore", 2}
@@ -26,11 +26,28 @@ data:extend(
     subgroup = "intermediate-product",
     enabled = true,
     energy_required = 3,
-    ingredients = {{"bauxite-ore", 4}},
+    ingredients = {{"bauxite-ore", 8}},
     results =
     {
-      {"titanium-ore", 2},
-      {"aluminum-ore", 2}
+      {"titanium-ore", 4},
+      {"aluminum-ore", 4}
+    },
+    icon_size = 64
+  },
+  {
+    type = "recipe",
+    name = "cobaltite-reduction",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobaltite-ore.png",
+    category = "crafting",
+    subgroup = "intermediate-product",
+    enabled = true,
+    energy_required = 3,
+    ingredients = {{"cobaltite-ore", 8}},
+    results =
+    {
+      {"cobalt-ore", 4},
+      {"magnetite-ore", 2},
+      {"nickel-ore", 2}
     },
     icon_size = 64
   },
@@ -150,6 +167,21 @@ data:extend(
     enabled = true,
     energy_required = 12,
     ingredients = {{"bauxite-ore", 8}},
+    results =
+    {
+      {"laterite-ore", 8}
+    },
+    icon_size = 64
+  },
+  {
+    type = "recipe",
+    name = "cobaltite-recycling",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobaltite-ore.png",
+    category = "crafting",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 12,
+    ingredients = {{"cobaltite-ore", 8}},
     results =
     {
       {"laterite-ore", 8}
