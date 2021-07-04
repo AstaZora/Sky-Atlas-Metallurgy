@@ -101,6 +101,15 @@ data:extend(
   },
   {
     type = "recipe",
+    name = "chromium-steel",
+    category = "alloy-smelting",
+    ingredients = {{ "chromium-plate", 2},{"iron-plate", 4}},
+    results = {{"chromium-steel", 1}},
+    energy_required = 5,
+    enabled = true
+  },
+  {
+    type = "recipe",
     name = "invar-plate",
     category = "alloy-smelting",
     ingredients = {{ "nickel-plate", 1},{"iron-plate", 2}},
@@ -133,6 +142,34 @@ data:extend(
     ingredients = {{ "iron-plate", 5},{"nickel-plate", 3},{ "cobalt-plate", 2}},
     results = {{"kovar-plate", 10}},
     energy_required = 5,
+    enabled = true
+  },
+    --Magnet Age
+  {
+    type = "recipe",
+    name = "neodymium-magnet",
+    category = "alloy-smelting",
+    ingredients = {{ "neodymium-ore", 6},{"iron-plate", 3}},
+    results = {{"neodymium-magnet", 1}},
+    energy_required = 8,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "permalloy-magnet",
+    category = "alloy-smelting",
+    ingredients = {{ "nickel-plate", 2},{"iron-plate", 2}},
+    results = {{"permalloy-magnet", 1}},
+    energy_required = 3,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "smco-magnet",
+    category = "alloy-smelting",
+    ingredients = {{ "samarium-ore", 3},{"cobalt-plate", 3}},
+    results = {{"smco-magnet", 2}},
+    energy_required = 2,
     enabled = true
   }
 })

@@ -48,27 +48,27 @@ data:extend(
       {
         name = "uranium-ore",
         probability = 0.05,
-        amount = 2
+        amount = 10
       },
       {
         name = "thorium-ore",
         probability = 0.1,
-        amount = 2
+        amount = 10
       },
       {
         name = "neodymium-ore",
         probability = 0.2,
-        amount = 4
+        amount = 10
       },
       {
         name = "samarium-ore",
         probability = 0.2,
-        amount = 4
+        amount = 10
       },
       {
         name = "chromite-ore",
         probability = 0.4,
-        amount = 8
+        amount = 10
       }
     },
     icon_size = 64
@@ -92,20 +92,53 @@ data:extend(
    {
     type = "recipe",
     name = "thorium-fuel-cell",
-    energy_required = 10,
+    energy_required = 100,
     enabled = true,
     ingredients =
     {
-      {"monel-plate", 12},
-      {"invar-plate", 12},
-      {"kovar-plate", 20},
-      {"thorium-ore", 8},
-      {"uranium-235", 4},
-      {"uranium-238", 10}
+      {"monel-plate", 30},
+      {"invar-plate", 30},
+      {"kovar-plate", 60},
+      {"thorium-ore", 50},
+      {"uranium-235", 10},
+      {"uranium-238", 50}
     },
     result = "thorium-fuel-cell",
-    result_count = 4
+    result_count = 10
   },
+  {
+    type = "recipe",
+    name = "uranium-233-cell",
+    energy_required = 100,
+    enabled = true,
+    ingredients =
+    {
+      {"titanium-plate", 20},
+      {"kovar-plate", 20},
+      {"incoloy-plate", 40},
+      {"uranium-233", 5}
+    },
+    result = "uranium-233-cell",
+    result_count = 20
+  },
+  {
+    type = "recipe",
+    name = "thorium-fuel-reprocessing",
+    energy_required = 60,
+    enabled = true,
+    category = "centrifuging",
+    ingredients = {{"used-up-thorium-fuel-cell", 1}},
+    icon = "__base__/graphics/icons/nuclear-fuel-reprocessing.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "r[uranium-processing]-b[nuclear-fuel-reprocessing]",
+    main_product = "",
+    results = {{"uranium-233", 4}},
+    allow_decomposition = false
+  },
+
+  --Magnetic Age
+  
 
   --Recycle Ores
   {

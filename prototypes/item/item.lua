@@ -230,7 +230,7 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[nickel-plate]",
-    stack_size = 50
+    stack_size = 100
   },
   {
     type = "item",
@@ -239,7 +239,7 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[cobalt-plate]",
-    stack_size = 50
+    stack_size = 100
   },
   {
     type = "item",
@@ -248,7 +248,7 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[aluminum-plate]",
-    stack_size = 50
+    stack_size = 100
   },
   {
     type = "item",
@@ -257,7 +257,7 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[titanium-plate]",
-    stack_size = 50
+    stack_size = 100
   },
   {
     type = "item",
@@ -266,7 +266,7 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[chromium-plate]",
-    stack_size = 50
+    stack_size = 100
   },
   {
     type = "item",
@@ -275,7 +275,7 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[incoloy-plate]",
-    stack_size = 50
+    stack_size = 100
   },
   {
     type = "item",
@@ -284,7 +284,7 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[invar-plate]",
-    stack_size = 50
+    stack_size = 100
   },
   {
     type = "item",
@@ -293,7 +293,7 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[monel-plate]",
-    stack_size = 50
+    stack_size = 100
   },
   {
     type = "item",
@@ -302,6 +302,43 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[kovar-plate]",
+    stack_size = 100
+  },
+    --Magnetic Age
+  {
+    type = "item",
+    name = "neodymium-magnet",
+    icon = "__base__/graphics/icons/steel-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "a[neodymium-magnet]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "permalloy-magnet",
+    icon = "__base__/graphics/icons/steel-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "b[neodymium-magnet]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "smco-magnet",
+    icon = "__base__/graphics/icons/steel-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "c[neodymium-magnet]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "chromium-steel",
+    icon = "__base__/graphics/icons/steel-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "a[steel-plate]",
     stack_size = 50
   },
     --Nuclear Age
@@ -331,11 +368,61 @@ data:extend(
         }
       },
       subgroup = "intermediate-product",
-      order = "r[uranium-processing]-a[uranium-fuel-cell]",
+      order = "r[thorium-processing]-a[thorium-fuel-cell]",
       fuel_category = "nuclear",
-      burnt_result = "uranium-233",
+      burnt_result = "used-up-thorium-fuel-cell",
       fuel_value = "32GJ",
       stack_size = 10
+    },
+    {
+      type = "item",
+      name = "used-up-thorium-fuel-cell",
+      icon = "__base__/graphics/icons/used-up-uranium-fuel-cell.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "intermediate-product",
+      order = "r[used-up-thorium-fuel-cell]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "uranium-233-cell",
+      icon = "__base__/graphics/icons/uranium-fuel-cell.png",
+      icon_size = 64, icon_mipmaps = 4,
+      pictures =
+      {
+        layers =
+        {
+          {
+            size = 64,
+            filename = "__base__/graphics/icons/uranium-fuel-cell.png",
+            scale = 0.25,
+            mipmap_count = 4
+          },
+          {
+            draw_as_light = true,
+            flags = {"light"},
+            size = 64,
+            filename = "__base__/graphics/icons/uranium-fuel-cell-light.png",
+            scale = 0.25,
+            mipmap_count = 4
+          }
+        }
+      },
+      subgroup = "intermediate-product",
+      order = "r[uranium-processing]-a[uranium-233-cell]",
+      fuel_category = "nuclear",
+      burnt_result = "used-up-uranium-fuel-cell",
+      fuel_value = "100GJ",
+      stack_size = 10
+    },
+    {
+      type = "item",
+      name = "used-up-thorium-fuel-cell",
+      icon = "__base__/graphics/icons/used-up-uranium-fuel-cell.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "intermediate-product",
+      order = "r[used-up-thorium-fuel-cell]",
+      stack_size = 50
     },
     --New Machines
   {
