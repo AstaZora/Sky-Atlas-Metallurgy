@@ -7,14 +7,14 @@ data:extend(
     category = "crafting",
     subgroup = "intermediate-product",
     enabled = true,
-    energy_required = 12,
+    energy_required = 6,
     ingredients = {{"laterite-ore", 8}},
     results =
     {
       {"cobaltite-ore", 2},
       {"bauxite-ore", 2},
-      {"magnetite-ore", 2},
-      {"malachite-ore", 2}
+      {"magnetite-ore", 3},
+      {"malachite-ore", 1}
     },
     icon_size = 64
   },
@@ -29,8 +29,8 @@ data:extend(
     ingredients = {{"bauxite-ore", 8}},
     results =
     {
-      {"titanium-ore", 4},
-      {"aluminum-ore", 4}
+      {"titanium-ore", 6},
+      {"aluminum-ore", 2}
     },
     icon_size = 64
   },
@@ -165,7 +165,7 @@ data:extend(
     category = "crafting",
     subgroup = "raw-resource",
     enabled = true,
-    energy_required = 12,
+    energy_required = 2,
     ingredients = {{"bauxite-ore", 8}},
     results =
     {
@@ -180,7 +180,7 @@ data:extend(
     category = "crafting",
     subgroup = "raw-resource",
     enabled = true,
-    energy_required = 12,
+    energy_required = 2,
     ingredients = {{"cobaltite-ore", 8}},
     results =
     {

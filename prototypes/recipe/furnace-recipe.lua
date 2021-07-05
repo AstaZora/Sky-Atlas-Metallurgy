@@ -74,9 +74,9 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "aluminum-plate",
+    name = "aluminum-plate-aluminum",
     category = "smelting",
-    ingredients = {{ "aluminum-ore", 2}},
+    ingredients = {{"aluminum-ore", 2}},
     results = {{"aluminum-plate", 1}},
     energy_required = 3.2,
     enabled = true
@@ -85,7 +85,7 @@ data:extend(
     type = "recipe",
     name = "titanium-plate",
     category = "smelting",
-    ingredients = {{ "titanium-ore", 2}},
+    ingredients = {{ "titanium-ore", 1}},
     results = {{"titanium-plate", 1}},
     energy_required = 3.2,
     enabled = true
@@ -101,7 +101,7 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "aluminum-plate",
+    name = "aluminum-plate-bauxite",
     category = "smelting",
     ingredients = {{ "bauxite-ore", 2}},
     results = {{"aluminum-plate", 1}},
@@ -122,7 +122,7 @@ data:extend(
     name = "invar-plate",
     category = "alloy-smelting",
     ingredients = {{ "nickel-plate", 1},{"iron-plate", 2}},
-    results = {{"invar-plate", 3}},
+    results = {{"invar-plate", 1}},
     energy_required = 3.2,
     enabled = true
   },
@@ -131,7 +131,7 @@ data:extend(
     name = "incoloy-plate",
     category = "alloy-smelting",
     ingredients = {{ "nickel-plate", 2},{"iron-plate", 1},{"chromium-plate", 1}},
-    results = {{"incoloy-plate", 2}},
+    results = {{"incoloy-plate", 1}},
     energy_required = 3.2,
     enabled = true
   },
@@ -140,7 +140,7 @@ data:extend(
     name = "monel-plate",
     category = "alloy-smelting",
     ingredients = {{ "nickel-plate", 2},{"copper-plate", 1}},
-    results = {{"monel-plate", 3}},
+    results = {{"monel-plate", 1}},
     energy_required = 3.2,
     enabled = true
   },
@@ -149,7 +149,35 @@ data:extend(
     name = "kovar-plate",
     category = "alloy-smelting",
     ingredients = {{ "iron-plate", 5},{"nickel-plate", 3},{ "cobalt-plate", 2}},
-    results = {{"kovar-plate", 10}},
+    results = {{"kovar-plate", 5}},
+    energy_required = 8,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "duralumin-plate",
+    category = "alloy-smelting",
+    ingredients = {{ "aluminum-plate", 5},{"copper-plate", 1}},
+    results = {{"duralumin-plate", 1}},
+    energy_required = 5,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "bronze-plate",
+    category = "alloy-smelting",
+    ingredients = {{ "copper-plate", 16},{"aluminum-plate", 2},{"iron-plate", 1},{"nickel-plate", 1}},
+    results = {{"bronze-plate", 10}},
+    energy_required = 10,
+    enabled = true
+  },
+  --bulletproof Titanium
+  {
+    type = "recipe",
+    name = "titanium5-plate",
+    category = "alloy-smelting",
+    ingredients = {{ "titanium-plate", 9},{"aluminum-plate", 1}},
+    results = {{"titanium5-plate", 1}},
     energy_required = 5,
     enabled = true
   },

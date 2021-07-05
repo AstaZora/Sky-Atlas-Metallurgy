@@ -304,12 +304,47 @@ data:extend(
     order = "a[kovar-plate]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "duralumin-plate",
+    icon = "__base__/graphics/icons/iron-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[duralumin-plate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "bronze-plate",
+    icon = "__base__/graphics/icons/iron-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[bronze-plate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "titanium5-plate",
+    icon = "__base__/graphics/icons/iron-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[titanium5-plate]",
+    stack_size = 100
+  },
     --Magnetic Age
+  {
+  
+    type = "fuel-category",
+    name = "magnetic",
+  
+  },
   {
     type = "item",
     name = "neodymium-magnet",
     icon = "__base__/graphics/icons/steel-plate.png",
     icon_size = 64, icon_mipmaps = 4,
+    fuel_category = "magnetic",
+    fuel_value = "300MJ",
     subgroup = "intermediate-product",
     order = "a[neodymium-magnet]",
     stack_size = 50
@@ -319,6 +354,8 @@ data:extend(
     name = "permalloy-magnet",
     icon = "__base__/graphics/icons/steel-plate.png",
     icon_size = 64, icon_mipmaps = 4,
+    fuel_category = "magnetic",
+    fuel_value = "50MJ",
     subgroup = "intermediate-product",
     order = "b[neodymium-magnet]",
     stack_size = 50
@@ -328,6 +365,8 @@ data:extend(
     name = "smco-magnet",
     icon = "__base__/graphics/icons/steel-plate.png",
     icon_size = 64, icon_mipmaps = 4,
+    fuel_category = "magnetic",
+    fuel_value = "100MJ",
     subgroup = "intermediate-product",
     order = "c[neodymium-magnet]",
     stack_size = 50

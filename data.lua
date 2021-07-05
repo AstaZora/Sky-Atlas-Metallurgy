@@ -50,6 +50,10 @@ data.raw["furnace"]["alloy-furnace"]["type"] = "assembling-machine"
 data.raw["assembling-machine"]["alloy-furnace"] = data.raw["furnace"]["alloy-furnace"]
 data.raw["furnace"]["alloy-furnace"] = nil
 
+local boiler = data.raw["boiler"]["boiler"]
+boiler.energy_source.fuel_category = nil
+boiler.energy_source.fuel_categories = {"chemical", "magnetic"}
+
 
 removeResource("iron-ore")
 removeResource("copper-ore")
