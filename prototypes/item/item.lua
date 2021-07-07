@@ -50,6 +50,39 @@ data:extend(
   },
   {
     type = "item",
+    name = "magnetite-ore",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    pictures =
+    {
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore-1.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore-2.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore-3.png", scale = 0.25, mipmap_count = 4 }
+    },
+    subgroup = "raw-resource",
+    order = "i[magnetite-ore]", -- g[uranium-ore], h[raw-fish]
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "oil-shale",
+    icon = "__base__/graphics/icons/coal.png",
+    icon_size = 64, icon_mipmaps = 4,
+    pictures =
+    {
+      { size = 64, filename = "__base__/graphics/icons/coal.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-1.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-2.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-3.png",   scale = 0.25, mipmap_count = 4 }
+
+    },
+    subgroup = "raw-resource",
+    order = "f[oil-shale]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "nickel-ore",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
     icon_size = 64, icon_mipmaps = 4,
@@ -307,7 +340,7 @@ data:extend(
   {
     type = "item",
     name = "duralumin-plate",
-    icon = "__base__/graphics/icons/iron-plate.png",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/duralumin-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[duralumin-plate]",
@@ -316,7 +349,7 @@ data:extend(
   {
     type = "item",
     name = "bronze-plate",
-    icon = "__base__/graphics/icons/iron-plate.png",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bronze-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[bronze-plate]",
@@ -325,7 +358,7 @@ data:extend(
   {
     type = "item",
     name = "titanium5-plate",
-    icon = "__base__/graphics/icons/iron-plate.png",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-5.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[titanium5-plate]",
@@ -374,7 +407,7 @@ data:extend(
   {
     type = "item",
     name = "chromium-steel",
-    icon = "__base__/graphics/icons/steel-plate.png",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/stainless-steel-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "a[steel-plate]",

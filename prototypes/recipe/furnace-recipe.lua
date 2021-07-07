@@ -177,7 +177,7 @@ data:extend(
     name = "titanium5-plate",
     category = "alloy-smelting",
     ingredients = {{ "titanium-plate", 9},{"aluminum-plate", 1}},
-    results = {{"titanium5-plate", 1}},
+    results = {{"titanium5-plate", 2}},
     energy_required = 5,
     enabled = true
   },

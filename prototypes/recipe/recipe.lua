@@ -30,7 +30,7 @@ data:extend(
     results =
     {
       {"titanium-ore", 6},
-      {"aluminum-ore", 2}
+      {"aluminum-ore", 6}
     },
     icon_size = 64
   },

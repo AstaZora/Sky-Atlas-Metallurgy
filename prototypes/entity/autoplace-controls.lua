@@ -27,5 +27,12 @@ data:extend(
     richness = true,
     order = "b-bd",
     category = "resource"
+  },
+  {
+    type = "autoplace-control",
+    name = "oil-shale",
+    richness = true,
+    order = "b-bd",
+    category = "resource"
   }
 })

@@ -25,7 +25,37 @@ magnesium
 vanadium
 and more
 
+Turn oil shale into oil and sulfur (5:1 ratio?) with oil-shale-debris out the back 
+turn oil shale debris into 
+iron and nickel
+
 -- Backup Text Pastes
+
+Old Alloy Furnace (testing new graphics)
+This is the old deep copied stone Furnace
+local alloyFurnace = table.deepcopy(data.raw.furnace["stone-furnace"])
+alloyFurnace.name = "alloy-furnace"
+alloyFurnace.working_visualizations = 
+alloyFurnace.max_health = 750
+alloyFurnace.crafting_speed = 0.75
+alloyFurnace.energy_usage = "250kW"
+alloyFurnace.crafting_categories = {"alloy-smelting"}
+alloyFurnace.minable.result = "alloy-furnace"
+alloyFurnace.icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/machines/furnace_brick.png"
+alloyFurnace.picture = {
+  filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/machines/furnace_brick.png",
+  priority = "extra-high",
+  selection_box = {{-1, -1}, {1, 1}},
+  width = 200,
+  height = 200,
+}
+
+data:extend(
+{
+  alloyFurnace
+})
+
+
 data:extend(
 {
     {
