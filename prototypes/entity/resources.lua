@@ -61,7 +61,7 @@ data:extend(
     {
       name = "malachite-ore",
       order = "b",
-      base_density = 8,
+      base_density = 5,
       has_starting_area_placement = true,
       regular_rq_factor_multiplier = 1,
       starting_rq_factor_multiplier = 1
@@ -80,7 +80,7 @@ data:extend(
         scale = 0.5
       }
     },
-    map_color = {5, 82, 22}
+    map_color = {r=75, g=221, b=50, a=0.3}
   },
   {
     type = "resource",
@@ -101,7 +101,7 @@ data:extend(
     {
       name = "laterite-ore",
       order = "c",
-      base_density = 8,
+      base_density = 11,
       has_starting_area_placement = true,
       regular_rq_factor_multiplier = 1,
       starting_rq_factor_multiplier = 1
@@ -174,7 +174,7 @@ data:extend(
     minable =
     {
       mining_particle = "monazite-ore-particle",
-      mining_time = 1,
+      mining_time = 10,
       result = "oil-shale",
       fluid_amount = 10,
       required_fluid = "steam"

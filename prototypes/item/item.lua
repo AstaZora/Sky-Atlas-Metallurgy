@@ -364,6 +364,16 @@ data:extend(
     order = "a[titanium5-plate]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "havar-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/havar-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[havar-plate]",
+    stack_size = 100
+  },
+ 
     --Magnetic Age
   {
   
@@ -500,11 +510,21 @@ data:extend(
   {
     type = "item",
     name = "alloy-furnace",
-    icon = "__base__/graphics/icons/electric-furnace.png",
+    icon = "__base__/graphics/icons/stone-furnace.png",
     icon_size = 64, icon_mipmaps = 4,
     place_result = "alloy-furnace",
     subgroup = "smelting-machine",
     order = "a[alloy-furnace]",
+    stack_size = 50
+  },
+  {    
+    type = "item",
+    name = "bulk-drone",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/misc/construction-robo-ico.png",
+    icon_size = 32, icon_mipmaps = 4,
+    group = "logistics-network",
+    order = "b[bulk-drone]",
+    place_result = "bulk-drone",
     stack_size = 50
   }
 

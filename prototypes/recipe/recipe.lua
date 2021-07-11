@@ -11,9 +11,9 @@ data:extend(
     ingredients = {{"laterite-ore", 8}},
     results =
     {
-      {"cobaltite-ore", 2},
-      {"bauxite-ore", 2},
-      {"magnetite-ore", 3},
+      {"cobaltite-ore", 3},
+      {"bauxite-ore", 3},
+      {"magnetite-ore", 1},
       {"malachite-ore", 1}
     },
     icon_size = 64
@@ -36,6 +36,21 @@ data:extend(
   },
   {
     type = "recipe",
+    name = "aluminum-recycling",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bauxite-ore.png",
+    category = "crafting",
+    subgroup = "intermediate-product",
+    enabled = true,
+    energy_required = 3,
+    ingredients = {{"aluminum-ore", 8}},
+    results =
+    {
+      {"bauxite-ore", 8}
+    },
+    icon_size = 64
+  },
+  {
+    type = "recipe",
     name = "cobaltite-reduction",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobaltite-ore.png",
     category = "crafting",
@@ -47,7 +62,7 @@ data:extend(
     {
       {"cobalt-ore", 4},
       {"magnetite-ore", 2},
-      {"nickel-ore", 2}
+      {"nickel-ore", 4}
     },
     icon_size = 64
   },
@@ -156,6 +171,47 @@ data:extend(
 
   --Magnetic Age
   
+  --Oil related Age
+
+  {
+    type = "recipe",
+    name = "oil-shale-refining",
+    icon = "__base__/graphics/icons/fluid/coal-liquefaction.png",
+    category = "oil-processing",
+    subgroup = "raw-material",
+    enabled = true,
+    energy_required = 5,
+    ingredients = {{"oil-shale", 10},{type="fluid", name="steam", amount=100}},
+    results = --other resources include aluminum, magnesium, silicon - Check Oil Shale
+    {
+      {
+        name = "stone",
+        probability = 0.50,
+        amount = 20
+      },
+      {
+        name = "sulfur",
+        probability = 0.1,
+        amount = 4
+      },
+      {
+        type="fluid",
+        name="crude-oil",
+        amount=100,
+      },
+      {
+        name = "magnetite-ore",
+        probability = 0.2,
+        amount = 10
+      },
+      {
+        name = "coal",
+        probability = 0.4,
+        amount = 10
+      }
+    },
+    icon_size = 64
+  },
 
   --Recycle Ores
   {
@@ -181,12 +237,28 @@ data:extend(
     subgroup = "raw-resource",
     enabled = true,
     energy_required = 2,
-    ingredients = {{"cobaltite-ore", 8}},
+    ingredients = {{"cobalt-ore", 8}},
     results =
     {
       {"laterite-ore", 8}
     },
     icon_size = 64
+  },
+  {
+    
+    type = "recipe",
+    name = "bulk-drone",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/misc/construction-robo-ico.png",
+    category = "advanced-crafting",
+    subgroup = "logistic-network",
+    enabled = true,
+    energy_required = 20,
+    ingredients = {{"titanium-plate", 8},{"kovar-plate", 10},{"bronze-plate", 25}, {"flying-robot-frame", 4}},
+      results =
+      {
+        {"bulk-drone", 1}
+      },
+    icon_size = 32
   },
 
     --recipe categories

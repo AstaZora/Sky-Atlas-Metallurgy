@@ -58,7 +58,7 @@ data:extend(
     type = "recipe",
     name = "cobalt-plate-raw",
     category = "smelting",
-    ingredients = {{ "cobaltite-ore", 2}},
+    ingredients = {{ "cobaltite-ore", 1}},
     results = {{"cobalt-plate", 1}},
     energy_required = 3.2,
     enabled = true
@@ -85,9 +85,9 @@ data:extend(
     type = "recipe",
     name = "titanium-plate",
     category = "smelting",
-    ingredients = {{ "titanium-ore", 1}},
+    ingredients = {{ "titanium-ore", 2}},
     results = {{"titanium-plate", 1}},
-    energy_required = 3.2,
+    energy_required = 5,
     enabled = true
   },
   {
@@ -103,7 +103,7 @@ data:extend(
     type = "recipe",
     name = "aluminum-plate-bauxite",
     category = "smelting",
-    ingredients = {{ "bauxite-ore", 2}},
+    ingredients = {{ "bauxite-ore", 1}},
     results = {{"aluminum-plate", 1}},
     energy_required = 3.2,
     enabled = true
@@ -157,7 +157,7 @@ data:extend(
     type = "recipe",
     name = "duralumin-plate",
     category = "alloy-smelting",
-    ingredients = {{ "aluminum-plate", 5},{"copper-plate", 1}},
+    ingredients = {{ "aluminum-plate", 3},{"copper-plate", 1}},
     results = {{"duralumin-plate", 1}},
     energy_required = 5,
     enabled = true
@@ -171,12 +171,21 @@ data:extend(
     energy_required = 10,
     enabled = true
   },
+  {
+    type = "recipe",
+    name = "havar-plate",
+    category = "alloy-smelting",
+    ingredients = {{ "cobalt-plate", 5},{"chromium-plate", 3},{"nickel-plate", 2}},
+    results = {{"havar-plate", 2}},
+    energy_required = 5,
+    enabled = true
+  },
   --bulletproof Titanium
   {
     type = "recipe",
     name = "titanium5-plate",
     category = "alloy-smelting",
-    ingredients = {{ "titanium-plate", 9},{"aluminum-plate", 1}},
+    ingredients = {{ "titanium-plate", 4},{"aluminum-plate", 1},{"cobalt-plate", 2}},
     results = {{"titanium5-plate", 2}},
     energy_required = 5,
     enabled = true
