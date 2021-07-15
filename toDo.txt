@@ -60,3 +60,50 @@ Limestone
 - deep sea rig - Using argonite to obtain
 Zinc Cobalt Lead
 
+Divalent lead (Pb) cations and sulfur (S) anions form a close-packed cubic unit cell much like the mineral halite of the halide mineral group.
+Zinc, cadmium, iron, copper, antimony, arsenic, bismuth and selenium also occur in variable amounts in galena.
+Selenium substitutes for sulfur in the structure constituting a solid solution series.
+The lead telluride mineral altaite has the same crystal structure as galena.
+
+
+The compounds used include metal halides (most often zinc chloride or ammonium chloride),
+hydrochloric acid, phosphoric acid, citric acid, and hydrobromic acid.
+Salts of mineral acids with amines are also used as aggressive activators.
+
+Galena Ore Worktable
+Add Gasses
+Ammonium chloride
+Ammonium chloride is used in a ~5% aqueous solution to work on oil wells with clay swelling problems. (another type of oilfield, maybe?)
+The acid mixture aqua regia, or royal water, dissolves gold and is used to purify scrap alloy containing gold.
+Aqua regia is a mix of three parts hydrochloric acid to one part nitric acid.
+
+
+Creating acid is too complex right now, instead I pride to use acid levels instead
+Ideal suggestions with metallurgy include
+Sulfuric acid expense
+Coal Investments
+Stone Investments
+
+Next steps -> 
+Mine a "raw" ore
+Smelting it (3x ore) = 1 plate
+adding sulfuric acid produces a refined ore (3x ore -> 2x refined ore, stone byproduct) = 1 plate
+Refining again, taking more sulfuric acid, and stone generates a refined chunk of that metal. 1 to 1 Smelting
+Lastly, two steps exist
+Chemical mod is created. -> or allow more sulfuric acid, water, stone, coal, (maybe limestone?) producing a pure ore
+Pure ore smelts 1:2
+(This idea is for the now)
+
+
+Average electricity cost per process 50MW
+
+Total Cost 200MW (before beacons)
+
+Suggested machinery to create art for
+Ore Centrifuge
+Ore Sorter
+Thermal Nuker
+Chemical Nuker
+Washing Station
+Acid Washing Station
+Water Treatment Plant

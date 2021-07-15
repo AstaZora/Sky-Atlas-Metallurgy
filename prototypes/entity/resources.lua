@@ -89,11 +89,66 @@ data:extend(
     icon_size = 64,
     flags = {"placeable-neutral"},
     order="g-h-i",
-    minable =
+    minable = 
     {
       mining_particle = "laterite-ore-particle",
       mining_time = 1,
-      result = "laterite-ore"
+      results = {
+      {
+        name = "magnetite-ore",
+        probability = 0.1,
+        amount_min = 1,
+        amount_max = 10
+      },
+      {
+        name = "malachite-ore",
+        probability = 0.1,
+        amount_min = 1,
+        amount_max = 10
+      },
+      {
+        name = "nickel-ore",
+        probability = 0.1,
+        amount_min = 1,
+        amount_max = 10
+      },
+      {
+        name = "cobalt-ore",
+        probability = 0.1,
+        amount_min = 1,
+        amount_max = 10
+      },
+      {
+        name = "aluminum-ore",
+        probability = 0.1,
+        amount_min = 1,
+        amount_max = 10
+      },
+      {
+        name = "laterite-ore",
+        probability = 1,
+        amount_min = 1,
+        amount_max = 10
+      },
+      {
+        name = "titanium-ore",
+        probability = 0.1,
+        amount_min = 1,
+        amount_max = 10
+      },
+      {
+        name = "bauxite-ore",
+        probability = 0.2,
+        amount_min = 1,
+        amount_max = 10
+      },
+      {
+        name = "cobaltite-ore",
+        probability = 0.2,
+        amount_min = 1,
+        amount_max = 10
+      },
+    }
     },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
@@ -101,7 +156,7 @@ data:extend(
     {
       name = "laterite-ore",
       order = "c",
-      base_density = 11,
+      base_density = 10,
       has_starting_area_placement = true,
       regular_rq_factor_multiplier = 1,
       starting_rq_factor_multiplier = 1

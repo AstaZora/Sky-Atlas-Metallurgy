@@ -19,19 +19,7 @@ alloyFurnace.animation =
           frame_count = 1,
           shift = util.by_pixel(22, 0),
           scale = 1.2,
-          hr_version =
-          {
-            filename = "__base__/graphics/entity/stone-furnace/hr-stone-furnace-shadow.png",
-            priority = "extra-high",
-            width = 164,
-            height = 74,
-            frame_count = 1,
-            draw_as_shadow = true,
-            shift = util.by_pixel(14.5, 13),
-            scale = 0.5
-          }
         },
-        
         {
           filename = "__base__/graphics/entity/stone-furnace/stone-furnace-shadow.png",
           priority = "extra-high",

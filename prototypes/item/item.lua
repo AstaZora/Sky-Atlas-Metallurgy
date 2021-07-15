@@ -14,7 +14,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "i[magnetite-ore]", -- g[uranium-ore], h[raw-fish]
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -30,7 +30,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "j[malachite-ore]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -46,7 +46,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "k[laterite-ore]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -62,7 +62,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "i[magnetite-ore]", -- g[uranium-ore], h[raw-fish]
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -79,7 +79,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "f[oil-shale]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -95,7 +95,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "l[nickel-ore]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -111,7 +111,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "m[bauxite-ore]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -127,7 +127,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "n[cobaltite-ore]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -143,7 +143,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "o[cobalt-ore]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -156,7 +156,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "q[titanium-ore]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -169,7 +169,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "q[aluminum-ore]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -185,7 +185,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "p[monazite-ore]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -198,7 +198,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "q[monazite-ore]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -211,7 +211,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "r[thorium-ore]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -224,7 +224,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "s[samarium-ore]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -237,7 +237,7 @@ data:extend(
     },
     subgroup = "raw-resource",
     order = "s[chromite-ore]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -423,6 +423,15 @@ data:extend(
     order = "a[steel-plate]",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "stone-debris",
+    icon = "__base__/graphics/icons/stone.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[stone-debris]",
+    stack_size = 100
+  },
     --Nuclear Age
     {
       type = "item",
@@ -453,7 +462,7 @@ data:extend(
       order = "r[thorium-processing]-a[thorium-fuel-cell]",
       fuel_category = "nuclear",
       burnt_result = "used-up-thorium-fuel-cell",
-      fuel_value = "32GJ",
+      fuel_value = "8GJ",
       stack_size = 10
     },
     {
@@ -494,7 +503,7 @@ data:extend(
       order = "r[uranium-processing]-a[uranium-233-cell]",
       fuel_category = "nuclear",
       burnt_result = "used-up-uranium-fuel-cell",
-      fuel_value = "100GJ",
+      fuel_value = "40GJ",
       stack_size = 10
     },
     {

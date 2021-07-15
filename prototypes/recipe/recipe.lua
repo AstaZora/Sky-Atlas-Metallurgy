@@ -41,7 +41,7 @@ data:extend(
     category = "crafting",
     subgroup = "intermediate-product",
     enabled = true,
-    energy_required = 3,
+    energy_required = 1,
     ingredients = {{"aluminum-ore", 8}},
     results =
     {
@@ -185,19 +185,18 @@ data:extend(
     results = --other resources include aluminum, magnesium, silicon - Check Oil Shale
     {
       {
-        name = "stone",
-        probability = 0.50,
+        name = "stone-debris",
         amount = 20
-      },
-      {
-        name = "sulfur",
-        probability = 0.1,
-        amount = 4
       },
       {
         type="fluid",
         name="crude-oil",
         amount=100,
+      },
+      {
+        name = "sulfur",
+        probability = 0.1,
+        amount = 4
       },
       {
         name = "magnetite-ore",
@@ -221,7 +220,7 @@ data:extend(
     category = "crafting",
     subgroup = "raw-resource",
     enabled = true,
-    energy_required = 2,
+    energy_required = 1,
     ingredients = {{"bauxite-ore", 8}},
     results =
     {
@@ -236,7 +235,7 @@ data:extend(
     category = "crafting",
     subgroup = "raw-resource",
     enabled = true,
-    energy_required = 2,
+    energy_required = 1,
     ingredients = {{"cobalt-ore", 8}},
     results =
     {
@@ -253,12 +252,89 @@ data:extend(
     subgroup = "logistic-network",
     enabled = true,
     energy_required = 20,
-    ingredients = {{"titanium-plate", 8},{"kovar-plate", 10},{"bronze-plate", 25}, {"flying-robot-frame", 4}},
+    ingredients = {{"titanium-plate", 8},{"kovar-plate", 10},{"bronze-plate", 25},{"flying-robot-frame", 4},{"accumulator", 1}},
       results =
       {
         {"bulk-drone", 1}
       },
     icon_size = 32
+  },
+  {
+    type = "recipe",
+    name = "stone-reprocessing",
+    energy_required = 20,
+    enabled = true,
+    category = "centrifuging",
+    ingredients = {{"stone-debris", 20}},
+    icon = "__base__/graphics/icons/stone.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-material",
+    order = "",
+    main_product = "",
+    results = 
+    {
+      {
+        name = "stone-debris",
+        probability = 0.05,
+        amount = 20
+      },
+      {
+        name = "uranium-ore",
+        probability = 0.1,
+        amount = 5
+      },
+      {
+        name = "magnetite-ore",
+        probability = 0.1,
+        amount = 5
+      },
+      {
+        name = "malachite-ore",
+        probability = 0.1,
+        amount = 5
+      },
+      {
+        name = "nickel-ore",
+        probability = 0.1,
+        amount = 5
+      },
+      {
+        name = "cobalt-ore",
+        probability = 0.1,
+        amount = 5
+      },
+      {
+        name = "aluminum-ore",
+        probability = 0.1,
+        amount = 5
+      },
+      {
+        name = "neodymium-ore",
+        probability = 0.1,
+        amount = 5
+      },
+      {
+        name = "titanium-ore",
+        probability = 0.1,
+        amount = 5
+      },
+      {
+        name = "thorium-ore",
+        probability = 0.1,
+        amount = 5
+      },
+      {
+        name = "chromite-ore",
+        probability = 0.1,
+        amount = 5
+      },
+      {
+        name = "samarium-ore",
+        probability = 0.1,
+        amount = 5
+      },
+    },
+    allow_decomposition = false
   },
 
     --recipe categories
