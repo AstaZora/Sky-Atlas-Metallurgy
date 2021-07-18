@@ -152,7 +152,10 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore-1.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore-2.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore-3.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "q[titanium-ore]",
@@ -165,7 +168,10 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore-1.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore-2.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore-3.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "q[aluminum-ore]",
@@ -194,7 +200,10 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore-1.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore-2.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore-3.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "q[monazite-ore]",
@@ -207,7 +216,10 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore-1.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore-2.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore-3.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "r[thorium-ore]",
@@ -220,7 +232,10 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore-1.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore-2.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore-3.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "s[samarium-ore]",
@@ -233,7 +248,10 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore-1.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore-2.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore-3.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "s[chromite-ore]",
