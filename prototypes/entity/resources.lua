@@ -231,7 +231,7 @@ data:extend(
       mining_particle = "monazite-ore-particle",
       mining_time = 10,
       result = "oil-shale",
-      fluid_amount = 10,
+      fluid_amount = 25,
       required_fluid = "steam"
     },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
