@@ -95,56 +95,20 @@ data:extend(
       mining_time = 1,
       results = {
       {
-        name = "magnetite-ore",
-        probability = 0.1,
-        amount_min = 1,
-        amount_max = 10
-      },
-      {
-        name = "malachite-ore",
-        probability = 0.1,
-        amount_min = 1,
-        amount_max = 10
-      },
-      {
-        name = "nickel-ore",
-        probability = 0.1,
-        amount_min = 1,
-        amount_max = 10
-      },
-      {
-        name = "cobalt-ore",
-        probability = 0.1,
-        amount_min = 1,
-        amount_max = 10
-      },
-      {
-        name = "aluminum-ore",
-        probability = 0.1,
-        amount_min = 1,
-        amount_max = 10
-      },
-      {
         name = "laterite-ore",
         probability = 1,
         amount_min = 1,
         amount_max = 10
       },
       {
-        name = "titanium-ore",
-        probability = 0.1,
-        amount_min = 1,
-        amount_max = 10
-      },
-      {
         name = "bauxite-ore",
-        probability = 0.2,
+        probability = 0.5,
         amount_min = 1,
         amount_max = 10
       },
       {
         name = "cobaltite-ore",
-        probability = 0.2,
+        probability = 0.5,
         amount_min = 1,
         amount_max = 10
       },
@@ -199,7 +163,7 @@ data:extend(
       name = "monazite-ore",
       order = "d",
       base_density = 5,
-      has_starting_area_placement = true,
+      has_starting_area_placement = false,
       regular_rq_factor_multiplier = 1,
       starting_rq_factor_multiplier = 1
     },

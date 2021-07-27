@@ -77,6 +77,8 @@ Ammonium chloride is used in a ~5% aqueous solution to work on oil wells with cl
 The acid mixture aqua regia, or royal water, dissolves gold and is used to purify scrap alloy containing gold.
 Aqua regia is a mix of three parts hydrochloric acid to one part nitric acid.
 
+Add Thorite (raw source of thorium)
+
 
 Creating acid is too complex right now, instead I pride to use acid levels instead
 Ideal suggestions with metallurgy include
@@ -107,3 +109,53 @@ Chemical Nuker
 Washing Station
 Acid Washing Station
 Water Treatment Plant
+
+
+Other Informatics
+The high nickel content makes Inconel one of the most difficult materials to a machine,
+requiring wear resistant coated carbide and a rigid machine tool.
+Sitting right next to nickel on the periodic table is cobalt,
+the main ingredient in cobalt chrome alloy. 
+
+
+Add Alacrite
+Composition
+  20% Chromium 15% Tungsten 10% nickel 5% iron 65% Cobalt
+Add Wolframite
+Iron Tungsten Magnesium Exports
+Add Nitinol (50/50 nickel titanium)
+
+
+
+List of items/components
+Screws - Moved to general Hardware
+Nuts - Moved to general Hardware
+Bolts - Moved to general Hardware
+Washers - Moved to general Hardware
+Springs
+gears
+pistons
+rotors
+motors
+Pipe
+Wire/Coil (respective to conduction/tensile strength)
+Rivets
+Beams
+tubes
+
+
+
+--Nuclear Decay (resource balanacing Strategy)
+
+Cobalt Decays into Nickel
+Option B
+Result in Decaying the material with a 50% change to return to laterite, or 25% to return to two important elements
+IE (Decay -> Aluminum Ore)
+50% Laterite
+25% Bauxite
+25% Titanium
+
+Other Example
+Cobalt -> (Tech 3) Decay into Nickel (0-66% loss of material is required, though)
+
+Check Decomposition Io's for more information

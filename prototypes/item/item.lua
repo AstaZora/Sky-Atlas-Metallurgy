@@ -533,6 +533,15 @@ data:extend(
       order = "r[used-up-thorium-fuel-cell]",
       stack_size = 50
     },
+    {
+      type = "item",
+      name = "decaying-matter-cell",
+      icon = "__base__/graphics/icons/used-up-uranium-fuel-cell.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "intermediate-product",
+      order = "r[used-up-thorium-fuel-cell]",
+      stack_size = 50
+    },
     --New Machines
   {
     type = "item",

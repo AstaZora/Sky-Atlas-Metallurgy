@@ -112,9 +112,9 @@ data:extend(
     type = "recipe",
     name = "chromium-steel",
     category = "alloy-smelting",
-    ingredients = {{ "chromium-plate", 2},{"iron-plate", 4}},
-    results = {{"chromium-steel", 1}},
-    energy_required = 5,
+    ingredients = {{ "chromium-plate", 1},{"iron-plate", 9}},
+    results = {{"chromium-steel", 2}},
+    energy_required = 8,
     enabled = true
   },
   {
@@ -195,7 +195,7 @@ data:extend(
     type = "recipe",
     name = "neodymium-magnet",
     category = "alloy-smelting",
-    ingredients = {{ "neodymium-ore", 6},{"iron-plate", 3}},
+    ingredients = {{ "neodymium-ore", 3},{"iron-plate", 3}},
     results = {{"neodymium-magnet", 1}},
     energy_required = 8,
     enabled = true
@@ -213,7 +213,7 @@ data:extend(
     type = "recipe",
     name = "smco-magnet",
     category = "alloy-smelting",
-    ingredients = {{ "samarium-ore", 3},{"cobalt-plate", 3}},
+    ingredients = {{ "samarium-ore", 6},{"cobalt-plate", 3}},
     results = {{"smco-magnet", 2}},
     energy_required = 2,
     enabled = true

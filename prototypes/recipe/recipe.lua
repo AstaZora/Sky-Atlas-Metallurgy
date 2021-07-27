@@ -29,7 +29,7 @@ data:extend(
     ingredients = {{"bauxite-ore", 8}},
     results =
     {
-      {"titanium-ore", 6},
+      {"titanium-ore", 4},
       {"aluminum-ore", 6}
     },
     icon_size = 64
@@ -79,22 +79,22 @@ data:extend(
     {
       {
         name = "uranium-ore",
-        probability = 0.05,
-        amount = 10
+        probability = 0.25,
+        amount = 20
       },
       {
         name = "thorium-ore",
+        probability = 0.05,
+        amount = 5
+      },
+      {
+        name = "neodymium-ore",
         probability = 0.1,
         amount = 10
       },
       {
-        name = "neodymium-ore",
-        probability = 0.2,
-        amount = 10
-      },
-      {
         name = "samarium-ore",
-        probability = 0.2,
+        probability = 0.1,
         amount = 10
       },
       {
@@ -145,10 +145,10 @@ data:extend(
     enabled = true,
     ingredients =
     {
-      {"titanium-plate", 20},
-      {"kovar-plate", 20},
+      {"titanium5-plate", 20},
+      {"havar-plate", 20},
       {"incoloy-plate", 40},
-      {"uranium-233", 5}
+      {"uranium-233", 10}
     },
     result = "uranium-233-cell",
     result_count = 20
@@ -215,6 +215,158 @@ data:extend(
   --Recycle Ores
   {
     type = "recipe",
+    name = "decaying-matter-cell",
+    icon = "__base__/graphics/icons/used-up-uranium-fuel-cell.png",
+    category = "crafting",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 30,
+    ingredients = 
+    {
+      {"used-up-uranium-fuel-cell", 1},
+      {"thorium-ore", 20},
+      {"havar-plate", 10},
+      {"kovar-plate", 20},
+      {"duralumin-plate", 20},
+    },
+    result = "decaying-matter-cell",
+    result_count = 10,
+    icon_size = 64
+  },
+  {
+    type = "recipe",
+    name = "aluminum-transmutation",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    category = "centrifuging",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 600,
+    ingredients = {{"decaying-matter-cell", 10},{"aluminum-ore", 2000}},
+    results = 
+    {
+      {"used-up-thorium-fuel-cell", 10},
+      {
+        name = "titanium-ore",
+        probability = 1,
+        amount_min = 100,
+        amount_max = 500
+      },
+      {
+        name = "bauxite-ore",
+        probability = 1,
+        amount_min = 100,
+        amount_max = 500
+      },
+      {
+        name = "laterite-ore",
+        probability = 1,
+        amount_min = 200,
+        amount_max = 1000
+      },
+    },
+    icon_size = 64
+  },
+  {
+    type = "recipe",
+    name = "cobalt-transmutation",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    category = "centrifuging",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 600,
+    ingredients = {{"thorium-fuel-cell", 10},{"cobalt-ore", 2000}},
+    results = 
+    {
+      {"used-up-thorium-fuel-cell", 10},
+      {
+        name = "nickel-ore",
+        probability = 1,
+        amount_min = 100,
+        amount_max = 500
+      },
+      {
+        name = "cobaltite-ore",
+        probability = 1,
+        amount_min = 100,
+        amount_max = 500
+      },
+      {
+        name = "laterite-ore",
+        probability = 1,
+        amount_min = 200,
+        amount_max = 1000
+      },
+    },
+    icon_size = 64
+  },
+  {
+    type = "recipe",
+    name = "samarium-transmutation",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    category = "centrifuging",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 600,
+    ingredients = {{"decaying-matter-cell", 10},{"samarium-ore", 2000}},
+    results = 
+    {
+      {"used-up-thorium-fuel-cell", 10},
+      {
+        name = "uranium-ore",
+        probability = 1,
+        amount_min = 100,
+        amount_max = 500
+      },
+      {
+        name = "thorium-ore",
+        probability = 1,
+        amount_min = 100,
+        amount_max = 500
+      },
+      {
+        name = "monazite-ore",
+        probability = 1,
+        amount_min = 200,
+        amount_max = 1000
+      },
+    },
+    icon_size = 64
+  },
+  {
+    type = "recipe",
+    name = "neodymium-transmutation",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    category = "centrifuging",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 600,
+    ingredients = {{"decaying-matter-cell", 10},{"neodymium-ore", 2000}},
+    results = 
+    {
+      {"used-up-thorium-fuel-cell", 10},
+      {
+        name = "uranium-ore",
+        probability = 1,
+        amount_min = 100,
+        amount_max = 500
+      },
+      {
+        name = "thorium-ore",
+        probability = 1,
+        amount_min = 100,
+        amount_max = 500
+      },
+      {
+        name = "monazite-ore",
+        probability = 1,
+        amount_min = 200,
+        amount_max = 1000
+      },
+    },
+    icon_size = 64
+  },
+  {
+    type = "recipe",
     name = "bauxite-recycling",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bauxite-ore.png",
     category = "crafting",
@@ -252,7 +404,7 @@ data:extend(
     subgroup = "logistic-network",
     enabled = true,
     energy_required = 20,
-    ingredients = {{"titanium-plate", 8},{"kovar-plate", 10},{"bronze-plate", 25},{"flying-robot-frame", 4},{"accumulator", 1}},
+    ingredients = {{"titanium-plate", 8},{"kovar-plate", 10},{"bronze-plate", 25},{"logistic-robot", 4},{"accumulator", 1}},
       results =
       {
         {"bulk-drone", 1}
