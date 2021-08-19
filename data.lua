@@ -8,6 +8,8 @@ require("prototypes.recipe.recipe")
 require("prototypes.entity.entity")
 require("prototypes.sound.sound")
 require("prototypes.entity.robots.robots")
+require("prototypes.item-groups")
+require("prototypes.recipe.fluid-recipe")
 
 local presets = {
   ["rich-resources"] = {richness = "very-good"},

@@ -5,6 +5,7 @@ alloyFurnace.max_health = 750
 alloyFurnace.crafting_speed = 2
 alloyFurnace.energy_usage = "250kW"
 alloyFurnace.crafting_categories = {"alloy-smelting"}
+alloyFurnace.energy_source.fuel_categories = {"chemical", "magnetic"}
 alloyFurnace.minable.result = "alloy-furnace"
 alloyFurnace.next_upgrade = nil
 alloyFurnace.animation =

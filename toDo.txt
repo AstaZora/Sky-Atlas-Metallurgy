@@ -110,6 +110,24 @@ Washing Station
 Acid Washing Station
 Water Treatment Plant
 
+New Ore Workflow
+Crush -> Sort (benefit 2x smelting rate)
+Hydrolize -> Fluid Creation
+Fluid Creation -> Fluid Sorting (creates waste)
+Electrolytic Refining -> attracts magnetic materials from fluid  (requires acid fluid [Copper sulphate, but for simplicity Copper + acid inputs])
+Boiling -> powdered metals
+Acid Fluid Induction (sort ores into types) IE [Laterite -> Nickel, Magnetite]
+Washing -> 50% smelting increase of "clean ores" no waste
+Acid Refining 50% material increase
+Thermal Treatment (heating, create small chance of byproducts)
+Fire Refining (Charcoal) -> purification plate process (works for lower temperature metals [IE Copper,nickel,lead])
+Fracture treatment (Flash freeze)
+Chemical Purification -> end result is 3 plates per chunk
+For heavy metals (rares) pound the ingots into plates (For all items?)
+
+Optional methods for more plates
+Using molten plates, and a Finery Forge (not refinery) [Google it, it's a thing]
+20% plate increase when fining hot plates
 
 Other Informatics
 The high nickel content makes Inconel one of the most difficult materials to a machine,
@@ -159,3 +177,12 @@ Other Example
 Cobalt -> (Tech 3) Decay into Nickel (0-66% loss of material is required, though)
 
 Check Decomposition Io's for more information
+
+Volcanic Melting
+- Create "invisible pipes" that are in fact decorated as trenches
+- create large batch smelting, with the chance of "runoff" or "eruptions" ?
+- create hydrothermal Mining (refer to hydrothermal fluid)
+- allow "volcanic" smelting to take some items in [IE magnetite + malachite = 40% iron 40% copper 20% new metal]
+end current theory
+amend to above statements, most chemicals could be constructed from this volcanic melting (lots of gases can come from volcanos!)
+THEORY - Create a volcano as a dual component, one part crafts molten metals, one part creates volcanic gases constantly

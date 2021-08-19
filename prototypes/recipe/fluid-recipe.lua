@@ -1,0 +1,102 @@
+data:extend(
+  {  
+    {
+        type = "fluid",
+        name = "molten-iron",
+        subgroup = "sam-fluid-recipes",
+        default_temperature = 150,
+        max_temperature = 300,
+        heat_capacity = "0.2KJ",
+        base_color = {r=8, g=0.2, b=0.6},
+        flow_color = {r=0.7, g=0.55, b=0.2},
+        icon = "__base__/graphics/icons/fluid/water.png",
+        icon_size = 64, icon_mipmaps = 4,
+        order = "a[fluid]-a[water]",
+        auto_barrel = true
+      },
+      {
+        type = "fluid",
+        name = "molten-copper",
+        subgroup = "sam-fluid-recipes",
+        default_temperature = 150,
+        max_temperature = 300,
+        heat_capacity = "0.2KJ",
+        base_color = {r=8, g=0.2, b=0.6},
+        flow_color = {r=0.7, g=0.55, b=0.2},
+        icon = "__base__/graphics/icons/fluid/water.png",
+        icon_size = 64, icon_mipmaps = 4,
+        order = "a[fluid]-a[water]",
+        auto_barrel = true
+      },
+      {
+        type = "fluid",
+        name = "molten-nickel",
+        subgroup = "sam-fluid-recipes",
+        default_temperature = 150,
+        max_temperature = 300,
+        heat_capacity = "0.2KJ",
+        base_color = {r=8, g=0.2, b=0.6},
+        flow_color = {r=0.7, g=0.55, b=0.2},
+        icon = "__base__/graphics/icons/fluid/water.png",
+        icon_size = 64, icon_mipmaps = 4,
+        order = "a[fluid]-a[water]",
+        auto_barrel = true
+      },
+      {
+        type = "fluid",
+        name = "molten-aluminum",
+        subgroup = "sam-fluid-recipes",
+        default_temperature = 150,
+        max_temperature = 300,
+        heat_capacity = "0.2KJ",
+        base_color = {r=8, g=0.2, b=0.6},
+        flow_color = {r=0.7, g=0.55, b=0.2},
+        icon = "__base__/graphics/icons/fluid/water.png",
+        icon_size = 64, icon_mipmaps = 4,
+        order = "a[fluid]-a[water]",
+        auto_barrel = true
+      },
+      {
+        type = "fluid",
+        name = "molten-cobalt",
+        subgroup = "sam-fluid-recipes",
+        default_temperature = 150,
+        max_temperature = 300,
+        heat_capacity = "0.2KJ",
+        base_color = {r=8, g=0.2, b=0.6},
+        flow_color = {r=0.7, g=0.55, b=0.2},
+        icon = "__base__/graphics/icons/fluid/water.png",
+        icon_size = 64, icon_mipmaps = 4,
+        order = "a[fluid]-a[water]",
+        auto_barrel = true
+      },
+      {
+        type = "fluid",
+        name = "molten-titanium",
+        subgroup = "sam-fluid-recipes",
+        default_temperature = 150,
+        max_temperature = 300,
+        heat_capacity = "0.2KJ",
+        base_color = {r=8, g=0.2, b=0.6},
+        flow_color = {r=0.7, g=0.55, b=0.2},
+        icon = "__base__/graphics/icons/fluid/water.png",
+        icon_size = 64, icon_mipmaps = 4,
+        order = "a[fluid]-a[water]",
+        auto_barrel = true
+      },
+      {
+        type = "fluid",
+        name = "molten-chromium",
+        subgroup = "sam-fluid-recipes",
+        default_temperature = 150,
+        max_temperature = 300,
+        heat_capacity = "0.2KJ",
+        base_color = {r=8, g=0.2, b=0.6},
+        flow_color = {r=0.7, g=0.55, b=0.2},
+        icon = "__base__/graphics/icons/fluid/water.png",
+        icon_size = 64, icon_mipmaps = 4,
+        order = "a[fluid]-a[water]",
+        auto_barrel = true
+      }
+  }
+)

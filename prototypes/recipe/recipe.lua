@@ -5,7 +5,7 @@ data:extend(
     name = "laterite-crushing",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/laterite-ore.png",
     category = "crafting",
-    subgroup = "intermediate-product",
+    subgroup = "metallurgy-processes",
     enabled = true,
     energy_required = 6,
     ingredients = {{"laterite-ore", 8}},
@@ -23,7 +23,7 @@ data:extend(
     name = "bauxite-reduction",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bauxite-ore.png",
     category = "crafting",
-    subgroup = "intermediate-product",
+    subgroup = "metallurgy-processes",
     enabled = true,
     energy_required = 3,
     ingredients = {{"bauxite-ore", 8}},
@@ -36,10 +36,26 @@ data:extend(
   },
   {
     type = "recipe",
+    name = "chromite-reduction",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    enabled = true,
+    energy_required = 3,
+    ingredients = {{"chromite-ore", 8}},
+    results =
+    {
+      {"chromite-ore", 4},
+      {"magnetite-ore", 4}
+    },
+    icon_size = 64
+  },
+  {
+    type = "recipe",
     name = "aluminum-recycling",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bauxite-ore.png",
     category = "crafting",
-    subgroup = "intermediate-product",
+    subgroup = "metallurgy-processes",
     enabled = true,
     energy_required = 1,
     ingredients = {{"aluminum-ore", 8}},
@@ -54,7 +70,7 @@ data:extend(
     name = "cobaltite-reduction",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobaltite-ore.png",
     category = "crafting",
-    subgroup = "intermediate-product",
+    subgroup = "metallurgy-processes",
     enabled = true,
     energy_required = 3,
     ingredients = {{"cobaltite-ore", 8}},
@@ -71,7 +87,7 @@ data:extend(
     name = "monazite-refining",
     icon = "__base__/graphics/icons/uranium-ore.png",
     category = "centrifuging",
-    subgroup = "raw-material",
+    subgroup = "metallurgy-processes",
     enabled = true,
     energy_required = 30,
     ingredients = {{"monazite-ore", 10}},
@@ -99,7 +115,7 @@ data:extend(
       },
       {
         name = "chromite-ore",
-        probability = 0.4,
+        probability = 0.5,
         amount = 10
       }
     },
@@ -110,7 +126,7 @@ data:extend(
     name = "alloy-furnace",
     icon = "__base__/graphics/icons/electric-furnace.png",
     category = "crafting",
-    subgroup = "smelting-machine",
+    subgroup = "sam-recipes",
     enabled = true,
     energy_required = 12,
     ingredients = {{"cobalt-plate", 10}, {"nickel-plate", 10}, {"iron-plate", 10}, {"stone-brick", 25}},
@@ -124,6 +140,7 @@ data:extend(
    {
     type = "recipe",
     name = "thorium-fuel-cell",
+    subgroup = "sam-recipes",
     energy_required = 100,
     enabled = true,
     ingredients =
@@ -141,6 +158,7 @@ data:extend(
   {
     type = "recipe",
     name = "uranium-233-cell",
+    subgroup = "sam-recipes",
     energy_required = 100,
     enabled = true,
     ingredients =
@@ -156,13 +174,13 @@ data:extend(
   {
     type = "recipe",
     name = "thorium-fuel-reprocessing",
-    energy_required = 60,
+    energy_required = 10,
     enabled = true,
     category = "centrifuging",
     ingredients = {{"used-up-thorium-fuel-cell", 1}},
     icon = "__base__/graphics/icons/nuclear-fuel-reprocessing.png",
     icon_size = 64, icon_mipmaps = 4,
-    subgroup = "intermediate-product",
+    subgroup = "metallurgy-processes",
     order = "r[uranium-processing]-b[nuclear-fuel-reprocessing]",
     main_product = "",
     results = {{"uranium-233", 4}},
@@ -178,7 +196,7 @@ data:extend(
     name = "oil-shale-refining",
     icon = "__base__/graphics/icons/fluid/coal-liquefaction.png",
     category = "oil-processing",
-    subgroup = "raw-material",
+    subgroup = "metallurgy-processes",
     enabled = true,
     energy_required = 5,
     ingredients = {{"oil-shale", 10},{type="fluid", name="steam", amount=100}},
@@ -218,9 +236,9 @@ data:extend(
     name = "decaying-matter-cell",
     icon = "__base__/graphics/icons/used-up-uranium-fuel-cell.png",
     category = "crafting",
-    subgroup = "raw-resource",
+    subgroup = "sam-recipes",
     enabled = true,
-    energy_required = 30,
+    energy_required = 10,
     ingredients = 
     {
       {"used-up-uranium-fuel-cell", 1},
@@ -238,13 +256,13 @@ data:extend(
     name = "aluminum-transmutation",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
     category = "centrifuging",
-    subgroup = "raw-resource",
+    subgroup = "metallurgy-processes",
     enabled = true,
-    energy_required = 600,
-    ingredients = {{"decaying-matter-cell", 10},{"aluminum-ore", 2000}},
+    energy_required = 300,
+    ingredients = {{"decaying-matter-cell", 1},{"aluminum-ore", 2000}},
     results = 
     {
-      {"used-up-thorium-fuel-cell", 10},
+      {"used-up-thorium-fuel-cell", 1},
       {
         name = "titanium-ore",
         probability = 1,
@@ -271,13 +289,13 @@ data:extend(
     name = "cobalt-transmutation",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
     category = "centrifuging",
-    subgroup = "raw-resource",
+    subgroup = "metallurgy-processes",
     enabled = true,
-    energy_required = 600,
-    ingredients = {{"thorium-fuel-cell", 10},{"cobalt-ore", 2000}},
+    energy_required = 300,
+    ingredients = {{"decaying-matter-cell", 1},{"cobalt-ore", 2000}},
     results = 
     {
-      {"used-up-thorium-fuel-cell", 10},
+      {"used-up-thorium-fuel-cell", 1},
       {
         name = "nickel-ore",
         probability = 1,
@@ -304,13 +322,13 @@ data:extend(
     name = "samarium-transmutation",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
     category = "centrifuging",
-    subgroup = "raw-resource",
+    subgroup = "metallurgy-processes",
     enabled = true,
-    energy_required = 600,
-    ingredients = {{"decaying-matter-cell", 10},{"samarium-ore", 2000}},
+    energy_required = 300,
+    ingredients = {{"decaying-matter-cell", 1},{"samarium-ore", 2000}},
     results = 
     {
-      {"used-up-thorium-fuel-cell", 10},
+      {"used-up-thorium-fuel-cell", 1},
       {
         name = "uranium-ore",
         probability = 1,
@@ -337,13 +355,13 @@ data:extend(
     name = "neodymium-transmutation",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
     category = "centrifuging",
-    subgroup = "raw-resource",
+    subgroup = "metallurgy-processes",
     enabled = true,
-    energy_required = 600,
-    ingredients = {{"decaying-matter-cell", 10},{"neodymium-ore", 2000}},
+    energy_required = 300,
+    ingredients = {{"decaying-matter-cell", 1},{"neodymium-ore", 2000}},
     results = 
     {
-      {"used-up-thorium-fuel-cell", 10},
+      {"used-up-thorium-fuel-cell", 1},
       {
         name = "uranium-ore",
         probability = 1,
@@ -370,7 +388,7 @@ data:extend(
     name = "bauxite-recycling",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bauxite-ore.png",
     category = "crafting",
-    subgroup = "raw-resource",
+    subgroup = "metallurgy-processes",
     enabled = true,
     energy_required = 1,
     ingredients = {{"bauxite-ore", 8}},
@@ -385,7 +403,7 @@ data:extend(
     name = "cobaltite-recycling",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobaltite-ore.png",
     category = "crafting",
-    subgroup = "raw-resource",
+    subgroup = "metallurgy-processes",
     enabled = true,
     energy_required = 1,
     ingredients = {{"cobalt-ore", 8}},
@@ -420,7 +438,7 @@ data:extend(
     ingredients = {{"stone-debris", 20}},
     icon = "__base__/graphics/icons/stone.png",
     icon_size = 64, icon_mipmaps = 4,
-    subgroup = "raw-material",
+    subgroup = "metallurgy-processes",
     order = "",
     main_product = "",
     results = 
@@ -488,6 +506,9 @@ data:extend(
     },
     allow_decomposition = false
   },
+
+    --Fluids
+    
 
     --recipe categories
 

@@ -407,7 +407,7 @@ data:extend(
     fuel_category = "magnetic",
     fuel_value = "300MJ",
     subgroup = "intermediate-product",
-    order = "a[neodymium-magnet]",
+    order = "b[neodymium-magnet]",
     stack_size = 50
   },
   {
@@ -418,7 +418,7 @@ data:extend(
     fuel_category = "magnetic",
     fuel_value = "50MJ",
     subgroup = "intermediate-product",
-    order = "b[neodymium-magnet]",
+    order = "a[neodymium-magnet]",
     stack_size = 50
   },
   {
@@ -438,7 +438,7 @@ data:extend(
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/stainless-steel-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
-    order = "a[steel-plate]",
+    order = "b[steel-plate]",
     stack_size = 50
   },
   {
