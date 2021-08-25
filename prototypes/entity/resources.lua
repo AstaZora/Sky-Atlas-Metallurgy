@@ -80,7 +80,7 @@ data:extend(
         scale = 0.5
       }
     },
-    map_color = {r=75, g=221, b=50, a=0.3}
+    map_color = {r=50, g=221, b=80}
   },
   {
     type = "resource",
@@ -182,6 +182,46 @@ data:extend(
       }
     },
     map_color = {220, 220, 220}
+  },
+  {
+    type = "resource",
+    name = "haematite-ore",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/haematite-ore.png",
+    icon_size = 64,
+    flags = {"placeable-neutral"},
+    order="h-i",
+    minable =
+    {
+      mining_particle = "monazite-ore-particle",
+      mining_time = 3,
+      result = "haematite-ore"
+    },
+    collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
+    selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
+    autoplace = resource_autoplace.resource_autoplace_settings
+    {
+      name = "haematite-ore",
+      order = "e",
+      base_density = 7,
+      has_starting_area_placement = false,
+      regular_rq_factor_multiplier = 1,
+      starting_rq_factor_multiplier = 1
+    },
+    stage_counts = {10000, 6000, 2500, 400},
+    stages =
+    {
+      sheet =
+      {
+        filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/haematite-ore/haematite-ore.png",
+        priority = "medium",
+        width = 40,
+        height = 40,
+        frame_count = 4,
+        variation_count = 8,
+        scale = 1
+      }
+    },
+    map_color = {220, 120, 20}
   },
   {
     type = "resource",

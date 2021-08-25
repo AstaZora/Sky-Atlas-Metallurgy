@@ -34,6 +34,14 @@ data:extend(
   },
   {
     type = "autoplace-control",
+    name = "haematite-ore",
+    localised_name = {"", "[entity=haematite-ore] ", {"entity-name.haematite-ore"}},
+    richness = true,
+    order = "b-cd",
+    category = "resource"
+  },
+  {
+    type = "autoplace-control",
     name = "oil-shale",
     localised_name = {"", "[entity=oil-shale] ", {"entity-name.oil-shale"}},
     richness = true,

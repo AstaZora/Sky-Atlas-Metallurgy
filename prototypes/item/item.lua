@@ -18,6 +18,19 @@ data:extend(
   },
   {
     type = "item",
+    name = "haematite-ore",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    pictures =
+    {
+      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",   scale = 0.25, mipmap_count = 4 }
+    },
+    subgroup = "raw-resource",
+    order = "i[magnetite-ore]", -- g[uranium-ore], h[raw-fish]
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "malachite-ore",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
@@ -540,6 +553,170 @@ data:extend(
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "intermediate-product",
       order = "r[used-up-thorium-fuel-cell]",
+      stack_size = 50
+    },
+    --Refining Materials
+    {
+      type = "item",
+      name = "crushed-magnetite",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-magnetite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "magnetite-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-magnetite]",
+      stack_size = 50
+    },
+
+    {
+      type = "item",
+      name = "refined-magnetite-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-magnetite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-magnetite-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-magnetite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "magnetite-rock",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-magnetite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "magnetite-chunk",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-magnetite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "magnetite-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-magnetite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "purified-magnetite-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-magnetite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-magnetite-ore",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-magnetite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "crushed-malachite",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "c[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "malachite-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "c[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "refined-malachite-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "c[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-malachite-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "c[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "malachite-rock",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "c[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "malachite-chunk",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "c[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "malachite-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "c[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "purified-malachite-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "c[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-malachite-ore",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "c[raw-malachite]",
       stack_size = 50
     },
     --New Machines

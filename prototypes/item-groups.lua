@@ -16,6 +16,18 @@ data:extend(
         order = "a"
       },
       {
+        type = "item-subgroup",
+        name = "raw-magnetite",
+        group = "raw-metallurgy",
+        order = "b"
+      },
+      {
+        type = "item-subgroup",
+        name = "raw-malachite",
+        group = "raw-metallurgy",
+        order = "c"
+      },
+      {
         type = "item-group",
         name = "refined-metallurgy",
         icon = "__base__/graphics/technology/advanced-material-processing-2.png",

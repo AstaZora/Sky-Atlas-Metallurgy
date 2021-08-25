@@ -136,6 +136,317 @@ data:extend(
     },
     icon_size = 64
   },
+   --Metallurgy Stages
+
+   --Magnetite Purification
+   {
+    type = "recipe",
+    name = "crushed-magnetite",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "aa",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"magnetite-ore", 4}
+    },
+    result = "crushed-magnetite",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "magnetite-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"crushed-magnetite", 2}
+    },
+    result = "magnetite-powder",
+    result_count = 3
+  },
+--side note - OXYGENATION STATE = Purification = Faster Smelt
+  {
+    type = "recipe",
+    name = "refined-magnetite-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 6,
+    enabled = true,
+    ingredients =
+    {
+      {"magnetite-powder", 3},
+      {type="fluid", name="water", amount=25}
+    },
+    result = "refined-magnetite-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-magnetite-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 3,
+    enabled = true,
+    ingredients =
+    {
+      {"refined-magnetite-powder", 3},
+      {type="fluid", name="water", amount=50}
+    },
+    result = "pure-magnetite-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "magnetite-rock",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ae",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 12,
+    enabled = true,
+    ingredients =
+    {
+      {"pure-magnetite-powder", 2},
+      {type="fluid", name="water", amount=100}
+    },
+    result = "magnetite-rock",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "magnetite-chunk",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "af",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"magnetite-rock", 2},
+      {"sulfur", 4}
+    },
+    result = "magnetite-chunk",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "magnetite-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ag",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 10,
+    enabled = true,
+    ingredients =
+    {
+      {"magnetite-chunk", 2},
+      {type="fluid", name="sulfuric-acid", amount=25}
+    },
+    result = "magnetite-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "purified-magnetite-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ah",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 5,
+    enabled = true,
+    ingredients =
+    {
+      {"magnetite-shard", 3},
+      {type="fluid", name="steam", amount=50}
+    },
+    result = "purified-magnetite-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-magnetite-ore",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ai",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 12,
+    enabled = true,
+    ingredients =
+    {
+      {"purified-magnetite-shard", 1},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-magnetite-ore",
+    result_count = 2
+  },
+   --Malachite Refining
+   {
+    type = "recipe",
+    name = "crushed-malachite",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 3,
+    enabled = true,
+    ingredients =
+    {
+      {"malachite-ore", 4}
+    },
+    result = "crushed-malachite",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "malachite-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 3,
+    enabled = true,
+    ingredients =
+    {
+      {"crushed-malachite", 2}
+    },
+    result = "malachite-powder",
+    result_count = 3
+  },
+--side note - OXYGENATION STATE = Purification = Faster Smelt
+  {
+    type = "recipe",
+    name = "refined-malachite-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 3,
+    enabled = true,
+    ingredients =
+    {
+      {"malachite-powder", 3}
+    },
+    result = "refined-malachite-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-malachite-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 3,
+    enabled = true,
+    ingredients =
+    {
+      {"refined-malachite-powder", 3}
+    },
+    result = "pure-malachite-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "malachite-rock",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 3,
+    enabled = true,
+    ingredients =
+    {
+      {"pure-malachite-powder", 2}
+    },
+    result = "malachite-rock",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "malachite-chunk",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 3,
+    enabled = true,
+    ingredients =
+    {
+      {"malachite-rock", 2}
+    },
+    result = "malachite-chunk",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "malachite-shard",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 3,
+    enabled = true,
+    ingredients =
+    {
+      {"malachite-chunk", 2}
+    },
+    result = "malachite-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "purified-malachite-shard",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 3,
+    enabled = true,
+    ingredients =
+    {
+      {"malachite-shard", 3}
+    },
+    result = "purified-malachite-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-malachite-ore",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 3,
+    enabled = true,
+    ingredients =
+    {
+      {"purified-malachite-shard", 1}
+    },
+    result = "pure-malachite-ore",
+    result_count = 2
+  },
    --New Items (Nuclear)
    {
     type = "recipe",
