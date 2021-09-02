@@ -25,6 +25,9 @@ magnesium
 vanadium
 and more
 
+more alloys
+Terne (Lead and Tin)
+
 Consider Inconel
 (Nickel Chromium Cobalt)
   45      20       15     %'s respective (use in super alloyer)

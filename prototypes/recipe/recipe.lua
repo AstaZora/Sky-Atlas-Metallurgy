@@ -138,10 +138,10 @@ data:extend(
   },
    --Metallurgy Stages
 
-   --Magnetite Purification
+   --Magnetite Purification (RAW)
    {
     type = "recipe",
-    name = "crushed-magnetite",
+    name = "magnetite-rock",
     category = "crafting",
     subgroup = "metallurgy-processes",
     order = "aa",
@@ -153,13 +153,13 @@ data:extend(
     {
       {"magnetite-ore", 4}
     },
-    result = "crushed-magnetite",
+    result = "magnetite-rock",
     result_count = 3
   },
   {
     type = "recipe",
-    name = "magnetite-powder",
-    category = "crafting",
+    name = "magnetite-chunk",
+    category = "alloy-smelting",
     subgroup = "metallurgy-processes",
     order = "ab",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
@@ -168,12 +168,141 @@ data:extend(
     enabled = true,
     ingredients =
     {
-      {"crushed-magnetite", 2}
+      {"magnetite-rock", 2},
+      {"sulfur", 4}
+    },
+    result = "magnetite-chunk",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "crushed-magnetite",
+    category = "basic-crafting",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"magnetite-chunk", 2}
+    },
+    result = "crushed-magnetite",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-magnetite-ore",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"crushed-magnetite", 1},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="steam", amount=10}
+    },
+    result = "pure-magnetite-ore",
+    result_count = 3
+  },
+   --Magnetite Purification (CHEMICAL)
+   {
+    type = "recipe",
+    name = "magnetite-slurry",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"magnetite-ore", 4}
+    },
+    results =
+    {
+       {type="fluid", name="magnetite-slurry", amount=50}
+    },
+  },
+  {
+    type = "recipe",
+    name = "magnetite-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {type="fluid", name="magnetite-slurry", amount=50}
+    },
+    result = "magnetite-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-magnetite-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"magnetite-shard", 2},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="steam", amount=10}
+    },
+    result = "purified-magnetite-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-magnetite-ore-chemical",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"purified-magnetite-shard", 1},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="steam", amount=10}
+    },
+    result = "pure-magnetite-ore",
+    result_count = 3
+  },
+   --Magnetite Purification (POWDER)
+   {
+    type = "recipe",
+    name = "magnetite-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"magnetite-ore", 4}
     },
     result = "magnetite-powder",
     result_count = 3
   },
---side note - OXYGENATION STATE = Purification = Faster Smelt
   {
     type = "recipe",
     name = "refined-magnetite-powder",
@@ -182,11 +311,11 @@ data:extend(
     order = "ac",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 6,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
-      {"magnetite-powder", 3},
+      {"magnetite-powder", 2},
       {type="fluid", name="water", amount=25}
     },
     result = "refined-magnetite-powder",
@@ -200,107 +329,36 @@ data:extend(
     order = "ad",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 3,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
-      {"refined-magnetite-powder", 3},
-      {type="fluid", name="water", amount=50}
+      {"refined-magnetite-powder", 2},
+      {type="fluid", name="steam", amount=50}
     },
     result = "pure-magnetite-powder",
     result_count = 3
   },
   {
     type = "recipe",
-    name = "magnetite-rock",
+    name = "pure-magnetite-ore-powder",
     category = "chemistry",
     subgroup = "metallurgy-processes",
-    order = "ae",
+    order = "ad",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 12,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
-      {"pure-magnetite-powder", 2},
-      {type="fluid", name="water", amount=100}
-    },
-    result = "magnetite-rock",
-    result_count = 3
-  },
-  {
-    type = "recipe",
-    name = "magnetite-chunk",
-    category = "crafting",
-    subgroup = "metallurgy-processes",
-    order = "af",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
-    icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
-    enabled = true,
-    ingredients =
-    {
-      {"magnetite-rock", 2},
-      {"sulfur", 4}
-    },
-    result = "magnetite-chunk",
-    result_count = 3
-  },
-  {
-    type = "recipe",
-    name = "magnetite-shard",
-    category = "chemistry",
-    subgroup = "metallurgy-processes",
-    order = "ag",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
-    icon_size = 64, icon_mipmaps = 4,
-    energy_required = 10,
-    enabled = true,
-    ingredients =
-    {
-      {"magnetite-chunk", 2},
-      {type="fluid", name="sulfuric-acid", amount=25}
-    },
-    result = "magnetite-shard",
-    result_count = 3
-  },
-  {
-    type = "recipe",
-    name = "purified-magnetite-shard",
-    category = "chemistry",
-    subgroup = "metallurgy-processes",
-    order = "ah",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
-    icon_size = 64, icon_mipmaps = 4,
-    energy_required = 5,
-    enabled = true,
-    ingredients =
-    {
-      {"magnetite-shard", 3},
-      {type="fluid", name="steam", amount=50}
-    },
-    result = "purified-magnetite-shard",
-    result_count = 3
-  },
-  {
-    type = "recipe",
-    name = "pure-magnetite-ore",
-    category = "chemistry",
-    subgroup = "metallurgy-processes",
-    order = "ai",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
-    icon_size = 64, icon_mipmaps = 4,
-    energy_required = 12,
-    enabled = true,
-    ingredients =
-    {
-      {"purified-magnetite-shard", 1},
+      {"pure-magnetite-powder", 1},
       {type="fluid", name="water", amount=25},
-      {type="fluid", name="sulfuric-acid", amount=10}
+      {type="fluid", name="steam", amount=10}
     },
     result = "pure-magnetite-ore",
-    result_count = 2
+    result_count = 3
   },
+
    --Malachite Refining
    {
     type = "recipe",
@@ -519,18 +577,13 @@ data:extend(
       },
       {
         type="fluid",
-        name="crude-oil",
+        name="chemical-oil",
         amount=100,
       },
       {
         name = "sulfur",
         probability = 0.1,
         amount = 4
-      },
-      {
-        name = "magnetite-ore",
-        probability = 0.2,
-        amount = 10
       },
       {
         name = "coal",
@@ -818,8 +871,158 @@ data:extend(
     allow_decomposition = false
   },
 
-    --Fluids
+    --Fluids, Chemistry
     
+    {
+      type = "recipe",
+      name = "motor-oil",
+      category = "oil-processing",
+      subgroup = "sam-fluid-recipes",
+      order = "ba",
+      icon = "__base__/graphics/icons/fluid/water.png",
+      icon_size = 64, icon_mipmaps = 4,
+      energy_required = 20,
+      enabled = true,
+      ingredients =
+      {
+        {type="fluid", name="lubricant", amount=20},
+        {type="fluid", name="light-oil", amount=20},
+        {type="fluid", name="water", amount=50}
+      },
+      results =
+      {
+        {type="fluid", name="motor-oil", amount=50}
+      },
+    },
+    {
+      type = "recipe",
+      name = "coolant",
+      category = "chemistry",
+      subgroup = "sam-fluid-recipes",
+      order = "ba",
+      icon = "__base__/graphics/icons/fluid/water.png",
+      icon_size = 64, icon_mipmaps = 4,
+      energy_required = 20,
+      enabled = true,
+      ingredients =
+      {
+        {type="fluid", name="lubricant", amount=20},
+        {type="fluid", name="nitrogen", amount=40}
+      },
+      results =
+      {
+        {type="fluid", name="coolant", amount=50}
+      },
+    },
+    {
+      type = "recipe",
+      name = "chemical-oil-processing",
+      category = "oil-processing",
+      subgroup = "sam-fluid-recipes",
+      order = "ba",
+      icon = "__base__/graphics/icons/fluid/water.png",
+      icon_size = 64, icon_mipmaps = 4,
+      energy_required = 20,
+      enabled = true,
+      ingredients =
+      {
+        {type="fluid", name="chemical-oil", amount=50},
+        {type="fluid", name="water", amount=50}
+        
+      },
+      results =
+      {
+        {type="fluid", name="petroleum-gas", amount=50},
+        {type="fluid", name="chemical-water", amount=25},
+        {type="fluid", name="chemical-gas", amount=25}
+      },
+    },
+    {
+      type = "recipe",
+      name = "chemical-water-processing",
+      category = "oil-processing",
+      subgroup = "sam-fluid-recipes",
+      order = "ba",
+      icon = "__base__/graphics/icons/fluid/water.png",
+      icon_size = 64, icon_mipmaps = 4,
+      energy_required = 20,
+      enabled = true,
+      ingredients =
+      {
+        {type="fluid", name="chemical-water", amount=20},
+        {type="fluid", name="water", amount=50}
+      },
+      results =
+      {
+        {type="fluid", name="liquid-air", amount=80},
+        {type="fluid", name="chlorine", amount=10},
+        {type="fluid", name="fluorine", amount=10}
+      },
+    },
+    {
+      type = "recipe",
+      name = "chemical-gas-processing",
+      category = "oil-processing",
+      subgroup = "sam-fluid-recipes",
+      order = "ba",
+      icon = "__base__/graphics/icons/fluid/water.png",
+      icon_size = 64, icon_mipmaps = 4,
+      energy_required = 20,
+      enabled = true,
+      ingredients =
+      {
+        {type="fluid", name="chemical-gas", amount=20},
+        {type="fluid", name="water", amount=50}
+      },
+      results =
+      {
+        {type="fluid", name="noble-gases", amount=20},
+        {type="fluid", name="carbon-dioxide", amount=40},
+        {type="fluid", name="oxygen", amount=40}
+      },
+    },
+    {
+      type = "recipe",
+      name = "liquid-air-processing",
+      category = "oil-processing",
+      subgroup = "sam-fluid-recipes",
+      order = "ba",
+      icon = "__base__/graphics/icons/fluid/water.png",
+      icon_size = 64, icon_mipmaps = 4,
+      energy_required = 20,
+      enabled = true,
+      ingredients =
+      {
+        {type="fluid", name="liquid-air", amount=20},
+        {type="fluid", name="water", amount=50}
+      },
+      results =
+      {
+        {type="fluid", name="nitrogen", amount=20},
+        {type="fluid", name="oxygen", amount=20},
+        {type="fluid", name="hydrogen", amount=20}
+      },
+    },
+    {
+      type = "recipe",
+      name = "coolant",
+      category = "chemistry",
+      subgroup = "sam-fluid-recipes",
+      order = "ba",
+      icon = "__base__/graphics/icons/fluid/water.png",
+      icon_size = 64, icon_mipmaps = 4,
+      energy_required = 20,
+      enabled = true,
+      ingredients =
+      {
+        {type="fluid", name="lubricant", amount=20},
+        {type="fluid", name="nitrogen", amount=40}
+      },
+      results =
+      {
+        {type="fluid", name="coolant", amount=50}
+      },
+    },
 
     --recipe categories
 
