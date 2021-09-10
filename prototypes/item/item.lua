@@ -730,7 +730,17 @@ data:extend(
     order = "a[alloy-furnace]",
     stack_size = 50
   },
-  {    
+  {
+    type = "item",
+    name = "chemical-refinery",
+    icon = "__base__/graphics/icons/oil-refinery.png",
+    icon_size = 64, icon_mipmaps = 4,
+    place_result = "chemical-refinery",
+    subgroup = "production-machine",
+    order = "c[chemical-refinery]",
+    stack_size = 50
+  },
+  {
     type = "item",
     name = "bulk-drone",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/misc/construction-robo-ico.png",

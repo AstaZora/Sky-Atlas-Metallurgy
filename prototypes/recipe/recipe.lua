@@ -136,6 +136,21 @@ data:extend(
     },
     icon_size = 64
   },
+  {
+    type = "recipe",
+    name = "chemical-refinery",
+    icon = "__base__/graphics/icons/oil-refinery.png",
+    category = "crafting",
+    subgroup = "sam-recipes",
+    enabled = true,
+    energy_required = 12,
+    ingredients = {{"duralumin-plate", 30}, {"kovar-plate", 10}, {"titanium-plate", 20}, {"concrete", 50}},
+    results =
+    {
+      {"chemical-refinery", 1}
+    },
+    icon_size = 64
+  },
    --Metallurgy Stages
 
    --Magnetite Purification (RAW)
@@ -205,7 +220,7 @@ data:extend(
     {
       {"crushed-magnetite", 1},
       {type="fluid", name="water", amount=25},
-      {type="fluid", name="steam", amount=10}
+      {type="fluid", name="sulfuric-acid", amount=10}
     },
     result = "pure-magnetite-ore",
     result_count = 3
@@ -280,7 +295,7 @@ data:extend(
     {
       {"purified-magnetite-shard", 1},
       {type="fluid", name="water", amount=25},
-      {type="fluid", name="steam", amount=10}
+      {type="fluid", name="sulfuric-acid", amount=10}
     },
     result = "pure-magnetite-ore",
     result_count = 3
@@ -353,7 +368,7 @@ data:extend(
     {
       {"pure-magnetite-powder", 1},
       {type="fluid", name="water", amount=25},
-      {type="fluid", name="steam", amount=10}
+      {type="fluid", name="sulfuric-acid", amount=10}
     },
     result = "pure-magnetite-ore",
     result_count = 3
@@ -954,9 +969,9 @@ data:extend(
       },
       results =
       {
-        {type="fluid", name="liquid-air", amount=80},
-        {type="fluid", name="chlorine", amount=10},
-        {type="fluid", name="fluorine", amount=10}
+        {type="fluid", name="liquid-air", amount=60},
+        {type="fluid", name="chlorine", amount=20},
+        {type="fluid", name="fluorine", amount=20}
       },
     },
     {
@@ -1021,6 +1036,111 @@ data:extend(
       results =
       {
         {type="fluid", name="coolant", amount=50}
+      },
+    },
+    {
+      type = "recipe",
+      name = "azane-acid",
+      category = "oil-processing",
+      subgroup = "sam-fluid-recipes",
+      order = "ba",
+      icon = "__base__/graphics/icons/fluid/water.png",
+      icon_size = 64, icon_mipmaps = 4,
+      energy_required = 20,
+      enabled = true,
+      ingredients =
+      {
+        {type="fluid", name="nitrogen", amount=10},
+        {type="fluid", name="hydrogen", amount=30},
+        {type="fluid", name="water", amount=20}
+      },
+      results =
+      {
+        {type="fluid", name="azane-acid", amount=50}
+      },
+    },
+    {
+      type = "recipe",
+      name = "carbonic-acid",
+      category = "oil-processing",
+      subgroup = "sam-fluid-recipes",
+      order = "ba",
+      icon = "__base__/graphics/icons/fluid/water.png",
+      icon_size = 64, icon_mipmaps = 4,
+      energy_required = 20,
+      enabled = true,
+      ingredients =
+      {
+        {type="fluid", name="hydrogen", amount=20},
+        {type="fluid", name="carbon-dioxide", amount=30},
+        {type="fluid", name="water", amount=50}
+      },
+      results =
+      {
+        {type="fluid", name="carbonic-acid", amount=50}
+      },
+    },
+    {
+      type = "recipe",
+      name = "nitric-acid",
+      category = "oil-processing",
+      subgroup = "sam-fluid-recipes",
+      order = "ba",
+      icon = "__base__/graphics/icons/fluid/water.png",
+      icon_size = 64, icon_mipmaps = 4,
+      energy_required = 20,
+      enabled = true,
+      ingredients =
+      {
+        {type="fluid", name="nitrogen", amount=30},
+        {type="fluid", name="hydrogen", amount=10},
+        {type="fluid", name="water", amount=20}
+      },
+      results =
+      {
+        {type="fluid", name="nitric-acid", amount=50}
+      },
+    },
+    {
+      type = "recipe",
+      name = "chloric-acid",
+      category = "oil-processing",
+      subgroup = "sam-fluid-recipes",
+      order = "ba",
+      icon = "__base__/graphics/icons/fluid/water.png",
+      icon_size = 64, icon_mipmaps = 4,
+      energy_required = 20,
+      enabled = true,
+      ingredients =
+      {
+        {type="fluid", name="hydrogen", amount=10},
+        {type="fluid", name="chlorine", amount=10},
+        {type="fluid", name="oxygen", amount=30}
+      },
+      results =
+      {
+        {type="fluid", name="chloric-acid", amount=50}
+      },
+    },
+    {
+      type = "recipe",
+      name = "hydrofluoric-acid",
+      category = "oil-processing",
+      subgroup = "sam-fluid-recipes",
+      order = "ba",
+      icon = "__base__/graphics/icons/fluid/water.png",
+      icon_size = 64, icon_mipmaps = 4,
+      energy_required = 20,
+      enabled = true,
+      ingredients =
+      {
+        {type="fluid", name="hydrogen", amount=10},
+        {type="fluid", name="fluorine", amount=10},
+        {type="fluid", name="water", amount=50}
+      },
+      results =
+      {
+        {type="fluid", name="hydrofluoric-acid", amount=50}
       },
     },
 

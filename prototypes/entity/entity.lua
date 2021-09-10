@@ -32,9 +32,50 @@ alloyFurnace.animation =
         }
       }
     }
-
+local chemicalRefinery = table.deepcopy(data.raw["assembling-machine"]["oil-refinery"])
+chemicalRefinery.name = "chemical-refinery"
+chemicalRefinery.crafting_categories = {"oil-processing", "chemistry"}
+chemicalRefinery.fluid_boxes =
+    {
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ position = {-1, 3} }}
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ position = {1, 3} }}
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_level = 1,
+        pipe_connections = {{ type="input", position = {-2, -3} }}
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_level = 1,
+        pipe_connections = {{ type="input", position = {0, -3} }}
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_level = 1,
+        pipe_connections = {{ type="input", position = {2, -3} }}
+      }
+    }
 
 data:extend(
 {
   alloyFurnace
+})
+data:extend(
+{
+  chemicalRefinery
 })
