@@ -16,9 +16,9 @@ data:extend(
     name = "iron-plate-1",
     category = "smelting",
     subgroup = "refined-metallurgy",
-    ingredients = {{ "crushed-magnetite", 2}},
+    ingredients = {{ "crushed-magnetite", 1}},
     results = {{"iron-plate", 1}},
-    energy_required = 8,
+    energy_required = 4,
     enabled = true
   },
   {
@@ -28,7 +28,7 @@ data:extend(
     subgroup = "refined-metallurgy",
     ingredients = {{ "magnetite-powder", 2}},
     results = {{"iron-plate", 1}},
-    energy_required = 8,
+    energy_required = 6,
     enabled = true
   },
   {
@@ -36,9 +36,9 @@ data:extend(
     name = "iron-plate-3",
     category = "smelting",
     subgroup = "refined-metallurgy",
-    ingredients = {{ "refined-magnetite-powder", 2}},
+    ingredients = {{ "refined-magnetite-powder", 1}},
     results = {{"iron-plate", 1}},
-    energy_required = 6,
+    energy_required = 4,
     enabled = true
   },
   {
@@ -46,9 +46,9 @@ data:extend(
     name = "iron-plate-4",
     category = "smelting",
     subgroup = "refined-metallurgy",
-    ingredients = {{ "pure-magnetite-powder", 2}},
+    ingredients = {{ "pure-magnetite-powder", 1}},
     results = {{"iron-plate", 1}},
-    energy_required = 4,
+    energy_required = 2,
     enabled = true
   },
   {
@@ -57,8 +57,8 @@ data:extend(
     category = "smelting",
     subgroup = "refined-metallurgy",
     ingredients = {{ "magnetite-rock", 2}},
-    results = {{"iron-plate", 2}},
-    energy_required = 4,
+    results = {{"iron-plate", 1}},
+    energy_required = 8,
     enabled = true
   },
   {
@@ -68,7 +68,7 @@ data:extend(
     subgroup = "refined-metallurgy",
     ingredients = {{ "magnetite-chunk", 1}},
     results = {{"iron-plate", 1}},
-    energy_required = 4,
+    energy_required = 8,
     enabled = true
   },
   {
@@ -78,7 +78,7 @@ data:extend(
     subgroup = "refined-metallurgy",
     ingredients = {{ "magnetite-shard", 1}},
     results = {{"iron-plate", 1}},
-    energy_required = 3,
+    energy_required = 5,
     enabled = true
   },
   {
@@ -88,7 +88,7 @@ data:extend(
     subgroup = "refined-metallurgy",
     ingredients = {{ "purified-magnetite-shard", 1}},
     results = {{"iron-plate", 1}},
-    energy_required = 2,
+    energy_required = 3,
     enabled = true
   },
   {
@@ -96,9 +96,9 @@ data:extend(
     name = "iron-plate-9",
     category = "smelting",
     subgroup = "refined-metallurgy",
-    ingredients = {{ "pure-magnetite-ore", 1}},
+    ingredients = {{ "pure-magnetite-ore", 2}},
     results = {{"iron-plate", 2}},
-    energy_required = 2,
+    energy_required = 4,
     enabled = true
   },
   --regular iron smelting

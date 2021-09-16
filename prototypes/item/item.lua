@@ -738,7 +738,7 @@ data:extend(
     place_result = "chemical-refinery",
     subgroup = "production-machine",
     order = "c[chemical-refinery]",
-    stack_size = 50
+    stack_size = 10
   },
   {
     type = "item",
@@ -748,7 +748,7 @@ data:extend(
     group = "logistics-network",
     order = "b[bulk-drone]",
     place_result = "bulk-drone",
-    stack_size = 50
+    stack_size = 20
   }
 
 })
