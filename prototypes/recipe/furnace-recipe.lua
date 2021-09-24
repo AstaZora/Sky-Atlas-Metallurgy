@@ -352,6 +352,36 @@ data:extend(
   },
   {
     type = "recipe",
+    name = "nitinol-plate",
+    category = "alloy-smelting",
+    subgroup = "refined-metallurgy",
+    ingredients = {{"nickel-plate", 3},{ "titanium-plate", 3}},
+    results = {{"kovar-plate", 5}},
+    energy_required = 10,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "soldering-plate",
+    category = "alloy-smelting",
+    subgroup = "refined-metallurgy",
+    ingredients = {{"lead-plate", 3},{ "tin-plate", 3}},
+    results = {{"soldering-plate", 2}},
+    energy_required = 4,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "light-bronze-plate",
+    category = "alloy-smelting",
+    subgroup = "refined-metallurgy",
+    ingredients = {{"copper-plate", 1},{ "tin-plate", 2}},
+    results = {{"light-bronze-plate", 1}},
+    energy_required = 4,
+    enabled = true
+  },
+  {
+    type = "recipe",
     name = "duralumin-plate",
     category = "alloy-smelting",
     subgroup = "refined-metallurgy",
@@ -420,6 +450,16 @@ data:extend(
     ingredients = {{ "samarium-ore", 6},{"cobalt-plate", 3}},
     results = {{"smco-magnet", 2}},
     energy_required = 2,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "alnico-magnet",
+    category = "alloy-smelting",
+    subgroup = "refined-metallurgy",
+    ingredients = {{ "iron-plate", 31},{ "cobalt-plate", 36},{ "nickel-plate", 14},{ "aluminum-plate", 8},{ "titanium-plate", 8},{"copper-plate", 3}},
+    results = {{"alnico-magnet", 10}},
+    energy_required = 40,
     enabled = true
   }
 })

@@ -33,7 +33,10 @@ alloyFurnace.animation =
       }
     }
 local chemicalRefinery = table.deepcopy(data.raw["assembling-machine"]["oil-refinery"])
+chemicalRefinery.crafting_speed = 4
+chemicalRefinery.energy_usage = "1500kW"
 chemicalRefinery.name = "chemical-refinery"
+chemicalRefinery.minable.result = "chemical-refinery"
 chemicalRefinery.crafting_categories = {"oil-processing", "chemistry"}
 chemicalRefinery.fluid_boxes =
     {

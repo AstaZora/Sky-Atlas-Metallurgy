@@ -309,7 +309,7 @@ data:extend(
       },
       {
         type = "fluid",
-        name = "hydrofluoric-acid",
+        name = "muriatic-acid",
         subgroup = "sam-fluid-recipes",
         default_temperature = 150,
         max_temperature = 300,

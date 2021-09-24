@@ -96,6 +96,74 @@ data:extend(
   },
   {
     type = "item",
+    name = "galena-ore",
+    icon = "__base__/graphics/icons/coal.png",
+    icon_size = 64, icon_mipmaps = 4,
+    pictures =
+    {
+      { size = 64, filename = "__base__/graphics/icons/coal.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-1.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-2.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-3.png",   scale = 0.25, mipmap_count = 4 }
+
+    },
+    subgroup = "raw-resource",
+    order = "fb[galena-ore]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "carbonatite-ore",
+    icon = "__base__/graphics/icons/coal.png",
+    icon_size = 64, icon_mipmaps = 4,
+    pictures =
+    {
+      { size = 64, filename = "__base__/graphics/icons/coal.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-1.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-2.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-3.png",   scale = 0.25, mipmap_count = 4 }
+
+    },
+    subgroup = "raw-resource",
+    order = "fc[carbonatite-ore]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "lead-ore",
+    icon = "__base__/graphics/icons/coal.png",
+    icon_size = 64, icon_mipmaps = 4,
+    pictures =
+    {
+      { size = 64, filename = "__base__/graphics/icons/coal.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-1.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-2.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-3.png",   scale = 0.25, mipmap_count = 4 }
+
+    },
+    subgroup = "raw-resource",
+    order = "fc[lead-ore]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "tin-ore",
+    icon = "__base__/graphics/icons/coal.png",
+    icon_size = 64, icon_mipmaps = 4,
+    pictures =
+    {
+      { size = 64, filename = "__base__/graphics/icons/coal.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-1.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-2.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__base__/graphics/icons/coal-3.png",   scale = 0.25, mipmap_count = 4 }
+
+    },
+    subgroup = "raw-resource",
+    order = "fc[tin-ore]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "nickel-ore",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
     icon_size = 64, icon_mipmaps = 4,
@@ -316,6 +384,24 @@ data:extend(
   },
   {
     type = "item",
+    name = "lead-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/duralumin-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[aluminum-plate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "tin-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bronze-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "a[aluminum-plate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "titanium-plate",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-plate.png",
     icon_size = 64, icon_mipmaps = 4,
@@ -370,6 +456,33 @@ data:extend(
   },
   {
     type = "item",
+    name = "nitinol-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nitinol-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "ab[kovar-plate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "light-bronze-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bronze-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "ac[kovar-plate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "soldering-plate",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/invar-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "ad[kovar-plate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "duralumin-plate",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/duralumin-plate.png",
     icon_size = 64, icon_mipmaps = 4,
@@ -420,7 +533,7 @@ data:extend(
     fuel_category = "magnetic",
     fuel_value = "300MJ",
     subgroup = "intermediate-product",
-    order = "b[neodymium-magnet]",
+    order = "cb[neodymium-magnet]",
     stack_size = 50
   },
   {
@@ -431,7 +544,7 @@ data:extend(
     fuel_category = "magnetic",
     fuel_value = "50MJ",
     subgroup = "intermediate-product",
-    order = "a[neodymium-magnet]",
+    order = "ca[neodymium-magnet]",
     stack_size = 50
   },
   {
@@ -442,7 +555,18 @@ data:extend(
     fuel_category = "magnetic",
     fuel_value = "100MJ",
     subgroup = "intermediate-product",
-    order = "c[neodymium-magnet]",
+    order = "cc[neodymium-magnet]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "alnico-magnet",
+    icon = "__base__/graphics/icons/steel-plate.png",
+    icon_size = 64, icon_mipmaps = 4,
+    fuel_category = "magnetic",
+    fuel_value = "100MJ",
+    subgroup = "intermediate-product",
+    order = "cd[neodymium-magnet]",
     stack_size = 50
   },
   {

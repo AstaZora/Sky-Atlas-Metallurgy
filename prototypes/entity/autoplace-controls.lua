@@ -42,6 +42,22 @@ data:extend(
   },
   {
     type = "autoplace-control",
+    name = "galena-ore",
+    localised_name = {"", "[entity=galena-ore] ", {"entity-name.galena-ore"}},
+    richness = true,
+    order = "b-ce",
+    category = "resource"
+  },
+  {
+    type = "autoplace-control",
+    name = "carbonatite-ore",
+    localised_name = {"", "[entity=carbonatite-ore] ", {"entity-name.carbonatite-ore"}},
+    richness = true,
+    order = "b-de",
+    category = "resource"
+  },
+  {
+    type = "autoplace-control",
     name = "oil-shale",
     localised_name = {"", "[entity=oil-shale] ", {"entity-name.oil-shale"}},
     richness = true,

@@ -95,7 +95,7 @@ data:extend(
     {
       {
         name = "uranium-ore",
-        probability = 0.25,
+        probability = 0.45,
         amount = 20
       },
       {
@@ -104,19 +104,57 @@ data:extend(
         amount = 5
       },
       {
-        name = "neodymium-ore",
-        probability = 0.1,
-        amount = 10
-      },
-      {
-        name = "samarium-ore",
-        probability = 0.1,
-        amount = 10
-      },
-      {
         name = "chromite-ore",
         probability = 0.5,
-        amount = 10
+        amount = 5
+      }
+    },
+    icon_size = 64
+  },
+  {
+    type = "recipe",
+    name = "carbonatite-refining",
+    icon = "__base__/graphics/icons/coal.png",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    enabled = true,
+    energy_required = 8,
+    ingredients = {{"carbonatite-ore", 10}},
+    results =
+    {
+      {
+        name = "samarium-ore",
+        probability = 1,
+        amount = 5
+      },
+      {
+        name = "neodymium-ore",
+        probability = 1,
+        amount = 5
+      }
+    },
+    icon_size = 64
+  },
+  {
+    type = "recipe",
+    name = "galena-refining",
+    icon = "__base__/graphics/icons/coal.png",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    enabled = true,
+    energy_required = 8,
+    ingredients = {{"galena-ore", 10}},
+    results =
+    {
+      {
+        name = "lead-ore",
+        probability = 1,
+        amount = 5
+      },
+      {
+        name = "tin-ore",
+        probability = 1,
+        amount = 5
       }
     },
     icon_size = 64
@@ -219,7 +257,7 @@ data:extend(
     ingredients =
     {
       {"crushed-magnetite", 1},
-      {type="fluid", name="water", amount=25},
+      {type="fluid", name="water", amount=10},
       {type="fluid", name="sulfuric-acid", amount=10}
     },
     result = "pure-magnetite-ore",
@@ -294,7 +332,7 @@ data:extend(
     ingredients =
     {
       {"purified-magnetite-shard", 1},
-      {type="fluid", name="water", amount=25},
+      {type="fluid", name="water", amount=10},
       {type="fluid", name="sulfuric-acid", amount=10}
     },
     result = "pure-magnetite-ore",
@@ -367,7 +405,7 @@ data:extend(
     ingredients =
     {
       {"pure-magnetite-powder", 1},
-      {type="fluid", name="water", amount=25},
+      {type="fluid", name="water", amount=10},
       {type="fluid", name="sulfuric-acid", amount=10}
     },
     result = "pure-magnetite-ore",
@@ -1124,7 +1162,7 @@ data:extend(
     },
     {
       type = "recipe",
-      name = "hydrofluoric-acid",
+      name = "muriatic-acid",
       category = "oil-processing",
       subgroup = "sam-fluid-recipes",
       order = "ba",
@@ -1140,7 +1178,7 @@ data:extend(
       },
       results =
       {
-        {type="fluid", name="hydrofluoric-acid", amount=50}
+        {type="fluid", name="muriatic-acid", amount=50}
       },
     },
 
