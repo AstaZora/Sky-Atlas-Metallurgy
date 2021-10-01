@@ -531,7 +531,7 @@ data:extend(
     icon = "__base__/graphics/icons/steel-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     fuel_category = "magnetic",
-    fuel_value = "300MJ",
+    fuel_value = "100MJ",
     subgroup = "intermediate-product",
     order = "cb[neodymium-magnet]",
     stack_size = 50
@@ -542,7 +542,7 @@ data:extend(
     icon = "__base__/graphics/icons/steel-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     fuel_category = "magnetic",
-    fuel_value = "50MJ",
+    fuel_value = "10MJ",
     subgroup = "intermediate-product",
     order = "ca[neodymium-magnet]",
     stack_size = 50
@@ -553,7 +553,7 @@ data:extend(
     icon = "__base__/graphics/icons/steel-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     fuel_category = "magnetic",
-    fuel_value = "100MJ",
+    fuel_value = "50MJ",
     subgroup = "intermediate-product",
     order = "cc[neodymium-magnet]",
     stack_size = 50
@@ -564,7 +564,7 @@ data:extend(
     icon = "__base__/graphics/icons/steel-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     fuel_category = "magnetic",
-    fuel_value = "100MJ",
+    fuel_value = "150MJ",
     subgroup = "intermediate-product",
     order = "cd[neodymium-magnet]",
     stack_size = 50
@@ -762,13 +762,14 @@ data:extend(
       order = "b[raw-magnetite]",
       stack_size = 50
     },
+    --Malachite
     {
       type = "item",
       name = "crushed-malachite",
       icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
-      order = "c[raw-malachite]",
+      order = "b[raw-malachite]",
       stack_size = 50
     },
     {
@@ -777,16 +778,17 @@ data:extend(
       icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
-      order = "c[raw-malachite]",
+      order = "b[raw-malachite]",
       stack_size = 50
     },
+
     {
       type = "item",
       name = "refined-malachite-powder",
       icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
-      order = "c[raw-malachite]",
+      order = "b[raw-malachite]",
       stack_size = 50
     },
     {
@@ -795,7 +797,7 @@ data:extend(
       icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
-      order = "c[raw-malachite]",
+      order = "b[raw-malachite]",
       stack_size = 50
     },
     {
@@ -804,7 +806,7 @@ data:extend(
       icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
-      order = "c[raw-malachite]",
+      order = "b[raw-malachite]",
       stack_size = 50
     },
     {
@@ -813,7 +815,7 @@ data:extend(
       icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
-      order = "c[raw-malachite]",
+      order = "b[raw-malachite]",
       stack_size = 50
     },
     {
@@ -822,7 +824,7 @@ data:extend(
       icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
-      order = "c[raw-malachite]",
+      order = "b[raw-malachite]",
       stack_size = 50
     },
     {
@@ -831,7 +833,7 @@ data:extend(
       icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
-      order = "c[raw-malachite]",
+      order = "b[raw-malachite]",
       stack_size = 50
     },
     {
@@ -840,7 +842,919 @@ data:extend(
       icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
-      order = "c[raw-malachite]",
+      order = "b[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "crushed-malachite",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "malachite-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-malachite]",
+      stack_size = 50
+    },
+
+    {
+      type = "item",
+      name = "refined-malachite-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-malachite-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "malachite-rock",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "malachite-chunk",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "malachite-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "purified-malachite-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-malachite]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-malachite-ore",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-malachite]",
+      stack_size = 50
+    },
+    --Nickel
+    {
+      type = "item",
+      name = "crushed-nickel",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-nickel]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "nickel-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-nickel]",
+      stack_size = 50
+    },
+
+    {
+      type = "item",
+      name = "refined-nickel-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-nickel]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-nickel-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-nickel]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "nickel-rock",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-nickel]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "nickel-chunk",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-nickel]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "nickel-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-nickel]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "purified-nickel-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-nickel]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-nickel-ore",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-nickel]",
+      stack_size = 50
+    },
+    --Cobalt
+    {
+      type = "item",
+      name = "crushed-cobalt",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-cobalt]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "cobalt-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-cobalt]",
+      stack_size = 50
+    },
+
+    {
+      type = "item",
+      name = "refined-cobalt-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-cobalt]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-cobalt-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-cobalt]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "cobalt-rock",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-cobalt]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "cobalt-chunk",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-cobalt]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "cobalt-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-cobalt]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "purified-cobalt-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-cobalt]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-cobalt-ore",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-cobalt]",
+      stack_size = 50
+    },
+    --Aluminum
+    {
+      type = "item",
+      name = "crushed-aluminum",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-aluminum]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "aluminum-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-aluminum]",
+      stack_size = 50
+    },
+
+    {
+      type = "item",
+      name = "refined-aluminum-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-aluminum]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-aluminum-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-aluminum]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "aluminum-rock",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-aluminum]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "aluminum-chunk",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-aluminum]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "aluminum-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-aluminum]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "purified-aluminum-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-aluminum]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-aluminum-ore",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-aluminum]",
+      stack_size = 50
+    },
+    --Titanium
+    {
+      type = "item",
+      name = "crushed-titanium",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-titanium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "titanium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-titanium]",
+      stack_size = 50
+    },
+
+    {
+      type = "item",
+      name = "refined-titanium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-titanium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-titanium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-titanium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "titanium-rock",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-titanium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "titanium-chunk",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-titanium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "titanium-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-titanium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "purified-titanium-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-titanium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-titanium-ore",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-titanium]",
+      stack_size = 50
+    },
+    --Chromium
+    {
+      type = "item",
+      name = "crushed-chromium",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-chromium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "chromium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-chromium]",
+      stack_size = 50
+    },
+
+    {
+      type = "item",
+      name = "refined-chromium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-chromium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-chromium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-chromium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "chromium-rock",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-chromium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "chromium-chunk",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-chromium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "chromium-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-chromium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "purified-chromium-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-chromium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-chromium-ore",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-chromium]",
+      stack_size = 50
+    },
+    --Thorium
+    {
+      type = "item",
+      name = "crushed-thorium",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-thorium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "thorium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-thorium]",
+      stack_size = 50
+    },
+
+    {
+      type = "item",
+      name = "refined-thorium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-thorium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-thorium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-thorium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "thorium-rock",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-thorium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "thorium-chunk",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-thorium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "thorium-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-thorium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "purified-thorium-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-thorium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-thorium-ore",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-thorium]",
+      stack_size = 50
+    },
+    --Samarium
+    {
+      type = "item",
+      name = "crushed-samarium",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-samarium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "samarium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-samarium]",
+      stack_size = 50
+    },
+
+    {
+      type = "item",
+      name = "refined-samarium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-samarium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-samarium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-samarium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "samarium-rock",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-samarium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "samarium-chunk",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-samarium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "samarium-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-samarium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "purified-samarium-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-samarium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-samarium-ore",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-samarium]",
+      stack_size = 50
+    },
+    --Neodymium
+    {
+      type = "item",
+      name = "crushed-neodymium",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-neodymium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "neodymium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-neodymium]",
+      stack_size = 50
+    },
+
+    {
+      type = "item",
+      name = "refined-neodymium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-neodymium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-neodymium-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-neodymium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "neodymium-rock",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-neodymium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "neodymium-chunk",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-neodymium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "neodymium-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-neodymium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "purified-neodymium-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-neodymium]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-neodymium-ore",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-neodymium]",
+      stack_size = 50
+    },
+    --Lead
+    {
+      type = "item",
+      name = "crushed-lead",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-lead]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "lead-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-lead]",
+      stack_size = 50
+    },
+
+    {
+      type = "item",
+      name = "refined-lead-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-lead]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-lead-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-lead]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "lead-rock",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-lead]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "lead-chunk",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-lead]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "lead-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-lead]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "purified-lead-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-lead]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-lead-ore",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-lead]",
+      stack_size = 50
+    },
+    --Tin
+    {
+      type = "item",
+      name = "crushed-tin",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-tin]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "tin-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-tin]",
+      stack_size = 50
+    },
+
+    {
+      type = "item",
+      name = "refined-tin-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-tin]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-tin-powder",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-tin]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "tin-rock",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-tin]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "tin-chunk",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-tin]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "tin-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-tin]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "purified-tin-shard",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-tin]",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pure-tin-ore",
+      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon_size = 64, icon_mipmaps = 4,
+      subgroup = "raw-metallurgy",
+      order = "b[raw-tin]",
       stack_size = 50
     },
     --New Machines

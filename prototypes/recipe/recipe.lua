@@ -413,150 +413,2435 @@ data:extend(
   },
 
    --Malachite Refining
+   --Malachite Purification (RAW)
+      {
+        type = "recipe",
+        name = "malachite-rock",
+        category = "crafting",
+        subgroup = "metallurgy-processes",
+        order = "aa",
+        icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+        icon_size = 64, icon_mipmaps = 4,
+        energy_required = 8,
+        enabled = true,
+        ingredients =
+        {
+          {"malachite-ore", 4}
+        },
+        result = "malachite-rock",
+        result_count = 3
+      },
+      {
+        type = "recipe",
+        name = "malachite-chunk",
+        category = "alloy-smelting",
+        subgroup = "metallurgy-processes",
+        order = "ab",
+        icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+        icon_size = 64, icon_mipmaps = 4,
+        energy_required = 4,
+        enabled = true,
+        ingredients =
+        {
+          {"malachite-rock", 2},
+          {"sulfur", 4}
+        },
+        result = "malachite-chunk",
+        result_count = 3
+      },
+      {
+        type = "recipe",
+        name = "crushed-malachite",
+        category = "basic-crafting",
+        subgroup = "metallurgy-processes",
+        order = "ac",
+        icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+        icon_size = 64, icon_mipmaps = 4,
+        energy_required = 4,
+        enabled = true,
+        ingredients =
+        {
+          {"malachite-chunk", 2}
+        },
+        result = "crushed-malachite",
+        result_count = 3
+      },
+      {
+        type = "recipe",
+        name = "pure-malachite-ore",
+        category = "chemistry",
+        subgroup = "metallurgy-processes",
+        order = "ad",
+        icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+        icon_size = 64, icon_mipmaps = 4,
+        energy_required = 4,
+        enabled = true,
+        ingredients =
+        {
+          {"crushed-malachite", 1},
+          {type="fluid", name="water", amount=10},
+          {type="fluid", name="sulfuric-acid", amount=10}
+        },
+        result = "pure-malachite-ore",
+        result_count = 3
+      },
+       --Malachite Purification (CHEMICAL)
+       {
+        type = "recipe",
+        name = "malachite-slurry",
+        category = "chemistry",
+        subgroup = "metallurgy-processes",
+        order = "ab",
+        icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+        icon_size = 64, icon_mipmaps = 4,
+        energy_required = 8,
+        enabled = true,
+        ingredients =
+        {
+          {"malachite-ore", 4}
+        },
+        results =
+        {
+           {type="fluid", name="malachite-slurry", amount=50}
+        },
+      },
+      {
+        type = "recipe",
+        name = "malachite-shard",
+        category = "chemistry",
+        subgroup = "metallurgy-processes",
+        order = "ab",
+        icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+        icon_size = 64, icon_mipmaps = 4,
+        energy_required = 4,
+        enabled = true,
+        ingredients =
+        {
+          {type="fluid", name="malachite-slurry", amount=50}
+        },
+        result = "malachite-shard",
+        result_count = 3
+      },
+      {
+        type = "recipe",
+        name = "pure-malachite-shard",
+        category = "chemistry",
+        subgroup = "metallurgy-processes",
+        order = "ad",
+        icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+        icon_size = 64, icon_mipmaps = 4,
+        energy_required = 4,
+        enabled = true,
+        ingredients =
+        {
+          {"malachite-shard", 2},
+          {type="fluid", name="water", amount=25},
+          {type="fluid", name="steam", amount=10}
+        },
+        result = "purified-malachite-shard",
+        result_count = 3
+      },
+      {
+        type = "recipe",
+        name = "pure-malachite-ore-chemical",
+        category = "chemistry",
+        subgroup = "metallurgy-processes",
+        order = "ad",
+        icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+        icon_size = 64, icon_mipmaps = 4,
+        energy_required = 4,
+        enabled = true,
+        ingredients =
+        {
+          {"purified-malachite-shard", 1},
+          {type="fluid", name="water", amount=10},
+          {type="fluid", name="sulfuric-acid", amount=10}
+        },
+        result = "pure-malachite-ore",
+        result_count = 3
+      },
+       --Malachite Purification (POWDER)
+       {
+        type = "recipe",
+        name = "malachite-powder",
+        category = "crafting",
+        subgroup = "metallurgy-processes",
+        order = "ab",
+        icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+        icon_size = 64, icon_mipmaps = 4,
+        energy_required = 8,
+        enabled = true,
+        ingredients =
+        {
+          {"malachite-ore", 4}
+        },
+        result = "malachite-powder",
+        result_count = 3
+      },
+      {
+        type = "recipe",
+        name = "refined-malachite-powder",
+        category = "chemistry",
+        subgroup = "metallurgy-processes",
+        order = "ac",
+        icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+        icon_size = 64, icon_mipmaps = 4,
+        energy_required = 4,
+        enabled = true,
+        ingredients =
+        {
+          {"malachite-powder", 2},
+          {type="fluid", name="water", amount=25}
+        },
+        result = "refined-malachite-powder",
+        result_count = 3
+      },
+      {
+        type = "recipe",
+        name = "pure-malachite-powder",
+        category = "chemistry",
+        subgroup = "metallurgy-processes",
+        order = "ad",
+        icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+        icon_size = 64, icon_mipmaps = 4,
+        energy_required = 4,
+        enabled = true,
+        ingredients =
+        {
+          {"refined-malachite-powder", 2},
+          {type="fluid", name="steam", amount=50}
+        },
+        result = "pure-malachite-powder",
+        result_count = 3
+      },
+      {
+        type = "recipe",
+        name = "pure-malachite-ore-powder",
+        category = "chemistry",
+        subgroup = "metallurgy-processes",
+        order = "ad",
+        icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+        icon_size = 64, icon_mipmaps = 4,
+        energy_required = 4,
+        enabled = true,
+        ingredients =
+        {
+          {"pure-malachite-powder", 1},
+          {type="fluid", name="water", amount=10},
+          {type="fluid", name="sulfuric-acid", amount=10}
+        },
+        result = "pure-malachite-ore",
+        result_count = 3
+      },
+  --Nickel Refining
+   --Nickel Purification (RAW)
    {
     type = "recipe",
-    name = "crushed-malachite",
+    name = "nickel-rock",
     category = "crafting",
     subgroup = "metallurgy-processes",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    order = "aa",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 3,
+    energy_required = 8,
     enabled = true,
     ingredients =
     {
-      {"malachite-ore", 4}
+      {"nickel-ore", 4}
     },
-    result = "crushed-malachite",
+    result = "nickel-rock",
     result_count = 3
   },
   {
     type = "recipe",
-    name = "malachite-powder",
-    category = "crafting",
+    name = "nickel-chunk",
+    category = "alloy-smelting",
     subgroup = "metallurgy-processes",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 3,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
-      {"crushed-malachite", 2}
+      {"nickel-rock", 2},
+      {"sulfur", 4}
     },
-    result = "malachite-powder",
-    result_count = 3
-  },
---side note - OXYGENATION STATE = Purification = Faster Smelt
-  {
-    type = "recipe",
-    name = "refined-malachite-powder",
-    category = "crafting",
-    subgroup = "metallurgy-processes",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
-    icon_size = 64, icon_mipmaps = 4,
-    energy_required = 3,
-    enabled = true,
-    ingredients =
-    {
-      {"malachite-powder", 3}
-    },
-    result = "refined-malachite-powder",
+    result = "nickel-chunk",
     result_count = 3
   },
   {
     type = "recipe",
-    name = "pure-malachite-powder",
-    category = "crafting",
+    name = "crushed-nickel",
+    category = "basic-crafting",
     subgroup = "metallurgy-processes",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 3,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
-      {"refined-malachite-powder", 3}
+      {"nickel-chunk", 2}
     },
-    result = "pure-malachite-powder",
+    result = "crushed-nickel",
     result_count = 3
   },
   {
     type = "recipe",
-    name = "malachite-rock",
-    category = "crafting",
+    name = "pure-nickel-ore",
+    category = "chemistry",
     subgroup = "metallurgy-processes",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 3,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
-      {"pure-malachite-powder", 2}
+      {"crushed-nickel", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
     },
-    result = "malachite-rock",
+    result = "pure-nickel-ore",
+    result_count = 3
+  },
+   --Nickel Purification (CHEMICAL)
+   {
+    type = "recipe",
+    name = "nickel-slurry",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"nickel-ore", 4}
+    },
+    results =
+    {
+       {type="fluid", name="nickel-slurry", amount=50}
+    },
+  },
+  {
+    type = "recipe",
+    name = "nickel-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {type="fluid", name="nickel-slurry", amount=50}
+    },
+    result = "nickel-shard",
     result_count = 3
   },
   {
     type = "recipe",
-    name = "malachite-chunk",
-    category = "crafting",
+    name = "pure-nickel-shard",
+    category = "chemistry",
     subgroup = "metallurgy-processes",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 3,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
-      {"malachite-rock", 2}
+      {"nickel-shard", 2},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="steam", amount=10}
     },
-    result = "malachite-chunk",
+    result = "purified-nickel-shard",
     result_count = 3
   },
   {
     type = "recipe",
-    name = "malachite-shard",
-    category = "crafting",
+    name = "pure-nickel-ore-chemical",
+    category = "chemistry",
     subgroup = "metallurgy-processes",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 3,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
-      {"malachite-chunk", 2}
+      {"purified-nickel-shard", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
     },
-    result = "malachite-shard",
+    result = "pure-nickel-ore",
+    result_count = 3
+  },
+   --Nickel Purification (POWDER)
+   {
+    type = "recipe",
+    name = "nickel-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"nickel-ore", 4}
+    },
+    result = "nickel-powder",
     result_count = 3
   },
   {
     type = "recipe",
-    name = "purified-malachite-shard",
-    category = "crafting",
+    name = "refined-nickel-powder",
+    category = "chemistry",
     subgroup = "metallurgy-processes",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 3,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
-      {"malachite-shard", 3}
+      {"nickel-powder", 2},
+      {type="fluid", name="water", amount=25}
     },
-    result = "purified-malachite-shard",
+    result = "refined-nickel-powder",
     result_count = 3
   },
   {
     type = "recipe",
-    name = "pure-malachite-ore",
-    category = "crafting",
+    name = "pure-nickel-powder",
+    category = "chemistry",
     subgroup = "metallurgy-processes",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 3,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
-      {"purified-malachite-shard", 1}
+      {"refined-nickel-powder", 2},
+      {type="fluid", name="steam", amount=50}
     },
-    result = "pure-malachite-ore",
-    result_count = 2
+    result = "pure-nickel-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-nickel-ore-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"pure-nickel-powder", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-nickel-ore",
+    result_count = 3
+  },  
+  --Cobalt Refining
+   --Cobalt Purification (RAW)
+   {
+    type = "recipe",
+    name = "cobalt-rock",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "aa",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"cobalt-ore", 4}
+    },
+    result = "cobalt-rock",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "cobalt-chunk",
+    category = "alloy-smelting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"cobalt-rock", 2},
+      {"sulfur", 4}
+    },
+    result = "cobalt-chunk",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "crushed-cobalt",
+    category = "basic-crafting",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"cobalt-chunk", 2}
+    },
+    result = "crushed-cobalt",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-cobalt-ore",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"crushed-cobalt", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-cobalt-ore",
+    result_count = 3
+  },
+   --Cobalt Purification (CHEMICAL)
+   {
+    type = "recipe",
+    name = "cobalt-slurry",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"cobalt-ore", 4}
+    },
+    results =
+    {
+       {type="fluid", name="cobalt-slurry", amount=50}
+    },
+  },
+  {
+    type = "recipe",
+    name = "cobalt-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {type="fluid", name="cobalt-slurry", amount=50}
+    },
+    result = "cobalt-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-cobalt-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"cobalt-shard", 2},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="steam", amount=10}
+    },
+    result = "purified-cobalt-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-cobalt-ore-chemical",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"purified-cobalt-shard", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-cobalt-ore",
+    result_count = 3
+  },
+   --Cobalt Purification (POWDER)
+   {
+    type = "recipe",
+    name = "cobalt-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"cobalt-ore", 4}
+    },
+    result = "cobalt-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "refined-cobalt-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"cobalt-powder", 2},
+      {type="fluid", name="water", amount=25}
+    },
+    result = "refined-cobalt-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-cobalt-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"refined-cobalt-powder", 2},
+      {type="fluid", name="steam", amount=50}
+    },
+    result = "pure-cobalt-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-cobalt-ore-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"pure-cobalt-powder", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-cobalt-ore",
+    result_count = 3
+  },
+  --Aluminum Refining
+   --Aluminum Purification (RAW)
+   {
+    type = "recipe",
+    name = "aluminum-rock",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "aa",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"aluminum-ore", 4}
+    },
+    result = "aluminum-rock",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "aluminum-chunk",
+    category = "alloy-smelting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"aluminum-rock", 2},
+      {"sulfur", 4}
+    },
+    result = "aluminum-chunk",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "crushed-aluminum",
+    category = "basic-crafting",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"aluminum-chunk", 2}
+    },
+    result = "crushed-aluminum",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-aluminum-ore",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"crushed-aluminum", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-aluminum-ore",
+    result_count = 3
+  },
+   --Aluminum Purification (CHEMICAL)
+   {
+    type = "recipe",
+    name = "aluminum-slurry",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"aluminum-ore", 4}
+    },
+    results =
+    {
+       {type="fluid", name="aluminum-slurry", amount=50}
+    },
+  },
+  {
+    type = "recipe",
+    name = "aluminum-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {type="fluid", name="aluminum-slurry", amount=50}
+    },
+    result = "aluminum-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-aluminum-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"aluminum-shard", 2},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="steam", amount=10}
+    },
+    result = "purified-aluminum-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-aluminum-ore-chemical",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"purified-aluminum-shard", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-aluminum-ore",
+    result_count = 3
+  },
+   --Aluminum Purification (POWDER)
+   {
+    type = "recipe",
+    name = "aluminum-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"aluminum-ore", 4}
+    },
+    result = "aluminum-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "refined-aluminum-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"aluminum-powder", 2},
+      {type="fluid", name="water", amount=25}
+    },
+    result = "refined-aluminum-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-aluminum-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"refined-aluminum-powder", 2},
+      {type="fluid", name="steam", amount=50}
+    },
+    result = "pure-aluminum-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-aluminum-ore-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"pure-aluminum-powder", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-aluminum-ore",
+    result_count = 3
+  },
+  --Titanium Refining
+   --Titanium Purification (RAW)
+   {
+    type = "recipe",
+    name = "titanium-rock",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "aa",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"titanium-ore", 4}
+    },
+    result = "titanium-rock",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "titanium-chunk",
+    category = "alloy-smelting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"titanium-rock", 2},
+      {"sulfur", 4}
+    },
+    result = "titanium-chunk",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "crushed-titanium",
+    category = "basic-crafting",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"titanium-chunk", 2}
+    },
+    result = "crushed-titanium",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-titanium-ore",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"crushed-titanium", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-titanium-ore",
+    result_count = 3
+  },
+   --Titanium Purification (CHEMICAL)
+   {
+    type = "recipe",
+    name = "titanium-slurry",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"titanium-ore", 4}
+    },
+    results =
+    {
+       {type="fluid", name="titanium-slurry", amount=50}
+    },
+  },
+  {
+    type = "recipe",
+    name = "titanium-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {type="fluid", name="titanium-slurry", amount=50}
+    },
+    result = "titanium-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-titanium-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"titanium-shard", 2},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="steam", amount=10}
+    },
+    result = "purified-titanium-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-titanium-ore-chemical",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"purified-titanium-shard", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-titanium-ore",
+    result_count = 3
+  },
+   --Titanium Purification (POWDER)
+   {
+    type = "recipe",
+    name = "titanium-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"titanium-ore", 4}
+    },
+    result = "titanium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "refined-titanium-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"titanium-powder", 2},
+      {type="fluid", name="water", amount=25}
+    },
+    result = "refined-titanium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-titanium-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"refined-titanium-powder", 2},
+      {type="fluid", name="steam", amount=50}
+    },
+    result = "pure-titanium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-titanium-ore-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"pure-titanium-powder", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-titanium-ore",
+    result_count = 3
+  },
+  --Chromite Refining
+   --Chromite Purification (RAW)
+   {
+    type = "recipe",
+    name = "chromium-rock",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "aa",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"chromite-ore", 4}
+    },
+    result = "chromium-rock",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "chromium-chunk",
+    category = "alloy-smelting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"chromium-rock", 2},
+      {"sulfur", 4}
+    },
+    result = "chromium-chunk",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "crushed-chromium",
+    category = "basic-crafting",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"chromium-chunk", 2}
+    },
+    result = "crushed-chromium",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-chromium-ore",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"crushed-chromium", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-chromium-ore",
+    result_count = 3
+  },
+   --Chromite Purification (CHEMICAL)
+   {
+    type = "recipe",
+    name = "chromium-slurry",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"chromite-ore", 4}
+    },
+    results =
+    {
+       {type="fluid", name="chromium-slurry", amount=50}
+    },
+  },
+  {
+    type = "recipe",
+    name = "chromium-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {type="fluid", name="chromium-slurry", amount=50}
+    },
+    result = "chromium-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-chromium-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"chromium-shard", 2},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="steam", amount=10}
+    },
+    result = "purified-chromium-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-chromium-ore-chemical",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"purified-chromium-shard", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-chromium-ore",
+    result_count = 3
+  },
+   --Chromite Purification (POWDER)
+   {
+    type = "recipe",
+    name = "chromium-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"chromite-ore", 4}
+    },
+    result = "chromium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "refined-chromium-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"chromium-powder", 2},
+      {type="fluid", name="water", amount=25}
+    },
+    result = "refined-chromium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-chromium-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"refined-chromium-powder", 2},
+      {type="fluid", name="steam", amount=50}
+    },
+    result = "pure-chromium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-chromium-ore-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"pure-chromium-powder", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-chromium-ore",
+    result_count = 3
+  },
+  --Lead Refining
+   --Lead Purification (RAW)
+   {
+    type = "recipe",
+    name = "lead-rock",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "aa",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"lead-ore", 4}
+    },
+    result = "lead-rock",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "lead-chunk",
+    category = "alloy-smelting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"lead-rock", 2},
+      {"sulfur", 4}
+    },
+    result = "lead-chunk",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "crushed-lead",
+    category = "basic-crafting",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"lead-chunk", 2}
+    },
+    result = "crushed-lead",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-lead-ore",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"crushed-lead", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-lead-ore",
+    result_count = 3
+  },
+   --Lead Purification (CHEMICAL)
+   {
+    type = "recipe",
+    name = "lead-slurry",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"lead-ore", 4}
+    },
+    results =
+    {
+       {type="fluid", name="lead-slurry", amount=50}
+    },
+  },
+  {
+    type = "recipe",
+    name = "lead-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {type="fluid", name="lead-slurry", amount=50}
+    },
+    result = "lead-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-lead-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"lead-shard", 2},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="steam", amount=10}
+    },
+    result = "purified-lead-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-lead-ore-chemical",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"purified-lead-shard", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-lead-ore",
+    result_count = 3
+  },
+   --Lead Purification (POWDER)
+   {
+    type = "recipe",
+    name = "lead-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"lead-ore", 4}
+    },
+    result = "lead-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "refined-lead-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"lead-powder", 2},
+      {type="fluid", name="water", amount=25}
+    },
+    result = "refined-lead-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-lead-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"refined-lead-powder", 2},
+      {type="fluid", name="steam", amount=50}
+    },
+    result = "pure-lead-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-lead-ore-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"pure-lead-powder", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-lead-ore",
+    result_count = 3
+  },
+  --Tin Refining
+   --Tin Purification (RAW)
+   {
+    type = "recipe",
+    name = "tin-rock",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "aa",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"tin-ore", 4}
+    },
+    result = "tin-rock",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "tin-chunk",
+    category = "alloy-smelting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"tin-rock", 2},
+      {"sulfur", 4}
+    },
+    result = "tin-chunk",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "crushed-tin",
+    category = "basic-crafting",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"tin-chunk", 2}
+    },
+    result = "crushed-tin",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-tin-ore",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"crushed-tin", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-tin-ore",
+    result_count = 3
+  },
+   --Tin Purification (CHEMICAL)
+   {
+    type = "recipe",
+    name = "tin-slurry",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"tin-ore", 4}
+    },
+    results =
+    {
+       {type="fluid", name="tin-slurry", amount=50}
+    },
+  },
+  {
+    type = "recipe",
+    name = "tin-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {type="fluid", name="tin-slurry", amount=50}
+    },
+    result = "tin-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-tin-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"tin-shard", 2},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="steam", amount=10}
+    },
+    result = "purified-tin-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-tin-ore-chemical",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"purified-tin-shard", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-tin-ore",
+    result_count = 3
+  },
+   --Tin Purification (POWDER)
+   {
+    type = "recipe",
+    name = "tin-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"tin-ore", 4}
+    },
+    result = "tin-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "refined-tin-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"tin-powder", 2},
+      {type="fluid", name="water", amount=25}
+    },
+    result = "refined-tin-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-tin-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"refined-tin-powder", 2},
+      {type="fluid", name="steam", amount=50}
+    },
+    result = "pure-tin-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-tin-ore-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"pure-tin-powder", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-tin-ore",
+    result_count = 3
+  },
+  --Thorium Refining
+   --Thorium Purification (RAW)
+   {
+    type = "recipe",
+    name = "thorium-rock",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "aa",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"thorium-ore", 4}
+    },
+    result = "thorium-rock",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "thorium-chunk",
+    category = "alloy-smelting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"thorium-rock", 2},
+      {"sulfur", 4}
+    },
+    result = "thorium-chunk",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "crushed-thorium",
+    category = "basic-crafting",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"thorium-chunk", 2}
+    },
+    result = "crushed-thorium",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-thorium-ore",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"crushed-thorium", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-thorium-ore",
+    result_count = 3
+  },
+   --Thorium Purification (CHEMICAL)
+   {
+    type = "recipe",
+    name = "thorium-slurry",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"thorium-ore", 4}
+    },
+    results =
+    {
+       {type="fluid", name="thorium-slurry", amount=50}
+    },
+  },
+  {
+    type = "recipe",
+    name = "thorium-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {type="fluid", name="thorium-slurry", amount=50}
+    },
+    result = "thorium-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-thorium-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"thorium-shard", 2},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="steam", amount=10}
+    },
+    result = "purified-thorium-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-thorium-ore-chemical",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"purified-thorium-shard", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-thorium-ore",
+    result_count = 3
+  },
+   --Thorium Purification (POWDER)
+   {
+    type = "recipe",
+    name = "thorium-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"thorium-ore", 4}
+    },
+    result = "thorium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "refined-thorium-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"thorium-powder", 2},
+      {type="fluid", name="water", amount=25}
+    },
+    result = "refined-thorium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-thorium-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"refined-thorium-powder", 2},
+      {type="fluid", name="steam", amount=50}
+    },
+    result = "pure-thorium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-thorium-ore-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"pure-thorium-powder", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-thorium-ore",
+    result_count = 3
+  },
+  --Samarium Refining
+   --Samarium Purification (RAW)
+   {
+    type = "recipe",
+    name = "samarium-rock",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "aa",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"samarium-ore", 4}
+    },
+    result = "samarium-rock",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "samarium-chunk",
+    category = "alloy-smelting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"samarium-rock", 2},
+      {"sulfur", 4}
+    },
+    result = "samarium-chunk",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "crushed-samarium",
+    category = "basic-crafting",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"samarium-chunk", 2}
+    },
+    result = "crushed-samarium",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-samarium-ore",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"crushed-samarium", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-samarium-ore",
+    result_count = 3
+  },
+   --Samarium Purification (CHEMICAL)
+   {
+    type = "recipe",
+    name = "samarium-slurry",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"samarium-ore", 4}
+    },
+    results =
+    {
+       {type="fluid", name="samarium-slurry", amount=50}
+    },
+  },
+  {
+    type = "recipe",
+    name = "samarium-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {type="fluid", name="samarium-slurry", amount=50}
+    },
+    result = "samarium-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-samarium-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"samarium-shard", 2},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="steam", amount=10}
+    },
+    result = "purified-samarium-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-samarium-ore-chemical",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"purified-samarium-shard", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-samarium-ore",
+    result_count = 3
+  },
+   --Samarium Purification (POWDER)
+   {
+    type = "recipe",
+    name = "samarium-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"samarium-ore", 4}
+    },
+    result = "samarium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "refined-samarium-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"samarium-powder", 2},
+      {type="fluid", name="water", amount=25}
+    },
+    result = "refined-samarium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-samarium-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"refined-samarium-powder", 2},
+      {type="fluid", name="steam", amount=50}
+    },
+    result = "pure-samarium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-samarium-ore-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"pure-samarium-powder", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-samarium-ore",
+    result_count = 3
+  },
+  --Neodymium Refining
+   --Neodymium Purification (RAW)
+   {
+    type = "recipe",
+    name = "neodymium-rock",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "aa",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"neodymium-ore", 4}
+    },
+    result = "neodymium-rock",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "neodymium-chunk",
+    category = "alloy-smelting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"neodymium-rock", 2},
+      {"sulfur", 4}
+    },
+    result = "neodymium-chunk",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "crushed-neodymium",
+    category = "basic-crafting",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"neodymium-chunk", 2}
+    },
+    result = "crushed-neodymium",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-neodymium-ore",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"crushed-neodymium", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-neodymium-ore",
+    result_count = 3
+  },
+   --Neodymium Purification (CHEMICAL)
+   {
+    type = "recipe",
+    name = "neodymium-slurry",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"neodymium-ore", 4}
+    },
+    results =
+    {
+       {type="fluid", name="neodymium-slurry", amount=50}
+    },
+  },
+  {
+    type = "recipe",
+    name = "neodymium-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {type="fluid", name="neodymium-slurry", amount=50}
+    },
+    result = "neodymium-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-neodymium-shard",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"neodymium-shard", 2},
+      {type="fluid", name="water", amount=25},
+      {type="fluid", name="steam", amount=10}
+    },
+    result = "purified-neodymium-shard",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-neodymium-ore-chemical",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"purified-neodymium-shard", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-neodymium-ore",
+    result_count = 3
+  },
+   --Neodymium Purification (POWDER)
+   {
+    type = "recipe",
+    name = "neodymium-powder",
+    category = "crafting",
+    subgroup = "metallurgy-processes",
+    order = "ab",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 8,
+    enabled = true,
+    ingredients =
+    {
+      {"neodymium-ore", 4}
+    },
+    result = "neodymium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "refined-neodymium-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ac",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"neodymium-powder", 2},
+      {type="fluid", name="water", amount=25}
+    },
+    result = "refined-neodymium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-neodymium-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"refined-neodymium-powder", 2},
+      {type="fluid", name="steam", amount=50}
+    },
+    result = "pure-neodymium-powder",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "pure-neodymium-ore-powder",
+    category = "chemistry",
+    subgroup = "metallurgy-processes",
+    order = "ad",
+    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    icon_size = 64, icon_mipmaps = 4,
+    energy_required = 4,
+    enabled = true,
+    ingredients =
+    {
+      {"pure-neodymium-powder", 1},
+      {type="fluid", name="water", amount=10},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "pure-neodymium-ore",
+    result_count = 3
   },
    --New Items (Nuclear)
    {
