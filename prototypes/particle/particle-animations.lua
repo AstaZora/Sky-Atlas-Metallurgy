@@ -4,7 +4,7 @@ particle_animations.get_magnetite_particle_pictures = function(options)
   return
   {
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/magnetite-ore-particle/magnetite-ore-particle-1.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/magnetite-ore-particle/magnetite-ore-particle-1.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -12,7 +12,7 @@ particle_animations.get_magnetite_particle_pictures = function(options)
       scale = 0.375
     },
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/magnetite-ore-particle/magnetite-ore-particle-2.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/magnetite-ore-particle/magnetite-ore-particle-2.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -20,7 +20,7 @@ particle_animations.get_magnetite_particle_pictures = function(options)
       scale = 0.375
     },
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/magnetite-ore-particle/magnetite-ore-particle-3.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/magnetite-ore-particle/magnetite-ore-particle-3.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -28,7 +28,7 @@ particle_animations.get_magnetite_particle_pictures = function(options)
       scale = 0.375
     },
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/magnetite-ore-particle/magnetite-ore-particle-4.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/magnetite-ore-particle/magnetite-ore-particle-4.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -42,7 +42,7 @@ particle_animations.get_malachite_particle_pictures = function(options)
   return
   {
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/malachite-ore-particle/malachite-ore-particle-1.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/malachite-ore-particle/malachite-ore-particle-1.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -50,7 +50,7 @@ particle_animations.get_malachite_particle_pictures = function(options)
       scale = 0.375
     },
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/malachite-ore-particle/malachite-ore-particle-2.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/malachite-ore-particle/malachite-ore-particle-2.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -58,7 +58,7 @@ particle_animations.get_malachite_particle_pictures = function(options)
       scale = 0.375
     },
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/malachite-ore-particle/malachite-ore-particle-3.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/malachite-ore-particle/malachite-ore-particle-3.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -66,7 +66,7 @@ particle_animations.get_malachite_particle_pictures = function(options)
       scale = 0.375
     },
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/malachite-ore-particle/malachite-ore-particle-4.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/malachite-ore-particle/malachite-ore-particle-4.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -80,7 +80,7 @@ particle_animations.get_laterite_particle_pictures = function(options)
   return
   {
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/laterite-ore-particle/laterite-ore-particle-1.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/laterite-ore-particle/laterite-ore-particle-1.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -88,7 +88,7 @@ particle_animations.get_laterite_particle_pictures = function(options)
       scale = 0.375
     },
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/laterite-ore-particle/laterite-ore-particle-2.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/laterite-ore-particle/laterite-ore-particle-2.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -96,7 +96,7 @@ particle_animations.get_laterite_particle_pictures = function(options)
       scale = 0.375
     },
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/laterite-ore-particle/laterite-ore-particle-3.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/laterite-ore-particle/laterite-ore-particle-3.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -104,7 +104,7 @@ particle_animations.get_laterite_particle_pictures = function(options)
       scale = 0.375
     },
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/laterite-ore-particle/laterite-ore-particle-4.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/laterite-ore-particle/laterite-ore-particle-4.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -118,7 +118,7 @@ particle_animations.get_monazite_particle_pictures = function(options)
   return
   {
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/monazite-ore-particle/monazite-ore-particle-1.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/monazite-ore-particle/monazite-ore-particle-1.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -126,7 +126,7 @@ particle_animations.get_monazite_particle_pictures = function(options)
       scale = 0.375
     },
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/monazite-ore-particle/monazite-ore-particle-2.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/monazite-ore-particle/monazite-ore-particle-2.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -134,7 +134,7 @@ particle_animations.get_monazite_particle_pictures = function(options)
       scale = 0.375
     },
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/monazite-ore-particle/monazite-ore-particle-3.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/monazite-ore-particle/monazite-ore-particle-3.png",
       priority = "extra-high",
       width = 32,
       height = 32,
@@ -142,7 +142,7 @@ particle_animations.get_monazite_particle_pictures = function(options)
       scale = 0.375
     },
     {
-      filename = "__Sky-Atlas-Metallurgy__/graphics/particle/monazite-ore-particle/monazite-ore-particle-4.png",
+      filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/particle/monazite-ore-particle/monazite-ore-particle-4.png",
       priority = "extra-high",
       width = 32,
       height = 32,

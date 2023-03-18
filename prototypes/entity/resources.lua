@@ -4,7 +4,7 @@ data:extend({
 	{
 		type = "resource",
 		name = "magnetite-ore",
-		icon = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
 		icon_size = 64,
 		flags = { "placeable-neutral" },
 		order = "g-h-i",
@@ -26,7 +26,7 @@ data:extend({
 		stage_counts = { 10000, 6330, 3670, 1930, 870, 270, 100, 50 },
 		stages = {
 			sheet = {
-				filename = "__Sky-Atlas-Metallurgy__/graphics/entity/magnetite-ore/magnetite-ore.png",
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/magnetite-ore/magnetite-ore.png",
 				priority = "extra-high",
 				width = 128,
 				height = 128,
@@ -40,7 +40,7 @@ data:extend({
 	{
 		type = "resource",
 		name = "malachite-ore",
-		icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
 		icon_size = 64,
 		flags = { "placeable-neutral" },
 		order = "g-h-i",
@@ -62,7 +62,7 @@ data:extend({
 		stage_counts = { 10000, 6330, 3670, 1930, 870, 270, 100, 50 },
 		stages = {
 			sheet = {
-				filename = "__Sky-Atlas-Metallurgy__/graphics/entity/malachite-ore/malachite-ore.png",
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/malachite-ore/malachite-ore.png",
 				priority = "extra-high",
 				width = 128,
 				height = 128,
@@ -76,7 +76,7 @@ data:extend({
 	{
 		type = "resource",
 		name = "laterite-ore",
-		icon = "__Sky-Atlas-Metallurgy__/graphics/icons/laterite-ore.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/laterite-ore.png",
 		icon_size = 64,
 		flags = { "placeable-neutral" },
 		order = "g-h-i",
@@ -117,7 +117,7 @@ data:extend({
 		stage_counts = { 10000, 6330, 3670, 1930, 870, 270, 100, 50 },
 		stages = {
 			sheet = {
-				filename = "__Sky-Atlas-Metallurgy__/graphics/entity/laterite-ore/laterite-ore.png",
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/laterite-ore/laterite-ore.png",
 				priority = "extra-high",
 				width = 128,
 				height = 128,
@@ -131,7 +131,7 @@ data:extend({
 	{
 		type = "resource",
 		name = "monazite-ore",
-		icon = "__Sky-Atlas-Metallurgy__/graphics/icons/monazite-ore.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monazite-ore.png",
 		icon_size = 64,
 		flags = { "placeable-neutral" },
 		order = "h-i",
@@ -155,7 +155,7 @@ data:extend({
 		stage_counts = { 10000, 7500, 5000, 2500, 1250, 800, 400, 100 },
 		stages = {
 			sheet = {
-				filename = "__Sky-Atlas-Metallurgy__/graphics/entity/monazite-ore/monazite-ore.png",
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/monazite-ore/monazite-ore.png",
 				priority = "medium",
 				width = 128,
 				height = 128,
@@ -169,7 +169,7 @@ data:extend({
 	{
 		type = "resource",
 		name = "haematite-ore",
-		icon = "__Sky-Atlas-Metallurgy__/graphics/icons/haematite-ore.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/haematite-ore.png",
 		icon_size = 64,
 		flags = { "placeable-neutral" },
 		order = "h-i",
@@ -191,7 +191,7 @@ data:extend({
 		stage_counts = { 10000, 6000, 2500, 400 },
 		stages = {
 			sheet = {
-				filename = "__Sky-Atlas-Metallurgy__/graphics/entity/haematite-ore/haematite-ore.png",
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/haematite-ore/haematite-ore.png",
 				priority = "medium",
 				width = 40,
 				height = 40,
@@ -229,7 +229,7 @@ data:extend({
 		stage_counts = { 10000, 7500, 5000, 2500, 1250, 800, 400, 100 },
 		stages = {
 			sheet = {
-				filename = "__Sky-Atlas-Metallurgy__/graphics/entity/monazite-ore/monazite-ore.png",
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/monazite-ore/monazite-ore.png",
 				priority = "medium",
 				width = 128,
 				height = 128,
@@ -280,7 +280,7 @@ data:extend({
 		stage_counts = { 10000, 7500, 5000, 2500, 1250, 800, 400, 100 },
 		stages = {
 			sheet = {
-				filename = "__Sky-Atlas-Metallurgy__/graphics/entity/monazite-ore/monazite-ore.png",
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/monazite-ore/monazite-ore.png",
 				priority = "medium",
 				width = 128,
 				height = 128,
@@ -338,7 +338,7 @@ data:extend({
 		stage_counts = { 10000, 7500, 5000, 2500, 1250, 800, 400, 100 },
 		stages = {
 			sheet = {
-				filename = "__Sky-Atlas-Metallurgy__/graphics/entity/monazite-ore/monazite-ore.png",
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/monazite-ore/monazite-ore.png",
 				priority = "medium",
 				width = 128,
 				height = 128,

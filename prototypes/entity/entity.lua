@@ -13,7 +13,7 @@ alloyFurnace.animation =
       layers =
       {
         {
-          filename = "__Sky-Atlas-Metallurgy__/graphics/entity/machines/clay_furnace.png",
+          filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/machines/clay_furnace.png",
           priority = "extra-high",
           width = 81,
           height = 64,
