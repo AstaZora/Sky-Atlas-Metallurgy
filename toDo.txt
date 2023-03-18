@@ -113,6 +113,13 @@ Washing Station
 Acid Washing Station
 Water Treatment Plant
 
+There are several types of metallurgical coal:
+
+Hard coking coals (HCC)
+Medium coking coal (MCC)
+Semi-soft coking coal (SSCC)
+Pulverized coal for injection (PCI) coal
+
 New Ore Workflow
 Crush -> Sort (benefit 2x smelting rate)
 Hydrolize -> Fluid Creation

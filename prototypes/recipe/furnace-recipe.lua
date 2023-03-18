@@ -111,6 +111,17 @@ data:extend(
     energy_required = 4,
     enabled = true
   },
+  --Haematite Smelting
+  {
+    type = "recipe",
+    name = "iron-plate-raw2",
+    category = "smelting",
+    subgroup = "refined-metallurgy",
+    ingredients = {{ "haematite-ore", 4}},
+    results = {{"iron-plate", 1}},
+    energy_required = 2,
+    enabled = true
+  },
   --Copper Smelting
   {
     type = "recipe",

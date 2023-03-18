@@ -617,7 +617,7 @@ data:extend(
       order = "r[thorium-processing]-a[thorium-fuel-cell]",
       fuel_category = "nuclear",
       burnt_result = "used-up-thorium-fuel-cell",
-      fuel_value = "8GJ",
+      fuel_value = "20GJ",
       stack_size = 10
     },
     {

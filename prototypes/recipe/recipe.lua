@@ -200,7 +200,7 @@ data:extend(
     order = "aa",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -347,7 +347,7 @@ data:extend(
     order = "ab",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -422,7 +422,7 @@ data:extend(
         order = "aa",
         icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
         icon_size = 64, icon_mipmaps = 4,
-        energy_required = 8,
+        energy_required = 4,
         enabled = true,
         ingredients =
         {
@@ -569,7 +569,7 @@ data:extend(
         order = "ab",
         icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
         icon_size = 64, icon_mipmaps = 4,
-        energy_required = 8,
+        energy_required = 4,
         enabled = true,
         ingredients =
         {
@@ -643,7 +643,7 @@ data:extend(
     order = "aa",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -790,7 +790,7 @@ data:extend(
     order = "ab",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -864,7 +864,7 @@ data:extend(
     order = "aa",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -1011,7 +1011,7 @@ data:extend(
     order = "ab",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -1085,7 +1085,7 @@ data:extend(
     order = "aa",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -1232,7 +1232,7 @@ data:extend(
     order = "ab",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -1306,7 +1306,7 @@ data:extend(
     order = "aa",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -1453,7 +1453,7 @@ data:extend(
     order = "ab",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -1527,7 +1527,7 @@ data:extend(
     order = "aa",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -1674,7 +1674,7 @@ data:extend(
     order = "ab",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -1748,7 +1748,7 @@ data:extend(
     order = "aa",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -1895,7 +1895,7 @@ data:extend(
     order = "ab",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -1969,7 +1969,7 @@ data:extend(
     order = "aa",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -2116,7 +2116,7 @@ data:extend(
     order = "ab",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -2190,7 +2190,7 @@ data:extend(
     order = "aa",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -2337,7 +2337,7 @@ data:extend(
     order = "ab",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -2411,7 +2411,7 @@ data:extend(
     order = "aa",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -2558,7 +2558,7 @@ data:extend(
     order = "ab",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -2632,7 +2632,7 @@ data:extend(
     order = "aa",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
@@ -2779,7 +2779,7 @@ data:extend(
     order = "ab",
     icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
-    energy_required = 8,
+    energy_required = 4,
     enabled = true,
     ingredients =
     {
