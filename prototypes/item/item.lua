@@ -3,14 +3,14 @@ data:extend(
   {
     type = "item",
     name = "magnetite-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",   scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore-1.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore-2.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore-3.png", scale = 0.25, mipmap_count = 4 }
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore-1.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore-2.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore-3.png", scale = 0.25, mipmap_count = 4 }
     },
     subgroup = "raw-resource",
     order = "i[magnetite-ore]", -- g[uranium-ore], h[raw-fish]
@@ -19,11 +19,11 @@ data:extend(
   {
     type = "item",
     name = "haematite-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",   scale = 0.25, mipmap_count = 4 }
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",   scale = 0.25, mipmap_count = 4 }
     },
     subgroup = "raw-resource",
     order = "i[magnetite-ore]", -- g[uranium-ore], h[raw-fish]
@@ -32,14 +32,14 @@ data:extend(
   {
     type = "item",
     name = "malachite-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",   scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore-1.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore-2.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore-3.png", scale = 0.25, mipmap_count = 4 }
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore-1.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore-2.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore-3.png", scale = 0.25, mipmap_count = 4 }
     },
     subgroup = "raw-resource",
     order = "j[malachite-ore]",
@@ -48,14 +48,14 @@ data:extend(
   {
     type = "item",
     name = "laterite-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/laterite-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/laterite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/laterite-ore.png",   scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/laterite-ore-1.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/laterite-ore-2.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/laterite-ore-3.png", scale = 0.25, mipmap_count = 4 }
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/laterite-ore.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/laterite-ore-1.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/laterite-ore-2.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/laterite-ore-3.png", scale = 0.25, mipmap_count = 4 }
     },
     subgroup = "raw-resource",
     order = "k[laterite-ore]",
@@ -64,14 +64,14 @@ data:extend(
   {
     type = "item",
     name = "magnetite-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",   scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore-1.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore-2.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore-3.png", scale = 0.25, mipmap_count = 4 }
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore-1.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore-2.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore-3.png", scale = 0.25, mipmap_count = 4 }
     },
     subgroup = "raw-resource",
     order = "i[magnetite-ore]", -- g[uranium-ore], h[raw-fish]
@@ -165,14 +165,14 @@ data:extend(
   {
     type = "item",
     name = "nickel-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",   scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore-1.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore-2.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore-3.png", scale = 0.25, mipmap_count = 4 }
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore-1.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore-2.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore-3.png", scale = 0.25, mipmap_count = 4 }
     },
     subgroup = "raw-resource",
     order = "l[nickel-ore]",
@@ -181,14 +181,14 @@ data:extend(
   {
     type = "item",
     name = "bauxite-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bauxite-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/bauxite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bauxite-ore.png",   scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bauxite-ore-1.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bauxite-ore-2.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bauxite-ore-3.png", scale = 0.25, mipmap_count = 4 }
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/bauxite-ore.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/bauxite-ore-1.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/bauxite-ore-2.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/bauxite-ore-3.png", scale = 0.25, mipmap_count = 4 }
     },
     subgroup = "raw-resource",
     order = "m[bauxite-ore]",
@@ -197,14 +197,14 @@ data:extend(
   {
     type = "item",
     name = "cobaltite-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobaltite-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/cobaltite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobaltite-ore.png",   scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobaltite-ore-1.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobaltite-ore-2.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobaltite-ore-3.png", scale = 0.25, mipmap_count = 4 }
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/cobaltite-ore.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/cobaltite-ore-1.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/cobaltite-ore-2.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/cobaltite-ore-3.png", scale = 0.25, mipmap_count = 4 }
     },
     subgroup = "raw-resource",
     order = "n[cobaltite-ore]",
@@ -213,14 +213,14 @@ data:extend(
   {
     type = "item",
     name = "cobalt-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",   scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore-1.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore-2.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore-3.png", scale = 0.25, mipmap_count = 4 }
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore-1.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore-2.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore-3.png", scale = 0.25, mipmap_count = 4 }
     },
     subgroup = "raw-resource",
     order = "o[cobalt-ore]",
@@ -229,14 +229,14 @@ data:extend(
   {
     type = "item",
     name = "titanium-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore-1.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore-2.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore-3.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore-1.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore-2.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore-3.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "q[titanium-ore]",
@@ -245,14 +245,14 @@ data:extend(
   {
     type = "item",
     name = "aluminum-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore-1.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore-2.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore-3.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore-1.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore-2.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore-3.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "q[aluminum-ore]",
@@ -261,14 +261,14 @@ data:extend(
   {
     type = "item",
     name = "monazite-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monazite-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/monazite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monazite-ore.png",   scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monazite-ore-1.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monazite-ore-2.png", scale = 0.25, mipmap_count = 4 },
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monazite-ore-3.png", scale = 0.25, mipmap_count = 4 }
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/monazite-ore.png",   scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/monazite-ore-1.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/monazite-ore-2.png", scale = 0.25, mipmap_count = 4 },
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/monazite-ore-3.png", scale = 0.25, mipmap_count = 4 }
     },
     subgroup = "raw-resource",
     order = "p[monazite-ore]",
@@ -277,14 +277,14 @@ data:extend(
   {
     type = "item",
     name = "neodymium-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore-1.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore-2.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore-3.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore-1.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore-2.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore-3.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "q[monazite-ore]",
@@ -293,14 +293,14 @@ data:extend(
   {
     type = "item",
     name = "thorium-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore-1.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore-2.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore-3.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore-1.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore-2.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore-3.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "r[thorium-ore]",
@@ -309,14 +309,14 @@ data:extend(
   {
     type = "item",
     name = "samarium-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore-1.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore-2.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore-3.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore-1.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore-2.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore-3.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "s[samarium-ore]",
@@ -325,14 +325,14 @@ data:extend(
   {
     type = "item",
     name = "chromite-ore",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore-1.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore-2.png",  scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore-3.png",  scale = 0.25, mipmap_count = 4}
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore-1.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore-2.png",  scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore-3.png",  scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "s[chromite-ore]",
@@ -358,7 +358,7 @@ data:extend(
   {
     type = "item",
     name = "nickel-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[nickel-plate]",
@@ -367,7 +367,7 @@ data:extend(
   {
     type = "item",
     name = "cobalt-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[cobalt-plate]",
@@ -376,7 +376,7 @@ data:extend(
   {
     type = "item",
     name = "aluminum-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[aluminum-plate]",
@@ -385,7 +385,7 @@ data:extend(
   {
     type = "item",
     name = "lead-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/duralumin-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/duralumin-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[aluminum-plate]",
@@ -394,7 +394,7 @@ data:extend(
   {
     type = "item",
     name = "tin-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bronze-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/bronze-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[aluminum-plate]",
@@ -403,7 +403,7 @@ data:extend(
   {
     type = "item",
     name = "titanium-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[titanium-plate]",
@@ -412,7 +412,7 @@ data:extend(
   {
     type = "item",
     name = "chromium-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromium-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/chromium-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[chromium-plate]",
@@ -421,7 +421,7 @@ data:extend(
   {
     type = "item",
     name = "incoloy-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/incoloy-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/incoloy-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[incoloy-plate]",
@@ -430,7 +430,7 @@ data:extend(
   {
     type = "item",
     name = "invar-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/invar-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/invar-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[invar-plate]",
@@ -439,7 +439,7 @@ data:extend(
   {
     type = "item",
     name = "monel-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monel-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/monel-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[monel-plate]",
@@ -448,7 +448,7 @@ data:extend(
   {
     type = "item",
     name = "kovar-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/kovar-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/kovar-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[kovar-plate]",
@@ -457,7 +457,7 @@ data:extend(
   {
     type = "item",
     name = "nitinol-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nitinol-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/nitinol-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "ab[kovar-plate]",
@@ -466,7 +466,7 @@ data:extend(
   {
     type = "item",
     name = "light-bronze-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bronze-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/bronze-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "ac[kovar-plate]",
@@ -475,7 +475,7 @@ data:extend(
   {
     type = "item",
     name = "soldering-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/invar-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/invar-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "ad[kovar-plate]",
@@ -484,7 +484,7 @@ data:extend(
   {
     type = "item",
     name = "duralumin-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/duralumin-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/duralumin-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[duralumin-plate]",
@@ -493,7 +493,7 @@ data:extend(
   {
     type = "item",
     name = "bronze-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/bronze-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/bronze-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[bronze-plate]",
@@ -502,7 +502,7 @@ data:extend(
   {
     type = "item",
     name = "titanium5-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-5.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-5.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[titanium5-plate]",
@@ -511,7 +511,7 @@ data:extend(
   {
     type = "item",
     name = "havar-plate",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/havar-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/havar-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "a[havar-plate]",
@@ -572,7 +572,7 @@ data:extend(
   {
     type = "item",
     name = "chromium-steel",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/stainless-steel-plate.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/icons/stainless-steel-plate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "b[steel-plate]",
@@ -683,7 +683,7 @@ data:extend(
     {
       type = "item",
       name = "crushed-magnetite",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-magnetite]",
@@ -692,7 +692,7 @@ data:extend(
     {
       type = "item",
       name = "magnetite-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-magnetite]",
@@ -702,7 +702,7 @@ data:extend(
     {
       type = "item",
       name = "refined-magnetite-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-magnetite]",
@@ -711,7 +711,7 @@ data:extend(
     {
       type = "item",
       name = "pure-magnetite-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-magnetite]",
@@ -720,7 +720,7 @@ data:extend(
     {
       type = "item",
       name = "magnetite-rock",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-magnetite]",
@@ -729,7 +729,7 @@ data:extend(
     {
       type = "item",
       name = "magnetite-chunk",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-magnetite]",
@@ -738,7 +738,7 @@ data:extend(
     {
       type = "item",
       name = "magnetite-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-magnetite]",
@@ -747,7 +747,7 @@ data:extend(
     {
       type = "item",
       name = "purified-magnetite-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-magnetite]",
@@ -756,7 +756,7 @@ data:extend(
     {
       type = "item",
       name = "pure-magnetite-ore",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/magnetite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-magnetite]",
@@ -766,7 +766,7 @@ data:extend(
     {
       type = "item",
       name = "crushed-malachite",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -775,7 +775,7 @@ data:extend(
     {
       type = "item",
       name = "malachite-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -785,7 +785,7 @@ data:extend(
     {
       type = "item",
       name = "refined-malachite-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -794,7 +794,7 @@ data:extend(
     {
       type = "item",
       name = "pure-malachite-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -803,7 +803,7 @@ data:extend(
     {
       type = "item",
       name = "malachite-rock",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -812,7 +812,7 @@ data:extend(
     {
       type = "item",
       name = "malachite-chunk",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -821,7 +821,7 @@ data:extend(
     {
       type = "item",
       name = "malachite-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -830,7 +830,7 @@ data:extend(
     {
       type = "item",
       name = "purified-malachite-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -839,7 +839,7 @@ data:extend(
     {
       type = "item",
       name = "pure-malachite-ore",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -848,7 +848,7 @@ data:extend(
     {
       type = "item",
       name = "crushed-malachite",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -857,7 +857,7 @@ data:extend(
     {
       type = "item",
       name = "malachite-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -867,7 +867,7 @@ data:extend(
     {
       type = "item",
       name = "refined-malachite-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -876,7 +876,7 @@ data:extend(
     {
       type = "item",
       name = "pure-malachite-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -885,7 +885,7 @@ data:extend(
     {
       type = "item",
       name = "malachite-rock",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -894,7 +894,7 @@ data:extend(
     {
       type = "item",
       name = "malachite-chunk",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -903,7 +903,7 @@ data:extend(
     {
       type = "item",
       name = "malachite-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -912,7 +912,7 @@ data:extend(
     {
       type = "item",
       name = "purified-malachite-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -921,7 +921,7 @@ data:extend(
     {
       type = "item",
       name = "pure-malachite-ore",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/malachite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-malachite]",
@@ -931,7 +931,7 @@ data:extend(
     {
       type = "item",
       name = "crushed-nickel",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-nickel]",
@@ -940,7 +940,7 @@ data:extend(
     {
       type = "item",
       name = "nickel-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-nickel]",
@@ -950,7 +950,7 @@ data:extend(
     {
       type = "item",
       name = "refined-nickel-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-nickel]",
@@ -959,7 +959,7 @@ data:extend(
     {
       type = "item",
       name = "pure-nickel-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-nickel]",
@@ -968,7 +968,7 @@ data:extend(
     {
       type = "item",
       name = "nickel-rock",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-nickel]",
@@ -977,7 +977,7 @@ data:extend(
     {
       type = "item",
       name = "nickel-chunk",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-nickel]",
@@ -986,7 +986,7 @@ data:extend(
     {
       type = "item",
       name = "nickel-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-nickel]",
@@ -995,7 +995,7 @@ data:extend(
     {
       type = "item",
       name = "purified-nickel-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-nickel]",
@@ -1004,7 +1004,7 @@ data:extend(
     {
       type = "item",
       name = "pure-nickel-ore",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/nickel-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-nickel]",
@@ -1014,7 +1014,7 @@ data:extend(
     {
       type = "item",
       name = "crushed-cobalt",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-cobalt]",
@@ -1023,7 +1023,7 @@ data:extend(
     {
       type = "item",
       name = "cobalt-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-cobalt]",
@@ -1033,7 +1033,7 @@ data:extend(
     {
       type = "item",
       name = "refined-cobalt-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-cobalt]",
@@ -1042,7 +1042,7 @@ data:extend(
     {
       type = "item",
       name = "pure-cobalt-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-cobalt]",
@@ -1051,7 +1051,7 @@ data:extend(
     {
       type = "item",
       name = "cobalt-rock",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-cobalt]",
@@ -1060,7 +1060,7 @@ data:extend(
     {
       type = "item",
       name = "cobalt-chunk",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-cobalt]",
@@ -1069,7 +1069,7 @@ data:extend(
     {
       type = "item",
       name = "cobalt-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-cobalt]",
@@ -1078,7 +1078,7 @@ data:extend(
     {
       type = "item",
       name = "purified-cobalt-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-cobalt]",
@@ -1087,7 +1087,7 @@ data:extend(
     {
       type = "item",
       name = "pure-cobalt-ore",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/cobalt-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-cobalt]",
@@ -1097,7 +1097,7 @@ data:extend(
     {
       type = "item",
       name = "crushed-aluminum",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-aluminum]",
@@ -1106,7 +1106,7 @@ data:extend(
     {
       type = "item",
       name = "aluminum-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-aluminum]",
@@ -1116,7 +1116,7 @@ data:extend(
     {
       type = "item",
       name = "refined-aluminum-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-aluminum]",
@@ -1125,7 +1125,7 @@ data:extend(
     {
       type = "item",
       name = "pure-aluminum-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-aluminum]",
@@ -1134,7 +1134,7 @@ data:extend(
     {
       type = "item",
       name = "aluminum-rock",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-aluminum]",
@@ -1143,7 +1143,7 @@ data:extend(
     {
       type = "item",
       name = "aluminum-chunk",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-aluminum]",
@@ -1152,7 +1152,7 @@ data:extend(
     {
       type = "item",
       name = "aluminum-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-aluminum]",
@@ -1161,7 +1161,7 @@ data:extend(
     {
       type = "item",
       name = "purified-aluminum-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-aluminum]",
@@ -1170,7 +1170,7 @@ data:extend(
     {
       type = "item",
       name = "pure-aluminum-ore",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/aluminum-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-aluminum]",
@@ -1180,7 +1180,7 @@ data:extend(
     {
       type = "item",
       name = "crushed-titanium",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-titanium]",
@@ -1189,7 +1189,7 @@ data:extend(
     {
       type = "item",
       name = "titanium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-titanium]",
@@ -1199,7 +1199,7 @@ data:extend(
     {
       type = "item",
       name = "refined-titanium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-titanium]",
@@ -1208,7 +1208,7 @@ data:extend(
     {
       type = "item",
       name = "pure-titanium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-titanium]",
@@ -1217,7 +1217,7 @@ data:extend(
     {
       type = "item",
       name = "titanium-rock",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-titanium]",
@@ -1226,7 +1226,7 @@ data:extend(
     {
       type = "item",
       name = "titanium-chunk",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-titanium]",
@@ -1235,7 +1235,7 @@ data:extend(
     {
       type = "item",
       name = "titanium-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-titanium]",
@@ -1244,7 +1244,7 @@ data:extend(
     {
       type = "item",
       name = "purified-titanium-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-titanium]",
@@ -1253,7 +1253,7 @@ data:extend(
     {
       type = "item",
       name = "pure-titanium-ore",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/titanium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-titanium]",
@@ -1263,7 +1263,7 @@ data:extend(
     {
       type = "item",
       name = "crushed-chromium",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-chromium]",
@@ -1272,7 +1272,7 @@ data:extend(
     {
       type = "item",
       name = "chromium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-chromium]",
@@ -1282,7 +1282,7 @@ data:extend(
     {
       type = "item",
       name = "refined-chromium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-chromium]",
@@ -1291,7 +1291,7 @@ data:extend(
     {
       type = "item",
       name = "pure-chromium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-chromium]",
@@ -1300,7 +1300,7 @@ data:extend(
     {
       type = "item",
       name = "chromium-rock",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-chromium]",
@@ -1309,7 +1309,7 @@ data:extend(
     {
       type = "item",
       name = "chromium-chunk",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-chromium]",
@@ -1318,7 +1318,7 @@ data:extend(
     {
       type = "item",
       name = "chromium-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-chromium]",
@@ -1327,7 +1327,7 @@ data:extend(
     {
       type = "item",
       name = "purified-chromium-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-chromium]",
@@ -1336,7 +1336,7 @@ data:extend(
     {
       type = "item",
       name = "pure-chromium-ore",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/chromite-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-chromium]",
@@ -1346,7 +1346,7 @@ data:extend(
     {
       type = "item",
       name = "crushed-thorium",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-thorium]",
@@ -1355,7 +1355,7 @@ data:extend(
     {
       type = "item",
       name = "thorium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-thorium]",
@@ -1365,7 +1365,7 @@ data:extend(
     {
       type = "item",
       name = "refined-thorium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-thorium]",
@@ -1374,7 +1374,7 @@ data:extend(
     {
       type = "item",
       name = "pure-thorium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-thorium]",
@@ -1383,7 +1383,7 @@ data:extend(
     {
       type = "item",
       name = "thorium-rock",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-thorium]",
@@ -1392,7 +1392,7 @@ data:extend(
     {
       type = "item",
       name = "thorium-chunk",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-thorium]",
@@ -1401,7 +1401,7 @@ data:extend(
     {
       type = "item",
       name = "thorium-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-thorium]",
@@ -1410,7 +1410,7 @@ data:extend(
     {
       type = "item",
       name = "purified-thorium-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-thorium]",
@@ -1419,7 +1419,7 @@ data:extend(
     {
       type = "item",
       name = "pure-thorium-ore",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/thorium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-thorium]",
@@ -1429,7 +1429,7 @@ data:extend(
     {
       type = "item",
       name = "crushed-samarium",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-samarium]",
@@ -1438,7 +1438,7 @@ data:extend(
     {
       type = "item",
       name = "samarium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-samarium]",
@@ -1448,7 +1448,7 @@ data:extend(
     {
       type = "item",
       name = "refined-samarium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-samarium]",
@@ -1457,7 +1457,7 @@ data:extend(
     {
       type = "item",
       name = "pure-samarium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-samarium]",
@@ -1466,7 +1466,7 @@ data:extend(
     {
       type = "item",
       name = "samarium-rock",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-samarium]",
@@ -1475,7 +1475,7 @@ data:extend(
     {
       type = "item",
       name = "samarium-chunk",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-samarium]",
@@ -1484,7 +1484,7 @@ data:extend(
     {
       type = "item",
       name = "samarium-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-samarium]",
@@ -1493,7 +1493,7 @@ data:extend(
     {
       type = "item",
       name = "purified-samarium-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-samarium]",
@@ -1502,7 +1502,7 @@ data:extend(
     {
       type = "item",
       name = "pure-samarium-ore",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/samarium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/samarium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-samarium]",
@@ -1512,7 +1512,7 @@ data:extend(
     {
       type = "item",
       name = "crushed-neodymium",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-neodymium]",
@@ -1521,7 +1521,7 @@ data:extend(
     {
       type = "item",
       name = "neodymium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-neodymium]",
@@ -1531,7 +1531,7 @@ data:extend(
     {
       type = "item",
       name = "refined-neodymium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-neodymium]",
@@ -1540,7 +1540,7 @@ data:extend(
     {
       type = "item",
       name = "pure-neodymium-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-neodymium]",
@@ -1549,7 +1549,7 @@ data:extend(
     {
       type = "item",
       name = "neodymium-rock",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-neodymium]",
@@ -1558,7 +1558,7 @@ data:extend(
     {
       type = "item",
       name = "neodymium-chunk",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-neodymium]",
@@ -1567,7 +1567,7 @@ data:extend(
     {
       type = "item",
       name = "neodymium-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-neodymium]",
@@ -1576,7 +1576,7 @@ data:extend(
     {
       type = "item",
       name = "purified-neodymium-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-neodymium]",
@@ -1585,7 +1585,7 @@ data:extend(
     {
       type = "item",
       name = "pure-neodymium-ore",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/neodymium-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/neodymium-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-neodymium]",
@@ -1595,7 +1595,7 @@ data:extend(
     {
       type = "item",
       name = "crushed-lead",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/lead-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-lead]",
@@ -1604,7 +1604,7 @@ data:extend(
     {
       type = "item",
       name = "lead-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/lead-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-lead]",
@@ -1614,7 +1614,7 @@ data:extend(
     {
       type = "item",
       name = "refined-lead-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/lead-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-lead]",
@@ -1623,7 +1623,7 @@ data:extend(
     {
       type = "item",
       name = "pure-lead-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/lead-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-lead]",
@@ -1632,7 +1632,7 @@ data:extend(
     {
       type = "item",
       name = "lead-rock",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/lead-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-lead]",
@@ -1641,7 +1641,7 @@ data:extend(
     {
       type = "item",
       name = "lead-chunk",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/lead-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-lead]",
@@ -1650,7 +1650,7 @@ data:extend(
     {
       type = "item",
       name = "lead-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/lead-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-lead]",
@@ -1659,7 +1659,7 @@ data:extend(
     {
       type = "item",
       name = "purified-lead-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/lead-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-lead]",
@@ -1668,7 +1668,7 @@ data:extend(
     {
       type = "item",
       name = "pure-lead-ore",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/lead-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-lead]",
@@ -1678,7 +1678,7 @@ data:extend(
     {
       type = "item",
       name = "crushed-tin",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/tin-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-tin]",
@@ -1687,7 +1687,7 @@ data:extend(
     {
       type = "item",
       name = "tin-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/tin-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-tin]",
@@ -1697,7 +1697,7 @@ data:extend(
     {
       type = "item",
       name = "refined-tin-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/tin-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-tin]",
@@ -1706,7 +1706,7 @@ data:extend(
     {
       type = "item",
       name = "pure-tin-powder",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/tin-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-tin]",
@@ -1715,7 +1715,7 @@ data:extend(
     {
       type = "item",
       name = "tin-rock",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/tin-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-tin]",
@@ -1724,7 +1724,7 @@ data:extend(
     {
       type = "item",
       name = "tin-chunk",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/tin-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-tin]",
@@ -1733,7 +1733,7 @@ data:extend(
     {
       type = "item",
       name = "tin-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/tin-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-tin]",
@@ -1742,7 +1742,7 @@ data:extend(
     {
       type = "item",
       name = "purified-tin-shard",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/tin-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-tin]",
@@ -1751,7 +1751,7 @@ data:extend(
     {
       type = "item",
       name = "pure-tin-ore",
-      icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
+      icon = "__Sky-Atlas-Metallurgy__/graphics/icons/tin-ore.png",
       icon_size = 64, icon_mipmaps = 4,
       subgroup = "raw-metallurgy",
       order = "b[raw-tin]",
@@ -1781,7 +1781,7 @@ data:extend(
   {
     type = "item",
     name = "bulk-drone",
-    icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/misc/construction-robo-ico.png",
+    icon = "__Sky-Atlas-Metallurgy__/graphics/entity/misc/construction-robo-ico.png",
     icon_size = 32, icon_mipmaps = 4,
     group = "logistics-network",
     order = "b[bulk-drone]",
