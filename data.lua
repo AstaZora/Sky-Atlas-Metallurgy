@@ -1,62 +1,58 @@
-require("prototypes.item.item")
-require("prototypes.entity.resources")
+require("prototypes.categories.fuel-category")
+require("prototypes.categories.recipe-category")
 require("prototypes.entity.autoplace-controls")
+require("prototypes.entity.entity")
+require("prototypes.entity.resources")
+require("prototypes.entity.robots")
+require("prototypes.item.item")
+require("prototypes.item-groups")
+require("prototypes.recipe.furnace-recipe")
 require("prototypes.particle.particles")
 require("prototypes.particle.particle-animations")
-require("prototypes.recipe.furnace-recipe")
 require("prototypes.recipe.recipe")
-require("prototypes.entity.entity")
-require("prototypes.sound.sound")
-require("prototypes.entity.robots.robots")
-require("prototypes.item-groups")
 require("prototypes.recipe.fluid-recipe")
 
 local presets = {
-  ["rich-resources"] = {richness = "very-good"},
-  ["rail-world"] = {
-    frequency = 0.33333333333,
-    size = 3
-  },
-  ["ribbon-world"] = {
-    frequency = 3,
-    size = 0.5,
-    richness = 2
-  }
+	["rich-resources"] = { richness = "very-good" },
+	["rail-world"] = {
+		frequency = 0.33333333333,
+		size = 3,
+	},
+	["ribbon-world"] = {
+		frequency = 3,
+		size = 0.5,
+		richness = 2,
+	},
 }
 
 local function addResource(resource)
-  for preset, conf in pairs(presets) do
-    local set = data.raw["map-gen-presets"]["default"][preset]
-    if
-      set and set.basic_settings and set.basic_settings.autoplace_controls and
-        not set.basic_settings.autoplace_controls[resource]
-     then
-      set.basic_settings.autoplace_controls[resource] = conf
-    end
-  end
+	for preset, conf in pairs(presets) do
+		local set = data.raw["map-gen-presets"]["default"][preset]
+		if
+			set
+			and set.basic_settings
+			and set.basic_settings.autoplace_controls
+			and not set.basic_settings.autoplace_controls[resource]
+		then
+			set.basic_settings.autoplace_controls[resource] = conf
+		end
+	end
 end
 
 local function removeResource(resource)
-  for _, preset in pairs(data.raw["map-gen-presets"]["default"]) do
-    if
-    preset and preset.basic_settings and preset.basic_settings.autoplace_controls and
-      preset.basic_settings.autoplace_controls[resource]
-    then
-      data.raw["resource"][resource] = nil
-      data.raw["autoplace-control"][resource] = nil
-      preset.basic_settings.autoplace_controls[resource] = nil
-    end
-  end
+	for _, preset in pairs(data.raw["map-gen-presets"]["default"]) do
+		if
+			preset
+			and preset.basic_settings
+			and preset.basic_settings.autoplace_controls
+			and preset.basic_settings.autoplace_controls[resource]
+		then
+			data.raw["resource"][resource] = nil
+			data.raw["autoplace-control"][resource] = nil
+			preset.basic_settings.autoplace_controls[resource] = nil
+		end
+	end
 end
-
-data.raw["furnace"]["alloy-furnace"]["type"] = "assembling-machine"
-data.raw["assembling-machine"]["alloy-furnace"] = data.raw["furnace"]["alloy-furnace"]
-data.raw["furnace"]["alloy-furnace"] = nil
-
-local boiler = data.raw["boiler"]["boiler"]
-boiler.energy_source.fuel_category = nil
-boiler.energy_source.fuel_categories = {"chemical", "magnetic"}
-
 
 removeResource("iron-ore")
 removeResource("copper-ore")
@@ -66,3 +62,40 @@ addResource("malachite-ore")
 addResource("laterite-ore")
 addResource("monazite-ore")
 addResource("oil-shale")
+
+data.raw["furnace"]["alloy-furnace"]["type"] = "assembling-machine"
+data.raw["assembling-machine"]["alloy-furnace"] = data.raw["furnace"]["alloy-furnace"]
+data.raw["furnace"]["alloy-furnace"] = nil
+
+local boiler = data.raw["boiler"]["boiler"]
+boiler.energy_source.fuel_category = nil
+boiler.energy_source.fuel_categories = { "chemical", "magnetic" }
+
+data.raw["recipe"]["automation-science-pack"].ingredients = { { "invar-plate", 1 }, { "monel-plate", 1 } }
+data.raw["recipe"]["logistic-science-pack"].ingredients = { { "kovar-plate", 5 }, { "titanium-plate", 1 } }
+data.raw["recipe"]["concrete"].ingredients = {
+	{ "magnetite-ore", 1 },
+	{ "stone-brick", 5 },
+	{ type = "fluid", name = "water", amount = 100 },
+}
+data.raw["recipe"]["chemical-science-pack"].ingredients = {
+	{ "bronze-plate", 8 },
+	{ "titanium5-plate", 2 },
+	{ "duralumin-plate", 2 },
+	{ "permalloy-magnet", 4 },
+}
+data.raw["recipe"]["military-science-pack"].ingredients = {
+	{ "aluminum-plate", 4 },
+	{ "cobalt-plate", 4 },
+	{ "copper-plate", 8 },
+}
+data.raw["recipe"]["production-science-pack"].ingredients = {
+	{ "incoloy-plate", 5 },
+	{ "chromium-plate", 5 },
+	{ "smco-magnet", 5 },
+}
+data.raw["recipe"]["utility-science-pack"].ingredients = {
+	{ "havar-plate", 8 },
+	{ "chromium-steel", 4 },
+	{ "neodymium-magnet", 5 },
+}
