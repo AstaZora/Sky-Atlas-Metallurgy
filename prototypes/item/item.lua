@@ -179,6 +179,22 @@ data:extend({
 	},
 	{
 		type = "item",
+		name = "limonite-ore",
+		icon = "__base__/graphics/icons/coal.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		pictures = {
+			{ size = 64, filename = "__base__/graphics/icons/coal.png", scale = 0.25, mipmap_count = 4 },
+			{ size = 64, filename = "__base__/graphics/icons/coal-1.png", scale = 0.25, mipmap_count = 4 },
+			{ size = 64, filename = "__base__/graphics/icons/coal-2.png", scale = 0.25, mipmap_count = 4 },
+			{ size = 64, filename = "__base__/graphics/icons/coal-3.png", scale = 0.25, mipmap_count = 4 },
+		},
+		subgroup = "raw-resource",
+		order = "f[limonite-ore]",
+		stack_size = 200,
+	},
+	{
+		type = "item",
 		name = "galena-ore",
 		icon = "__base__/graphics/icons/coal.png",
 		icon_size = 64,

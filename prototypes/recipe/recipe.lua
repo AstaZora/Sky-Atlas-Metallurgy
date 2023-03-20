@@ -176,7 +176,43 @@ data:extend({
 		},
 		icon_size = 64,
 	},
-
+	--Nickel Creation
+	{
+		type = "recipe",
+		name = "limonite-ore",
+		category = "chemistry",
+		subgroup = "metallurgy-processes",
+		order = "aa",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 2,
+		enabled = true,
+		ingredients = {
+			{ "magnetite-ore", 4 },
+			{ "haematite-ore", 4 },
+			{ type = "fluid", name = "water", amount = 50 },
+		},
+		result = "limonite-ore",
+		result_count = 8,
+	},
+	{
+		type = "recipe",
+		name = "nickel-reduction",
+		category = "crafting",
+		subgroup = "metallurgy-processes",
+		order = "aa",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 2,
+		enabled = true,
+		ingredients = {
+			{ "limonite-ore", 4 },
+		},
+		result = "nickel-ore",
+		result_count = 8,
+	},
 	--Metallurgy Stages
 
 	--Magnetite Purification (Raw)
