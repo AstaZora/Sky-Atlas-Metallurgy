@@ -220,10 +220,9 @@ data:extend({
 		type = "recipe",
 		name = "magnetite-rock",
 		category = "crafting",
-		subgroup = "metallurgy-processes",
 		order = "aa",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-rock.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
@@ -239,14 +238,14 @@ data:extend({
 		category = "alloy-smelting",
 		hide_from_player_crafting = true,
 		order = "ab",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-chunk.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ "magnetite-rock", 2 },
-			{ "sulfur", 4 },
+			{ "sulfur", 1 },
 		},
 		result = "magnetite-chunk",
 		result_count = 3,
@@ -257,8 +256,8 @@ data:extend({
 		category = "basic-crafting",
 		hide_from_player_crafting = true,
 		order = "ac",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-crushed.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
@@ -274,10 +273,10 @@ data:extend({
 		category = "chemistry",
 		hide_from_player_crafting = true,
 		order = "ad",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/iron-pure.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
-		energy_required = 4,
+		energy_required = 2,
 		enabled = true,
 		ingredients = {
 			{ "crushed-magnetite", 1 },
@@ -470,7 +469,7 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "malachite-rock", 2 },
-			{ "sulfur", 4 },
+			{ "sulfur", 1 },
 		},
 		result = "malachite-chunk",
 		result_count = 3,
@@ -501,7 +500,7 @@ data:extend({
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 4,
+		energy_required = 2,
 		enabled = true,
 		ingredients = {
 			{ "crushed-malachite", 1 },
@@ -694,7 +693,7 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "nickel-rock", 2 },
-			{ "sulfur", 4 },
+			{ "sulfur", 1 },
 		},
 		result = "nickel-chunk",
 		result_count = 3,
@@ -918,7 +917,7 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "cobalt-rock", 2 },
-			{ "sulfur", 4 },
+			{ "sulfur", 1 },
 		},
 		result = "cobalt-chunk",
 		result_count = 3,
@@ -1142,7 +1141,7 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "aluminum-rock", 2 },
-			{ "sulfur", 4 },
+			{ "sulfur", 1 },
 		},
 		result = "aluminum-chunk",
 		result_count = 3,
@@ -1335,7 +1334,7 @@ data:extend({
 	-- Titanium Creation
 	{
 		type = "recipe",
-		name = "ilmenite -ore",
+		name = "ilmenite-ore",
 		category = "chemistry",
 		subgroup = "metallurgy-processes",
 		order = "aa",
@@ -1349,7 +1348,7 @@ data:extend({
 			{ "titanium-ore", 6 },
 			{ type = "fluid", name = "water", amount = 50 },
 		},
-		result = "ilmenite -ore",
+		result = "ilmenite-ore",
 		result_count = 8,
 	},
 	{
@@ -1366,7 +1365,7 @@ data:extend({
 		ingredients = {
 			{ "ilmenite-ore", 4 },
 		},
-		result = "titanium -ore",
+		result = "titanium-ore",
 		result_count = 8,
 	},
 	--Titanium Refining
@@ -1402,7 +1401,7 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "titanium-rock", 2 },
-			{ "sulfur", 4 },
+			{ "sulfur", 1 },
 		},
 		result = "titanium-chunk",
 		result_count = 3,
@@ -1625,7 +1624,7 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "chromium-rock", 2 },
-			{ "sulfur", 4 },
+			{ "sulfur", 1 },
 		},
 		result = "chromium-chunk",
 		result_count = 3,
@@ -1849,7 +1848,7 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "lead-rock", 2 },
-			{ "sulfur", 4 },
+			{ "sulfur", 1 },
 		},
 		result = "lead-chunk",
 		result_count = 3,
@@ -2073,7 +2072,7 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "tin-rock", 2 },
-			{ "sulfur", 4 },
+			{ "sulfur", 1 },
 		},
 		result = "tin-chunk",
 		result_count = 3,
@@ -2297,7 +2296,7 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "thorium-rock", 2 },
-			{ "sulfur", 4 },
+			{ "sulfur", 1 },
 		},
 		result = "thorium-chunk",
 		result_count = 3,
@@ -2521,7 +2520,7 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "samarium-rock", 2 },
-			{ "sulfur", 4 },
+			{ "sulfur", 1 },
 		},
 		result = "samarium-chunk",
 		result_count = 3,
@@ -2745,7 +2744,7 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "neodymium-rock", 2 },
-			{ "sulfur", 4 },
+			{ "sulfur", 1 },
 		},
 		result = "neodymium-chunk",
 		result_count = 3,

@@ -964,7 +964,7 @@ data:extend({
 		order = "r[thorium-processing]-a[thorium-fuel-cell]",
 		fuel_category = "nuclear",
 		burnt_result = "used-up-thorium-fuel-cell",
-		fuel_value = "20GJ",
+		fuel_value = "50GJ",
 		stack_size = 10,
 	},
 	{
@@ -1005,7 +1005,7 @@ data:extend({
 		order = "r[uranium-processing]-a[uranium-233-cell]",
 		fuel_category = "nuclear",
 		burnt_result = "used-up-uranium-fuel-cell",
-		fuel_value = "40GJ",
+		fuel_value = "250GJ",
 		stack_size = 10,
 	},
 	{
@@ -1033,8 +1033,8 @@ data:extend({
 	{
 		type = "item",
 		name = "crushed-magnetite",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-crushed.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		subgroup = "raw-metallurgy",
 		order = "b[raw-magnetite]",
@@ -1073,8 +1073,8 @@ data:extend({
 	{
 		type = "item",
 		name = "magnetite-rock",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-rock.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		subgroup = "raw-metallurgy",
 		order = "b[raw-magnetite]",
@@ -1083,8 +1083,8 @@ data:extend({
 	{
 		type = "item",
 		name = "magnetite-chunk",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-chunk.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		subgroup = "raw-metallurgy",
 		order = "b[raw-magnetite]",
@@ -1113,8 +1113,8 @@ data:extend({
 	{
 		type = "item",
 		name = "pure-magnetite-ore",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/iron-pure.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		subgroup = "raw-metallurgy",
 		order = "b[raw-magnetite]",
