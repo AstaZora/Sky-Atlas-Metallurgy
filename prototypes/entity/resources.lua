@@ -294,7 +294,7 @@ data:extend({
 
 	{
 		type = "resource",
-		name = "carbonatite-ore",
+		name = "chromite-ore",
 		icon = "__base__/graphics/icons/coal.png",
 		icon_size = 64,
 		flags = { "placeable-neutral" },
@@ -304,22 +304,22 @@ data:extend({
 			mining_time = 3,
 			results = {
 				{
-					name = "carbonatite-ore",
+					name = "chromite-ore",
 					probability = 1,
 					amount_min = 1,
-					amount_max = 1,
+					amount_max = 10,
 				},
 				{
-					name = "monazite-ore",
+					name = "magnetite-ore",
 					probability = 0.2,
 					amount_min = 1,
 					amount_max = 3,
 				},
 				{
 					name = "titanium-ore",
-					probability = 0.15,
+					probability = 0.2,
 					amount_min = 1,
-					amount_max = 1,
+					amount_max = 5,
 				},
 			},
 			fluid_amount = 5,
