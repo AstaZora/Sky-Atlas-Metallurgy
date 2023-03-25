@@ -86,17 +86,17 @@ data:extend({
 		results = {
 			{
 				name = "uranium-ore",
-				probability = 0.45,
+				probability = 0.05,
 				amount = 20,
 			},
 			{
 				name = "thorium-ore",
-				probability = 0.05,
+				probability = 0.15,
 				amount = 5,
 			},
 			{
-				name = "chromite-ore",
-				probability = 0.5,
+				name = "rare-earth-ore",
+				probability = 0.8,
 				amount = 5,
 			},
 		},
@@ -104,21 +104,44 @@ data:extend({
 	},
 	{
 		type = "recipe",
-		name = "carbonatite-refining",
+		name = "chromite-refining",
 		icon = "__base__/graphics/icons/coal.png",
 		category = "crafting",
 		subgroup = "metallurgy-processes",
 		enabled = true,
 		energy_required = 8,
-		ingredients = { { "carbonatite-ore", 10 } },
+		ingredients = { { chromite-ore", 10 } },
 		results = {
 			{
-				name = "samarium-ore",
+				name = "magnetite-ore",
 				probability = 1,
 				amount = 5,
 			},
 			{
+				name = "chromite-ore",
+				probability = 1,
+				amount = 5,
+			},
+		},
+		icon_size = 64,
+	},
+	{
+		type = "recipe",
+		name = "magnet-refining",
+		icon = "__base__/graphics/icons/coal.png",
+		category = "crafting",
+		subgroup = "metallurgy-processes",
+		enabled = true,
+		energy_required = 8,
+		ingredients = { { rare-earth-ore", 10 } },
+		results = {
+			{
 				name = "neodymium-ore",
+				probability = 1,
+				amount = 5,
+			},
+			{
+				name = "samarium-ore",
 				probability = 1,
 				amount = 5,
 			},
