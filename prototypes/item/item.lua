@@ -1,40 +1,53 @@
-data:extend({
-	{
+local oresToAdd = { "magnetite", "malachite" }
+
+local function createOre(ore)
+	return {
 		type = "item",
-		name = "magnetite-ore",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+		name = ore .. "-ore",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/" .. ore .. "-ore.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
 		pictures = {
 			{
 				size = 64,
-				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/" .. ore .. "-ore.png",
 				scale = 0.25,
 				mipmap_count = 4,
 			},
 			{
 				size = 64,
-				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore-1.png",
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/" .. ore .. "-ore-1.png",
 				scale = 0.25,
 				mipmap_count = 4,
 			},
 			{
 				size = 64,
-				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore-2.png",
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/" .. ore .. "-ore-2.png",
 				scale = 0.25,
 				mipmap_count = 4,
 			},
 			{
 				size = 64,
-				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore-3.png",
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/" .. ore .. "-ore-3.png",
 				scale = 0.25,
 				mipmap_count = 4,
 			},
 		},
 		subgroup = "raw-resource",
-		order = "i[magnetite-ore]",
+		order = "i[" .. ore .. "-ore]",
 		stack_size = 200,
-	},
+	}
+end
+
+local ores = {}
+
+for _, ore in pairs(oresToAdd) do
+	table.insert(ores, createOre(ore))
+end
+
+data:extend(ores)
+
+data:extend({
 	{
 		type = "item",
 		name = "haematite-ore",
@@ -69,42 +82,6 @@ data:extend({
 		},
 		subgroup = "raw-resource",
 		order = "i[magnetite-ore]",
-		stack_size = 200,
-	},
-	{
-		type = "item",
-		name = "malachite-ore",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
-		icon_size = 64,
-		icon_mipmaps = 4,
-		pictures = {
-			{
-				size = 64,
-				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
-				scale = 0.25,
-				mipmap_count = 4,
-			},
-			{
-				size = 64,
-				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore-1.png",
-				scale = 0.25,
-				mipmap_count = 4,
-			},
-			{
-				size = 64,
-				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore-2.png",
-				scale = 0.25,
-				mipmap_count = 4,
-			},
-			{
-				size = 64,
-				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore-3.png",
-				scale = 0.25,
-				mipmap_count = 4,
-			},
-		},
-		subgroup = "raw-resource",
-		order = "j[malachite-ore]",
 		stack_size = 200,
 	},
 	{
