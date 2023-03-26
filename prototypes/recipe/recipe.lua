@@ -110,7 +110,7 @@ data:extend({
 		subgroup = "metallurgy-processes",
 		enabled = true,
 		energy_required = 8,
-		ingredients = { { chromite-ore", 10 } },
+		ingredients = { { "chromite-ore", 10 } },
 		results = {
 			{
 				name = "magnetite-ore",
@@ -133,7 +133,7 @@ data:extend({
 		subgroup = "metallurgy-processes",
 		enabled = true,
 		energy_required = 8,
-		ingredients = { { rare-earth-ore", 10 } },
+		ingredients = { { "rare-earth-ore", 10 } },
 		results = {
 			{
 				name = "neodymium-ore",
@@ -3261,7 +3261,7 @@ data:extend({
 				amount = 20,
 			},
 			{
-				name = "carbonatite-ore",
+				name = "chromite-ore",
 				probability = 0.01,
 				amount = 100,
 			},

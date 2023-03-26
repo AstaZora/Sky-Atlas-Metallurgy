@@ -294,7 +294,7 @@ data:extend({
 
 	{
 		type = "resource",
-		name = "chromite-ore",
+		name = "carbonatite-ore",
 		icon = "__base__/graphics/icons/coal.png",
 		icon_size = 64,
 		flags = { "placeable-neutral" },

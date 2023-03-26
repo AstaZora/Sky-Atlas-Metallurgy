@@ -196,3 +196,73 @@ Volcanic Melting
 end current theory
 amend to above statements, most chemicals could be constructed from this volcanic melting (lots of gases can come from volcanos!)
 THEORY - Create a volcano as a dual component, one part crafts molten metals, one part creates volcanic gases constantly
+
+
+-- Chat AI GPT Metallurgy Processes
+--Titanium
+The most common process for producing pure titanium is the Kroll process, which involves the following steps:
+
+Preparation of titanium tetrachloride: 
+The starting material for the Kroll process is titanium tetrachloride (TiCl4), 
+which is typically produced by the chlorination of titanium-containing minerals, such as ilmenite or rutile.
+
+Reduction of titanium tetrachloride: 
+The titanium tetrachloride is then reduced with magnesium (Mg) in a high-temperature vacuum furnace. 
+The reaction produces titanium sponge, which is a porous, spongy mass of titanium metal.
+
+Purification of titanium sponge: 
+The titanium sponge is then purified using a series of chemical and physical treatments, 
+such as washing, acid leaching, and vacuum melting, to remove impurities and achieve the desired purity.
+
+Formation of titanium ingots: 
+The purified titanium sponge is then melted and cast into titanium ingots, 
+which can be further processed into various forms, such as bars, plates, and sheets.
+
+The Kroll process is a complex and expensive process, requiring specialized equipment and handling procedures. 
+However, it remains the most widely used process for producing high-purity titanium due 
+to its ability to produce large quantities of titanium with high purity and at relatively low cost.
+
+-- Chromium
+The most common process for producing pure chromium is the aluminothermic reduction of chromium oxide using aluminum. 
+The process involves the following steps:
+
+Preparation of chromium oxide: 
+The starting material for the process is chromium oxide (Cr2O3), which is typically obtained from chromite ore.
+
+Mixing with aluminum powder: 
+The chromium oxide is mixed with aluminum powder in the presence of a flux, 
+such as calcium fluoride (CaF2), and other additives.
+
+Ignition: The mixture is ignited using a fuse or an electric spark, 
+which initiates a highly exothermic reaction between the aluminum and chromium oxide. 
+The reaction produces molten chromium metal and aluminum oxide (Al2O3).
+
+Separation of chromium: 
+The molten chromium is separated from the aluminum oxide using various techniques, 
+such as centrifugation or vacuum distillation.
+
+Refining: 
+The separated chromium is then refined using various techniques, 
+such as electrorefining or vacuum melting, to remove impurities and achieve the desired purity.
+
+The aluminothermic reduction process is a relatively simple and inexpensive process, 
+requiring only a few raw materials and basic equipment. However, it has some drawbacks,
+such as low yield and difficulty in controlling the reaction conditions. 
+As a result, it is typically used for producing small quantities of high-purity chromium, 
+such as for use in the aerospace and electronics industries.
+
+Hastelloy X: Another nickel-based alloy, 
+Hastelloy X is highly resistant to oxidation and can maintain its strength at high temperatures. 
+It is often used in gas turbine engines and other high-temperature applications.
+
+Haynes 230: This is a nickel-based superalloy that offers excellent resistance to high temperatures, corrosion, and oxidation. 
+It is commonly used in gas turbine components, heat exchangers, and other high-temperature applications.
+
+Waspaloy: This is a nickel-based superalloy that offers high strength and excellent resistance to high temperatures and corrosion.
+It is commonly used in gas turbine engine components and other high-stress applications.
+
+Stellite 6B: This is a cobalt-based superalloy that offers high wear resistance and excellent corrosion resistance. 
+It is commonly used in valve seats, pump components, and other applications where wear resistance is critical.
+
+Maraging Steel: This is a low-carbon, high-nickel alloy that offers high strength and excellent toughness. 
+It is often used in aerospace and defense applications, such as missile and rocket motor components.
