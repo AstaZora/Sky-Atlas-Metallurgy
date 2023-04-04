@@ -1402,7 +1402,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "titanium-reduction",
-		category = "chemistry",
+		category = "crafting",
 		subgroup = "metallurgy-processes",
 		order = "aa",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/thorium-ore.png",
@@ -3045,7 +3045,7 @@ data:extend({
 		subgroup = "metallurgy-processes",
 		enabled = true,
 		energy_required = 5,
-		ingredients = { { "oil-shale", 1 }, { type = "fluid", name = "steam", amount = 100 } },
+		ingredients = { { "oil-shale-ore", 1 }, { type = "fluid", name = "steam", amount = 100 } },
 		results = { --other resources include aluminum, magnesium, silicon - Check Oil Shale
 			{
 				name = "stone-debris",
@@ -3380,11 +3380,6 @@ data:extend({
 			},
 			{
 				name = "ilmenite-ore",
-				probability = 0.01,
-				amount = 10,
-			},
-			{
-				name = "limonite-ore",
 				probability = 0.01,
 				amount = 10,
 			},

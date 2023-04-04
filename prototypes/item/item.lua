@@ -1,4 +1,4 @@
-local oresToAdd = { "magnetite", "malachite" }
+local oresToAdd = { "magnetite", "malachite", "haematite", "oil-shale", "monazite", "chromite", "galena", }
 
 local function createOre(ore)
 	return {
@@ -154,22 +154,6 @@ data:extend({
 		},
 		subgroup = "raw-resource",
 		order = "i[magnetite-ore]",
-		stack_size = 200,
-	},
-	{
-		type = "item",
-		name = "oil-shale",
-		icon = "__base__/graphics/icons/coal.png",
-		icon_size = 64,
-		icon_mipmaps = 4,
-		pictures = {
-			{ size = 64, filename = "__base__/graphics/icons/coal.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-1.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-2.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-3.png", scale = 0.25, mipmap_count = 4 },
-		},
-		subgroup = "raw-resource",
-		order = "f[oil-shale]",
 		stack_size = 200,
 	},
 	{

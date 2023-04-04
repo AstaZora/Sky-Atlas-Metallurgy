@@ -205,14 +205,14 @@ data:extend({
 	{
 		type = "resource",
 		name = "oil-shale",
-		icon = "__base__/graphics/icons/coal.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/oil-shale-ore.png",
 		icon_size = 64,
 		flags = { "placeable-neutral" },
 		order = "h-i",
 		minable = {
 			mining_particle = "monazite-ore-particle",
 			mining_time = 10,
-			result = "oil-shale",
+			result = "oil-shale-ore",
 			fluid_amount = 25,
 			required_fluid = "steam",
 		},
@@ -229,7 +229,7 @@ data:extend({
 		stage_counts = { 10000, 7500, 5000, 2500, 1250, 800, 400, 100 },
 		stages = {
 			sheet = {
-				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/monazite-ore/monazite-ore.png",
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/oil-shale-ore/oil-shale-ore.png",
 				priority = "medium",
 				width = 128,
 				height = 128,
