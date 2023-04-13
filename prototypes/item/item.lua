@@ -676,7 +676,7 @@ data:extend({
 	{
 		type = "item",
 		name = "cobalt-plate",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ingot.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-plate-3.png",
 		icon_size = 32,
 		icon_mipmaps = 4,
 		subgroup = "raw-resource",
@@ -1349,7 +1349,7 @@ data:extend({
 	{
 		type = "item",
 		name = "cobalt-chunk",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-chunk.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-chunk-2.png",
 		icon_size = 32,
 		icon_mipmaps = 4,
 		subgroup = "raw-metallurgy",

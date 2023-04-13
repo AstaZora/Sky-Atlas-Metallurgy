@@ -772,7 +772,7 @@ data:extend({
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 4,
+		energy_required = 2,
 		enabled = true,
 		ingredients = {
 			{ "crushed-nickel", 1 },
@@ -996,7 +996,7 @@ data:extend({
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-pure.png",
 		icon_size = 32,
 		icon_mipmaps = 4,
-		energy_required = 4,
+		energy_required = 2,
 		enabled = true,
 		ingredients = {
 			{ "crushed-cobalt", 1 },
@@ -1220,7 +1220,7 @@ data:extend({
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 4,
+		energy_required = 2,
 		enabled = true,
 		ingredients = {
 			{ "crushed-aluminum", 1 },
@@ -1480,7 +1480,7 @@ data:extend({
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 4,
+		energy_required = 2,
 		enabled = true,
 		ingredients = {
 			{ "crushed-titanium", 1 },
@@ -1703,7 +1703,7 @@ data:extend({
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 4,
+		energy_required = 2,
 		enabled = true,
 		ingredients = {
 			{ "crushed-chromium", 1 },
