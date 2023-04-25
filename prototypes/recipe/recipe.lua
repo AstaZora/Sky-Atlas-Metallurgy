@@ -25,7 +25,8 @@ data:extend({
 		ingredients = { { "bauxite-ore", 8 } },
 		results = {
 			{ "titanium-ore", 4 },
-			{ "aluminum-ore", 6 },
+			{ "aluminum-ore", 4 },
+			{ "magnetite-ore", 2 },
 		},
 		icon_size = 64,
 	},
@@ -105,6 +106,46 @@ data:extend({
 			{ "cobaltite-ore", 8 },
 		},
 		icon_size = 64,
+	},
+	{
+		type = "recipe",
+		name = "direct-cobaltite",
+		category = "crafting",
+		hide_from_player_crafting = true,
+		order = "ac",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+		icon_size = 32,
+		icon_mipmaps = 4,
+		energy_required = 4,
+		enabled = true,
+		ingredients = {
+			{ "cobaltite-ore", 4 },
+		},
+		results = {
+			{ "cobalt-ore", 4 },
+			{ "stone", 4 },
+		},
+		main_product = "cobalt-ore",
+	},
+	{
+		type = "recipe",
+		name = "direct-bauxite",
+		category = "crafting",
+		hide_from_player_crafting = true,
+		order = "ac",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
+		icon_size = 32,
+		icon_mipmaps = 4,
+		energy_required = 4,
+		enabled = true,
+		ingredients = {
+			{ "bauxite-ore", 4 },
+		},
+		results = {
+			{ "aluminum-ore", 4 },
+			{ "stone", 4 },
+		},
+		main_product = "aluminum-ore",
 	},
 	{
 		type = "recipe",
@@ -3281,11 +3322,6 @@ data:extend({
 		order = "",
 		main_product = "",
 		results = {
-			{
-				name = "stone-debris",
-				probability = 0.05,
-				amount = 20,
-			},
 			{
 				name = "chromite-ore",
 				probability = 0.01,

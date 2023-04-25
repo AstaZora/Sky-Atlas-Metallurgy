@@ -87,20 +87,20 @@ data:extend({
 				{
 					name = "laterite-ore",
 					probability = 1,
-					amount_min = 1,
+					amount_min = 3,
 					amount_max = 10,
 				},
 				{
 					name = "bauxite-ore",
 					probability = 0.5,
 					amount_min = 1,
-					amount_max = 10,
+					amount_max = 3,
 				},
 				{
 					name = "cobaltite-ore",
 					probability = 0.5,
 					amount_min = 1,
-					amount_max = 10,
+					amount_max = 3,
 				},
 			},
 		},
