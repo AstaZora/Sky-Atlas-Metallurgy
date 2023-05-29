@@ -6,6 +6,7 @@ data:extend({
 		category = "crafting",
 		subgroup = "metallurgy-processes",
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		energy_required = 1,
 		ingredients = { { "laterite-ore", 8 } },
 		results = {
@@ -21,6 +22,7 @@ data:extend({
 		category = "crafting",
 		subgroup = "metallurgy-processes",
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		energy_required = 1,
 		ingredients = { { "bauxite-ore", 8 } },
 		results = {
@@ -41,6 +43,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "cobaltite-ore", 4 },
 		},
@@ -58,6 +61,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "bauxite-ore", 4 },
 		},
@@ -71,6 +75,7 @@ data:extend({
 		category = "crafting",
 		subgroup = "metallurgy-processes",
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		energy_required = 3,
 		ingredients = { { "chromite-ore", 8 } },
 		results = {
@@ -86,6 +91,7 @@ data:extend({
 		category = "crafting",
 		subgroup = "metallurgy-processes",
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		energy_required = 1,
 		ingredients = { { "aluminum-ore", 8 } },
 		results = {
@@ -100,6 +106,7 @@ data:extend({
 		category = "crafting",
 		subgroup = "metallurgy-processes",
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		energy_required = 1,
 		ingredients = { { "cobalt-ore", 8 } },
 		results = {
@@ -118,6 +125,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "cobaltite-ore", 4 },
 		},
@@ -138,6 +146,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "bauxite-ore", 4 },
 		},
@@ -154,6 +163,7 @@ data:extend({
 		category = "crafting",
 		subgroup = "metallurgy-processes",
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		energy_required = 1,
 		ingredients = { { "cobaltite-ore", 8 } },
 		results = {
@@ -170,6 +180,7 @@ data:extend({
 		category = "centrifuging",
 		subgroup = "metallurgy-processes",
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		energy_required = 30,
 		ingredients = { { "monazite-ore", 10 } },
 		results = {
@@ -198,6 +209,7 @@ data:extend({
 		category = "crafting",
 		subgroup = "metallurgy-processes",
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		energy_required = 8,
 		ingredients = { { "rare-earth-ore", 10 } },
 		results = {
@@ -221,6 +233,7 @@ data:extend({
 		category = "crafting",
 		subgroup = "metallurgy-processes",
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		energy_required = 8,
 		ingredients = { { "galena-ore", 10 } },
 		results = {
@@ -239,6 +252,31 @@ data:extend({
 	},
 	{
 		type = "recipe",
+		name = "carbonatite-refining",
+		icon = "__base__/graphics/icons/coal.png",
+		category = "crafting",
+		subgroup = "metallurgy-processes",
+		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
+		energy_required = 8,
+		ingredients = {{"carbonatite-ore", 10}},
+		results =
+		{
+		  {
+			name = "scarce-metal-ores",
+			probability = 1,
+			amount = 5,
+		  },
+		  {
+			name = "valuable-metal-ores",
+			probability = 1,
+			amount = 5
+		  }
+		},
+		icon_size = 64
+	  },
+	{
+		type = "recipe",
 		name = "alloy-furnace",
 		icon = "__base__/graphics/icons/electric-furnace.png",
 		category = "crafting",
@@ -248,6 +286,20 @@ data:extend({
 		ingredients = { { "cobalt-plate", 10 }, { "nickel-plate", 10 }, { "iron-plate", 10 }, { "stone-brick", 25 } },
 		results = {
 			{ "alloy-furnace", 1 },
+		},
+		icon_size = 64,
+	},
+	{
+		type = "recipe",
+		name = "advanced-alloy-furnace",
+		icon = "__base__/graphics/icons/electric-furnace.png",
+		category = "crafting",
+		subgroup = "sam-recipes",
+		enabled = true,
+		energy_required = 36,
+		ingredients = { { "havar-plate", 10 }, { "invar-plate", 10 }, { "steel-plate", 30 }, { "advanced-circuit", 25 } },
+		results = {
+			{ "advanced-alloy-furnace", 1 },
 		},
 		icon_size = 64,
 	},
@@ -277,6 +329,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "magnetite-ore", 4 },
 			{ "haematite-ore", 4 },
@@ -296,6 +349,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "limonite-ore", 4 },
 		},
@@ -315,6 +369,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "magnetite-ore", 4 },
 		},
@@ -332,6 +387,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "magnetite-rock", 2 },
 			{ "sulfur", 1 },
@@ -350,6 +406,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "magnetite-chunk", 2 },
 		},
@@ -367,6 +424,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "crushed-magnetite", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -388,6 +446,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 8,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "magnetite-ore", 4 },
 		},
@@ -406,6 +465,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "magnetite-slurry", amount = 50 },
 		},
@@ -423,6 +483,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "magnetite-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -442,6 +503,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "purified-magnetite-shard", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -463,6 +525,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "magnetite-ore", 4 },
 		},
@@ -480,6 +543,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "magnetite-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -498,6 +562,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "refined-magnetite-powder", 2 },
 			{ type = "fluid", name = "steam", amount = 50 },
@@ -516,6 +581,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "pure-magnetite-powder", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -539,6 +605,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "malachite-ore", 4 },
 		},
@@ -556,6 +623,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "malachite-rock", 2 },
 			{ "sulfur", 1 },
@@ -574,6 +642,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "malachite-chunk", 2 },
 		},
@@ -591,6 +660,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "crushed-malachite", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -612,6 +682,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 8,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "malachite-ore", 4 },
 		},
@@ -630,6 +701,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "malachite-slurry", amount = 50 },
 		},
@@ -647,6 +719,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "malachite-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -666,6 +739,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "purified-malachite-shard", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -687,6 +761,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "malachite-ore", 4 },
 		},
@@ -704,6 +779,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "malachite-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -722,6 +798,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "refined-malachite-powder", 2 },
 			{ type = "fluid", name = "steam", amount = 50 },
@@ -740,6 +817,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "pure-malachite-powder", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -763,6 +841,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "nickel-ore", 4 },
 		},
@@ -780,6 +859,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "nickel-rock", 2 },
 			{ "sulfur", 1 },
@@ -798,6 +878,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "nickel-chunk", 2 },
 		},
@@ -815,6 +896,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "crushed-nickel", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -836,6 +918,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 8,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "nickel-ore", 4 },
 		},
@@ -854,6 +937,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "nickel-slurry", amount = 50 },
 		},
@@ -871,6 +955,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "nickel-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -890,6 +975,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "purified-nickel-shard", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -911,6 +997,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "nickel-ore", 4 },
 		},
@@ -928,6 +1015,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "nickel-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -946,6 +1034,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "refined-nickel-powder", 2 },
 			{ type = "fluid", name = "steam", amount = 50 },
@@ -964,6 +1053,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "pure-nickel-powder", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -987,6 +1077,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "cobalt-ore", 4 },
 		},
@@ -1004,6 +1095,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "cobalt-rock", 2 },
 			{ "sulfur", 1 },
@@ -1022,6 +1114,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "cobalt-chunk", 2 },
 		},
@@ -1039,6 +1132,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "crushed-cobalt", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -1060,6 +1154,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 8,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "cobalt-ore", 4 },
 		},
@@ -1078,6 +1173,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "cobalt-slurry", amount = 50 },
 		},
@@ -1095,6 +1191,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "cobalt-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -1114,6 +1211,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "purified-cobalt-shard", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -1135,6 +1233,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "cobalt-ore", 4 },
 		},
@@ -1152,6 +1251,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "cobalt-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -1170,6 +1270,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "refined-cobalt-powder", 2 },
 			{ type = "fluid", name = "steam", amount = 50 },
@@ -1188,6 +1289,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "pure-cobalt-powder", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -1211,6 +1313,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "aluminum-ore", 4 },
 		},
@@ -1228,6 +1331,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "aluminum-rock", 2 },
 			{ "sulfur", 1 },
@@ -1246,6 +1350,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "aluminum-chunk", 2 },
 		},
@@ -1263,6 +1368,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "crushed-aluminum", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -1284,6 +1390,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 8,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "aluminum-ore", 4 },
 		},
@@ -1302,6 +1409,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "aluminum-slurry", amount = 50 },
 		},
@@ -1319,6 +1427,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "aluminum-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -1338,6 +1447,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "purified-aluminum-shard", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -1359,6 +1469,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "aluminum-ore", 4 },
 		},
@@ -1376,6 +1487,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "aluminum-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -1394,6 +1506,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "refined-aluminum-powder", 2 },
 			{ type = "fluid", name = "steam", amount = 50 },
@@ -1412,6 +1525,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "pure-aluminum-powder", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -1432,6 +1546,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "magnetite-ore", 2 },
 			{ "titanium-ore", 6 },
@@ -1451,6 +1566,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "ilmenite-ore", 4 },
 		},
@@ -1471,6 +1587,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "titanium-ore", 4 },
 		},
@@ -1488,6 +1605,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "titanium-rock", 2 },
 			{ "sulfur", 1 },
@@ -1506,6 +1624,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "titanium-chunk", 2 },
 		},
@@ -1523,6 +1642,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "crushed-titanium", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -1544,6 +1664,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 8,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "titanium-ore", 4 },
 		},
@@ -1562,6 +1683,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "titanium-slurry", amount = 50 },
 		},
@@ -1579,6 +1701,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "titanium-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -1598,6 +1721,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "purified-titanium-shard", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -1619,6 +1743,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "titanium-ore", 4 },
 		},
@@ -1636,6 +1761,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "titanium-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -1654,6 +1780,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "refined-titanium-powder", 2 },
 			{ type = "fluid", name = "steam", amount = 50 },
@@ -1672,6 +1799,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "pure-titanium-powder", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -1694,6 +1822,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "chromite-ore", 4 },
 		},
@@ -1711,6 +1840,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "chromium-rock", 2 },
 			{ "sulfur", 1 },
@@ -1729,6 +1859,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "chromium-chunk", 2 },
 		},
@@ -1746,6 +1877,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "crushed-chromium", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -1767,6 +1899,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 8,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "chromite-ore", 4 },
 		},
@@ -1785,6 +1918,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "chromium-slurry", amount = 50 },
 		},
@@ -1802,6 +1936,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "chromium-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -1821,6 +1956,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "purified-chromium-shard", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -1842,6 +1978,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "chromite-ore", 4 },
 		},
@@ -1859,6 +1996,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "chromium-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -1877,6 +2015,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "refined-chromium-powder", 2 },
 			{ type = "fluid", name = "steam", amount = 50 },
@@ -1895,6 +2034,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "pure-chromium-powder", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -1918,6 +2058,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "lead-ore", 4 },
 		},
@@ -1935,6 +2076,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "lead-rock", 2 },
 			{ "sulfur", 1 },
@@ -1953,6 +2095,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "lead-chunk", 2 },
 		},
@@ -1970,6 +2113,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "crushed-lead", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -1991,6 +2135,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 8,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "lead-ore", 4 },
 		},
@@ -2009,6 +2154,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "lead-slurry", amount = 50 },
 		},
@@ -2026,6 +2172,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "lead-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -2045,6 +2192,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "purified-lead-shard", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -2066,6 +2214,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "lead-ore", 4 },
 		},
@@ -2083,6 +2232,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "lead-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -2101,6 +2251,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "refined-lead-powder", 2 },
 			{ type = "fluid", name = "steam", amount = 50 },
@@ -2119,6 +2270,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "pure-lead-powder", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -2142,6 +2294,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "tin-ore", 4 },
 		},
@@ -2159,6 +2312,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "tin-rock", 2 },
 			{ "sulfur", 1 },
@@ -2177,6 +2331,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "tin-chunk", 2 },
 		},
@@ -2194,6 +2349,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "crushed-tin", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -2215,6 +2371,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 8,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "tin-ore", 4 },
 		},
@@ -2233,6 +2390,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "tin-slurry", amount = 50 },
 		},
@@ -2250,6 +2408,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "tin-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -2269,6 +2428,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "purified-tin-shard", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -2290,6 +2450,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "tin-ore", 4 },
 		},
@@ -2307,6 +2468,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "tin-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -2325,6 +2487,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "refined-tin-powder", 2 },
 			{ type = "fluid", name = "steam", amount = 50 },
@@ -2343,6 +2506,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "pure-tin-powder", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -2366,6 +2530,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "thorium-ore", 4 },
 		},
@@ -2383,6 +2548,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "thorium-rock", 2 },
 			{ "sulfur", 1 },
@@ -2401,6 +2567,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "thorium-chunk", 2 },
 		},
@@ -2418,6 +2585,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "crushed-thorium", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -2439,6 +2607,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 8,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "thorium-ore", 4 },
 		},
@@ -2457,6 +2626,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "thorium-slurry", amount = 50 },
 		},
@@ -2474,6 +2644,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "thorium-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -2493,6 +2664,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "purified-thorium-shard", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -2514,6 +2686,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "thorium-ore", 4 },
 		},
@@ -2531,6 +2704,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "thorium-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -2549,6 +2723,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "refined-thorium-powder", 2 },
 			{ type = "fluid", name = "steam", amount = 50 },
@@ -2567,6 +2742,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "pure-thorium-powder", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -2590,6 +2766,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "samarium-ore", 4 },
 		},
@@ -2607,6 +2784,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "samarium-rock", 2 },
 			{ "sulfur", 1 },
@@ -2625,6 +2803,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "samarium-chunk", 2 },
 		},
@@ -2642,6 +2821,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "crushed-samarium", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -2663,6 +2843,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 8,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "samarium-ore", 4 },
 		},
@@ -2681,6 +2862,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "samarium-slurry", amount = 50 },
 		},
@@ -2698,6 +2880,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "samarium-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -2717,6 +2900,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "purified-samarium-shard", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -2738,6 +2922,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "samarium-ore", 4 },
 		},
@@ -2755,6 +2940,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "samarium-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -2773,6 +2959,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "refined-samarium-powder", 2 },
 			{ type = "fluid", name = "steam", amount = 50 },
@@ -2791,6 +2978,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "pure-samarium-powder", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -2814,6 +3002,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "neodymium-ore", 4 },
 		},
@@ -2831,6 +3020,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "neodymium-rock", 2 },
 			{ "sulfur", 1 },
@@ -2849,6 +3039,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "neodymium-chunk", 2 },
 		},
@@ -2866,6 +3057,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "crushed-neodymium", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -2887,6 +3079,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 8,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "neodymium-ore", 4 },
 		},
@@ -2905,6 +3098,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "neodymium-slurry", amount = 50 },
 		},
@@ -2922,6 +3116,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "neodymium-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -2941,6 +3136,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "purified-neodymium-shard", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -2962,6 +3158,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "neodymium-ore", 4 },
 		},
@@ -2979,6 +3176,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "neodymium-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
@@ -2997,6 +3195,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "refined-neodymium-powder", 2 },
 			{ type = "fluid", name = "steam", amount = 50 },
@@ -3015,6 +3214,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ "pure-neodymium-powder", 1 },
 			{ type = "fluid", name = "water", amount = 10 },
@@ -3085,6 +3285,7 @@ data:extend({
 		category = "oil-processing",
 		subgroup = "metallurgy-processes",
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		energy_required = 5,
 		ingredients = { { "oil-shale-ore", 1 }, { type = "fluid", name = "steam", amount = 100 } },
 		results = { --other resources include aluminum, magnesium, silicon - Check Oil Shale
@@ -3445,6 +3646,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 20,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "lubricant", amount = 20 },
 			{ type = "fluid", name = "light-oil", amount = 20 },
@@ -3465,6 +3667,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 20,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "lubricant", amount = 20 },
 			{ type = "fluid", name = "nitrogen", amount = 40 },
@@ -3484,6 +3687,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 20,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "chemical-oil", amount = 50 },
 			{ type = "fluid", name = "water", amount = 50 },
@@ -3505,6 +3709,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 20,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "chemical-water", amount = 20 },
 			{ type = "fluid", name = "water", amount = 50 },
@@ -3526,6 +3731,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 20,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "chemical-gas", amount = 20 },
 			{ type = "fluid", name = "water", amount = 50 },
@@ -3547,6 +3753,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 20,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "liquid-air", amount = 20 },
 			{ type = "fluid", name = "water", amount = 50 },
@@ -3568,6 +3775,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 20,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "lubricant", amount = 20 },
 			{ type = "fluid", name = "nitrogen", amount = 40 },
@@ -3587,6 +3795,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 20,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "nitrogen", amount = 10 },
 			{ type = "fluid", name = "hydrogen", amount = 30 },
@@ -3607,6 +3816,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 20,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "hydrogen", amount = 20 },
 			{ type = "fluid", name = "carbon-dioxide", amount = 30 },
@@ -3627,6 +3837,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 20,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "nitrogen", amount = 30 },
 			{ type = "fluid", name = "hydrogen", amount = 10 },
@@ -3647,6 +3858,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 20,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "hydrogen", amount = 10 },
 			{ type = "fluid", name = "chlorine", amount = 10 },
@@ -3667,6 +3879,7 @@ data:extend({
 		icon_mipmaps = 4,
 		energy_required = 20,
 		enabled = true,
+		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 		ingredients = {
 			{ type = "fluid", name = "hydrogen", amount = 10 },
 			{ type = "fluid", name = "fluorine", amount = 10 },
