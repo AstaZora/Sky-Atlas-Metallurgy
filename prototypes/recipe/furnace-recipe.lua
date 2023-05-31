@@ -9,7 +9,6 @@ data:extend({
 		results = { { "iron-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -20,7 +19,6 @@ data:extend({
 		results = { { "iron-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -31,7 +29,6 @@ data:extend({
 		results = { { "iron-plate", 1 } },
 		energy_required = 6,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -42,7 +39,6 @@ data:extend({
 		results = { { "iron-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -53,7 +49,6 @@ data:extend({
 		results = { { "iron-plate", 1 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -64,7 +59,6 @@ data:extend({
 		results = { { "iron-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -75,7 +69,6 @@ data:extend({
 		results = { { "iron-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -86,7 +79,6 @@ data:extend({
 		results = { { "iron-plate", 1 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -97,18 +89,16 @@ data:extend({
 		results = { { "iron-plate", 1 } },
 		energy_required = 3,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
 		name = "iron-plate-9",
 		category = "smelting",
-		subgroup = "intermediate-product",
+		subgroup = "refined-metallurgy",
 		ingredients = { { "pure-magnetite-ore", 10 } },
 		results = { { "iron-plate", 20 } },
 		energy_required = 20,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--regular iron smelting
 	{
@@ -119,7 +109,6 @@ data:extend({
 		results = { { "iron-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Haematite Smelting
 	{
@@ -131,7 +120,6 @@ data:extend({
 		results = { { "iron-plate", 1 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Copper Smelting
 	{
@@ -143,7 +131,6 @@ data:extend({
 		results = { { "copper-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -154,7 +141,6 @@ data:extend({
 		results = { { "copper-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -165,7 +151,6 @@ data:extend({
 		results = { { "copper-plate", 1 } },
 		energy_required = 6,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -176,7 +161,6 @@ data:extend({
 		results = { { "copper-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -187,7 +171,6 @@ data:extend({
 		results = { { "copper-plate", 1 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -198,7 +181,6 @@ data:extend({
 		results = { { "copper-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -209,7 +191,6 @@ data:extend({
 		results = { { "copper-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -220,7 +201,6 @@ data:extend({
 		results = { { "copper-plate", 1 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -231,7 +211,6 @@ data:extend({
 		results = { { "copper-plate", 1 } },
 		energy_required = 3,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -242,7 +221,6 @@ data:extend({
 		results = { { "copper-plate", 2 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Copper Ore Smelting
 	{
@@ -253,7 +231,6 @@ data:extend({
 		results = { { "copper-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Nickel Smelting
 	{
@@ -265,7 +242,6 @@ data:extend({
 		results = { { "nickel-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Raw Nickel Smelting
 	{
@@ -277,7 +253,6 @@ data:extend({
 		results = { { "nickel-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -288,7 +263,6 @@ data:extend({
 		results = { { "nickel-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -299,7 +273,6 @@ data:extend({
 		results = { { "nickel-plate", 1 } },
 		energy_required = 6,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -310,7 +283,6 @@ data:extend({
 		results = { { "nickel-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -321,7 +293,6 @@ data:extend({
 		results = { { "nickel-plate", 1 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -332,7 +303,6 @@ data:extend({
 		results = { { "nickel-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -343,7 +313,6 @@ data:extend({
 		results = { { "nickel-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -354,7 +323,6 @@ data:extend({
 		results = { { "nickel-plate", 1 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -365,7 +333,6 @@ data:extend({
 		results = { { "nickel-plate", 1 } },
 		energy_required = 3,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -376,7 +343,6 @@ data:extend({
 		results = { { "nickel-plate", 2 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Cobalt Smelting
 	{
@@ -384,11 +350,10 @@ data:extend({
 		name = "cobalt-plate-raw",
 		category = "smelting",
 		subgroup = "refined-metallurgy",
-		ingredients = { { "cobaltite-ore", 1 } },
+		ingredients = { { "cobaltite-ore", 6 } },
 		results = { { "cobalt-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Raw Cobalt Smelting
 	{
@@ -400,7 +365,6 @@ data:extend({
 		results = { { "cobalt-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -411,7 +375,6 @@ data:extend({
 		results = { { "cobalt-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -422,7 +385,6 @@ data:extend({
 		results = { { "cobalt-plate", 1 } },
 		energy_required = 6,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -433,7 +395,6 @@ data:extend({
 		results = { { "cobalt-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -444,7 +405,6 @@ data:extend({
 		results = { { "cobalt-plate", 1 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -455,7 +415,6 @@ data:extend({
 		results = { { "cobalt-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -466,7 +425,6 @@ data:extend({
 		results = { { "cobalt-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -477,7 +435,6 @@ data:extend({
 		results = { { "cobalt-plate", 1 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -488,18 +445,36 @@ data:extend({
 		results = { { "cobalt-plate", 1 } },
 		energy_required = 3,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
 		name = "cobalt-plate-9",
 		category = "smelting",
 		subgroup = "refined-metallurgy",
-		ingredients = { { "pure-cobalt-ore", 2 } },
+		ingredients = { { "imperfect-cobalt", 2 } },
 		results = { { "cobalt-plate", 2 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
+	},
+	{
+		type = "recipe",
+		name = "cobalt-plate-9",
+		category = "smelting",
+		subgroup = "refined-metallurgy",
+		ingredients = { { "pure-cobalt-ore", 1 } },
+		results = { { "cobalt-plate", 2 } },
+		energy_required = 4,
+		enabled = true,
+	},
+	{
+		type = "recipe",
+		name = "cobalt-plate-10",
+		category = "smelting",
+		subgroup = "refined-metallurgy",
+		ingredients = { { "refined-cobalt-ore", 1 } },
+		results = { { "cobalt-plate", 2 } },
+		energy_required = 4,
+		enabled = true,
 	},
 	--Raw Aluminum Smelting
 	{
@@ -511,7 +486,6 @@ data:extend({
 		results = { { "aluminum-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Raw Aluminum Smelting
 	{
@@ -523,7 +497,6 @@ data:extend({
 		results = { { "aluminum-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -534,7 +507,6 @@ data:extend({
 		results = { { "aluminum-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -545,7 +517,6 @@ data:extend({
 		results = { { "aluminum-plate", 1 } },
 		energy_required = 6,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -556,7 +527,6 @@ data:extend({
 		results = { { "aluminum-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -567,7 +537,6 @@ data:extend({
 		results = { { "aluminum-plate", 1 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -578,7 +547,6 @@ data:extend({
 		results = { { "aluminum-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -589,7 +557,6 @@ data:extend({
 		results = { { "aluminum-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -600,7 +567,6 @@ data:extend({
 		results = { { "aluminum-plate", 1 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -611,7 +577,6 @@ data:extend({
 		results = { { "aluminum-plate", 1 } },
 		energy_required = 3,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -622,7 +587,6 @@ data:extend({
 		results = { { "aluminum-plate", 2 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Titanium Smelting
 	{
@@ -634,7 +598,6 @@ data:extend({
 		results = { { "titanium-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -645,7 +608,6 @@ data:extend({
 		results = { { "titanium-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -656,7 +618,6 @@ data:extend({
 		results = { { "titanium-plate", 1 } },
 		energy_required = 6,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -667,7 +628,6 @@ data:extend({
 		results = { { "titanium-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -678,7 +638,6 @@ data:extend({
 		results = { { "titanium-plate", 1 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -689,7 +648,6 @@ data:extend({
 		results = { { "titanium-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -700,7 +658,6 @@ data:extend({
 		results = { { "titanium-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -711,7 +668,6 @@ data:extend({
 		results = { { "titanium-plate", 1 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -722,7 +678,6 @@ data:extend({
 		results = { { "titanium-plate", 1 } },
 		energy_required = 3,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -733,7 +688,6 @@ data:extend({
 		results = { { "titanium-plate", 2 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Chromium Smelting
 	{
@@ -745,7 +699,6 @@ data:extend({
 		results = { { "chromium-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -756,7 +709,6 @@ data:extend({
 		results = { { "chromium-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -767,7 +719,6 @@ data:extend({
 		results = { { "chromium-plate", 1 } },
 		energy_required = 6,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -778,7 +729,6 @@ data:extend({
 		results = { { "chromium-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -789,7 +739,6 @@ data:extend({
 		results = { { "chromium-plate", 1 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -800,7 +749,6 @@ data:extend({
 		results = { { "chromium-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -811,7 +759,6 @@ data:extend({
 		results = { { "chromium-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -822,7 +769,6 @@ data:extend({
 		results = { { "chromium-plate", 1 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -833,7 +779,6 @@ data:extend({
 		results = { { "chromium-plate", 1 } },
 		energy_required = 3,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -844,7 +789,6 @@ data:extend({
 		results = { { "chromium-plate", 2 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Lead Smelting
 	{
@@ -856,7 +800,6 @@ data:extend({
 		results = { { "lead-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -867,7 +810,6 @@ data:extend({
 		results = { { "lead-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -878,7 +820,6 @@ data:extend({
 		results = { { "lead-plate", 1 } },
 		energy_required = 6,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -889,7 +830,6 @@ data:extend({
 		results = { { "lead-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -900,7 +840,6 @@ data:extend({
 		results = { { "lead-plate", 1 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -911,7 +850,6 @@ data:extend({
 		results = { { "lead-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -922,7 +860,6 @@ data:extend({
 		results = { { "lead-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -933,7 +870,6 @@ data:extend({
 		results = { { "lead-plate", 1 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -944,7 +880,6 @@ data:extend({
 		results = { { "lead-plate", 1 } },
 		energy_required = 3,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -955,7 +890,6 @@ data:extend({
 		results = { { "lead-plate", 2 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Tin Smelting
 	{
@@ -967,7 +901,6 @@ data:extend({
 		results = { { "tin-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -978,7 +911,6 @@ data:extend({
 		results = { { "tin-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -989,7 +921,6 @@ data:extend({
 		results = { { "tin-plate", 1 } },
 		energy_required = 6,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1000,7 +931,6 @@ data:extend({
 		results = { { "tin-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1011,7 +941,6 @@ data:extend({
 		results = { { "tin-plate", 1 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1022,7 +951,6 @@ data:extend({
 		results = { { "tin-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1033,7 +961,6 @@ data:extend({
 		results = { { "tin-plate", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1044,7 +971,6 @@ data:extend({
 		results = { { "tin-plate", 1 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1055,7 +981,6 @@ data:extend({
 		results = { { "tin-plate", 1 } },
 		energy_required = 3,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1066,7 +991,6 @@ data:extend({
 		results = { { "tin-plate", 2 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Thorium Ore
 	{
@@ -1078,7 +1002,6 @@ data:extend({
 		results = { { "thorium-ore", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1089,7 +1012,6 @@ data:extend({
 		results = { { "thorium-ore", 1 } },
 		energy_required = 6,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1100,7 +1022,6 @@ data:extend({
 		results = { { "thorium-ore", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1111,7 +1032,6 @@ data:extend({
 		results = { { "thorium-ore", 1 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1122,7 +1042,6 @@ data:extend({
 		results = { { "thorium-ore", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1133,7 +1052,6 @@ data:extend({
 		results = { { "thorium-ore", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1144,7 +1062,6 @@ data:extend({
 		results = { { "thorium-ore", 1 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1155,7 +1072,6 @@ data:extend({
 		results = { { "thorium-ore", 1 } },
 		energy_required = 3,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1166,7 +1082,6 @@ data:extend({
 		results = { { "thorium-ore", 2 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Samarium Ore
 	{
@@ -1178,7 +1093,6 @@ data:extend({
 		results = { { "samarium-ore", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1189,7 +1103,6 @@ data:extend({
 		results = { { "samarium-ore", 1 } },
 		energy_required = 6,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1200,7 +1113,6 @@ data:extend({
 		results = { { "samarium-ore", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1211,7 +1123,6 @@ data:extend({
 		results = { { "samarium-ore", 1 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1222,7 +1133,6 @@ data:extend({
 		results = { { "samarium-ore", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1233,7 +1143,6 @@ data:extend({
 		results = { { "samarium-ore", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1244,7 +1153,6 @@ data:extend({
 		results = { { "samarium-ore", 1 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1255,7 +1163,6 @@ data:extend({
 		results = { { "samarium-ore", 1 } },
 		energy_required = 3,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1266,7 +1173,6 @@ data:extend({
 		results = { { "samarium-ore", 2 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Neodymium Ore
 	{
@@ -1278,7 +1184,6 @@ data:extend({
 		results = { { "neodymium-ore", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1289,7 +1194,6 @@ data:extend({
 		results = { { "neodymium-ore", 1 } },
 		energy_required = 6,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1300,7 +1204,6 @@ data:extend({
 		results = { { "neodymium-ore", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1311,7 +1214,6 @@ data:extend({
 		results = { { "neodymium-ore", 1 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1322,7 +1224,6 @@ data:extend({
 		results = { { "neodymium-ore", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1333,7 +1234,6 @@ data:extend({
 		results = { { "neodymium-ore", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1344,7 +1244,6 @@ data:extend({
 		results = { { "neodymium-ore", 1 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1355,7 +1254,6 @@ data:extend({
 		results = { { "neodymium-ore", 1 } },
 		energy_required = 3,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1366,7 +1264,6 @@ data:extend({
 		results = { { "neodymium-ore", 2 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Alloys Smelting
 	{
@@ -1378,7 +1275,6 @@ data:extend({
 		results = { { "chromium-steel", 2 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1389,7 +1285,6 @@ data:extend({
 		results = { { "invar-plate", 1 } },
 		energy_required = 7.5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1400,7 +1295,6 @@ data:extend({
 		results = { { "incoloy-plate", 1 } },
 		energy_required = 7.5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1411,7 +1305,6 @@ data:extend({
 		results = { { "monel-plate", 1 } },
 		energy_required = 7.5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1422,7 +1315,6 @@ data:extend({
 		results = { { "kovar-plate", 5 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1433,7 +1325,6 @@ data:extend({
 		results = { { "kovar-plate", 5 } },
 		energy_required = 10,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1444,7 +1335,6 @@ data:extend({
 		results = { { "soldering-plate", 2 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1455,7 +1345,6 @@ data:extend({
 		results = { { "light-bronze-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1466,7 +1355,6 @@ data:extend({
 		results = { { "duralumin-plate", 1 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1477,7 +1365,6 @@ data:extend({
 		results = { { "bronze-plate", 10 } },
 		energy_required = 10,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1488,7 +1375,6 @@ data:extend({
 		results = { { "havar-plate", 2 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--bulletproof Titanium
 	{
@@ -1500,7 +1386,6 @@ data:extend({
 		results = { { "titanium5-plate", 2 } },
 		energy_required = 5,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	--Magnet Age
 	{
@@ -1512,7 +1397,6 @@ data:extend({
 		results = { { "neodymium-magnet", 1 } },
 		energy_required = 8,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1523,7 +1407,6 @@ data:extend({
 		results = { { "permalloy-magnet", 1 } },
 		energy_required = 3,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1534,7 +1417,6 @@ data:extend({
 		results = { { "smco-magnet", 2 } },
 		energy_required = 2,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 	{
 		type = "recipe",
@@ -1552,6 +1434,5 @@ data:extend({
 		results = { { "alnico-magnet", 10 } },
 		energy_required = 40,
 		enabled = true,
-		allowed_effects = {"speed", "productivity", "consumption", "pollution"},
 	},
 })

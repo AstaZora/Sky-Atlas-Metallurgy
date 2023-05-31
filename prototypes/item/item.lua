@@ -1341,7 +1341,7 @@ data:extend({
 	{
 		type = "item",
 		name = "cobalt-powder",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-powder-raw.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
 		subgroup = "raw-metallurgy",
@@ -1351,7 +1351,7 @@ data:extend({
 	{
 		type = "item",
 		name = "refined-cobalt-powder",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-powder.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
 		subgroup = "raw-metallurgy",
@@ -1361,7 +1361,7 @@ data:extend({
 	{
 		type = "item",
 		name = "pure-cobalt-powder",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-pure-powder.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
 		subgroup = "raw-metallurgy",
@@ -1391,7 +1391,7 @@ data:extend({
 	{
 		type = "item",
 		name = "cobalt-shard",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-shard.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
 		subgroup = "raw-metallurgy",
@@ -1401,7 +1401,7 @@ data:extend({
 	{
 		type = "item",
 		name = "purified-cobalt-shard",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-pure-shard.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
 		subgroup = "raw-metallurgy",
@@ -1411,13 +1411,34 @@ data:extend({
 	{
 		type = "item",
 		name = "pure-cobalt-ore",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-pure.png",
-		icon_size = 32,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-pure-ore.png",
+		icon_size =64,
 		icon_mipmaps = 4,
 		subgroup = "raw-metallurgy",
 		order = "b[raw-cobalt]",
 		stack_size = 50,
 	},
+	{
+		type = "item",
+		name = "refined-cobalt-ore",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-refined.png",
+		icon_size =64,
+		icon_mipmaps = 4,
+		subgroup = "raw-metallurgy",
+		order = "b[raw-cobalt]",
+		stack_size = 50,
+	},
+	{
+		type = "item",
+		name = "imperfect-cobalt",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-imperfect-ore.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		subgroup = "raw-metallurgy",
+		order = "b[raw-cobalt]",
+		stack_size = 50,
+	},
+
 
 	--Aluminum
 	{
