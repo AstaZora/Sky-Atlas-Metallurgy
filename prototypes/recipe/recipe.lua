@@ -1018,6 +1018,7 @@ data:extend({
 		type = "recipe",
 		name = "cobalt-rock",
 		category = "crafting",
+		main_product = "cobalt-rock",
 		hide_from_player_crafting = true,
 		order = "aa",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-rock.png",
@@ -1028,13 +1029,24 @@ data:extend({
 		ingredients = {
 			{ "cobalt-ore", 4 },
 		},
-		result = "cobalt-rock",
-		result_count = 3,
+		results = {
+			{
+				name = "cobalt-rock",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "cobalt-rock",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "cobalt-chunk",
 		category = "alloy-smelting",
+		main_product = "cobalt-chunk",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-chunk.png",
@@ -1046,13 +1058,24 @@ data:extend({
 			{ "cobalt-rock", 2 },
 			{ "sulfur", 1 },
 		},
-		result = "cobalt-chunk",
-		result_count = 3,
+		results = {
+			{
+				name = "cobalt-chunk",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "cobalt-chunk",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "crushed-cobalt",
 		category = "basic-crafting",
+		main_product = "crushed-cobalt",
 		hide_from_player_crafting = true,
 		order = "ac",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-crushed.png",
@@ -1063,13 +1086,24 @@ data:extend({
 		ingredients = {
 			{ "cobalt-chunk", 2 },
 		},
-		result = "crushed-cobalt",
-		result_count = 3,
+		results = {
+			{
+				name = "crushed-cobalt",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "crushed-cobalt",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-cobalt-ore",
 		category = "chemistry",
+		main_product = "refined-cobalt-ore",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-pure.png",
@@ -1078,12 +1112,22 @@ data:extend({
 		energy_required = 2,
 		enabled = true,
 		ingredients = {
-			{ "crushed-cobalt", 1 },
+			{ "crushed-cobalt", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
 			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
 		},
-		result = "refined-cobalt-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-cobalt-ore",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-cobalt-ore",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 
 	--Cobalt Purification (Chemical)
@@ -1109,6 +1153,7 @@ data:extend({
 		type = "recipe",
 		name = "cobalt-shard",
 		category = "chemistry",
+		main_product = "cobalt-shard",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
@@ -1117,15 +1162,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ type = "fluid", name = "cobalt-slurry", amount = 20 },
+			{ type = "fluid", name = "cobalt-slurry", amount = 40 },
 		},
-		result = "cobalt-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "cobalt-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "cobalt-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-cobalt-shard",
 		category = "chemistry",
+		main_product = "purified-cobalt-shard",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
@@ -1138,13 +1194,24 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 25 },
 			{ type = "fluid", name = "steam", amount = 10 },
 		},
-		result = "purified-cobalt-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "purified-cobalt-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "purified-cobalt-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-cobalt-ore-chemical",
 		category = "chemistry",
+		main_product = "imperfect-cobalt",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
@@ -1153,12 +1220,22 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "purified-cobalt-shard", 1 },
+			{ "purified-cobalt-shard", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
 			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
 		},
-		result = "imperfect-cobalt",
-		result_count = 3,
+		results = {
+			{
+				name = "imperfect-cobalt",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "imperfect-cobalt",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 
 	--Cobalt Purification (Powder)
@@ -1166,6 +1243,7 @@ data:extend({
 		type = "recipe",
 		name = "cobalt-powder",
 		category = "crafting",
+		main_product = "cobalt-powder",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
@@ -1176,13 +1254,24 @@ data:extend({
 		ingredients = {
 			{ "imperfect-cobalt", 2 },
 		},
-		result = "cobalt-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "cobalt-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "cobalt-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "refined-cobalt-powder",
 		category = "chemistry",
+		main_product = "refined-cobalt-powder",
 		hide_from_player_crafting = true,
 		order = "ac",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
@@ -1194,13 +1283,24 @@ data:extend({
 			{ "cobalt-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
 		},
-		result = "refined-cobalt-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-cobalt-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-cobalt-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-cobalt-powder",
 		category = "chemistry",
+		main_product = "pure-cobalt-powder",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-ore.png",
@@ -1212,8 +1312,18 @@ data:extend({
 			{ "refined-cobalt-powder", 2 },
 			{ type = "fluid", name = "steam", amount = 50 },
 		},
-		result = "pure-cobalt-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "pure-cobalt-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "pure-cobalt-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",

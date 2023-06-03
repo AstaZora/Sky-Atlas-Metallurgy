@@ -462,7 +462,7 @@ data:extend({
 		category = "smelting",
 		subgroup = "refined-metallurgy",
 		ingredients = { { "pure-cobalt-ore", 1 } },
-		results = { { "cobalt-plate", 2 } },
+		results = { { "cobalt-plate", 1 } },
 		energy_required = 4,
 		enabled = true,
 	},

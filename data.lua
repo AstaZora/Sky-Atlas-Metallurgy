@@ -103,36 +103,37 @@ data.raw["recipe"]["utility-science-pack"].ingredients = {
 	{ "chromium-steel", 4 },
 	{ "neodymium-magnet", 5 },
 }
-table.insert(data.raw.module["productivity-module-3"].limitation, "iron-plate-raw")
-table.insert(data.raw.module["productivity-module-3"].limitation, "iron-plate-1")
-table.insert(data.raw.module["productivity-module-3"].limitation, "iron-plate-2")
-table.insert(data.raw.module["productivity-module-3"].limitation, "iron-plate-3")
-table.insert(data.raw.module["productivity-module-3"].limitation, "iron-plate-4")
-table.insert(data.raw.module["productivity-module-3"].limitation, "iron-plate-5")
-table.insert(data.raw.module["productivity-module-3"].limitation, "iron-plate-6")
-table.insert(data.raw.module["productivity-module-3"].limitation, "iron-plate-7")
-table.insert(data.raw.module["productivity-module-3"].limitation, "iron-plate-8")
-table.insert(data.raw.module["productivity-module-3"].limitation, "iron-plate-9")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-plate-raw")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-plate-1")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-plate-2")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-plate-3")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-plate-4")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-plate-5")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-plate-6")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-plate-7")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-plate-8")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-plate-9")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-plate-10")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-rock")
-table.insert(data.raw.module["productivity-module-3"].limitation, "pure-cobalt-ore")
-table.insert(data.raw.module["productivity-module-3"].limitation, "crushed-cobalt")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-slurry")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-shard")
-table.insert(data.raw.module["productivity-module-3"].limitation, "pure-cobalt-shard")
-table.insert(data.raw.module["productivity-module-3"].limitation, "pure-cobalt-ore-chemical")
-table.insert(data.raw.module["productivity-module-3"].limitation, "cobalt-powder")
-table.insert(data.raw.module["productivity-module-3"].limitation, "refined-cobalt-powder")
-table.insert(data.raw.module["productivity-module-3"].limitation, "pure-cobalt-powder")
-table.insert(data.raw.module["productivity-module-3"].limitation, "pure-cobalt-ore-powder")
+  
+local my_productivity_list = {
+		"iron-plate-raw",
+		"iron-plate-1",
+		"iron-plate-2",
+		"iron-plate-3",
+  		"iron-plate-4",
+  		"iron-plate-5",
+  		"iron-plate-6",
+  		"iron-plate-7",
+  		"iron-plate-8",
+  		"iron-plate-9",
+ 		 "cobalt-plate-raw",
+  		"cobalt-plate-1",
+ 		 "cobalt-plate-2",
+  		"cobalt-plate-3",
+  		"cobalt-plate-4",
+  		"cobalt-plate-5",
+  		"cobalt-plate-6",
+ 		 "cobalt-plate-7",
+  		"cobalt-plate-8",
+  		"cobalt-plate-9",
+  		"cobalt-plate-10",
+}
 
+for _, module in pairs(data.raw.module) do
+    local limitations = module.limitation
+    if limitations then
+        --assumes only productivity has limitations
+        for _, recipe_name in pairs(my_productivity_list) do
+            table.insert(limitations, recipe_name)
+        end
+    end
+end
