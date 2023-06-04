@@ -1010,10 +1010,7 @@ data:extend({
 		result = "pure-nickel-ore",
 		result_count = 3,
 	},
-
 	--Cobalt Refining
-
-	--Cobalt Purification (Raw)
 	{
 		type = "recipe",
 		name = "cobalt-rock",
@@ -1114,7 +1111,7 @@ data:extend({
 		ingredients = {
 			{ "crushed-cobalt", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "muriatic-acid", amount = 10 },
 		},
 		results = {
 			{
@@ -1129,8 +1126,6 @@ data:extend({
 			},
 		}
 	},
-
-	--Cobalt Purification (Chemical)
 	{
 		type = "recipe",
 		name = "cobalt-slurry",
@@ -1192,7 +1187,7 @@ data:extend({
 		ingredients = {
 			{ "cobalt-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
-			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "nitric-acid", amount = 10 },
 		},
 		results = {
 			{
@@ -1222,7 +1217,7 @@ data:extend({
 		ingredients = {
 			{ "purified-cobalt-shard", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "azane-acid", amount = 10 },
 		},
 		results = {
 			{
@@ -1237,8 +1232,6 @@ data:extend({
 			},
 		}
 	},
-
-	--Cobalt Purification (Powder)
 	{
 		type = "recipe",
 		name = "cobalt-powder",
@@ -1310,7 +1303,7 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "refined-cobalt-powder", 2 },
-			{ type = "fluid", name = "steam", amount = 50 },
+			{ type = "fluid", name = "dilute-acid-solution", amount = 10 },
 		},
 		results = {
 			{
@@ -1338,8 +1331,8 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "pure-cobalt-powder", 1 },
-			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "acid-cleaning-solution", amount = 10 },
 		},
 		result = "pure-cobalt-ore",
 		result_count = 3,
@@ -3822,6 +3815,186 @@ data:extend({
 		},
 		results = {
 			{ type = "fluid", name = "muriatic-acid", amount = 50 },
+		},
+	},
+	{
+		type = "recipe",
+		name = "verelic-acid",
+		category = "oil-processing",
+		subgroup = "sam-fluid-recipes",
+		order = "ba",
+		icon = "__base__/graphics/icons/fluid/water.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 20,
+		enabled = true,
+		ingredients = {
+			{ type = "fluid", name = "nitrogen", amount = 10 },
+			{ type = "fluid", name = "oxygen", amount = 20 },
+			{ type = "fluid", name = "water", amount = 50 },
+		},
+		results = {
+			{ type = "fluid", name = "verelic-acid", amount = 50 },
+		},
+	},
+	{
+		type = "recipe",
+		name = "caudic-acid",
+		category = "oil-processing",
+		subgroup = "sam-fluid-recipes",
+		order = "ba",
+		icon = "__base__/graphics/icons/fluid/water.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 20,
+		enabled = true,
+		ingredients = {
+			{ type = "fluid", name = "carbon-dioxide", amount = 25 },
+			{ type = "fluid", name = "hydrogen", amount = 25 },
+			{ type = "fluid", name = "water", amount = 35 },
+		},
+		results = {
+			{ type = "fluid", name = "caudic-acid", amount = 50 },
+		},
+	},
+	{
+		type = "recipe",
+		name = "luret-acid",
+		category = "oil-processing",
+		subgroup = "sam-fluid-recipes",
+		order = "ba",
+		icon = "__base__/graphics/icons/fluid/water.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 20,
+		enabled = true,
+		ingredients = {
+			{ type = "fluid", name = "azane-acid", amount = 10 },
+			{ type = "fluid", name = "chloric-acid", amount = 30 },
+			{ type = "fluid", name = "water", amount = 20 },
+		},
+		results = {
+			{ type = "fluid", name = "luret-acid", amount = 50 },
+		},
+	},
+	{
+		type = "recipe",
+		name = "buren-acid",
+		category = "oil-processing",
+		subgroup = "sam-fluid-recipes",
+		order = "ba",
+		icon = "__base__/graphics/icons/fluid/water.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 20,
+		enabled = true,
+		ingredients = {
+			{ type = "fluid", name = "carbonic-acid", amount = 30 },
+			{ type = "fluid", name = "noble-gases", amount = 30 },
+			{ type = "fluid", name = "water", amount = 20 },
+		},
+		results = {
+			{ type = "fluid", name = "buren-acid", amount = 50 },
+		},
+	},
+	{
+		type = "recipe",
+		name = "genhal-acid",
+		category = "oil-processing",
+		subgroup = "sam-fluid-recipes",
+		order = "ba",
+		icon = "__base__/graphics/icons/fluid/water.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 20,
+		enabled = true,
+		ingredients = {
+			{ type = "fluid", name = "muriatic-acid", amount = 10 },
+			{ type = "fluid", name = "oxygen", amount = 30 },
+			{ type = "fluid", name = "water", amount = 20 },
+		},
+		results = {
+			{ type = "fluid", name = "genhal-acid", amount = 50 },
+		},
+	},
+	{
+		type = "recipe",
+		name = "vixal-acid",
+		category = "oil-processing",
+		subgroup = "sam-fluid-recipes",
+		order = "ba",
+		icon = "__base__/graphics/icons/fluid/water.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 20,
+		enabled = true,
+		ingredients = {
+			{ type = "fluid", name = "noble-gases", amount = 10 },
+			{ type = "fluid", name = "fluorine", amount = 30 },
+			{ type = "fluid", name = "oxygen", amount = 20 },
+		},
+		results = {
+			{ type = "fluid", name = "vixal-acid", amount = 50 },
+		},
+	},
+	{
+		type = "recipe",
+		name = "phaudec-acid",
+		category = "oil-processing",
+		subgroup = "sam-fluid-recipes",
+		order = "ba",
+		icon = "__base__/graphics/icons/fluid/water.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 20,
+		enabled = true,
+		ingredients = {
+			{ type = "fluid", name = "nitrogen", amount = 10 },
+			{ type = "fluid", name = "hydrogen", amount = 30 },
+			{ type = "fluid", name = "water", amount = 20 },
+		},
+		results = {
+			{ type = "fluid", name = "phaudec-acid", amount = 50 },
+		},
+	},
+	{
+		type = "recipe",
+		name = "dilute-acid-solution",
+		category = "oil-processing",
+		subgroup = "sam-fluid-recipes",
+		order = "ba",
+		icon = "__base__/graphics/icons/fluid/water.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 20,
+		enabled = true,
+		ingredients = {
+			{ type = "fluid", name = "lubricant", amount = 10 },
+			{ type = "fluid", name = "heavy-oil", amount = 30 },
+			{ type = "fluid", name = "coolant", amount = 20 },
+		},
+		results = {
+			{ type = "fluid", name = "dilute-acid-solution", amount = 100 },
+		},
+	},
+	{
+		type = "recipe",
+		name = "acid-cleaning-solution",
+		category = "oil-processing",
+		subgroup = "sam-fluid-recipes",
+		order = "ba",
+		icon = "__base__/graphics/icons/fluid/water.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 20,
+		enabled = true,
+		ingredients = {
+			{ type = "fluid", name = "chlorine", amount = 25 },
+			{ type = "fluid", name = "hydrogen", amount = 25},
+			{ type = "fluid", name = "steam", amount = 20 },
+		},
+		results = {
+			{ type = "fluid", name = "acid-cleaning-solution", amount = 50 },
 		},
 	},
 })
