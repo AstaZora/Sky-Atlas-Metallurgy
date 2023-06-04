@@ -3693,9 +3693,9 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 50 },
 		},
 		results = {
-			{ type = "fluid", name = "nitrogen", amount = 20 },
+			{ type = "fluid", name = "nitrogen", amount = 30 },
 			{ type = "fluid", name = "oxygen", amount = 20 },
-			{ type = "fluid", name = "hydrogen", amount = 20 },
+			{ type = "fluid", name = "hydrogen", amount = 10 },
 		},
 	},
 	{
