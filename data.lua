@@ -116,16 +116,10 @@ local my_productivity_list = {
   		"iron-plate-8",
   		"iron-plate-9",
  		"cobalt-plate-raw",
-  		"cobalt-plate-1",
+		"cobalt-plate-raw1",
+		"cobalt-plate-1",
  		"cobalt-plate-2",
   		"cobalt-plate-3",
-  		"cobalt-plate-4",
-  		"cobalt-plate-5",
-  		"cobalt-plate-6",
- 		"cobalt-plate-7",
-  		"cobalt-plate-8",
-  		"cobalt-plate-9",
-  		"cobalt-plate-10",
 }
 
 for _, module in pairs(data.raw.module) do
