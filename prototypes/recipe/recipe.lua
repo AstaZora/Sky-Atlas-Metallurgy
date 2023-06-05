@@ -3652,8 +3652,8 @@ data:extend({
 		},
 		results = {
 			{ type = "fluid", name = "liquid-air", amount = 60 },
-			{ type = "fluid", name = "chlorine", amount = 20 },
-			{ type = "fluid", name = "fluorine", amount = 20 },
+			{ type = "fluid", name = "chlorine", amount = 30 },
+			{ type = "fluid", name = "fluorine", amount = 30 },
 		},
 	},
 	{
@@ -3726,7 +3726,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 60,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "nitrogen", amount = 10 },
@@ -3746,7 +3746,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 60,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "hydrogen", amount = 20 },
@@ -3766,7 +3766,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 60,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "nitrogen", amount = 30 },
@@ -3786,7 +3786,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 60,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "hydrogen", amount = 10 },
@@ -3806,7 +3806,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 60,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "hydrogen", amount = 10 },
@@ -3826,7 +3826,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 120,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "nitrogen", amount = 10 },
@@ -3846,7 +3846,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 120,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "carbon-dioxide", amount = 25 },
@@ -3866,7 +3866,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 120,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "azane-acid", amount = 10 },
@@ -3886,7 +3886,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 120,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "carbonic-acid", amount = 30 },
@@ -3906,7 +3906,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 120,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "muriatic-acid", amount = 10 },
@@ -3926,7 +3926,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 120,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "noble-gases", amount = 10 },
@@ -3946,7 +3946,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 120,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "nitrogen", amount = 10 },
@@ -3966,7 +3966,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 120,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "lubricant", amount = 10 },
@@ -3986,7 +3986,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 120,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "chlorine", amount = 25 },
