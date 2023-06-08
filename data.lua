@@ -138,6 +138,10 @@ local my_productivity_list = {
 		"tin-plate-1",
 		"tin-plate-2",
 		"tin-plate-3",
+		"nickel-plate-raw",
+		"nickel-plate-1",
+		"nickel-plate-2",
+		"nickel-plate-3",
 }
 
 for _, module in pairs(data.raw.module) do
