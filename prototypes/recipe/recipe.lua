@@ -123,7 +123,7 @@ data:extend({
 		},
 		results = {
 			{ "cobalt-ore", 4 },
-			{ "stone", 4 },
+			{ "stone", 2 },
 		},
 		main_product = "cobalt-ore",
 	},
@@ -143,7 +143,7 @@ data:extend({
 		},
 		results = {
 			{ "aluminum-ore", 4 },
-			{ "stone", 4 },
+			{ "stone", 2 },
 		},
 		main_product = "aluminum-ore",
 	},
@@ -341,12 +341,13 @@ data:extend({
 		result_count = 8,
 	},
 	--Metallurgy Stages
-
-	--Magnetite Purification (Raw)
+	--Magnetite Refining
 	{
 		type = "recipe",
 		name = "magnetite-rock",
 		category = "crafting",
+		main_product = "magnetite-rock",
+		hide_from_player_crafting = true,
 		order = "aa",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-rock.png",
 		icon_size = 32,
@@ -356,13 +357,24 @@ data:extend({
 		ingredients = {
 			{ "magnetite-ore", 4 },
 		},
-		result = "magnetite-rock",
-		result_count = 3,
+		results = {
+			{
+				name = "magnetite-rock",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "magnetite-rock",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "magnetite-chunk",
 		category = "alloy-smelting",
+		main_product = "magnetite-chunk",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-chunk.png",
@@ -374,13 +386,24 @@ data:extend({
 			{ "magnetite-rock", 2 },
 			{ "sulfur", 1 },
 		},
-		result = "magnetite-chunk",
-		result_count = 3,
+		results = {
+			{
+				name = "magnetite-chunk",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "magnetite-chunk",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "crushed-magnetite",
 		category = "basic-crafting",
+		main_product = "crushed-magnetite",
 		hide_from_player_crafting = true,
 		order = "ac",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-crushed.png",
@@ -391,30 +414,49 @@ data:extend({
 		ingredients = {
 			{ "magnetite-chunk", 2 },
 		},
-		result = "crushed-magnetite",
-		result_count = 3,
+		results = {
+			{
+				name = "crushed-magnetite",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "crushed-magnetite",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-magnetite-ore",
 		category = "chemistry",
+		main_product = "refined-magnetite-ore",
 		hide_from_player_crafting = true,
 		order = "ad",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/iron-pure.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-refined.png",
 		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
 		ingredients = {
-			{ "crushed-magnetite", 1 },
+			{ "crushed-magnetite", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
 			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
 		},
-		result = "pure-magnetite-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-magnetite-ore",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-magnetite-ore",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Magnetite Purification (Chemical)
 	{
 		type = "recipe",
 		name = "magnetite-slurry",
@@ -427,7 +469,7 @@ data:extend({
 		energy_required = 8,
 		enabled = true,
 		ingredients = {
-			{ "magnetite-ore", 4 },
+			{ "refined-magnetite-ore", 4 },
 		},
 		results = {
 			{ type = "fluid", name = "magnetite-slurry", amount = 50 },
@@ -437,6 +479,7 @@ data:extend({
 		type = "recipe",
 		name = "magnetite-shard",
 		category = "chemistry",
+		main_product = "magnetite-shard",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
@@ -445,15 +488,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ type = "fluid", name = "magnetite-slurry", amount = 50 },
+			{ type = "fluid", name = "magnetite-slurry", amount = 40 },
 		},
-		result = "magnetite-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "magnetite-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "magnetite-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-magnetite-shard",
 		category = "chemistry",
+		main_product = "purified-magnetite-shard",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
@@ -464,15 +518,26 @@ data:extend({
 		ingredients = {
 			{ "magnetite-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
-			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "carbonic-acid", amount = 10 },
 		},
-		result = "purified-magnetite-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "purified-magnetite-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "purified-magnetite-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-magnetite-ore-chemical",
 		category = "chemistry",
+		main_product = "imperfect-magnetite",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
@@ -481,19 +546,28 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "purified-magnetite-shard", 1 },
+			{ "purified-magnetite-shard", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "caudic-acid", amount = 10 },
 		},
-		result = "pure-magnetite-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "imperfect-magnetite",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "imperfect-magnetite",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Magnetite Purification (Powder)
 	{
 		type = "recipe",
 		name = "magnetite-powder",
 		category = "crafting",
+		main_product = "magnetite-powder",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
@@ -502,15 +576,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "magnetite-ore", 4 },
+			{ "imperfect-magnetite", 2 },
 		},
-		result = "magnetite-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "magnetite-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "magnetite-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "refined-magnetite-powder",
 		category = "chemistry",
+		main_product = "refined-magnetite-powder",
 		hide_from_player_crafting = true,
 		order = "ac",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
@@ -522,13 +607,24 @@ data:extend({
 			{ "magnetite-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
 		},
-		result = "refined-magnetite-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-magnetite-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-magnetite-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-magnetite-powder",
 		category = "chemistry",
+		main_product = "pure-magnetite-powder",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
@@ -538,10 +634,20 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "refined-magnetite-powder", 2 },
-			{ type = "fluid", name = "steam", amount = 50 },
+			{ type = "fluid", name = "dilute-acid-solution", amount = 10 },
 		},
-		result = "pure-magnetite-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "pure-magnetite-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "pure-magnetite-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
@@ -556,20 +662,19 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "pure-magnetite-powder", 1 },
-			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "acid-cleaning-solution", amount = 10 },
 		},
 		result = "pure-magnetite-ore",
 		result_count = 3,
 	},
 
 	--Malachite Refining
-
-	--Malachite Purification (Raw)
 	{
 		type = "recipe",
 		name = "malachite-rock",
 		category = "crafting",
+		main_product = "malachite-rock",
 		hide_from_player_crafting = true,
 		order = "aa",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-rock.png",
@@ -580,13 +685,24 @@ data:extend({
 		ingredients = {
 			{ "malachite-ore", 4 },
 		},
-		result = "malachite-rock",
-		result_count = 3,
+		results = {
+			{
+				name = "malachite-rock",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "malachite-rock",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "malachite-chunk",
 		category = "alloy-smelting",
+		main_product = "malachite-chunk",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-chunk.png",
@@ -598,13 +714,24 @@ data:extend({
 			{ "malachite-rock", 2 },
 			{ "sulfur", 1 },
 		},
-		result = "malachite-chunk",
-		result_count = 3,
+		results = {
+			{
+				name = "malachite-chunk",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "malachite-chunk",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "crushed-malachite",
 		category = "basic-crafting",
+		main_product = "crushed-malachite",
 		hide_from_player_crafting = true,
 		order = "ac",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-crushed.png",
@@ -615,30 +742,49 @@ data:extend({
 		ingredients = {
 			{ "malachite-chunk", 2 },
 		},
-		result = "crushed-malachite",
-		result_count = 3,
+		results = {
+			{
+				name = "crushed-malachite",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "crushed-malachite",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-malachite-ore",
 		category = "chemistry",
+		main_product = "refined-malachite-ore",
 		hide_from_player_crafting = true,
 		order = "ad",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/copper-pure.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-refined.png",
 		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
 		ingredients = {
-			{ "crushed-malachite", 1 },
+			{ "crushed-malachite", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
 			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
 		},
-		result = "pure-malachite-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-malachite-ore",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-malachite-ore",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Malachite Purification (Chemical)
 	{
 		type = "recipe",
 		name = "malachite-slurry",
@@ -651,7 +797,7 @@ data:extend({
 		energy_required = 8,
 		enabled = true,
 		ingredients = {
-			{ "malachite-ore", 4 },
+			{ "refined-malachite-ore", 4 },
 		},
 		results = {
 			{ type = "fluid", name = "malachite-slurry", amount = 50 },
@@ -661,6 +807,7 @@ data:extend({
 		type = "recipe",
 		name = "malachite-shard",
 		category = "chemistry",
+		main_product = "malachite-shard",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
@@ -669,15 +816,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ type = "fluid", name = "malachite-slurry", amount = 50 },
+			{ type = "fluid", name = "malachite-slurry", amount = 40 },
 		},
-		result = "malachite-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "malachite-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "malachite-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-malachite-shard",
 		category = "chemistry",
+		main_product = "purified-malachite-shard",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
@@ -688,15 +846,26 @@ data:extend({
 		ingredients = {
 			{ "malachite-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
-			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "chloric-acid", amount = 10 },
 		},
-		result = "purified-malachite-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "purified-malachite-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "purified-malachite-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-malachite-ore-chemical",
 		category = "chemistry",
+		main_product = "imperfect-malachite",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
@@ -705,19 +874,28 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "purified-malachite-shard", 1 },
+			{ "purified-malachite-shard", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "luret-acid", amount = 10 },
 		},
-		result = "pure-malachite-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "imperfect-malachite",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "imperfect-malachite",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Malachite Purification (Powder)
 	{
 		type = "recipe",
 		name = "malachite-powder",
 		category = "crafting",
+		main_product = "malachite-powder",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
@@ -726,15 +904,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "malachite-ore", 4 },
+			{ "imperfect-malachite", 2 },
 		},
-		result = "malachite-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "malachite-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "malachite-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "refined-malachite-powder",
 		category = "chemistry",
+		main_product = "refined-malachite-powder",
 		hide_from_player_crafting = true,
 		order = "ac",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
@@ -746,13 +935,24 @@ data:extend({
 			{ "malachite-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
 		},
-		result = "refined-malachite-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-malachite-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-malachite-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-malachite-powder",
 		category = "chemistry",
+		main_product = "pure-malachite-powder",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/malachite-ore.png",
@@ -762,10 +962,20 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "refined-malachite-powder", 2 },
-			{ type = "fluid", name = "steam", amount = 50 },
+			{ type = "fluid", name = "dilute-acid-solution", amount = 10 },
 		},
-		result = "pure-malachite-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "pure-malachite-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "pure-malachite-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
@@ -780,41 +990,51 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "pure-malachite-powder", 1 },
-			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "acid-cleaning-solution", amount = 10 },
 		},
 		result = "pure-malachite-ore",
 		result_count = 3,
 	},
 
 	--Nickel Refining
-
-	--Nickel Purification (Raw)
 	{
 		type = "recipe",
 		name = "nickel-rock",
 		category = "crafting",
+		main_product = "nickel-rock",
 		hide_from_player_crafting = true,
 		order = "aa",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-rock.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ "nickel-ore", 4 },
 		},
-		result = "nickel-rock",
-		result_count = 3,
+		results = {
+			{
+				name = "nickel-rock",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "nickel-rock",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "nickel-chunk",
 		category = "alloy-smelting",
+		main_product = "nickel-chunk",
 		hide_from_player_crafting = true,
 		order = "ab",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-chunk.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
@@ -822,47 +1042,77 @@ data:extend({
 			{ "nickel-rock", 2 },
 			{ "sulfur", 1 },
 		},
-		result = "nickel-chunk",
-		result_count = 3,
+		results = {
+			{
+				name = "nickel-chunk",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "nickel-chunk",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "crushed-nickel",
 		category = "basic-crafting",
+		main_product = "crushed-nickel",
 		hide_from_player_crafting = true,
 		order = "ac",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-crushed.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ "nickel-chunk", 2 },
 		},
-		result = "crushed-nickel",
-		result_count = 3,
+		results = {
+			{
+				name = "crushed-nickel",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "crushed-nickel",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-nickel-ore",
 		category = "chemistry",
+		main_product = "refined-nickel-ore",
 		hide_from_player_crafting = true,
 		order = "ad",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-refined.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
 		ingredients = {
-			{ "crushed-nickel", 1 },
+			{ "crushed-nickel", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "nitric-acid", amount = 10 },
 		},
-		result = "pure-nickel-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-nickel-ore",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-nickel-ore",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Nickel Purification (Chemical)
 	{
 		type = "recipe",
 		name = "nickel-slurry",
@@ -875,7 +1125,7 @@ data:extend({
 		energy_required = 8,
 		enabled = true,
 		ingredients = {
-			{ "nickel-ore", 4 },
+			{ "refined-nickel-ore", 4 },
 		},
 		results = {
 			{ type = "fluid", name = "nickel-slurry", amount = 50 },
@@ -885,6 +1135,7 @@ data:extend({
 		type = "recipe",
 		name = "nickel-shard",
 		category = "chemistry",
+		main_product = "nickel-shard",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
@@ -893,15 +1144,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ type = "fluid", name = "nickel-slurry", amount = 50 },
+			{ type = "fluid", name = "nickel-slurry", amount = 40 },
 		},
-		result = "nickel-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "nickel-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "nickel-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-nickel-shard",
 		category = "chemistry",
+		main_product = "purified-nickel-shard",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
@@ -912,15 +1174,26 @@ data:extend({
 		ingredients = {
 			{ "nickel-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
-			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "azane-acid", amount = 10 },
 		},
-		result = "purified-nickel-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "purified-nickel-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "purified-nickel-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-nickel-ore-chemical",
 		category = "chemistry",
+		main_product = "imperfect-nickel",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
@@ -929,19 +1202,28 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "purified-nickel-shard", 1 },
+			{ "purified-nickel-shard", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "vixal-acid", amount = 10 },
 		},
-		result = "pure-nickel-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "imperfect-nickel",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "imperfect-nickel",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Nickel Purification (Powder)
 	{
 		type = "recipe",
 		name = "nickel-powder",
 		category = "crafting",
+		main_product = "nickel-powder",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
@@ -950,15 +1232,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "nickel-ore", 4 },
+			{ "imperfect-nickel", 2 },
 		},
-		result = "nickel-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "nickel-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "nickel-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "refined-nickel-powder",
 		category = "chemistry",
+		main_product = "refined-nickel-powder",
 		hide_from_player_crafting = true,
 		order = "ac",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
@@ -970,13 +1263,24 @@ data:extend({
 			{ "nickel-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
 		},
-		result = "refined-nickel-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-nickel-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-nickel-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-nickel-powder",
 		category = "chemistry",
+		main_product = "pure-nickel-powder",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/nickel-ore.png",
@@ -986,10 +1290,20 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "refined-nickel-powder", 2 },
-			{ type = "fluid", name = "steam", amount = 50 },
+			{ type = "fluid", name = "dilute-acid-solution", amount = 10 },
 		},
-		result = "pure-nickel-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "pure-nickel-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "pure-nickel-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
@@ -1004,12 +1318,13 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "pure-nickel-powder", 1 },
-			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "acid-cleaning-solution", amount = 10 },
 		},
 		result = "pure-nickel-ore",
 		result_count = 3,
 	},
+
 	--Cobalt Refining
 	{
 		type = "recipe",
@@ -1103,7 +1418,7 @@ data:extend({
 		main_product = "refined-cobalt-ore",
 		hide_from_player_crafting = true,
 		order = "ad",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-pure.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/cobalt-refined.png",
 		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 2,
@@ -1339,33 +1654,43 @@ data:extend({
 	},
 
 	--Aluminum Refining
-
-	--Aluminum Purification (Raw)
 	{
 		type = "recipe",
 		name = "aluminum-rock",
 		category = "crafting",
+		main_product = "aluminum-rock",
 		hide_from_player_crafting = true,
 		order = "aa",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-rock.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ "aluminum-ore", 4 },
 		},
-		result = "aluminum-rock",
-		result_count = 3,
+		results = {
+			{
+				name = "aluminum-rock",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "aluminum-rock",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "aluminum-chunk",
 		category = "alloy-smelting",
+		main_product = "aluminum-chunk",
 		hide_from_player_crafting = true,
 		order = "ab",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-chunk.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
@@ -1373,47 +1698,77 @@ data:extend({
 			{ "aluminum-rock", 2 },
 			{ "sulfur", 1 },
 		},
-		result = "aluminum-chunk",
-		result_count = 3,
+		results = {
+			{
+				name = "aluminum-chunk",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "aluminum-chunk",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "crushed-aluminum",
 		category = "basic-crafting",
+		main_product = "crushed-aluminum",
 		hide_from_player_crafting = true,
 		order = "ac",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-crushed.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ "aluminum-chunk", 2 },
 		},
-		result = "crushed-aluminum",
-		result_count = 3,
+		results = {
+			{
+				name = "crushed-aluminum",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "crushed-aluminum",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-aluminum-ore",
 		category = "chemistry",
+		main_product = "refined-aluminum-ore",
 		hide_from_player_crafting = true,
 		order = "ad",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-refined.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
 		ingredients = {
-			{ "crushed-aluminum", 1 },
+			{ "crushed-aluminum", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "chloric-acid", amount = 10 },
 		},
-		result = "pure-aluminum-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-aluminum-ore",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-aluminum-ore",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Aluminum Purification (Chemical)
 	{
 		type = "recipe",
 		name = "aluminum-slurry",
@@ -1426,7 +1781,7 @@ data:extend({
 		energy_required = 8,
 		enabled = true,
 		ingredients = {
-			{ "aluminum-ore", 4 },
+			{ "refined-aluminum-ore", 4 },
 		},
 		results = {
 			{ type = "fluid", name = "aluminum-slurry", amount = 50 },
@@ -1436,6 +1791,7 @@ data:extend({
 		type = "recipe",
 		name = "aluminum-shard",
 		category = "chemistry",
+		main_product = "aluminum-shard",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
@@ -1444,15 +1800,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ type = "fluid", name = "aluminum-slurry", amount = 50 },
+			{ type = "fluid", name = "aluminum-slurry", amount = 40 },
 		},
-		result = "aluminum-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "aluminum-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "aluminum-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-aluminum-shard",
 		category = "chemistry",
+		main_product = "purified-aluminum-shard",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
@@ -1463,15 +1830,26 @@ data:extend({
 		ingredients = {
 			{ "aluminum-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
-			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "muriatic-acid", amount = 10 },
 		},
-		result = "purified-aluminum-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "purified-aluminum-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "purified-aluminum-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-aluminum-ore-chemical",
 		category = "chemistry",
+		main_product = "imperfect-aluminum",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
@@ -1480,19 +1858,28 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "purified-aluminum-shard", 1 },
+			{ "purified-aluminum-shard", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "verelic-acid", amount = 10 },
 		},
-		result = "pure-aluminum-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "imperfect-aluminum",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "imperfect-aluminum",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Aluminum Purification (Powder)
 	{
 		type = "recipe",
 		name = "aluminum-powder",
 		category = "crafting",
+		main_product = "aluminum-powder",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
@@ -1501,15 +1888,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "aluminum-ore", 4 },
+			{ "imperfect-aluminum", 2 },
 		},
-		result = "aluminum-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "aluminum-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "aluminum-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "refined-aluminum-powder",
 		category = "chemistry",
+		main_product = "refined-aluminum-powder",
 		hide_from_player_crafting = true,
 		order = "ac",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
@@ -1521,13 +1919,24 @@ data:extend({
 			{ "aluminum-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
 		},
-		result = "refined-aluminum-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-aluminum-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-aluminum-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-aluminum-powder",
 		category = "chemistry",
+		main_product = "pure-aluminum-powder",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aluminum-ore.png",
@@ -1537,10 +1946,20 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "refined-aluminum-powder", 2 },
-			{ type = "fluid", name = "steam", amount = 50 },
+			{ type = "fluid", name = "dilute-acid-solution", amount = 10 },
 		},
-		result = "pure-aluminum-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "pure-aluminum-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "pure-aluminum-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
@@ -1555,12 +1974,13 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "pure-aluminum-powder", 1 },
-			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "acid-cleaning-solution", amount = 10 },
 		},
 		result = "pure-aluminum-ore",
 		result_count = 3,
 	},
+
 	-- Titanium Creation
 	{
 		type = "recipe",
@@ -1599,33 +2019,43 @@ data:extend({
 		result_count = 8,
 	},
 	--Titanium Refining
-
-	--Titanium Purification (Rsw)
 	{
 		type = "recipe",
 		name = "titanium-rock",
 		category = "crafting",
+		main_product = "titanium-rock",
 		hide_from_player_crafting = true,
 		order = "aa",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-rock.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ "titanium-ore", 4 },
 		},
-		result = "titanium-rock",
-		result_count = 3,
+		results = {
+			{
+				name = "titanium-rock",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "titanium-rock",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "titanium-chunk",
 		category = "alloy-smelting",
+		main_product = "titanium-chunk",
 		hide_from_player_crafting = true,
 		order = "ab",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-chunk.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
@@ -1633,47 +2063,77 @@ data:extend({
 			{ "titanium-rock", 2 },
 			{ "sulfur", 1 },
 		},
-		result = "titanium-chunk",
-		result_count = 3,
+		results = {
+			{
+				name = "titanium-chunk",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "titanium-chunk",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "crushed-titanium",
 		category = "basic-crafting",
+		main_product = "crushed-titanium",
 		hide_from_player_crafting = true,
 		order = "ac",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-crushed.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ "titanium-chunk", 2 },
 		},
-		result = "crushed-titanium",
-		result_count = 3,
+		results = {
+			{
+				name = "crushed-titanium",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "crushed-titanium",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-titanium-ore",
 		category = "chemistry",
+		main_product = "refined-titanium-ore",
 		hide_from_player_crafting = true,
 		order = "ad",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-refined.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
 		ingredients = {
-			{ "crushed-titanium", 1 },
+			{ "crushed-titanium", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "muriatic-acid", amount = 10 },
 		},
-		result = "pure-titanium-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-titanium-ore",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-titanium-ore",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Titanium Purification (Chemical)
 	{
 		type = "recipe",
 		name = "titanium-slurry",
@@ -1686,7 +2146,7 @@ data:extend({
 		energy_required = 8,
 		enabled = true,
 		ingredients = {
-			{ "titanium-ore", 4 },
+			{ "refined-titanium-ore", 4 },
 		},
 		results = {
 			{ type = "fluid", name = "titanium-slurry", amount = 50 },
@@ -1696,6 +2156,7 @@ data:extend({
 		type = "recipe",
 		name = "titanium-shard",
 		category = "chemistry",
+		main_product = "titanium-shard",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
@@ -1704,15 +2165,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ type = "fluid", name = "titanium-slurry", amount = 50 },
+			{ type = "fluid", name = "titanium-slurry", amount = 40 },
 		},
-		result = "titanium-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "titanium-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "titanium-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-titanium-shard",
 		category = "chemistry",
+		main_product = "purified-titanium-shard",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
@@ -1723,15 +2195,26 @@ data:extend({
 		ingredients = {
 			{ "titanium-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
-			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "carbonic-acid", amount = 10 },
 		},
-		result = "purified-titanium-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "purified-titanium-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "purified-titanium-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-titanium-ore-chemical",
 		category = "chemistry",
+		main_product = "imperfect-titanium",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
@@ -1740,19 +2223,28 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "purified-titanium-shard", 1 },
+			{ "purified-titanium-shard", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "genhal-acid", amount = 10 },
 		},
-		result = "pure-titanium-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "imperfect-titanium",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "imperfect-titanium",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Titanium Purification (Powder)
 	{
 		type = "recipe",
 		name = "titanium-powder",
 		category = "crafting",
+		main_product = "titanium-powder",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
@@ -1761,15 +2253,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "titanium-ore", 4 },
+			{ "imperfect-titanium", 2 },
 		},
-		result = "titanium-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "titanium-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "titanium-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "refined-titanium-powder",
 		category = "chemistry",
+		main_product = "refined-titanium-powder",
 		hide_from_player_crafting = true,
 		order = "ac",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
@@ -1781,13 +2284,24 @@ data:extend({
 			{ "titanium-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
 		},
-		result = "refined-titanium-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-titanium-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-titanium-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-titanium-powder",
 		category = "chemistry",
+		main_product = "pure-titanium-powder",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/titanium-ore.png",
@@ -1797,10 +2311,20 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "refined-titanium-powder", 2 },
-			{ type = "fluid", name = "steam", amount = 50 },
+			{ type = "fluid", name = "dilute-acid-solution", amount = 10 },
 		},
-		result = "pure-titanium-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "pure-titanium-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "pure-titanium-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
@@ -1815,91 +2339,132 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "pure-titanium-powder", 1 },
-			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "acid-cleaning-solution", amount = 10 },
 		},
 		result = "pure-titanium-ore",
 		result_count = 3,
 	},
 
 	--Chromite Refining
-	--Chromite Purification (Raw)
 	{
 		type = "recipe",
-		name = "chromium-rock",
+		name = "chromite-rock",
 		category = "crafting",
+		main_product = "chromite-rock",
 		hide_from_player_crafting = true,
 		order = "aa",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-rock.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ "chromite-ore", 4 },
 		},
-		result = "chromium-rock",
-		result_count = 3,
+		results = {
+			{
+				name = "chromite-rock",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "chromite-rock",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
-		name = "chromium-chunk",
+		name = "chromite-chunk",
 		category = "alloy-smelting",
+		main_product = "chromite-chunk",
 		hide_from_player_crafting = true,
 		order = "ab",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-chunk.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "chromium-rock", 2 },
+			{ "chromite-rock", 2 },
 			{ "sulfur", 1 },
 		},
-		result = "chromium-chunk",
-		result_count = 3,
+		results = {
+			{
+				name = "chromite-chunk",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "chromite-chunk",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
-		name = "crushed-chromium",
+		name = "crushed-chromite",
 		category = "basic-crafting",
+		main_product = "crushed-chromite",
 		hide_from_player_crafting = true,
 		order = "ac",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-crushed.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "chromium-chunk", 2 },
+			{ "chromite-chunk", 2 },
 		},
-		result = "crushed-chromium",
-		result_count = 3,
+		results = {
+			{
+				name = "crushed-chromite",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "crushed-chromite",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
-		name = "pure-chromium-ore",
+		name = "pure-chromite-ore",
 		category = "chemistry",
+		main_product = "refined-chromite-ore",
 		hide_from_player_crafting = true,
 		order = "ad",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-refined.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 2,
 		enabled = true,
 		ingredients = {
-			{ "crushed-chromium", 1 },
+			{ "crushed-chromite", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "carbonic-acid", amount = 10 },
 		},
-		result = "pure-chromium-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-chromite-ore",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-chromite-ore",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Chromite Purification (Chemical)
 	{
 		type = "recipe",
-		name = "chromium-slurry",
+		name = "chromite-slurry",
 		category = "chemistry",
 		hide_from_player_crafting = true,
 		order = "ab",
@@ -1909,7 +2474,7 @@ data:extend({
 		energy_required = 8,
 		enabled = true,
 		ingredients = {
-			{ "chromite-ore", 4 },
+			{ "refined-chromite-ore", 4 },
 		},
 		results = {
 			{ type = "fluid", name = "chromium-slurry", amount = 50 },
@@ -1917,8 +2482,9 @@ data:extend({
 	},
 	{
 		type = "recipe",
-		name = "chromium-shard",
+		name = "chromite-shard",
 		category = "chemistry",
+		main_product = "chromite-shard",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
@@ -1927,15 +2493,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ type = "fluid", name = "chromium-slurry", amount = 50 },
+			{ type = "fluid", name = "chromium-slurry", amount = 40 },
 		},
-		result = "chromium-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "chromite-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "chromite-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
-		name = "pure-chromium-shard",
+		name = "pure-chromite-shard",
 		category = "chemistry",
+		main_product = "purified-chromite-shard",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
@@ -1944,17 +2521,28 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "chromium-shard", 2 },
+			{ "chromite-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
-			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "azane-acid", amount = 10 },
 		},
-		result = "purified-chromium-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "purified-chromite-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "purified-chromite-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
-		name = "pure-chromium-ore-chemical",
+		name = "pure-chromite-ore-chemical",
 		category = "chemistry",
+		main_product = "imperfect-chromite",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
@@ -1963,19 +2551,28 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "purified-chromium-shard", 1 },
+			{ "purified-chromite-shard", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "buren-acid", amount = 10 },
 		},
-		result = "pure-chromium-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "imperfect-chromite",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "imperfect-chromite",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Chromite Purification (Powder)
 	{
 		type = "recipe",
-		name = "chromium-powder",
+		name = "chromite-powder",
 		category = "crafting",
+		main_product = "chromite-powder",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
@@ -1984,15 +2581,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "chromite-ore", 4 },
+			{ "imperfect-chromite", 2 },
 		},
-		result = "chromium-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "chromite-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "chromite-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
-		name = "refined-chromium-powder",
+		name = "refined-chromite-powder",
 		category = "chemistry",
+		main_product = "refined-chromite-powder",
 		hide_from_player_crafting = true,
 		order = "ac",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
@@ -2001,15 +2609,54 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "chromium-powder", 2 },
+			{ "chromite-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
 		},
-		result = "refined-chromium-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-chromite-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-chromite-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
-		name = "pure-chromium-powder",
+		name = "pure-chromite-powder",
+		category = "chemistry",
+		main_product = "pure-chromite-powder",
+		hide_from_player_crafting = true,
+		order = "ad",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 4,
+		enabled = true,
+		ingredients = {
+			{ "refined-chromite-powder", 2 },
+			{ type = "fluid", name = "dilute-acid-solution", amount = 10 },
+		},
+		results = {
+			{
+				name = "pure-chromite-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "pure-chromite-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
+	},
+	{
+		type = "recipe",
+		name = "pure-chromite-ore-powder",
 		category = "chemistry",
 		hide_from_player_crafting = true,
 		order = "ad",
@@ -2019,60 +2666,52 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "refined-chromium-powder", 2 },
-			{ type = "fluid", name = "steam", amount = 50 },
+			{ "pure-chromite-powder", 1 },
+			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "acid-cleaning-solution", amount = 10 },
 		},
-		result = "pure-chromium-powder",
-		result_count = 3,
-	},
-	{
-		type = "recipe",
-		name = "pure-chromium-ore-powder",
-		category = "chemistry",
-		hide_from_player_crafting = true,
-		order = "ad",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/chromite-ore.png",
-		icon_size = 64,
-		icon_mipmaps = 4,
-		energy_required = 4,
-		enabled = true,
-		ingredients = {
-			{ "pure-chromium-powder", 1 },
-			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
-		},
-		result = "pure-chromium-ore",
+		result = "pure-chromite-ore",
 		result_count = 3,
 	},
 
 	--Lead Refining
-
-	--Lead Purification (Raw)
 	{
 		type = "recipe",
 		name = "lead-rock",
 		category = "crafting",
+		main_product = "lead-rock",
 		hide_from_player_crafting = true,
 		order = "aa",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-rock.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ "lead-ore", 4 },
 		},
-		result = "lead-rock",
-		result_count = 3,
+		results = {
+			{
+				name = "lead-rock",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "lead-rock",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "lead-chunk",
 		category = "alloy-smelting",
+		main_product = "lead-chunk",
 		hide_from_player_crafting = true,
 		order = "ab",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-chunk.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
@@ -2080,47 +2719,77 @@ data:extend({
 			{ "lead-rock", 2 },
 			{ "sulfur", 1 },
 		},
-		result = "lead-chunk",
-		result_count = 3,
+		results = {
+			{
+				name = "lead-chunk",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "lead-chunk",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "crushed-lead",
 		category = "basic-crafting",
+		main_product = "crushed-lead",
 		hide_from_player_crafting = true,
 		order = "ac",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-crushed.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ "lead-chunk", 2 },
 		},
-		result = "crushed-lead",
-		result_count = 3,
+		results = {
+			{
+				name = "crushed-lead",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "crushed-lead",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-lead-ore",
 		category = "chemistry",
+		main_product = "refined-lead-ore",
 		hide_from_player_crafting = true,
 		order = "ad",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-refined.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
-		energy_required = 4,
+		energy_required = 2,
 		enabled = true,
 		ingredients = {
-			{ "crushed-lead", 1 },
+			{ "crushed-lead", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "muriatic-acid", amount = 10 },
 		},
-		result = "pure-lead-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-lead-ore",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-lead-ore",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Lead Purification (Chemical)
 	{
 		type = "recipe",
 		name = "lead-slurry",
@@ -2133,7 +2802,7 @@ data:extend({
 		energy_required = 8,
 		enabled = true,
 		ingredients = {
-			{ "lead-ore", 4 },
+			{ "refined-lead-ore", 4 },
 		},
 		results = {
 			{ type = "fluid", name = "lead-slurry", amount = 50 },
@@ -2143,6 +2812,7 @@ data:extend({
 		type = "recipe",
 		name = "lead-shard",
 		category = "chemistry",
+		main_product = "lead-shard",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
@@ -2151,15 +2821,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ type = "fluid", name = "lead-slurry", amount = 50 },
+			{ type = "fluid", name = "lead-slurry", amount = 40 },
 		},
-		result = "lead-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "lead-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "lead-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-lead-shard",
 		category = "chemistry",
+		main_product = "purified-lead-shard",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
@@ -2170,15 +2851,26 @@ data:extend({
 		ingredients = {
 			{ "lead-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
-			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "chloric-acid", amount = 10 },
 		},
-		result = "purified-lead-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "purified-lead-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "purified-lead-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-lead-ore-chemical",
 		category = "chemistry",
+		main_product = "imperfect-lead",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
@@ -2187,19 +2879,28 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "purified-lead-shard", 1 },
+			{ "purified-lead-shard", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "vixal-acid", amount = 10 },
 		},
-		result = "pure-lead-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "imperfect-lead",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "imperfect-lead",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Lead Purification (Powder)
 	{
 		type = "recipe",
 		name = "lead-powder",
 		category = "crafting",
+		main_product = "lead-powder",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
@@ -2208,15 +2909,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "lead-ore", 4 },
+			{ "imperfect-lead", 2 },
 		},
-		result = "lead-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "lead-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "lead-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "refined-lead-powder",
 		category = "chemistry",
+		main_product = "refined-lead-powder",
 		hide_from_player_crafting = true,
 		order = "ac",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
@@ -2228,13 +2940,24 @@ data:extend({
 			{ "lead-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
 		},
-		result = "refined-lead-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-lead-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-lead-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-lead-powder",
 		category = "chemistry",
+		main_product = "pure-lead-powder",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/lead-ore.png",
@@ -2244,10 +2967,20 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "refined-lead-powder", 2 },
-			{ type = "fluid", name = "steam", amount = 50 },
+			{ type = "fluid", name = "dilute-acid-solution", amount = 10 },
 		},
-		result = "pure-lead-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "pure-lead-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "pure-lead-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
@@ -2262,41 +2995,51 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "pure-lead-powder", 1 },
-			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "acid-cleaning-solution", amount = 10 },
 		},
 		result = "pure-lead-ore",
 		result_count = 3,
 	},
 
 	--Tin Refining
-
-	--Tin Purification (Raw)
 	{
 		type = "recipe",
 		name = "tin-rock",
 		category = "crafting",
+		main_product = "tin-rock",
 		hide_from_player_crafting = true,
 		order = "aa",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-rock.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ "tin-ore", 4 },
 		},
-		result = "tin-rock",
-		result_count = 3,
+		results = {
+			{
+				name = "tin-rock",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "tin-rock",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "tin-chunk",
 		category = "alloy-smelting",
+		main_product = "tin-chunk",
 		hide_from_player_crafting = true,
 		order = "ab",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-chunk.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
@@ -2304,47 +3047,77 @@ data:extend({
 			{ "tin-rock", 2 },
 			{ "sulfur", 1 },
 		},
-		result = "tin-chunk",
-		result_count = 3,
+		results = {
+			{
+				name = "tin-chunk",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "tin-chunk",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "crushed-tin",
 		category = "basic-crafting",
+		main_product = "crushed-tin",
 		hide_from_player_crafting = true,
 		order = "ac",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-crushed.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ "tin-chunk", 2 },
 		},
-		result = "crushed-tin",
-		result_count = 3,
+		results = {
+			{
+				name = "crushed-tin",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "crushed-tin",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-tin-ore",
 		category = "chemistry",
+		main_product = "refined-tin-ore",
 		hide_from_player_crafting = true,
 		order = "ad",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
-		icon_size = 64,
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-refined.png",
+		icon_size = 32,
 		icon_mipmaps = 4,
-		energy_required = 4,
+		energy_required = 2,
 		enabled = true,
 		ingredients = {
-			{ "crushed-tin", 1 },
+			{ "crushed-tin", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "carbonic-acid", amount = 10 },
 		},
-		result = "pure-tin-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-tin-ore",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-tin-ore",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Tin Purification (Chemical)
 	{
 		type = "recipe",
 		name = "tin-slurry",
@@ -2357,7 +3130,7 @@ data:extend({
 		energy_required = 8,
 		enabled = true,
 		ingredients = {
-			{ "tin-ore", 4 },
+			{ "refined-tin-ore", 4 },
 		},
 		results = {
 			{ type = "fluid", name = "tin-slurry", amount = 50 },
@@ -2367,6 +3140,7 @@ data:extend({
 		type = "recipe",
 		name = "tin-shard",
 		category = "chemistry",
+		main_product = "tin-shard",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
@@ -2375,15 +3149,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ type = "fluid", name = "tin-slurry", amount = 50 },
+			{ type = "fluid", name = "tin-slurry", amount = 40 },
 		},
-		result = "tin-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "tin-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "tin-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-tin-shard",
 		category = "chemistry",
+		main_product = "purified-tin-shard",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
@@ -2394,15 +3179,26 @@ data:extend({
 		ingredients = {
 			{ "tin-shard", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
-			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "azane-acid", amount = 10 },
 		},
-		result = "purified-tin-shard",
-		result_count = 3,
+		results = {
+			{
+				name = "purified-tin-shard",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "purified-tin-shard",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-tin-ore-chemical",
 		category = "chemistry",
+		main_product = "imperfect-tin",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
@@ -2411,19 +3207,28 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "purified-tin-shard", 1 },
+			{ "purified-tin-shard", 2 },
 			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "luret-acid", amount = 10 },
 		},
-		result = "pure-tin-ore",
-		result_count = 3,
+		results = {
+			{
+				name = "imperfect-tin",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "imperfect-tin",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
-
-	--Tin Purification (Powder)
 	{
 		type = "recipe",
 		name = "tin-powder",
 		category = "crafting",
+		main_product = "tin-powder",
 		hide_from_player_crafting = true,
 		order = "ab",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
@@ -2432,15 +3237,26 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "tin-ore", 4 },
+			{ "imperfect-tin", 2 },
 		},
-		result = "tin-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "tin-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "tin-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "refined-tin-powder",
 		category = "chemistry",
+		main_product = "refined-tin-powder",
 		hide_from_player_crafting = true,
 		order = "ac",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
@@ -2452,13 +3268,24 @@ data:extend({
 			{ "tin-powder", 2 },
 			{ type = "fluid", name = "water", amount = 25 },
 		},
-		result = "refined-tin-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "refined-tin-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "refined-tin-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
 		name = "pure-tin-powder",
 		category = "chemistry",
+		main_product = "pure-tin-powder",
 		hide_from_player_crafting = true,
 		order = "ad",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/tin-ore.png",
@@ -2468,10 +3295,20 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "refined-tin-powder", 2 },
-			{ type = "fluid", name = "steam", amount = 50 },
+			{ type = "fluid", name = "dilute-acid-solution", amount = 10 },
 		},
-		result = "pure-tin-powder",
-		result_count = 3,
+		results = {
+			{
+				name = "pure-tin-powder",
+				probability = 1,
+				amount = 2,
+			},
+			{
+				name = "pure-tin-powder",
+				probability = 0.5,
+				amount = 1,
+			},
+		}
 	},
 	{
 		type = "recipe",
@@ -2486,8 +3323,8 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{ "pure-tin-powder", 1 },
-			{ type = "fluid", name = "water", amount = 10 },
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
+			{ type = "fluid", name = "steam", amount = 10 },
+			{ type = "fluid", name = "acid-cleaning-solution", amount = 10 },
 		},
 		result = "pure-tin-ore",
 		result_count = 3,
@@ -3652,8 +4489,8 @@ data:extend({
 		},
 		results = {
 			{ type = "fluid", name = "liquid-air", amount = 60 },
-			{ type = "fluid", name = "chlorine", amount = 30 },
-			{ type = "fluid", name = "fluorine", amount = 30 },
+			{ type = "fluid", name = "chlorine", amount = 60 },
+			{ type = "fluid", name = "fluorine", amount = 60 },
 		},
 	},
 	{
@@ -3672,9 +4509,9 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 50 },
 		},
 		results = {
-			{ type = "fluid", name = "noble-gases", amount = 20 },
-			{ type = "fluid", name = "carbon-dioxide", amount = 40 },
-			{ type = "fluid", name = "oxygen", amount = 40 },
+			{ type = "fluid", name = "noble-gases", amount = 40 },
+			{ type = "fluid", name = "carbon-dioxide", amount = 80 },
+			{ type = "fluid", name = "oxygen", amount = 80 },
 		},
 	},
 	{
@@ -3693,9 +4530,9 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 50 },
 		},
 		results = {
-			{ type = "fluid", name = "nitrogen", amount = 20 },
-			{ type = "fluid", name = "oxygen", amount = 10 },
-			{ type = "fluid", name = "hydrogen", amount = 30 },
+			{ type = "fluid", name = "nitrogen", amount = 40 },
+			{ type = "fluid", name = "oxygen", amount = 20 },
+			{ type = "fluid", name = "hydrogen", amount = 60 },
 		},
 	},
 	{
