@@ -4551,7 +4551,7 @@ data:extend({
 			{ type = "fluid", name = "nitrogen", amount = 40 },
 		},
 		results = {
-			{ type = "fluid", name = "coolant", amount = 50 },
+			{ type = "fluid", name = "coolant", amount = 100 },
 		},
 	},
 	{
@@ -4571,7 +4571,7 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 20 },
 		},
 		results = {
-			{ type = "fluid", name = "azane-acid", amount = 50 },
+			{ type = "fluid", name = "azane-acid", amount = 100 },
 		},
 	},
 	{
@@ -4591,7 +4591,7 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 50 },
 		},
 		results = {
-			{ type = "fluid", name = "carbonic-acid", amount = 50 },
+			{ type = "fluid", name = "carbonic-acid", amount = 100 },
 		},
 	},
 	{
@@ -4611,7 +4611,7 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 20 },
 		},
 		results = {
-			{ type = "fluid", name = "nitric-acid", amount = 50 },
+			{ type = "fluid", name = "nitric-acid", amount = 100 },
 		},
 	},
 	{
@@ -4631,7 +4631,7 @@ data:extend({
 			{ type = "fluid", name = "oxygen", amount = 30 },
 		},
 		results = {
-			{ type = "fluid", name = "chloric-acid", amount = 50 },
+			{ type = "fluid", name = "chloric-acid", amount = 100 },
 		},
 	},
 	{
@@ -4651,7 +4651,7 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 50 },
 		},
 		results = {
-			{ type = "fluid", name = "muriatic-acid", amount = 50 },
+			{ type = "fluid", name = "muriatic-acid", amount = 100 },
 		},
 	},
 	{
@@ -4671,7 +4671,7 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 50 },
 		},
 		results = {
-			{ type = "fluid", name = "verelic-acid", amount = 50 },
+			{ type = "fluid", name = "verelic-acid", amount = 100 },
 		},
 	},
 	{
@@ -4691,7 +4691,7 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 35 },
 		},
 		results = {
-			{ type = "fluid", name = "caudic-acid", amount = 50 },
+			{ type = "fluid", name = "caudic-acid", amount = 100 },
 		},
 	},
 	{
@@ -4711,7 +4711,7 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 20 },
 		},
 		results = {
-			{ type = "fluid", name = "luret-acid", amount = 50 },
+			{ type = "fluid", name = "luret-acid", amount = 100 },
 		},
 	},
 	{
@@ -4731,7 +4731,7 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 20 },
 		},
 		results = {
-			{ type = "fluid", name = "buren-acid", amount = 50 },
+			{ type = "fluid", name = "buren-acid", amount = 100 },
 		},
 	},
 	{
@@ -4751,7 +4751,7 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 20 },
 		},
 		results = {
-			{ type = "fluid", name = "genhal-acid", amount = 50 },
+			{ type = "fluid", name = "genhal-acid", amount = 100 },
 		},
 	},
 	{
@@ -4771,7 +4771,7 @@ data:extend({
 			{ type = "fluid", name = "oxygen", amount = 20 },
 		},
 		results = {
-			{ type = "fluid", name = "vixal-acid", amount = 50 },
+			{ type = "fluid", name = "vixal-acid", amount = 100 },
 		},
 	},
 	{
@@ -4791,7 +4791,7 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 20 },
 		},
 		results = {
-			{ type = "fluid", name = "phaudec-acid", amount = 50 },
+			{ type = "fluid", name = "phaudec-acid", amount = 100 },
 		},
 	},
 	{
@@ -4811,7 +4811,7 @@ data:extend({
 			{ type = "fluid", name = "coolant", amount = 20 },
 		},
 		results = {
-			{ type = "fluid", name = "dilute-acid-solution", amount = 100 },
+			{ type = "fluid", name = "dilute-acid-solution", amount = 500 },
 		},
 	},
 	{
@@ -4831,7 +4831,7 @@ data:extend({
 			{ type = "fluid", name = "steam", amount = 20 },
 		},
 		results = {
-			{ type = "fluid", name = "acid-cleaning-solution", amount = 50 },
+			{ type = "fluid", name = "acid-cleaning-solution", amount = 500 },
 		},
 	},
 })
