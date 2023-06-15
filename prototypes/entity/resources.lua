@@ -109,7 +109,7 @@ data:extend({
 		autoplace = resource_autoplace.resource_autoplace_settings({
 			name = "laterite-ore",
 			order = "c",
-			base_density = 10,
+			base_density = 5,
 			has_starting_area_placement = true,
 			regular_rq_factor_multiplier = 1,
 			starting_rq_factor_multiplier = 1,
@@ -294,14 +294,14 @@ data:extend({
 
 	{
 		type = "resource",
-		name = "carbonatite-ore",
+		name = "chromite-ore",
 		icon = "__base__/graphics/icons/coal.png",
 		icon_size = 64,
 		flags = { "placeable-neutral" },
 		order = "h-i",
 		minable = {
 			mining_particle = "monazite-ore-particle",
-			mining_time = 3,
+			mining_time = 5,
 			results = {
 				{
 					name = "chromite-ore",
@@ -323,12 +323,12 @@ data:extend({
 				},
 			},
 			fluid_amount = 5,
-			required_fluid = "carbonic-acid",
+			required_fluid = "luret-acid",
 		},
 		collision_box = { { -0.1, -0.1 }, { 0.1, 0.1 } },
 		selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
 		autoplace = resource_autoplace.resource_autoplace_settings({
-			name = "carbonatite-ore",
+			name = "chromite-ore",
 			order = "f",
 			base_density = 6,
 			has_starting_area_placement = false,
@@ -339,7 +339,64 @@ data:extend({
 		stages = {
 			sheet = {
 				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/monazite-ore/monazite-ore.png",
-				priority = "medium",
+				priority = "low",
+				width = 128,
+				height = 128,
+				frame_count = 8,
+				variation_count = 8,
+				scale = 0.5,
+			},
+		},
+		map_color = { 20, 20, 20 },
+	},
+	{
+		type = "resource",
+		name = "carbonatite-ore",
+		icon = "__base__/graphics/icons/coal.png",
+		icon_size = 64,
+		flags = { "placeable-neutral" },
+		order = "h-i",
+		minable = {
+			mining_particle = "monazite-ore-particle",
+			mining_time = 5,
+			results = {
+				{
+					name = "carbonatite-ore",
+					probability = 1,
+					amount_min = 1,
+					amount_max = 10,
+				},
+				{
+					name = "scarce-metal-ores",
+					probability = 0.2,
+					amount_min = 1,
+					amount_max = 3,
+				},
+				{
+					name = "valuable-metal-ores",
+					probability = 0.2,
+					amount_min = 1,
+					amount_max = 5,
+				},
+			},
+			fluid_amount = 5,
+			required_fluid = "luret-acid",
+		},
+		collision_box = { { -0.1, -0.1 }, { 0.1, 0.1 } },
+		selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+		autoplace = resource_autoplace.resource_autoplace_settings({
+			name = "carbonatite-ore",
+			order = "f",
+			base_density = 3,
+			has_starting_area_placement = false,
+			regular_rq_factor_multiplier = 1,
+			starting_rq_factor_multiplier = 1,
+		}),
+		stage_counts = { 10000, 7500, 5000, 2500, 1250, 800, 400, 100 },
+		stages = {
+			sheet = {
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/entity/monazite-ore/monazite-ore.png",
+				priority = "low",
 				width = 128,
 				height = 128,
 				frame_count = 8,

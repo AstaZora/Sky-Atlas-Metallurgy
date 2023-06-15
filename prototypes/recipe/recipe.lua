@@ -4460,7 +4460,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "chemical-oil", amount = 50 },
@@ -4481,7 +4481,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 3,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "chemical-water", amount = 20 },
@@ -4502,14 +4502,14 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "chemical-gas", amount = 20 },
 			{ type = "fluid", name = "water", amount = 50 },
 		},
 		results = {
-			{ type = "fluid", name = "noble-gases", amount = 40 },
+			{ type = "fluid", name = "noble-gases", amount = 80 },
 			{ type = "fluid", name = "carbon-dioxide", amount = 80 },
 			{ type = "fluid", name = "oxygen", amount = 80 },
 		},
@@ -4523,7 +4523,7 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/water.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		energy_required = 20,
+		energy_required = 4,
 		enabled = true,
 		ingredients = {
 			{ type = "fluid", name = "liquid-air", amount = 20 },

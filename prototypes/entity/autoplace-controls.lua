@@ -57,6 +57,14 @@ data:extend({
 	},
 	{
 		type = "autoplace-control",
+		name = "chromite-ore",
+		localised_name = { "", "[entity=chromite-ore] ", { "entity-name.chromite-ore" } },
+		richness = true,
+		order = "b-fe",
+		category = "resource",
+	},
+	{
+		type = "autoplace-control",
 		name = "oil-shale",
 		localised_name = { "", "[entity=oil-shale] ", { "entity-name.oil-shale" } },
 		richness = true,
