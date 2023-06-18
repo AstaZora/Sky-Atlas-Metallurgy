@@ -109,7 +109,7 @@ data:extend({
 		autoplace = resource_autoplace.resource_autoplace_settings({
 			name = "laterite-ore",
 			order = "c",
-			base_density = 5,
+			base_density = 2,
 			has_starting_area_placement = true,
 			regular_rq_factor_multiplier = 1,
 			starting_rq_factor_multiplier = 1,
@@ -147,7 +147,7 @@ data:extend({
 		autoplace = resource_autoplace.resource_autoplace_settings({
 			name = "monazite-ore",
 			order = "d",
-			base_density = 5,
+			base_density = 2,
 			has_starting_area_placement = false,
 			regular_rq_factor_multiplier = 1,
 			starting_rq_factor_multiplier = 1,
@@ -183,7 +183,7 @@ data:extend({
 		autoplace = resource_autoplace.resource_autoplace_settings({
 			name = "haematite-ore",
 			order = "e",
-			base_density = 7,
+			base_density = 2,
 			has_starting_area_placement = false,
 			regular_rq_factor_multiplier = 1,
 			starting_rq_factor_multiplier = 1,
@@ -221,7 +221,7 @@ data:extend({
 		autoplace = resource_autoplace.resource_autoplace_settings({
 			name = "oil-shale",
 			order = "d",
-			base_density = 8,
+			base_density = 1,
 			has_starting_area_placement = false,
 			regular_rq_factor_multiplier = 1,
 			starting_rq_factor_multiplier = 1,
@@ -259,7 +259,7 @@ data:extend({
 				},
 				{
 					name = "sulfur",
-					probability = 0.05,
+					probability = 0.2,
 					amount_min = 1,
 					amount_max = 3,
 				},
@@ -272,7 +272,7 @@ data:extend({
 		autoplace = resource_autoplace.resource_autoplace_settings({
 			name = "galena-ore",
 			order = "f",
-			base_density = 6,
+			base_density = 1,
 			has_starting_area_placement = false,
 			regular_rq_factor_multiplier = 1,
 			starting_rq_factor_multiplier = 1,
@@ -330,7 +330,7 @@ data:extend({
 		autoplace = resource_autoplace.resource_autoplace_settings({
 			name = "chromite-ore",
 			order = "f",
-			base_density = 6,
+			base_density = 1,
 			has_starting_area_placement = false,
 			regular_rq_factor_multiplier = 1,
 			starting_rq_factor_multiplier = 1,
@@ -380,7 +380,7 @@ data:extend({
 				},
 			},
 			fluid_amount = 5,
-			required_fluid = "luret-acid",
+			required_fluid = "carbonic-acid",
 		},
 		collision_box = { { -0.1, -0.1 }, { 0.1, 0.1 } },
 		selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },

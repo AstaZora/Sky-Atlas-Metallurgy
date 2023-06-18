@@ -100,9 +100,9 @@ data.raw["recipe"]["production-science-pack"].ingredients = {
 	{ "smco-magnet", 5 },
 }
 data.raw["recipe"]["utility-science-pack"].ingredients = {
-	{ "havar-plate", 8 },
-	{ "chromium-steel", 4 },
-	{ "neodymium-magnet", 5 },
+	{ "magnox-plate", 8 },
+	{ "thoralite-plate", 4 },
+	{ "alnico-magnet", 5 },
 }
   
 local my_productivity_list = {
