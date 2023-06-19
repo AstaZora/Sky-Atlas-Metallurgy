@@ -159,14 +159,11 @@ data:extend({
 	{
 		type = "item",
 		name = "valuable-metal-ores",
-		icon = "__base__/graphics/icons/coal.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/valuable-metals.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		pictures = {
-			{ size = 64, filename = "__base__/graphics/icons/coal.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-1.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-2.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-3.png", scale = 0.25, mipmap_count = 4 },
+		picture = {
+			{ size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/valuable-metals.png", scale = 0.25, mipmap_count = 4 },
 		},
 		subgroup = "raw-resource",
 		order = "f[limonite-ore]",
@@ -175,15 +172,12 @@ data:extend({
 	{
 		type = "item",
 		name = "scarce-metal-ores",
-		icon = "__base__/graphics/icons/coal.png",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/invaluable-metals.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		pictures = {
-			{ size = 64, filename = "__base__/graphics/icons/coal.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-1.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-2.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-3.png", scale = 0.25, mipmap_count = 4 },
-		},
+		picture =
+			{ size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/invaluable-metals.png", scale = 0.25, mipmap_count = 4 },
+	
 		subgroup = "raw-resource",
 		order = "f[limonite-ore]",
 		stack_size = 200,

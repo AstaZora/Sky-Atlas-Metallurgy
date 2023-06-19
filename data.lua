@@ -91,8 +91,8 @@ data.raw["recipe"]["chemical-science-pack"].ingredients = {
 }
 data.raw["recipe"]["military-science-pack"].ingredients = {
 	{ "aluminum-plate", 4 },
-	{ "cobalt-plate", 4 },
-	{ "copper-plate", 8 },
+	{ "nitinol-plate", 4 },
+	{ "soldering-plate", 8 },
 }
 data.raw["recipe"]["production-science-pack"].ingredients = {
 	{ "incoloy-plate", 5 },
@@ -143,6 +143,12 @@ local my_productivity_list = {
 		"nickel-plate-1",
 		"nickel-plate-2",
 		"nickel-plate-3",
+		"samarium-transmutation",
+		"aluminum-transmutation",
+		"cobalt-transmutation",
+		"neodymium-transmutation",
+		"thorium-fuel-reprocessing",
+		"monazite-refining",
 }
 
 for _, module in pairs(data.raw.module) do
