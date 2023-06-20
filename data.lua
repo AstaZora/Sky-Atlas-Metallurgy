@@ -76,8 +76,14 @@ local boiler = data.raw["boiler"]["boiler"]
 boiler.energy_source.fuel_category = nil
 boiler.energy_source.fuel_categories = { "chemical", "magnetic" }
 
-data.raw["recipe"]["automation-science-pack"].ingredients = { { "invar-plate", 1 }, { "monel-plate", 1 } }
-data.raw["recipe"]["logistic-science-pack"].ingredients = { { "kovar-plate", 5 }, { "titanium-plate", 1 } }
+data.raw["recipe"]["automation-science-pack"].ingredients = {
+	{ "invar-plate", 1 },
+	{ "monel-plate", 1 },
+}
+data.raw["recipe"]["logistic-science-pack"].ingredients = {
+	{ "kovar-plate", 2 },
+	{ "titanium-plate", 1 },
+}
 data.raw["recipe"]["concrete"].ingredients = {
 	{ "magnetite-ore", 1 },
 	{ "stone-brick", 5 },

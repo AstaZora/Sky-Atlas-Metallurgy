@@ -269,7 +269,7 @@ data:extend({
 		subgroup = "metallurgy-processes",
 		enabled = true,
 		energy_required = 1,
-		ingredients = { { "valuable-metal-ores", 8 }, {"stone", 4}, {"coal", 2} },
+		ingredients = { { "valuable-metal-ores", 8 }, {"sulfur", 4}, {"coal", 2} },
 		results = {
 			{ "carbonatite-ore", 8 },
 		},
