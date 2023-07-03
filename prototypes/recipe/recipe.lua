@@ -175,7 +175,7 @@ data:extend({
 		results = {
 			{
 				name = "uranium-ore",
-				probability = 0.05,
+				probability = 0.25,
 				amount = 20,
 			},
 			{
@@ -185,7 +185,7 @@ data:extend({
 			},
 			{
 				name = "rare-earth-ore",
-				probability = 0.8,
+				probability = 0.5,
 				amount = 10,
 			},
 		},
@@ -251,12 +251,12 @@ data:extend({
 		  {
 			name = "scarce-metal-ores",
 			probability = 1,
-			amount = 5,
+			amount = 2,
 		  },
 		  {
 			name = "valuable-metal-ores",
 			probability = 1,
-			amount = 5
+			amount = 8
 		  }
 		},
 		icon_size = 64
@@ -3345,7 +3345,25 @@ data:extend({
 	},
 
 	--Thorium Refining
-
+	{
+		type = "recipe",
+		name = "thorium-nuclear-decay",
+		energy_required = 30,
+		enabled = true,
+		category = "centrifuging",
+		ingredients = {
+			{ "thorium-ore", 50 },
+			{ "uranium-235", 1 },
+		},
+		icon = "__base__/graphics/icons/nuclear-fuel-reprocessing.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		subgroup = "metallurgy-processes",
+		order = "r[uranium-processing]-b[nuclear-fuel-reprocessing]",
+		main_product = "",
+		results = { { "uranium-238", 50 } },
+		allow_decomposition = false,
+	},
 	--Samarium Refining
 
 	--Neodymium Refining
@@ -3355,15 +3373,15 @@ data:extend({
 		type = "recipe",
 		name = "thorium-fuel-cell",
 		subgroup = "sam-recipes",
-		energy_required = 100,
+		energy_required = 50,
 		enabled = true,
 		ingredients = {
 			{ "monel-plate", 30 },
 			{ "invar-plate", 30 },
 			{ "kovar-plate", 60 },
-			{ "thorium-ore", 10 },
+			{ "thorium-ore", 50 },
 			{ "uranium-235", 1 },
-			{ "uranium-238", 50 },
+			{ "uranium-238", 10 },
 		},
 		result = "thorium-fuel-cell",
 		result_count = 10,
@@ -3467,7 +3485,7 @@ data:extend({
 		energy_required = 300,
 		ingredients = { { "decaying-matter-cell", 1 }, { "aluminum-ore", 2000 } },
 		results = {
-			{ "used-up-thorium-fuel-cell", 1 },
+			{ "used-up-uranium-fuel-cell", 1 },
 			{
 				name = "titanium-ore",
 				probability = 1,
@@ -3499,7 +3517,7 @@ data:extend({
 		energy_required = 300,
 		ingredients = { { "decaying-matter-cell", 1 }, { "cobalt-ore", 2000 } },
 		results = {
-			{ "used-up-thorium-fuel-cell", 1 },
+			{ "used-up-uranium-fuel-cell", 1 },
 			{
 				name = "nickel-ore",
 				probability = 1,
@@ -3531,7 +3549,7 @@ data:extend({
 		energy_required = 300,
 		ingredients = { { "decaying-matter-cell", 1 }, { "samarium-ore", 2000 } },
 		results = {
-			{ "used-up-thorium-fuel-cell", 1 },
+			{ "used-up-uranium-fuel-cell", 1 },
 			{
 				name = "uranium-ore",
 				probability = 1,
@@ -3551,7 +3569,7 @@ data:extend({
 				amount_max = 1000,
 			},
 		},
-		catalyst_amount = "used-up-thorium-fuel-cell", 1,
+		catalyst_amount = "used-up-uranium-fuel-cell", 1,
 		icon_size = 64,
 	},
 	{
@@ -3564,7 +3582,7 @@ data:extend({
 		energy_required = 300,
 		ingredients = { { "decaying-matter-cell", 1 }, { "neodymium-ore", 2000 } },
 		results = {
-			{ "used-up-thorium-fuel-cell", 1 },
+			{ "used-up-uranium-fuel-cell", 1 },
 			{
 				name = "uranium-ore",
 				probability = 1,
@@ -3754,7 +3772,7 @@ data:extend({
 			{
 				name = "stone",
 				probability = 0.5,
-				amount = 20,
+				amount = 10,
 			},
 		},
 		allow_decomposition = false,

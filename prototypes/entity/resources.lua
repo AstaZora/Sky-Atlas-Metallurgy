@@ -87,20 +87,20 @@ data:extend({
 				{
 					name = "laterite-ore",
 					probability = 1,
-					amount_min = 3,
-					amount_max = 10,
+					amount_min = 1,
+					amount_max = 5,
 				},
 				{
 					name = "bauxite-ore",
 					probability = 0.5,
 					amount_min = 1,
-					amount_max = 3,
+					amount_max = 1,
 				},
 				{
 					name = "cobaltite-ore",
 					probability = 0.5,
 					amount_min = 1,
-					amount_max = 3,
+					amount_max = 1,
 				},
 			},
 		},
@@ -109,7 +109,7 @@ data:extend({
 		autoplace = resource_autoplace.resource_autoplace_settings({
 			name = "laterite-ore",
 			order = "c",
-			base_density = 2,
+			base_density = 1,
 			has_starting_area_placement = true,
 			regular_rq_factor_multiplier = 1,
 			starting_rq_factor_multiplier = 1,

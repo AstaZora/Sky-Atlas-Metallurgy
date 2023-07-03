@@ -266,3 +266,5 @@ It is commonly used in valve seats, pump components, and other applications wher
 
 Maraging Steel: This is a low-carbon, high-nickel alloy that offers high strength and excellent toughness. 
 It is often used in aerospace and defense applications, such as missile and rocket motor components.
+
+Carbon Steel is a great idea past stainless steel.

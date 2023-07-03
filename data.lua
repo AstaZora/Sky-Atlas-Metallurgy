@@ -81,8 +81,8 @@ data.raw["recipe"]["automation-science-pack"].ingredients = {
 	{ "monel-plate", 1 },
 }
 data.raw["recipe"]["logistic-science-pack"].ingredients = {
-	{ "kovar-plate", 2 },
-	{ "titanium-plate", 1 },
+	{ "kovar-plate", 1 },
+	{ "titanium-plate", 2 },
 }
 data.raw["recipe"]["concrete"].ingredients = {
 	{ "magnetite-ore", 1 },
@@ -166,3 +166,40 @@ for _, module in pairs(data.raw.module) do
         end
     end
 end
+local part_making_list = {
+    "cobalt",
+    "iron",
+    "copper",
+    "aluminum",
+    "nickel",
+    "titanium",
+    "chromite",
+    "lead",
+    "tin",
+    "bronze",
+    "duralumin",
+    "havar",
+    "incoloy",
+    "invar",
+    "monel",
+    "titanium5",
+    "kovar",
+    "nitinol",
+    "magnox",
+    "thoralite",
+    "light-bronze",
+    }
+local parts = {}
+local function create_part(part)
+	return {
+		type="item",
+		name = part .. "-pipe",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/".. part .."-pipe.png",
+		icon_size = 64,
+		stack_size= 50,
+	}
+end
+for _, part in pairs(part_making_list) do
+	table.insert(parts, create_part(part))
+end	
+data:extend(parts)
