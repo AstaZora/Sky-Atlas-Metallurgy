@@ -11,4 +11,8 @@ data:extend({
 		type = "recipe-category",
 		name = "electrolysis",
 	},
+	{
+		type = "recipe-category",
+		name = "sam-components",
+	},
 })

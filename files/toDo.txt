@@ -197,7 +197,15 @@ end current theory
 amend to above statements, most chemicals could be constructed from this volcanic melting (lots of gases can come from volcanos!)
 THEORY - Create a volcano as a dual component, one part crafts molten metals, one part creates volcanic gases constantly
 
+#Research
+Research should use the tiers  of stuff available upon research. Using Stage 1, 2 or 3 of refining to make parts of science packs
+For example, red science, early game should use plates or raw ores (I think raw ores)
+Green would likely follow course
+However blue would require something made from refining stage 1 galena, malachite, and magnetite using the "Geode" stage
+purple science should use stage 2 "fractured" ores
+etc 
 
+Once a stage is set, using 1-6 parts of these sciences should be "liquified" into a flask, combining all 6 in one machine to make mass sciences (10)
 -- Chat AI GPT Metallurgy Processes
 --Titanium
 The most common process for producing pure titanium is the Kroll process, which involves the following steps:

@@ -176,17 +176,17 @@ data:extend({
 			{
 				name = "uranium-ore",
 				probability = 0.25,
-				amount = 20,
+				amount = 10,
 			},
 			{
 				name = "thorium-ore",
 				probability = 0.15,
-				amount = 30,
+				amount = 10,
 			},
 			{
 				name = "rare-earth-ore",
 				probability = 0.5,
-				amount = 10,
+				amount = 20,
 			},
 		},
 		icon_size = 64,
@@ -3684,7 +3684,7 @@ data:extend({
 			},
 			{
 				name = "monazite-ore",
-				probability = 0.1,
+				probability = 0.01,
 				amount = 100,
 			},
 			{
@@ -3766,7 +3766,7 @@ data:extend({
 			},
 			{
 				name = "rare-earth-ore",
-				probability = 0.2,
+				probability = 0.05,
 				amount = 10,
 			},
 			{
