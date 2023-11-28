@@ -1,4 +1,4 @@
-local oresToAdd = { "magnetite", "malachite", "haematite", "oil-shale", "monazite", "chromite", "galena", "laterite", "limonite", "ilmenite"}
+local oresToAdd = { "magnetite", "malachite", "haematite", "oil-shale", "monazite", "chromite", "galena", "laterite", "limonite", "ilmenite", "carbonatite", "lead"}
 
 local function createOre(ore)
 	return {
@@ -90,54 +90,6 @@ data:extend({
 	
 		subgroup = "raw-resource",
 		order = "f[limonite-ore]",
-		stack_size = 200,
-	},
-	{
-		type = "item",
-		name = "galena-ore",
-		icon = "__base__/graphics/icons/coal.png",
-		icon_size = 64,
-		icon_mipmaps = 4,
-		pictures = {
-			{ size = 64, filename = "__base__/graphics/icons/coal.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-1.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-2.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-3.png", scale = 0.25, mipmap_count = 4 },
-		},
-		subgroup = "raw-resource",
-		order = "fb[galena-ore]",
-		stack_size = 200,
-	},
-	{
-		type = "item",
-		name = "carbonatite-ore",
-		icon = "__base__/graphics/icons/coal.png",
-		icon_size = 64,
-		icon_mipmaps = 4,
-		pictures = {
-			{ size = 64, filename = "__base__/graphics/icons/coal.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-1.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-2.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-3.png", scale = 0.25, mipmap_count = 4 },
-		},
-		subgroup = "raw-resource",
-		order = "fc[carbonatite-ore]",
-		stack_size = 200,
-	},
-	{
-		type = "item",
-		name = "lead-ore",
-		icon = "__base__/graphics/icons/coal.png",
-		icon_size = 64,
-		icon_mipmaps = 4,
-		pictures = {
-			{ size = 64, filename = "__base__/graphics/icons/coal.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-1.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-2.png", scale = 0.25, mipmap_count = 4 },
-			{ size = 64, filename = "__base__/graphics/icons/coal-3.png", scale = 0.25, mipmap_count = 4 },
-		},
-		subgroup = "raw-resource",
-		order = "fc[lead-ore]",
 		stack_size = 200,
 	},
 	{
@@ -370,42 +322,6 @@ data:extend({
 		},
 		subgroup = "raw-resource",
 		order = "q[aluminum-ore]",
-		stack_size = 200,
-	},
-	{
-		type = "item",
-		name = "monazite-ore",
-		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monazite-ore.png",
-		icon_size = 64,
-		icon_mipmaps = 4,
-		pictures = {
-			{
-				size = 64,
-				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monazite-ore.png",
-				scale = 0.25,
-				mipmap_count = 4,
-			},
-			{
-				size = 64,
-				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monazite-ore-1.png",
-				scale = 0.25,
-				mipmap_count = 4,
-			},
-			{
-				size = 64,
-				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monazite-ore-2.png",
-				scale = 0.25,
-				mipmap_count = 4,
-			},
-			{
-				size = 64,
-				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/monazite-ore-3.png",
-				scale = 0.25,
-				mipmap_count = 4,
-			},
-		},
-		subgroup = "raw-resource",
-		order = "p[monazite-ore]",
 		stack_size = 200,
 	},
 	{
