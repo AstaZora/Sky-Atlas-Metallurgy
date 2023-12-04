@@ -12,6 +12,7 @@ require("prototypes.particle.particle-animations")
 require("prototypes.recipe.recipe")
 require("prototypes.recipe.fluid-recipe")
 
+
 local presets = {
 	["rich-resources"] = { richness = "very-good" },
 	["rail-world"] = {
@@ -63,6 +64,7 @@ addResource("malachite-ore")
 addResource("laterite-ore")
 addResource("monazite-ore")
 addResource("oil-shale")
+addResource("iron-deposit")
 
 data.raw["furnace"]["alloy-furnace"]["type"] = "assembling-machine"
 data.raw["assembling-machine"]["alloy-furnace"] = data.raw["furnace"]["alloy-furnace"]
@@ -110,7 +112,10 @@ data.raw["recipe"]["utility-science-pack"].ingredients = {
 	{ "thoralite-plate", 4 },
 	{ "alnico-magnet", 5 },
 }
-  
+
+--@generic V
+--@param t V[]
+--@return V[]
 local my_productivity_list = {
 		"iron-plate-raw",
 		"iron-plate-1",
@@ -166,7 +171,12 @@ for _, module in pairs(data.raw.module) do
         end
     end
 end
-local part_making_pipe = {
+local rodparts = {}
+local craftrods = {}
+local pipeparts = {}
+local craftpipes = {}
+local metals = 
+  {
     "cobalt",
     "iron",
     "copper",
@@ -180,7 +190,6 @@ local part_making_pipe = {
     "duralumin",
     "havar",
     "incoloy",
-    "invar",
     "monel",
     "titanium5",
     "kovar",
@@ -188,98 +197,56 @@ local part_making_pipe = {
     "magnox",
     "thoralite",
     "light-bronze",
-    }
-local parts = {}
-local craft = {}
-local function create_pipe(pipe_part)
+  }
+local function create_component(metal_part)
     return
-	{
-        type = "item",
-        name = pipe_part .. "-pipe",
-        icon = "__base__/graphics/icons/pipe.png",
-        icon_size = 64,
-		stack_size = 50,
+    {
+        {
+            type = "item",
+            name = metal_part .. "-rod",
+            icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/"..metal_part.."-rod.png",
+            icon_size = 128,
+            stack_size = 50,
+        },
+        {
+          	type = "recipe",
+          	category = "crafting",
+          	name = metal_part.."-rod",
+          	icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/"..metal_part.."-rod.png",
+          	energy_required = 2,
+          	icon_size = 128,
+          	ingredients = { { metal_part.."-plate", 1 } },
+        	result = metal_part.."-rod",
+         	result_count = 2,
+        },
+		{
+			type = "item",
+			name = metal_part .. "-pipe",
+			icon = "__base__/graphics/icons/pipe.png",
+			icon_size = 64,
+			stack_size = 50,
+		},
+        {
+			type = "recipe",
+			category = "crafting",
+			name = metal_part.."-pipe",
+			icon = "__base__/graphics/icons/pipe.png",
+			energy_required = 1,
+			icon_size = 64,
+			ingredients = { { metal_part.."-plate", 2 } },
+			result = metal_part.."-pipe",
+			result_count = 1,
+		},
     }
 end
-for _, pipe_part in pairs(part_making_pipe) do
-    table.insert(parts, create_pipe(pipe_part))
-end   
-local part_making_rod = {
-    "cobalt",
-    "iron",
-    "copper",
-    "aluminum",
-    "nickel",
-    "titanium",
-    "chromium",
-    "lead",
-    "tin",
-    "bronze",
-    "duralumin",
-    "havar",
-    "incoloy",
-    "invar",
-    "monel",
-    "titanium5",
-    "kovar",
-    "nitinol",
-    "magnox",
-    "thoralite",
-    "light-bronze",
-    }
-local function create_rod(rod_part)
-    return
-	{
-        type = "item",
-        name = rod_part .. "-rod",
-        icon = "__base__/graphics/icons/iron-stick.png",
-        icon_size = 64,
-		stack_size = 50,
-    }
+for _, metal_part in pairs(metals) do
+    local pair = create_component(metal_part)
+    table.insert(rodparts, pair[1])
+    table.insert(craftrods, pair[2])
+	table.insert(pipeparts, pair[3])
+	table.insert(craftpipes, pair[4])
 end
-for _, rod_part in pairs(part_making_rod) do
-    table.insert(parts, create_rod(rod_part))
-end   
-local rod_maker = {
-    "cobalt",
-    "iron",
-    "copper",
-    "aluminum",
-    "nickel",
-    "titanium",
-    "chromium",
-    "lead",
-    "tin",
-    "bronze",
-    "duralumin",
-    "havar",
-    "incoloy",
-    "invar",
-    "monel",
-    "titanium5",
-    "kovar",
-    "nitinol",
-    "magnox",
-    "thoralite",
-    "light-bronze",
-    }
-local function rod_create(rod_recipe)
-    return
-	{
-        type = "recipe",
-		category = "crafting",
-        name = rod_recipe.."-rod",
-        icon = "__base__/graphics/icons/iron-stick.png",
-		energy_required = 2,
-        icon_size = 64,
-		stack_size = 50,
-		ingredients = { { rod_recipe.."-plate", 1 } },
-		result = rod_recipe.."-rod",
-		result_count = 2,
-    }
-end
-for _, rod_recipe in pairs(rod_maker) do
-    table.insert(craft, rod_create(rod_recipe))
-end   
-data:extend(parts)
-data:extend(craft)
+data:extend(rodparts)
+data:extend(craftrods)
+data:extend(pipeparts)
+data:extend(craftpipes)

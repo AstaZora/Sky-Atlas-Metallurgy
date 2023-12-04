@@ -9,6 +9,14 @@ data:extend({
 	},
 	{
 		type = "autoplace-control",
+		name = "iron-deposit",
+		localised_name = { "", "[entity=iron-deposit] ", { "entity-name.iron-deposit" } },
+		richness = true,
+		order = "b-a",
+		category = "resource",
+	},
+	{
+		type = "autoplace-control",
 		name = "malachite-ore",
 		localised_name = { "", "[entity=malachite-ore] ", { "entity-name.malachite-ore" } },
 		richness = true,

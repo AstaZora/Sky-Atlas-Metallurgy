@@ -7,6 +7,7 @@ data:extend({
 		subgroup = "metallurgy-processes",
 		enabled = true,
 		energy_required = 1,
+		allow_intermeidates = false,
 		ingredients = { { "laterite-ore", 8 } },
 		results = {
 			{ "cobaltite-ore", 4 },
@@ -283,7 +284,7 @@ data:extend({
 		subgroup = "sam-recipes",
 		enabled = true,
 		energy_required = 12,
-		ingredients = { { "cobalt-plate", 10 }, { "nickel-plate", 10 }, { "iron-plate", 10 }, { "stone-brick", 25 } },
+		ingredients = { { "iron-plate", 5 }, { "stone-brick", 5 } },
 		results = {
 			{ "alloy-furnace", 1 },
 		},
@@ -3713,7 +3714,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "stone-sifting",
-		energy_required = 20,
+		energy_required = 5,
 		enabled = true,
 		category = "centrifuging",
 		ingredients = { { "stone", 20 } },

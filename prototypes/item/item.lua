@@ -68,6 +68,24 @@ data:extend({
 	},
 	{
 		type = "item",
+		name = "iron-deposit-chunk",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		pictures = {
+			{
+				size = 64,
+				filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+				scale = 0.25,
+				mipmap_count = 4,
+			},
+		},
+		subgroup = "raw-resource",
+		order = "i[magnetite-ore]",
+		stack_size = 200,
+	},
+	{
+		type = "item",
 		name = "rare-earth-ore",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
 		icon_size = 64,

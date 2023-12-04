@@ -92,7 +92,7 @@ data:extend({
 		icon = "__base__/graphics/technology/sulfur-processing.png",
 		icon_size = 256,
 		icon_mipmaps = 4,
-		inventory_order = "j",
+		inventory_order = "k",
 		order = "i",
 	},
 })
