@@ -2167,6 +2167,16 @@ data:extend({
 		stack_size = 50,
 	},
 	{
+        type = "item",
+        name = "debris-miner",
+        icon = "__base__/graphics/icons/electric-mining-drill.png",  -- Update with your mod's icon
+        icon_size = 64,
+        subgroup = "extraction-machine",
+        order = "a[items]-c[debris-miner]",
+        place_result = "debris-miner",
+        stack_size = 50
+    },
+	{
 		type = "item",
 		name = "chemical-refinery",
 		icon = "__base__/graphics/icons/oil-refinery.png",

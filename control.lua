@@ -1,43 +1,56 @@
--- control.lua
-local function isWithinRadius(position, center, radius)
-    local dx = position.x - center.x
-    local dy = position.y - center.y
-    return dx * dx + dy * dy <= radius * radius
+function calculate_amount(x, y, center_x, center_y, min_amount, base_value)
+    local dx = x - center_x
+    local dy = y - center_y
+    local distance = math.sqrt(dx * dx + dy * dy)
+
+    if distance == 0 then
+        distance = 0.1
+    end
+
+    local amount = base_value / distance
+    return math.max(min_amount, amount)
 end
--- Function to generate "magnetite-ore" based on iron deposit parameters
-local function generateMagnetiteOre(chunk_center, nauvis_surface)
-    if chunk_center and chunk_center.x and chunk_center.y then
-        local radius_factor = 0.75  -- Adjust the factor to control the radius relative to "iron-deposit"
-        local radius = 5 * radius_factor  -- Adjust radius based on your preference
 
-        local chunk_center_position = {x = chunk_center.x + 16, y = chunk_center.y + 16}
 
-        -- Check if the chunk center is within the radius of an "iron-deposit" entity
-        if isWithinRadius(chunk_center_position, chunk_center_position, radius) then
-            -- Calculate the iron deposit value at the given position
-            local ironDepositEntities = nauvis_surface.find_entities_filtered{
-                name = "iron-deposit",
-                area = {{chunk_center_position.x - 1, chunk_center_position.y - 1}, {chunk_center_position.x + 1, chunk_center_position.y + 1}}
-            }
 
-            local ironDepositValue = 0
-            for _, entity in pairs(ironDepositEntities) do
-                ironDepositValue = ironDepositValue + entity.amount
+-- Function to place resources in a cluster with a core, normal layer, and debris layer
+function place_resource_cluster(center_x, center_y, seed)
+    local core_radius = 5
+    local normal_radius = 10
+    local debris_radius = 15
+    local min_amount = 500
+    local base_value = 1000
+
+    for x = center_x - debris_radius, center_x + debris_radius do
+        for y = center_y - debris_radius, center_y + debris_radius do
+            local distance = math.sqrt((x - center_x)^2 + (y - center_y)^2)
+
+            -- Check the conditions and call calculate_amount for each layer
+            if distance <= core_radius then
+                local amount_core = calculate_amount(x, y, center_x, center_y, min_amount, base_value)
+                game.surfaces[1].create_entity{name = "magnetite-ore", position = {x, y}, amount = amount_core}
+            elseif distance <= normal_radius then
+                local amount_normal = calculate_amount(x, y, center_x, center_y, min_amount, base_value)
+                game.surfaces[1].create_entity{name = "iron-deposit", position = {x, y}, amount = amount_normal}
             end
-
-            -- Check conditions for placing magnetite
-            if ironDepositValue > 1000 and math.random() < 0.5 then
-                -- Calculate the amount of "magnetite-ore" based on iron deposit value
-                local magnetiteOreAmount = ironDepositValue * 0.1  -- 10% of iron deposit value
-                magnetiteOreAmount = math.max(0, math.min(magnetiteOreAmount, 6000))  -- Clamp between 0 and 6000
-
-                nauvis_surface.create_entity{
-                    name = "magnetite-ore",
-                    amount = magnetiteOreAmount,
-                    position = chunk_center_position,
-                }
+            
+            if distance <= debris_radius then
+                local amount_debris = calculate_amount(x, y, center_x, center_y, min_amount, base_value)
+                game.surfaces[1].create_entity{name = "temporary-debris", position = {x, y}, amount = amount_debris}
             end
         end
     end
 end
-script.on_event(defines.events.on_chunk_generated, generateMagnetiteOre)
+
+-- Adjusted event handler for less frequent spawns
+script.on_event(defines.events.on_chunk_generated, function(event)
+    local chunk_area = event.area
+    local center_x = math.floor((chunk_area.left_top.x + chunk_area.right_bottom.x) / 2)
+    local center_y = math.floor((chunk_area.left_top.y + chunk_area.right_bottom.y) / 2)
+
+    -- Reduced chance for spawning a resource cluster
+    if math.random() < 0.005 then  -- Adjust this value for spawn frequency 0.01 is 1%
+        place_resource_cluster(center_x, center_y, game.surfaces[1].map_gen_settings.seed)
+    end
+end)
+

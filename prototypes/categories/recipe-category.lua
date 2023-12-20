@@ -15,4 +15,10 @@ data:extend({
 		type = "recipe-category",
 		name = "sam-components",
 	},
+	{
+        type = "resource-category",
+        name = "temporary-debris"
+    },
+	minable = {
+		category = "temporary-debris"},
 })

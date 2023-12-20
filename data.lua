@@ -56,7 +56,6 @@ local function removeResource(resource)
 end
 
 removeResource("iron-ore")
-removeResource("stone")
 removeResource("copper-ore")
 removeResource("uranium-ore")
 addResource("magnetite-ore")

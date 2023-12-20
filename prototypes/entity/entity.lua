@@ -131,10 +131,20 @@ alloyFurnacemk2.working_sound = {
 		volume = 0.35,
 	},
 }
-
+local debrisMiner = table.deepcopy(data.raw["mining-drill"]["electric-mining-drill"])
+debrisMiner.name= "debris-miner"
+debrisMiner.mining_power = 3.0  -- Adjust based on your needs
+debrisMiner.mining_speed = 2.0  -- Adjust based on your needs
+debrisMiner.energy_usage = "50kW"
+debrisMiner.minable = {mining_time = 0.3, result = "debris-miner"}
+debrisMiner.resource_categories = {"temporary-debris"}
+debrisMiner.flags = {"placeable-neutral", "placeable-player", "player-creation"}  -- Can be placed generally, including on resource tiles
+debrisMiner.collision_box = {{ -1.4, -1.4}, {1.4, 1.4}}
+debrisMiner.selection_box = {{ -1.5, -1.5}, {1.5, 1.5}}
 
 data:extend({
 	alloyFurnace,
 	alloyFurnacemk2,
 	chemicalRefinery,
+	debrisMiner
 })

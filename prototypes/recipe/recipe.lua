@@ -318,6 +318,20 @@ data:extend({
 		},
 		icon_size = 64,
 	},
+	{
+		type = "recipe",
+		name = "debris-miner",
+		icon = "__base__/graphics/icons/electric-mining-drill.png",
+		category = "crafting",
+		subgroup = "sam-recipes",
+		enabled = true,
+		energy_required = 5,
+		ingredients = { { "iron-gear-wheel", 10 }, { "burner-mining-drill", 4 }, { "electronic-circuit", 5 } },
+		results = {
+			{ "debris-miner", 1 },
+		},
+		icon_size = 64,
+	},
 	--Nickel Creation
 	{
 		type = "recipe",

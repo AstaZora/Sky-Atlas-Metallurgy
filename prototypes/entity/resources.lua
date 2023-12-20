@@ -3,6 +3,58 @@ local resource_autoplace = require("resource-autoplace")
 data:extend({
 	{
 		type = "resource",
+		name = "temporary-debris",
+		icon = "__base__/graphics/icons/stone.png",  -- Example, use an appropriate icon
+		icon_size = 32,
+		flags = {"placeable-neutral"},
+		category = "temporary-debris",
+		order="a-b-a",
+		minable = {
+			mining_particle = "stone-particle",
+			mining_time = 2,
+			result = "stone",  -- Result of mining the debris
+		},
+		collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
+		selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
+		autoplace = {
+			control = "stone",  -- Example, adjust as needed
+			sharpness = 1,
+			richness_multiplier = 1500,
+			richness_multiplier_distance_bonus = 30,
+			richness_base = 500,
+			coverage = 0.02,
+			peaks = {
+				{
+					noise_layer = "stone",
+					noise_octaves_difference = -1.5,
+					noise_persistence = 0.3,
+				},
+			},
+		},
+		stage_counts = {10000},
+		stages = {
+			sheet = {
+				filename = "__base__/graphics/entity/stone/stone.png",  -- Example, use appropriate graphics
+				priority = "extra-high",
+				width = 64,
+				height = 64,
+				frame_count = 4,
+				variation_count = 1,
+				hr_version = {
+					filename = "__base__/graphics/entity/stone/hr-stone.png",  -- Example, high-resolution graphics
+					priority = "extra-high",
+					width = 128,
+					height = 128,
+					frame_count = 4,
+					variation_count = 1,
+					scale = 0.5
+				}
+			}
+		},
+		map_color = {r=0.42, g=0.33, b=0.28}
+	},
+	{
+		type = "resource",
 		name = "magnetite-ore",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
 		icon_size = 64,
