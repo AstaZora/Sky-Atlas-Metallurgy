@@ -46,7 +46,7 @@ data:extend({
 			name = "magnetite-ore",
 			order = "a",
 			base_density = 10,
-			has_starting_area_placement = true,
+			has_starting_area_placement = false,
 			regular_rq_factor_multiplier = 1,
 			starting_rq_factor_multiplier = 1,
 		}),
@@ -71,6 +71,13 @@ data:extend({
 		icon_size = 64,
 		flags = { "placeable-neutral" },
 		order = "g-h-i",
+		starting_area_range = 2,
+		regular_rq_factor = 1,
+		base_density = 10,
+		richness_base = 1500,  -- Adjust as needed
+		richness_multiplier = 1500,  -- Adjust as needed
+		size_base = 30,  -- Adjust as needed
+		size_multiplier = 2,
 		minable = {
 			mining_particle = "magnetite-ore-particle",
 			mining_time = 1,
