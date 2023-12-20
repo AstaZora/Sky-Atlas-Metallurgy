@@ -1,13 +1,20 @@
-function calculate_amount(x, y, center_x, center_y, min_amount, base_value)
-    local dx = x - center_x
-    local dy = y - center_y
-    local distance = math.sqrt(dx * dx + dy * dy)
-
+function calculate_amount(distance, min_amount, base_value, layer_type)
+    local amount
     if distance == 0 then
         distance = 0.1
     end
 
-    local amount = base_value / distance
+    if layer_type == "core" then
+        -- Higher density closer to the center
+        amount = base_value / distance
+    elseif layer_type == "normal" then
+        -- Consistent density for normal layer (Iron deposit)
+        amount = base_value * 2
+    elseif layer_type == "debris" then
+        -- Lower density as distance increases
+        amount = base_value / (distance * 1.2)
+    end
+
     return math.max(min_amount, amount)
 end
 
@@ -25,22 +32,22 @@ function place_resource_cluster(center_x, center_y, seed)
         for y = center_y - debris_radius, center_y + debris_radius do
             local distance = math.sqrt((x - center_x)^2 + (y - center_y)^2)
 
-            -- Check the conditions and call calculate_amount for each layer
             if distance <= core_radius then
-                local amount_core = calculate_amount(x, y, center_x, center_y, min_amount, base_value)
+                local amount_core = calculate_amount(distance, min_amount, base_value, "core")
                 game.surfaces[1].create_entity{name = "magnetite-ore", position = {x, y}, amount = amount_core}
             elseif distance <= normal_radius then
-                local amount_normal = calculate_amount(x, y, center_x, center_y, min_amount, base_value)
+                local amount_normal = calculate_amount(distance, min_amount, base_value, "normal")
                 game.surfaces[1].create_entity{name = "iron-deposit", position = {x, y}, amount = amount_normal}
             end
             
             if distance <= debris_radius then
-                local amount_debris = calculate_amount(x, y, center_x, center_y, min_amount, base_value)
+                local amount_debris = calculate_amount(distance, min_amount, base_value, "debris")
                 game.surfaces[1].create_entity{name = "temporary-debris", position = {x, y}, amount = amount_debris}
             end
         end
     end
 end
+
 
 -- Adjusted event handler for less frequent spawns
 script.on_event(defines.events.on_chunk_generated, function(event)
