@@ -55,6 +55,44 @@ data:extend({
 	},
 	{
 		type = "resource",
+		name = "aquatic-ore",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aquatic-ore.png",  -- Example, use an appropriate icon
+		icon_size = 32,
+		flags = {"placeable-neutral"},
+		category = "aquatic",
+		order="a-b-a",
+		minable = {
+			mining_particle = "stone-particle",
+			mining_time = 2,
+			result = "aquatic-ore", 
+		},
+		collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
+		selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
+		collision_mask = {"ground-tile", "resource-layer", "not-colliding-with-itself"},
+		autoplace = resource_autoplace.resource_autoplace_settings({
+			name = "aquatic-ore",
+			order = "a",
+			base_density = 10,
+			has_starting_area_placement = false,
+			regular_rq_factor_multiplier = 1,
+			starting_rq_factor_multiplier = 1,
+		}),
+		stage_counts = {10000},
+		stages = {
+			sheet = {
+				filename = "__base__/graphics/entity/stone/stone.png",  -- Example, use appropriate graphics
+				priority = "extra-high",
+				width = 64,
+				height = 64,
+				frame_count = 4,
+				variation_count = 1,
+				
+			}
+		},
+		map_color = {r=0.10, g=0.44, b=0.44}
+	},
+	{
+		type = "resource",
 		name = "magnetite-ore",
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
 		icon_size = 64,

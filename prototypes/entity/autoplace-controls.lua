@@ -79,4 +79,13 @@ data:extend({
 		order = "b-bd",
 		category = "resource",
 	},
+	{
+		type = "autoplace-control",
+		name = "aquatic-ore",
+		localised_name = { "", "[entity=aquatic-ore] ", { "entity-name.aquatic-ore" } },
+		richness = true,
+		order = "b-bd",
+		category = "resource",
+	},
+		
 })

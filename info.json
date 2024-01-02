@@ -7,7 +7,18 @@
   "author": "Quasar_0, AstaZora",
   "homepage": "",
   "description": "This mod is the main mod, for a new overhaul of vanilla metallurgy. Revamping the vanilla experience",
-  "dependencies": [
-    "base >= 1.1"
-  ]
+  "dependencies": ["base >= 1.1"],
+  "config": {
+    "autoplace_settings": {
+        "start_area": "normal",
+        "default_resource": "coal",
+        "resource": {
+            "Sky-Atlas-Metallurgy:aquatic-ore": { 
+                "frequency": 1,
+                "size": 1,
+                "richness": 1
+            }
+        }
+    }
+}
 }

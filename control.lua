@@ -94,3 +94,29 @@ script.on_event(defines.events.on_chunk_generated, function(event)
     end
 end)
 
+script.on_event(defines.events.on_built_entity, function(event)
+    local entity = event.created_entity
+    if entity.name == "aquatic-miner" then
+        local position = entity.position
+        local area = {{position.x - 1, position.y - 1}, {position.x + 1, position.y + 1}}
+        local miners = entity.surface.find_entities_filtered{area = area, name = "aquatic-miner"}
+
+        if #miners > 1 then  -- More than one miner in the area
+            -- Destroy the newly placed miner
+            entity.destroy()
+
+            -- Optionally, return the item to the player
+            if event.player_index then
+                local player = game.players[event.player_index]
+                player.insert({name = "aquatic-miner", count = 1})
+            end
+
+            -- Optionally, display a warning message to the player
+            if event.player_index then
+                local player = game.players[event.player_index]
+                player.print("Cannot place Aquatic Miner here: too close to another miner.")
+            end
+        end
+    end
+end)
+

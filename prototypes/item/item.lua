@@ -112,6 +112,19 @@ data:extend({
 	},
 	{
 		type = "item",
+		name = "aquatic-ore",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aquatic-ore.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		picture =
+			{ size = 64, filename = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aquatic-ore.png", scale = 0.25, mipmap_count = 4 },
+	
+		subgroup = "raw-resource",
+		order = "f[limonite-ore]",
+		stack_size = 200,
+	},
+	{
+		type = "item",
 		name = "tin-ore",
 		icon = "__base__/graphics/icons/coal.png",
 		icon_size = 64,
@@ -765,6 +778,17 @@ data:extend({
 		type = "item",
 		name = "stone-debris",
 		icon = "__base__/graphics/icons/stone.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		subgroup = "raw-resource",
+		order = "a[stone-debris]",
+		stack_size = 100,
+	},
+	
+	{
+		type = "item",
+		name = "aquatic-ore",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/aquatic-ore.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
 		subgroup = "raw-resource",
@@ -2174,6 +2198,35 @@ data:extend({
         subgroup = "extraction-machine",
         order = "a[items]-c[debris-miner]",
         place_result = "debris-miner",
+        stack_size = 50
+    },
+	{
+        type = "item",
+        name = "aquatic-miner",
+        icon = "__base__/graphics/icons/electric-mining-drill.png",  -- Update with your mod's icon
+        icon_size = 64,
+        subgroup = "extraction-machine",
+        order = "a[items]-d[aquatic-miner]",
+        place_result = "aquatic-miner",
+        stack_size = 50
+    },
+	{
+        type = "item",
+        name = "chlorophyll-battery",
+        icon = "__base__/graphics/icons/accumulator.png",  -- Update with your mod's icon
+        icon_size = 64,
+        subgroup = "energy",
+        order = "a[items]-d[aquatic-miner]",
+        place_result = "chlorophyll-battery",
+        stack_size = 50
+    },
+	{
+        type = "item",
+        name = "plastic-polymers",
+        icon = "__base__/graphics/icons/plastic-bar.png",  -- Update with your mod's icon
+        icon_size = 64,
+        subgroup = "energy",
+        order = "a[items]-d[aquatic-miner]",
         stack_size = 50
     },
 	{

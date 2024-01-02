@@ -142,9 +142,85 @@ debrisMiner.flags = {"placeable-neutral", "placeable-player", "player-creation"}
 debrisMiner.collision_box = {{ -1.4, -1.4}, {1.4, 1.4}}
 debrisMiner.selection_box = {{ -1.5, -1.5}, {1.5, 1.5}}
 
+local waterMiner = table.deepcopy(data.raw["mining-drill"]["electric-mining-drill"])
+waterMiner.name = "aquatic-miner"
+waterMiner.mining_power = 1.0
+waterMiner.mining_speed = 1.0
+waterMiner.energy_usage = "120kW"
+waterMiner.minable = {mining_time = 0.5, result = "aquatic-miner"}
+waterMiner.resource_categories = {"aquatic"}
+waterMiner.collision_mask = {"ground-tile", "resource-layer", "not-colliding-with-itself"}
+waterMiner.flags = {"placeable-neutral", "placeable-player", "player-creation"}  -- Can be placed generally, including on resource tiles
+waterMiner.collision_box = {{ -1.4, -1.4}, {1.4, 1.4}}
+waterMiner.selection_box = {{ -1.5, -1.5}, {1.5, 1.5}}
+
+
+local chlorophyll_battery = table.deepcopy(data.raw["electric-energy-interface"]["electric-energy-interface"])
+
+chlorophyll_battery.name = "chlorophyll-battery"
+chlorophyll_battery.icon = "__base__/graphics/icons/accumulator.png"
+chlorophyll_battery.charge_cooldown = 16
+chlorophyll_battery.discharge_cooldown = 16
+chlorophyll_battery.energy_production = "150kW"
+chlorophyll_battery.gui_mode = "none"
+chlorophyll_battery.minable = {mining_time = 0.5, result = "chlorophyll-battery"}
+chlorophyll_battery.energy_source = {
+	type = "electric",
+	buffer_capacity = "5MJ",
+	usage_priority = "tertiary",
+	input_flow_limit = "300kW",
+	output_flow_limit = "300kW",
+  }
+chlorophyll_battery.picture = {
+	filename = "__base__/graphics/entity/accumulator/accumulator.png", -- Use the accumulator's graphics as a placeholder
+	priority = "extra-high",
+	width = 66,
+	height = 94,
+	shift = {0.0, -0.0},
+  }
+  chlorophyll_battery.charge_animation = {
+	filename = "__base__/graphics/entity/accumulator/accumulator-charge.png", -- Use the accumulator's charge animation as a placeholder
+	priority = "extra-high",
+	width = 87,
+	height = 71,
+	line_length = 6,
+	frame_count = 24,
+	shift = {0.0, -0.0},
+	animation_speed = 0.5,
+  }
+  chlorophyll_battery.water_reflection = {
+	pictures = {
+	  filename = "__base__/graphics/entity/accumulator/accumulator-reflection.png", -- Use the accumulator's water reflection as a placeholder
+	  priority = "extra-high",
+	  width = 20,
+	  height = 24,
+	  shift = {0.0, 1.0},
+	},
+	rotate = false,
+	orientation_to_variation = false,
+  }
+  chlorophyll_battery.vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65}
+  chlorophyll_battery.working_sound = {
+	sound = {
+	  filename = "__base__/sound/accumulator-working.ogg", -- Use the accumulator's working sound as a placeholder
+	  volume = 1,
+	},
+	idle_sound = {
+	  filename = "__base__/sound/accumulator-idle.ogg", -- Use the accumulator's idle sound as a placeholder
+	  volume = 0.4,
+	},
+	max_sounds_per_type = 5,
+	audible_distance_modifier = 0.5,
+  }
+  chlorophyll_battery.selection_box = {{-1.1, -1.1}, {1.1, 1.1}} -- Adjust the values as needed
+  chlorophyll_battery.collision_box = {{-0.9, -0.9}, {0.9, 0.9}} -- Adjust the values as needed
+
+-- Register the new entity to Factorio's Data
 data:extend({
 	alloyFurnace,
 	alloyFurnacemk2,
 	chemicalRefinery,
-	debrisMiner
+	debrisMiner,
+	waterMiner,
+	chlorophyll_battery
 })
