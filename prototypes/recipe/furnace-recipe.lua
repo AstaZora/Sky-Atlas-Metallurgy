@@ -2,6 +2,16 @@ data:extend({
 	--Magnetite Ore
 	{
 		type = "recipe",
+		name = "iron-plate-deposit",
+		category = "smelting",
+		subgroup = "refined-metallurgy",
+		ingredients = { { "magnetite-deposit", 6 } },
+		results = { { "iron-plate", 1 } },
+		energy_required = 8,
+		enabled = true,
+	},
+	{
+		type = "recipe",
 		name = "iron-plate-raw",
 		category = "smelting",
 		subgroup = "refined-metallurgy",

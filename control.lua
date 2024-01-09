@@ -16,7 +16,6 @@ function spiral_galaxy_noise(x, y, center_x, center_y, arms, base_value)
 end
 
 function calculate_distance_from_spawn(x, y)
-    -- Assuming spawn is at (0,0), adjust if your spawn is different
     return math.sqrt(x*x + y*y)
 end
 
@@ -27,13 +26,13 @@ function calculate_amount(distance, min_amount, base_value, layer_type)
     end
 
     if layer_type == "core" then
-        -- Higher density closer to the center
+        -- Higher density core closest to the center
         amount = base_value / distance
     elseif layer_type == "normal" then
-        -- Consistent density for normal layer (Iron deposit)
-        amount = base_value * 2
+        -- Main resource goes here
+        amount = base_value * 1
     elseif layer_type == "debris" then
-        -- Lower density as distance increases
+        -- Debris settings
         amount = base_value / (distance * 1.2)
     end
 
@@ -43,17 +42,16 @@ end
 
 
 -- Function to place resources in a cluster with a core, normal layer, and debris layer
-function place_resource_cluster(center_x, center_y)
-    local core_radius = 5
-    local normal_radius = 10
-    local debris_radius = 15
-    local min_amount = 500
-    local base_value = 1000
-    local num_arms = 4  -- Number of spiral arms
-    local spawn_distance = calculate_distance_from_spawn(center_x, center_y)
-
-
-    function place_resource_cluster(center_x, center_y)
+    function place_resource_cluster(center_x, center_y, surface)
+        local core_radius = 5
+        local deposit_radius = 10
+        local raw_radius = 15
+        local valuable_radius = 20
+        local debris_radius = 25
+        local min_amount = 500
+        local base_value = 100
+        local num_arms = 4  -- Number of spiral arms
+        local spawn_distance = calculate_distance_from_spawn(center_x, center_y)
     
         -- Adjust base_value based on distance from spawn
         local distance_factor = 1 + spawn_distance * 0.1  -- This factor increases with distance from spawn
@@ -64,22 +62,27 @@ function place_resource_cluster(center_x, center_y)
     
                 if distance <= core_radius then
                     local amount_core = calculate_amount(distance, min_amount, base_value * distance_factor, "core")
-                    game.surfaces[1].create_entity{name = "magnetite-ore", position = {x, y}, amount = amount_core}
-                elseif distance <= normal_radius then
-                    local amount_normal = calculate_amount(distance, min_amount, base_value * distance_factor, "normal")
-                    game.surfaces[1].create_entity{name = "iron-deposit", position = {x, y}, amount = amount_normal}
+                    surface.create_entity{name = "magnetite-core", position = {x, y}, amount = amount_core}
+                elseif distance <= deposit_radius then
+                    local amount_deposit = calculate_amount(distance, min_amount, base_value * distance_factor, "normal")
+                    surface.create_entity{name = "magnetite-valuable", position = {x, y}, amount = amount_deposit}
+                elseif distance <= raw_radius then
+                    local amount_raw = calculate_amount(distance, min_amount, base_value * distance_factor, "normal")
+                    surface.create_entity{name = "magnetite-raw", position = {x, y}, amount = amount_raw}
+                elseif distance <= valuable_radius then
+                    local amount_valuable = calculate_amount(distance, min_amount, base_value * distance_factor, "normal")
+                    surface.create_entity{name = "magnetite-deposit", position = {x, y}, amount = amount_valuable}
                 end
-                
+    
                 if distance <= debris_radius then
                     local amount_debris = spiral_galaxy_noise(x, y, center_x, center_y, num_arms, base_value * distance_factor)
                     if amount_debris > 0 then
-                        game.surfaces[1].create_entity{name = "temporary-debris", position = {x, y}, amount = amount_debris}
+                        surface.create_entity{name = "magnetite-debris", position = {x, y}, amount = amount_debris}
                     end
                 end
             end
         end
     end
-end
 
 
 -- Adjusted event handler for less frequent spawns
@@ -90,7 +93,7 @@ script.on_event(defines.events.on_chunk_generated, function(event)
 
     -- Reduced chance for spawning a resource cluster
     if math.random() < 0.003 then  -- Adjust this value for spawn frequency 0.01 is 1%
-        place_resource_cluster(center_x, center_y, game.surfaces[1].map_gen_settings.seed)
+        place_resource_cluster(center_x, center_y, event.surface)
     end
 end)
 

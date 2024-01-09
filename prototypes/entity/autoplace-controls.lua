@@ -9,6 +9,15 @@ data:extend({
 	},
 	{
 		type = "autoplace-control",
+		name = "magnetite",
+		localised_name = { "", "[entity=magnetite] ", { "entity-name.magnetite" } },
+		richness = true,
+		hidden = true,
+		order = "b-a",
+		category = "resource",
+	},
+	{
+		type = "autoplace-control",
 		name = "iron-deposit",
 		localised_name = { "", "[entity=iron-deposit] ", { "entity-name.iron-deposit" } },
 		richness = true,

@@ -1,7 +1,7 @@
 require("prototypes.categories.fuel-category")
 require("prototypes.categories.recipe-category")
-require("prototypes.entity.autoplace-controls")
 require("prototypes.entity.entity")
+require("prototypes.entity.autoplace-controls")
 require("prototypes.entity.resources")
 require("prototypes.entity.robots")
 require("prototypes.item.item")
@@ -11,7 +11,6 @@ require("prototypes.particle.particles")
 require("prototypes.particle.particle-animations")
 require("prototypes.recipe.recipe")
 require("prototypes.recipe.fluid-recipe")
-
 
 local presets = {
 	["rich-resources"] = { richness = "very-good" },

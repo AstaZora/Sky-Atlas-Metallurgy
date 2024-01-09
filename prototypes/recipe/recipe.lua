@@ -414,7 +414,7 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "aquatic-ore", 1 },
+			{ "aquatic-ore", 5 },
 		},
 		results = {
 			{ type = "fluid", name = "aquatic-slurry", amount = 50 },
@@ -547,6 +547,39 @@ data:extend({
 	},
 	--Metallurgy Stages
 	--Magnetite Refining
+	{
+		type = "recipe",
+		name = "magnetite-debris-sorting",
+		category = "centrifuging",
+		main_product = "magnetite-ore",
+		hide_from_player_crafting = true,
+		order = "aa",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+		icon_size = 32,
+		icon_mipmaps = 4,
+		energy_required = 8,
+		enabled = true,
+		ingredients = {
+			{ "magnetite-debris", 20 },
+		},
+		results = {
+			{
+				name = "magnetite-ore",
+				probability = 1,
+				amount = 4,
+			},
+			{
+				name = "magnetite-deposit",
+				probability = 1,
+				amount = 8,
+			},
+			{
+				name = "stone",
+				probability = 0.5,
+				amount = 2,
+			},
+		}
+	},
 	{
 		type = "recipe",
 		name = "magnetite-rock",

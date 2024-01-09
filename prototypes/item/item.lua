@@ -1002,6 +1002,26 @@ data:extend({
 		order = "b[raw-magnetite]",
 		stack_size = 50,
 	},
+	{
+		type = "item",
+		name = "magnetite-debris",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		subgroup = "raw-metallurgy",
+		order = "b[raw-magnetite]",
+		stack_size = 100,
+	},
+	{
+		type = "item",
+		name = "magnetite-deposit",
+		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		subgroup = "raw-metallurgy",
+		order = "b[raw-magnetite]",
+		stack_size = 100,
+	},
 	--Malachite
 	{
 		type = "item",
