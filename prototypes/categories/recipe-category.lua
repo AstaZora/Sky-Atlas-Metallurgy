@@ -17,12 +17,12 @@ data:extend({
 	},
 	{
         type = "resource-category",
-        name = "temporary-debris"
+        name = "debris"
     },
 	{
 		type = "resource-category",
 		name = "aquatic"
 	},
 	minable = {
-		category = "temporary-debris","aquatic"},
+		category = "debris","aquatic"},
 })

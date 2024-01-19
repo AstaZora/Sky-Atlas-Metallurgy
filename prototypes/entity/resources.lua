@@ -7,7 +7,7 @@ data:extend({
 		icon = "__base__/graphics/icons/stone.png",  -- Example, use an appropriate icon
 		icon_size = 32,
 		flags = {"placeable-neutral"},
-		category = "temporary-debris",
+		category = "debris",
 		order="a-b-a",
 		minable = {
 			mining_particle = "stone-particle",
@@ -555,6 +555,7 @@ data:extend({
 		icon = "__Sky-Atlas-Metallurgy-Rebirth__/graphics/icons/magnetite-ore.png",
 		icon_size = 64,
 		flags = { "placeable-neutral" },
+		category = "debris",
 		order = "i",
 		minable = {
 			mining_particle = "magnetite-ore-particle",
@@ -600,9 +601,9 @@ data:extend({
 		order = "i",
 		minable = {
 			mining_particle = "magnetite-ore-particle",
-			mining_time = 1,
+			mining_time = 2,
 			fluid_amount = 10,
-			required_fluid = "steam",
+			required_fluid = "motor-oil",
 			results = {
 				{
 					name = "refined-magnetite-ore",
@@ -644,9 +645,9 @@ data:extend({
 		order = "i",
 		minable = {
 			mining_particle = "magnetite-ore-particle",
-			mining_time = 1,
-			fluid_amount = 10,
-			required_fluid = "steam",
+			mining_time = 3,
+			fluid_amount = 5,
+			required_fluid = "carbonic-acid",
 			results = {
 				{
 					name = "imperfect-magnetite",
@@ -688,9 +689,9 @@ data:extend({
 		order = "i",
 		minable = {
 			mining_particle = "magnetite-ore-particle",
-			mining_time = 1,
-			fluid_amount = 10,
-			required_fluid = "steam",
+			mining_time = 4,
+			fluid_amount = 5,
+			required_fluid = "caudic-acid",
 			results = {
 				{
 					name = "pure-magnetite-ore",
@@ -738,9 +739,11 @@ data:extend({
 		size_base = 30,  -- Adjust as needed
 		size_multiplier = 2,
 		minable = {
+			fluid_amount = 10,
+			required_fluid = "motor-oil",
 			mining_particle = "magnetite-ore-particle",
 			mining_time = 1,
-			result = "magnetite-deposit",
+			result = "magnetite-ore",
 		},
 		collision_box = { { -0.1, -0.1 }, { 0.1, 0.1 } },
 		selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
