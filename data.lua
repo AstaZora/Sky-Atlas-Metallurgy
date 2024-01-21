@@ -75,7 +75,7 @@ data.raw["furnace"]["advanced-alloy-furnace"] = nil
 local boiler = data.raw["boiler"]["boiler"]
 boiler.energy_source.fuel_category = nil
 boiler.energy_source.fuel_categories = { "chemical", "magnetic" }
-
+--vanilla recipe changes
 data.raw["recipe"]["automation-science-pack"].ingredients = {
 	{ "invar-plate", 1 },
 	{ "monel-plate", 1 },
@@ -109,6 +109,14 @@ data.raw["recipe"]["utility-science-pack"].ingredients = {
 	{ "magnox-plate", 8 },
 	{ "thoralite-plate", 4 },
 	{ "alnico-magnet", 5 },
+}
+
+data.raw["recipe"]["rocket-fuel"].ingredients =
+{
+	{type = "fluid",name = "oxygen", amount = 30},
+	{type = "fluid", name = "aquamethane", amount = 10},
+	{"solid-fuel", 10}
+
 }
 
 --@generic V
