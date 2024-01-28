@@ -2453,6 +2453,16 @@ data:extend({
 	},
 	{
         type = "item",
+        name = "outpost-barreller",
+		icon = "__base__/graphics/icons/assembling-machine-3.png",
+        icon_size = 64,
+        subgroup = "production-machine",
+        order = "a[items]-c[assembling-machine-3]",
+        place_result = "outpost-barreller",
+        stack_size = 50
+    },
+	{
+        type = "item",
         name = "debris-miner",
         icon = "__base__/graphics/icons/electric-mining-drill.png",  -- Update with your mod's icon
         icon_size = 64,

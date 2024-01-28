@@ -364,6 +364,47 @@ data:extend({
 		},
 		icon_size = 64,
 	},
+	{
+		type = "recipe",
+		name = "outpost-barreller",
+		icon = "__base__/graphics/icons/assembling-machine-3.png",
+		category = "advanced-crafting",
+		subgroup = "sam-recipes",
+		enabled = true,
+		energy_required = 30,
+		ingredients = {
+			{ "storage-tank", 4 },
+			{ "pump", 10 },
+			{ "assembling-machine-3", 4 },
+		},
+		results = {
+			{ "chlorophyll-battery", 1 },
+		},
+		icon_size = 64,
+	},
+	{
+		type = "recipe",
+		name = "magnetite-fluid-balancing",
+		icon = "__base__/graphics/icons//fluid/barreling/barrel-empty.png",
+		category = "fluid-mining",
+		subgroup = "sam-recipes",
+		enabled = true,
+		energy_required = 15,
+		ingredients = {
+			{ type = "fluid", name = "coolant", amount = 5000 },
+			{ type = "fluid", name = "motor-oil", amount = 5000 },
+			{ type = "fluid", name = "carbonic-acid", amount = 5000 },
+			{ type = "fluid", name = "caudic-acid", amount = 5000 },
+			{ name = "empty-barrel", amount = 400 },
+		},
+		results = {
+			{name = "coolant-barrel", amount = 100 },
+			{name = "motor-oil-barrel", amount = 100 },
+			{name = "carbonic-acid-barrel", amount = 100 },
+			{name = "caudic-acid-barrel", amount = 100 },
+		},
+		icon_size = 64,
+	},
 	--Nickel Creation
 	{
 		type = "recipe",
@@ -598,13 +639,8 @@ data:extend({
 		results = {
 			{
 				name = "magnetite-rock",
-				probability = 1,
-				amount = 2,
-			},
-			{
-				name = "magnetite-rock",
-				probability = 0.5,
-				amount = 1,
+				amount_min = 2,
+				amount_max = 3,
 			},
 		}
 	},
@@ -627,13 +663,8 @@ data:extend({
 		results = {
 			{
 				name = "magnetite-chunk",
-				probability = 1,
-				amount = 2,
-			},
-			{
-				name = "magnetite-chunk",
-				probability = 0.5,
-				amount = 1,
+				amount_min = 2,
+				amount_max = 3,
 			},
 		}
 	},
@@ -655,13 +686,8 @@ data:extend({
 		results = {
 			{
 				name = "crushed-magnetite",
-				probability = 1,
-				amount = 2,
-			},
-			{
-				name = "crushed-magnetite",
-				probability = 0.5,
-				amount = 1,
+				amount_min = 2,
+				amount_max = 3,
 			},
 		}
 	},
@@ -685,13 +711,8 @@ data:extend({
 		results = {
 			{
 				name = "refined-magnetite-ore",
-				probability = 1,
-				amount = 2,
-			},
-			{
-				name = "refined-magnetite-ore",
-				probability = 0.5,
-				amount = 1,
+				amount_min = 2,
+				amount_max = 3,
 			},
 		}
 	},
@@ -731,13 +752,8 @@ data:extend({
 		results = {
 			{
 				name = "magnetite-shard",
-				probability = 1,
-				amount = 2,
-			},
-			{
-				name = "magnetite-shard",
-				probability = 0.5,
-				amount = 1,
+				amount_min = 2,
+				amount_max = 3,
 			},
 		}
 	},
@@ -761,13 +777,8 @@ data:extend({
 		results = {
 			{
 				name = "purified-magnetite-shard",
-				probability = 1,
-				amount = 2,
-			},
-			{
-				name = "purified-magnetite-shard",
-				probability = 0.5,
-				amount = 1,
+				amount_min = 2,
+				amount_max = 3,
 			},
 		}
 	},
@@ -791,13 +802,8 @@ data:extend({
 		results = {
 			{
 				name = "imperfect-magnetite",
-				probability = 1,
-				amount = 2,
-			},
-			{
-				name = "imperfect-magnetite",
-				probability = 0.5,
-				amount = 1,
+				amount_min = 2,
+				amount_max = 3,
 			},
 		}
 	},
@@ -819,13 +825,8 @@ data:extend({
 		results = {
 			{
 				name = "magnetite-powder",
-				probability = 1,
-				amount = 2,
-			},
-			{
-				name = "magnetite-powder",
-				probability = 0.5,
-				amount = 1,
+				amount_min = 2,
+				amount_max = 3,
 			},
 		}
 	},
@@ -848,13 +849,8 @@ data:extend({
 		results = {
 			{
 				name = "refined-magnetite-powder",
-				probability = 1,
-				amount = 2,
-			},
-			{
-				name = "refined-magnetite-powder",
-				probability = 0.5,
-				amount = 1,
+				amount_min = 2,
+				amount_max = 3,
 			},
 		}
 	},
@@ -877,13 +873,8 @@ data:extend({
 		results = {
 			{
 				name = "pure-magnetite-powder",
-				probability = 1,
-				amount = 2,
-			},
-			{
-				name = "pure-magnetite-powder",
-				probability = 0.5,
-				amount = 1,
+				amount_min = 2,
+				amount_max = 3,
 			},
 		}
 	},
@@ -899,12 +890,12 @@ data:extend({
 		energy_required = 4,
 		enabled = true,
 		ingredients = {
-			{ "pure-magnetite-powder", 1 },
+			{ "pure-magnetite-powder", 3 },
 			{ type = "fluid", name = "steam", amount = 10 },
 			{ type = "fluid", name = "acid-cleaning-solution", amount = 10 },
 		},
 		result = "pure-magnetite-ore",
-		result_count = 3,
+		result_count = 9,
 	},
 	--Uranium Refining
 	{

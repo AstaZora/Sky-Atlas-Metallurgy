@@ -16,6 +16,10 @@ data:extend({
 		name = "sam-components",
 	},
 	{
+        type = "recipe-category",
+        name = "fluid-mining"
+    },
+	{
         type = "resource-category",
         name = "debris"
     },

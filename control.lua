@@ -110,7 +110,7 @@ script.on_event(defines.events.on_chunk_generated, function(event)
     local chunk_area = event.area
     local center_x = math.floor((chunk_area.left_top.x + chunk_area.right_bottom.x) / 2)
     local center_y = math.floor((chunk_area.left_top.y + chunk_area.right_bottom.y) / 2)
-    if math.random() < 0.003 then  -- Adjust this value for spawn frequency
+    if math.random() < 0.001 then  -- Adjust this value for spawn frequency
         place_resource_cluster(center_x, center_y, event.surface)
     end
 end)

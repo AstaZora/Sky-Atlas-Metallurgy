@@ -154,6 +154,70 @@ waterMiner.flags = {"placeable-neutral", "placeable-player", "player-creation"} 
 waterMiner.collision_box = {{ -1.4, -1.4}, {1.4, 1.4}}
 waterMiner.selection_box = {{ -1.5, -1.5}, {1.5, 1.5}}
 
+local outpostBarreller = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"])
+outpostBarreller.name = "outpost-barreller"
+outpostBarreller.icon = "__base__/graphics/icons/assembling-machine-3.png"  -- Change to your custom icon if you have one
+outpostBarreller.icon_size = 64
+outpostBarreller.flags = {"placeable-neutral", "placeable-player", "player-creation"}
+outpostBarreller.minable = {mining_time = 0.5, result = "outpost-barreller"}
+outpostBarreller.max_health = 1250
+outpostBarreller.collision_box = {{-2, -2}, {2, 2}}
+outpostBarreller.selection_box = {{-2.5, -2.5}, {2.5, 2.5}}
+outpostBarreller.fluid_boxes = {
+  -- Single universal fluid input
+  {
+    production_type = "input",
+    pipe_picture = outpostBarreller.pipe_picture,
+    pipe_covers = outpostBarreller.pipe_covers,
+    base_area = 10,
+    base_level = -1,  -- Fluid level for input
+    pipe_connections = {
+      {type = "input", position = {-2.5, 0.5}}
+    }
+  },
+  {
+    production_type = "input",
+    pipe_picture = outpostBarreller.pipe_picture,
+    pipe_covers = outpostBarreller.pipe_covers,
+    base_area = 10,
+    base_level = -1,  -- Fluid level for input
+    pipe_connections = {
+      {type = "input", position = {2.5, 0.5}}
+    }
+  },
+  {
+    production_type = "input",
+    pipe_picture = outpostBarreller.pipe_picture,
+    pipe_covers = outpostBarreller.pipe_covers,
+    base_area = 10,
+    base_level = -1,  -- Fluid level for input
+    pipe_connections = {
+      {type = "input", position = {-0.5, 2.5}}
+    }
+  },
+  {
+    production_type = "input",
+    pipe_picture = outpostBarreller.pipe_picture,
+    pipe_covers = outpostBarreller.pipe_covers,
+    base_area = 10,
+    base_level = -1,  -- Fluid level for input
+    pipe_connections = {
+      {type = "input", position = {-0.5, -2.5}}
+    }
+  },
+}
+outpostBarreller.crafting_categories = {"fluid-mining"}
+outpostBarreller.crafting_speed = 1
+outpostBarreller.energy_usage = "300kW"
+outpostBarreller.ingredient_count = 4
+outpostBarreller.energy_source = {
+  type = "electric",
+  usage_priority = "secondary-input",
+  emissions_per_minute = 1
+}
+outpostBarreller.animation = outpostBarreller.animation  -- Keep existing animation
+outpostBarreller.working_visualisations = outpostBarreller.working_visualisations  -- Keep existing visualisations
+
 
 local chlorophyll_battery = table.deepcopy(data.raw["electric-energy-interface"]["electric-energy-interface"])
 
@@ -222,5 +286,6 @@ data:extend({
 	chemicalRefinery,
 	debrisMiner,
 	waterMiner,
-	chlorophyll_battery
+	chlorophyll_battery,
+	outpostBarreller
 })
