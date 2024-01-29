@@ -17,6 +17,7 @@ function mark_chunk_occupied(x, y)
     local chunk_y = math.floor(y / 32)
     global.occupied_chunks[chunk_x .. "," .. chunk_y] = true
 end
+
 -- Function to check if a chunk is occupied
 function is_chunk_occupied(x, y)
     local chunk_x = math.floor(x / 32)
@@ -24,41 +25,61 @@ function is_chunk_occupied(x, y)
     return global.occupied_chunks[chunk_x .. "," .. chunk_y] == true
 end
 
--- Spiral galaxy noise function and other related functions
--- Variation functions
+-- Core layer noise function
+function core_noise(x, y, center_x, center_y)
+    -- Here you can define a specific noise function for the core layer
+    local noise = math.random() -- This is just a placeholder for a real noise function
+    return noise
+end
+
+-- Valuable layer noise function
+function valuable_noise(x, y, center_x, center_y)
+    -- Specific noise function for the valuable layer
+    local noise = math.abs(math.sin((x + y) * 0.1)) -- As an example
+    return noise
+end
+
+-- Raw layer noise function
+function raw_noise(x, y, center_x, center_y)
+    -- Specific noise function for the raw layer
+    local noise = (math.sin(x * 0.1) + math.cos(y * 0.1)) * 0.5 -- As an example
+    return noise
+end
+
+-- Deposit layer noise function
+function deposit_noise(x, y, center_x, center_y)
+    -- Specific noise function for the deposit layer
+    local noise = math.random() -- This is just a placeholder for a real noise function
+    return noise
+end
+-- Define the noise variation functions for spiral galaxy noise
 local function spiral_variation(radius)
-    local frequency, amplitude = 0.1, 0.1
-    return amplitude * math.sin(frequency * radius)
+    -- Define the variation based on the radius
+    return 0.1 * math.sin(0.1 * radius)
 end
+
 local function arm_width_variation(radius)
-    local growth_rate, base_width = 0.05, 0.1
-    return base_width + radius * growth_rate
+    -- Define the arm width variation
+    return 0.1 + radius * 0.05
 end
--- Spiral galaxy noise function
+
+-- Spiral galaxy noise function for debris layer
 function spiral_galaxy_noise(x, y, center_x, center_y, arms, base_value)
     local dx, dy = x - center_x, y - center_y
     local radius, angle = math.sqrt(dx^2 + dy^2), math.atan(dy, dx)
     local spiral_factor = 0.5 + spiral_variation(radius)
     local arm_separation, arm_offset = (2 * math.pi) / arms, (angle + radius * spiral_factor) % ((2 * math.pi) / arms)
-          arm_offset = math.abs(arm_offset - arm_separation / 2)
+    arm_offset = math.abs(arm_offset - arm_separation / 2)
     local in_arm = arm_offset < ((arm_separation / 4) + arm_width_variation(radius))
     return in_arm and base_value / (1 + radius * 0.5) or 0
 end
--- Calculate amount function
-local function calculate_amount(layer, distance)
-    local layer_base_values = {core = 100, deposit = 80, raw = 60, valuable = 40, debris = 80}
-    local base_value = layer_base_values[layer] or 500
-    local min_amount = 100
-    return math.max(base_value / (1 + distance / 500), min_amount)
-end
--- Function to calculate distance from spawn
 function calculate_distance_from_spawn(x, y)
-    return math.sqrt(x*x + y*y)
+    local spawn_x, spawn_y = 0, 0  -- Assuming the spawn is at coordinates (0,0)
+    return math.sqrt((x - spawn_x)^2 + (y - spawn_y)^2)
 end
 
 -- Function to place resources in a cluster with overlapping layers
 function place_resource_cluster(center_x, center_y, surface)
-    -- Check if the chunk is already occupied
     if is_chunk_occupied(center_x, center_y) then
         return  -- Chunk is occupied, don't place a new cluster
     end
@@ -69,43 +90,56 @@ function place_resource_cluster(center_x, center_y, surface)
     local raw_radius = 15
     local valuable_radius = 10
     local core_radius = 5
-    local min_amount = 100
+    local min_amount = 30
     local spawn_distance = calculate_distance_from_spawn(center_x, center_y)
     local base_value = min_amount * math.log(1 + spawn_distance / 100)
-    local distance_factor = 1 + (spawn_distance * 0.1)
-        for x = center_x - debris_radius, center_x + debris_radius do
-            for y = center_y - debris_radius, center_y + debris_radius do
-                local distance_from_center = math.sqrt((x - center_x)^2 + (y - center_y)^2)
-                local amount
-                if distance_from_center <= core_radius then
-                    amount = calculate_amount("core", distance_from_center) * distance_factor
-                    surface.create_entity{name = "magnetite-core", position = {x, y}, amount = amount}
-                end
-                if distance_from_center <= valuable_radius then
-                    amount = calculate_amount("valuable", distance_from_center) * distance_factor
-                    surface.create_entity{name = "magnetite-valuable", position = {x, y}, amount = amount}
-                end
-                if distance_from_center <= raw_radius then
-                    amount = calculate_amount("raw", distance_from_center) * distance_factor
-                    surface.create_entity{name = "magnetite-raw", position = {x, y}, amount = amount}
-                end
-                local deposit_amount = 0
-            if distance_from_center <= deposit_radius then
-                deposit_amount = calculate_amount("deposit", distance_from_center) * distance_factor
-                surface.create_entity{name = "magnetite-deposit", position = {x, y}, amount = deposit_amount}
+
+    for x_offset = -debris_radius, debris_radius do
+        for y_offset = -debris_radius, debris_radius do
+            local x = center_x + x_offset
+            local y = center_y + y_offset
+            local distance_from_center = math.sqrt(x_offset^2 + y_offset^2)
+
+            -- Core
+            if distance_from_center <= core_radius then
+                local amount = base_value * core_noise(x, y, center_x, center_y)
+                amount = math.max(amount, min_amount)
+                surface.create_entity{name = "magnetite-core", position = {x, y}, amount = amount}
             end
-                local debris_amount = 0
-                if distance_from_center <= debris_radius then
-                    debris_amount = spiral_galaxy_noise(x, y, center_x, center_y, num_arms, base_value)
-                    debris_amount = math.max(debris_amount, min_amount)
-                    debris_amount = debris_amount + (deposit_amount * 0.5)  -- Example: 50% of deposit
-                    surface.create_entity{name = "magnetite-debris", position = {x, y}, amount = debris_amount}
-                end
-                    mark_chunk_occupied(center_x, center_y)
+
+            -- Valuable
+            if distance_from_center <= valuable_radius then
+                local amount = base_value * valuable_noise(x, y, center_x, center_y)
+                amount = math.max(amount, min_amount)
+                surface.create_entity{name = "magnetite-valuable", position = {x, y}, amount = amount}
+            end
+
+            -- Raw
+            if distance_from_center <= raw_radius then
+                local amount = base_value * raw_noise(x, y, center_x, center_y)
+                amount = math.max(amount, min_amount)
+                surface.create_entity{name = "magnetite-raw", position = {x, y}, amount = amount}
+            end
+
+            -- Deposit
+            if distance_from_center <= deposit_radius then
+                local amount = base_value * deposit_noise(x, y, center_x, center_y)
+                amount = math.max(amount, min_amount)
+                surface.create_entity{name = "magnetite-deposit", position = {x, y}, amount = amount}
+            end
+
+            --Debris
+            if distance_from_center <= debris_radius then
+                local noise_value = spiral_galaxy_noise(x, y, center_x, center_y, num_arms, base_value) -- Replace with your noise function
+                local amount = math.max(noise_value, 1) -- Ensures amount is always greater than 0
+                surface.create_entity{name = "magnetite-debris", position = {x, y}, amount = amount}
             end
         end
     end
--- Adjusted event handler for less frequent spawns
+    mark_chunk_occupied(center_x, center_y)
+end
+
+-- Event handler for chunk generation
 script.on_event(defines.events.on_chunk_generated, function(event)
     local chunk_area = event.area
     local center_x = math.floor((chunk_area.left_top.x + chunk_area.right_bottom.x) / 2)
@@ -114,6 +148,7 @@ script.on_event(defines.events.on_chunk_generated, function(event)
         place_resource_cluster(center_x, center_y, event.surface)
     end
 end)
+
 --Aquatic Mining Section
 
 script.on_event(defines.events.on_built_entity, function(event)
