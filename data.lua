@@ -116,7 +116,6 @@ data.raw["recipe"]["rocket-fuel"].ingredients =
 	{type = "fluid",name = "oxygen", amount = 30},
 	{type = "fluid", name = "aquamethane", amount = 10},
 	{"solid-fuel", 10}
-
 }
 
 --@generic V
